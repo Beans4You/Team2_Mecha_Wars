@@ -5,25 +5,28 @@ extends Node
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	pass # Replace with function body.
+	new_game()
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
+func _process(_delta: float) -> void:
 	pass
 
 
 
 #start button
 func _on_button_pressed() -> void:
-	new_game()
+	pass
+	#new_game()
 	
 func new_game():
-	$MobTimer.start()
-	$GameTimer.start()
+	pass
+	#$MobTimer.start()
+	#$GameTimer.start()
 
 
 func _on_mob_timer_timeout() -> void:
+	pass
 	var new_runner = runner_scene.instantiate()
 	
 	#needs code for setting runner location
@@ -32,5 +35,6 @@ func _on_mob_timer_timeout() -> void:
 
 
 func _on_game_timer_timeout() -> void:
+	pass
 	#10 second timer, when it ends stop spawning enemies
-	$MobTimer.stop()
+	#$MobTimer.stop()
