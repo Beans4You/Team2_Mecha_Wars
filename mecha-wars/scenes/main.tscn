@@ -1,12 +1,14 @@
-[gd_scene load_steps=4 format=3 uid="uid://buik30cn3d1er"]
+[gd_scene load_steps=5 format=3 uid="uid://buik30cn3d1er"]
 
 [ext_resource type="Script" path="res://scenes/main.gd" id="1_wop13"]
+[ext_resource type="PackedScene" uid="uid://h6nqnmhkcq1v" path="res://scenes/enemies/runner.tscn" id="2_1dlbe"]
 [ext_resource type="PackedScene" uid="uid://ihxkiyrb2opd" path="res://scenes/map.tscn" id="2_dpspi"]
 
 [sub_resource type="Curve2D" id="Curve2D_cv2b5"]
 
 [node name="main" type="Node"]
 script = ExtResource("1_wop13")
+runner_scene = ExtResource("2_1dlbe")
 
 [node name="Button" type="Button" parent="."]
 anchors_preset = 8
@@ -33,5 +35,3 @@ curve = SubResource("Curve2D_cv2b5")
 [node name="Map" parent="." instance=ExtResource("2_dpspi")]
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
-[connection signal="timeout" from="MobTimer" to="." method="_on_mob_timer_timeout"]
-[connection signal="timeout" from="GameTimer" to="." method="_on_game_timer_timeout"]
