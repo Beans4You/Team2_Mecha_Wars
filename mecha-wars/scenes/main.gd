@@ -17,4 +17,18 @@ func _on_button_pressed() -> void:
 	new_game()
 	
 func new_game():
-	pass
+	$MobTimer.start()
+	$GameTimer.start()
+
+
+func _on_mob_timer_timeout() -> void:
+	var new_runner = runner_scene.instantiate()
+	
+	#needs code for setting runner location
+	
+	add_child(new_runner)
+
+
+func _on_game_timer_timeout() -> void:
+	#10 second timer, when it ends stop spawning enemies
+	$MobTimer.stop()

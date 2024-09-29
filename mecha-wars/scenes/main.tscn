@@ -33,3 +33,5 @@ curve = SubResource("Curve2D_cv2b5")
 [node name="Map" parent="." instance=ExtResource("2_dpspi")]
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="timeout" from="MobTimer" to="." method="_on_mob_timer_timeout"]
+[connection signal="timeout" from="GameTimer" to="." method="_on_game_timer_timeout"]
