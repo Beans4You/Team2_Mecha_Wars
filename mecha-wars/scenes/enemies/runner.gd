@@ -1,5 +1,6 @@
-extends RigidBody2D
+extends CharacterBody2D
 
+@export var speed = 1000
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -8,7 +9,7 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	pass
+	get_parent().set_progress(get_parent().get_progress() * speed * delta)
 
 
 
