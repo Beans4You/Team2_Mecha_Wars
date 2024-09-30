@@ -1,0 +1,42 @@
+[gd_scene load_steps=8 format=3 uid="uid://bs3i7m6amjfm3"]
+
+[ext_resource type="Texture2D" uid="uid://cqnhc3cwkwuwn" path="res://Resources/rocket_dino/rocket_dino_mecha0.png" id="1_b5js8"]
+[ext_resource type="Script" path="res://scenes/mechas/rocket_dino_mecha.gd" id="1_jsrm8"]
+[ext_resource type="Texture2D" uid="uid://yhnosfjjv77s" path="res://Resources/rocket_dino/rocket_dino_mecha1.png" id="2_idm0l"]
+[ext_resource type="Texture2D" uid="uid://dyn1q0l1lnpx4" path="res://Resources/rocket_dino/rocket_dino_mecha2.png" id="3_b538q"]
+[ext_resource type="Texture2D" uid="uid://chu0aajmtbpfi" path="res://Resources/rocket_dino/rocket_dino_mecha3.png" id="4_wgga1"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_egpcp"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_b5js8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_idm0l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_b538q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_wgga1")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_wk2gr"]
+radius = 42.0
+height = 102.0
+
+[node name="rocket-dino" type="CharacterBody2D"]
+script = ExtResource("1_jsrm8")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_egpcp")
+animation = &"idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(1, 4)
+shape = SubResource("CapsuleShape2D_wk2gr")
