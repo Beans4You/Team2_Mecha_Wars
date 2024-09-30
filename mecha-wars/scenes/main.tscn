@@ -1,9 +1,10 @@
-[gd_scene load_steps=6 format=3 uid="uid://buik30cn3d1er"]
+[gd_scene load_steps=7 format=3 uid="uid://buik30cn3d1er"]
 
 [ext_resource type="Script" path="res://scenes/main.gd" id="1_wop13"]
 [ext_resource type="PackedScene" uid="uid://h6nqnmhkcq1v" path="res://scenes/enemies/runner.tscn" id="2_1dlbe"]
 [ext_resource type="PackedScene" uid="uid://ihxkiyrb2opd" path="res://scenes/map.tscn" id="2_dpspi"]
 [ext_resource type="PackedScene" uid="uid://bs3i7m6amjfm3" path="res://scenes/mechas/rocket_dino_mecha.tscn" id="4_qghg2"]
+[ext_resource type="PackedScene" uid="uid://chjcyfjud2sxf" path="res://scenes/start_screen.tscn" id="5_lki52"]
 
 [sub_resource type="Curve2D" id="Curve2D_mi2ma"]
 _data = {
@@ -43,5 +44,7 @@ rotation = 0.0158717
 
 [node name="rocket-dino" parent="." instance=ExtResource("4_qghg2")]
 position = Vector2(639, 167)
+
+[node name="Start Screen" parent="." instance=ExtResource("5_lki52")]
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
