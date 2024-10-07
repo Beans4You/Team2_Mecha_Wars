@@ -1,15 +1,16 @@
-[gd_scene load_steps=8 format=3 uid="uid://buik30cn3d1er"]
+[gd_scene load_steps=9 format=3 uid="uid://buik30cn3d1er"]
 
 [ext_resource type="Script" path="res://scenes/main.gd" id="1_wop13"]
 [ext_resource type="PackedScene" uid="uid://h6nqnmhkcq1v" path="res://scenes/enemies/runner.tscn" id="2_1dlbe"]
-[ext_resource type="PackedScene" uid="uid://ui76qs4pk0i3" path="res://scenes/new_map.tscn" id="3_muqhs"]
+[ext_resource type="PackedScene" uid="uid://ihxkiyrb2opd" path="res://scenes/map.tscn" id="2_dpspi"]
 [ext_resource type="PackedScene" uid="uid://bs3i7m6amjfm3" path="res://scenes/mechas/rocket_dino_mecha.tscn" id="4_qghg2"]
 [ext_resource type="PackedScene" uid="uid://chjcyfjud2sxf" path="res://scenes/start_screen.tscn" id="5_lki52"]
-[ext_resource type="AudioStream" uid="uid://c8buh00p5nomb" path="res://Resources/SCI-FI_UI_SFX_PACK/fight.wav" id="7_l4mcw"]
+[ext_resource type="PackedScene" uid="uid://hxwjjftcvqr5" path="res://scenes/ui/ui.tscn" id="6_g2qh7"]
+[ext_resource type="Script" path="res://scenes/ui/ui.gd" id="7_cvgpi"]
 
 [sub_resource type="Curve2D" id="Curve2D_mi2ma"]
 _data = {
-"points": PackedVector2Array(0, 0, 0, 0, 3, 247, 0, 0, 0, 0, 66, 248, 0, 0, 0, 0, 155, 252, 0, 0, 0, 0, 162, 424, 0, 0, 0, 0, 158, 578, 0, 0, 0, 0, 437, 434, 0, 0, 0, 0, 526, 510, 0, 0, 0, 0, 581, 468, 0, 0, 0, 0, 723, 428, 0, 0, 0, 0, 857, 314, 0, 0, 0, 0, 860, 151, 0, 0, 0, 0, 1068, 55, 0, 0, 0, 0, 1179, 62, 0, 0, 0, 0, 1177, 241, 0, 0, 0, 0, 1141, 331, 0, 0, 0, 0, 1178, 355, 0, 0, 0, 0, 1135, 364, 0, 0, 0, 0, 1030, 367, 0, 0, 0, 0, 1046, 589, 0, 0, 0, 0, 608, 608, 0, 0, 0, 0, 602, 692)
+"points": PackedVector2Array(0, 0, 0, 0, 3, 247, 0, 0, 0, 0, 66, 248, 0, 0, 0, 0, 155, 252, 0, 0, 0, 0, 162, 424, 0, 0, 0, 0, 163, 499, 0, 0, 0, 0, 380, 510, 0, 0, 0, 0, 526, 510, 0, 0, 0, 0, 609, 491, 0, 0, 0, 0, 608, 327, 0, 0, 0, 0, 857, 314, 0, 0, 0, 0, 860, 151, 0, 0, 0, 0, 862, 58, 0, 0, 0, 0, 1068, 55, 0, 0, 0, 0, 1179, 62, 0, 0, 0, 0, 1182, 242, 0, 0, 0, 0, 1178, 355, 0, 0, 0, 0, 1176, 382, 0, 0, 0, 0, 1059, 376, 0, 0, 0, 0, 1053, 598, 0, 0, 0, 0, 608, 608, 0, 0, 0, 0, 602, 692)
 }
 point_count = 21
 
@@ -32,8 +33,7 @@ grow_vertical = 2
 scale = Vector2(9.97849, 7.46708)
 text = "Start"
 
-[node name="NewMap" parent="." instance=ExtResource("3_muqhs")]
-z_index = 0
+[node name="Map" parent="." instance=ExtResource("2_dpspi")]
 
 [node name="Path2D" type="Path2D" parent="."]
 curve = SubResource("Curve2D_mi2ma")
@@ -45,14 +45,13 @@ rotation = 0.0158717
 [node name="runner" parent="Path2D/PathFollow2D" instance=ExtResource("2_1dlbe")]
 
 [node name="rocket-dino" parent="." instance=ExtResource("4_qghg2")]
-position = Vector2(1108, 105)
-scale = Vector2(0.8, 0.8)
+visible = false
+position = Vector2(639, 167)
 
 [node name="Start Screen" parent="." instance=ExtResource("5_lki52")]
+script = null
 
-[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
-stream = ExtResource("7_l4mcw")
-volume_db = -0.51
-autoplay = true
+[node name="UI" parent="." instance=ExtResource("6_g2qh7")]
+script = ExtResource("7_cvgpi")
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

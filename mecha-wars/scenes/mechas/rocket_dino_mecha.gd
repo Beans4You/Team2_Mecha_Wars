@@ -6,6 +6,7 @@ const JUMP_VELOCITY = -400.0
 
 func _ready() -> void:
 	$AnimatedSprite2D.play()
+	$Area.hide()
 
 func _physics_process(delta: float) -> void:
 	pass
