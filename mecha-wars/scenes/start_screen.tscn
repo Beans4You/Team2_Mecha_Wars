@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://chjcyfjud2sxf"]
 
-[ext_resource type="Script" path="res://start_screen.gd" id="1_i35bf"]
+[ext_resource type="Script" path="res://scenes/start_screen.gd" id="1_i35bf"]
 [ext_resource type="PackedScene" uid="uid://bs3i7m6amjfm3" path="res://scenes/mechas/rocket_dino_mecha.tscn" id="2_pbldr"]
 [ext_resource type="Texture2D" uid="uid://mk2gxdqwn35p" path="res://Resources/Alien Sprites/scifi_alien_run_1.png" id="3_luvg2"]
 
