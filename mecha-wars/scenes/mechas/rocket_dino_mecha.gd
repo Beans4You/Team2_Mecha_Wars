@@ -8,7 +8,7 @@ var Bullet = preload("res://scenes/towers/dino_bullet.tscn")
 var bulletDamage = 5
 var pathName
 var currTargets = []
-var curr
+var curr = null
 
 func _ready() -> void:
 	$AnimatedSprite2D.play()
@@ -43,7 +43,7 @@ func _on_area_2d_body_entered(body: Node2D) -> void:
 		var tempBullet = Bullet.instantiate()
 		tempBullet.pathName = pathName
 		tempBullet.bulletDamage = bulletDamage
-		get_node("BulletContainer").add_child(tempBullet)
+		get_node("BulletContainer").call_deferred("add_child", tempBullet)
 		tempBullet.global_position = $Aim.global_position
 		
 		
