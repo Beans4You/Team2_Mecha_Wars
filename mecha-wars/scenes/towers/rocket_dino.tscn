@@ -1,0 +1,56 @@
+[gd_scene load_steps=10 format=3 uid="uid://c2isihlke4e4t"]
+
+[ext_resource type="PackedScene" uid="uid://bhrok0a2cdblv" path="res://scenes/towers/tower_shooting.tscn" id="1_u1xbp"]
+[ext_resource type="Texture2D" uid="uid://cqnhc3cwkwuwn" path="res://Resources/rocket_dino/rocket_dino_mecha0.png" id="2_04m6f"]
+[ext_resource type="Script" path="res://scenes/towers/rocket_dino.gd" id="2_7h3dq"]
+[ext_resource type="Texture2D" uid="uid://yhnosfjjv77s" path="res://Resources/rocket_dino/rocket_dino_mecha1.png" id="3_sfokh"]
+[ext_resource type="Texture2D" uid="uid://dyn1q0l1lnpx4" path="res://Resources/rocket_dino/rocket_dino_mecha2.png" id="4_dcjd5"]
+[ext_resource type="Texture2D" uid="uid://chu0aajmtbpfi" path="res://Resources/rocket_dino/rocket_dino_mecha3.png" id="5_s6v0l"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_l1ral"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_04m6f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_sfokh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_dcjd5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_s6v0l")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_g0t6e"]
+radius = 42.0
+height = 102.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_lepyl"]
+radius = 175.385
+
+[node name="rocket_dino" instance=ExtResource("1_u1xbp")]
+script = ExtResource("2_7h3dq")
+
+[node name="rocket_dino_animated_sprite" type="AnimatedSprite2D" parent="." index="0"]
+sprite_frames = SubResource("SpriteFrames_l1ral")
+animation = &"idle"
+
+[node name="character_collision_shape" type="CollisionShape2D" parent="." index="1"]
+position = Vector2(1, 4)
+shape = SubResource("CapsuleShape2D_g0t6e")
+
+[node name="aim" type="Marker2D" parent="." index="2"]
+
+[node name="range" type="Area2D" parent="." index="4" groups=["Enemy"]]
+
+[node name="range_collision_shape" type="CollisionShape2D" parent="range" index="0"]
+shape = SubResource("CircleShape2D_lepyl")
+
+[connection signal="body_entered" from="range" to="." method="_on_range_body_entered"]
+[connection signal="body_exited" from="range" to="." method="_on_range_body_exited"]

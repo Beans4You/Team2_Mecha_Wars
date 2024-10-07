@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3 uid="uid://cpa1nagsmqgcy"]
+
+[ext_resource type="Script" path="res://tower.gd" id="1_r257c"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2xunu"]
+bg_color = Color(0.6, 0.0117647, 0.0117647, 1)
+corner_radius_top_left = 450
+corner_radius_top_right = 450
+corner_radius_bottom_right = 450
+corner_radius_bottom_left = 450
+
+[node name="tower" type="CharacterBody2D"]
+script = ExtResource("1_r257c")
+
+[node name="area" type="Panel" parent="."]
+modulate = Color(0, 0, 0, 0.313726)
+offset_left = -175.0
+offset_top = -175.0
+offset_right = 175.0
+offset_bottom = 175.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_2xunu")
