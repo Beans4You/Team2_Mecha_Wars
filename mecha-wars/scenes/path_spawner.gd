@@ -1,17 +1,18 @@
-extends Control
+extends Node2D
 
+
+@onready var path = preload("res://scenes/enemies/path.tscn")
 
 # Called when the node enters the scene tree for the first time.
-func _ready():
+func _ready() -> void:
 	pass # Replace with function body.
+
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	pass
 
-func _on_button_pressed() -> void:
-	hide()
-	var parent = get_parent()
-	var timer = parent.get_node("Path_Spawner/Timer")
-	timer.start()
-	
+
+func _on_timer_timeout() -> void:
+	var temp_path = path.instantiate()
+	add_child(temp_path)

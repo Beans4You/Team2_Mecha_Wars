@@ -7,42 +7,13 @@
 [ext_resource type="PackedScene" uid="uid://chjcyfjud2sxf" path="res://scenes/start_screen.tscn" id="5_lki52"]
 [ext_resource type="PackedScene" uid="uid://hxwjjftcvqr5" path="res://scenes/ui/ui.tscn" id="6_g2qh7"]
 [ext_resource type="Script" path="res://scenes/ui/ui.gd" id="7_cvgpi"]
-
-[sub_resource type="Curve2D" id="Curve2D_mi2ma"]
-_data = {
-"points": PackedVector2Array(0, 0, 0, 0, 3, 247, 0, 0, 0, 0, 66, 248, 0, 0, 0, 0, 155, 252, 0, 0, 0, 0, 162, 424, 0, 0, 0, 0, 163, 499, 0, 0, 0, 0, 380, 510, 0, 0, 0, 0, 526, 510, 0, 0, 0, 0, 609, 491, 0, 0, 0, 0, 608, 327, 0, 0, 0, 0, 857, 314, 0, 0, 0, 0, 860, 151, 0, 0, 0, 0, 862, 58, 0, 0, 0, 0, 1068, 55, 0, 0, 0, 0, 1179, 62, 0, 0, 0, 0, 1182, 242, 0, 0, 0, 0, 1178, 355, 0, 0, 0, 0, 1176, 382, 0, 0, 0, 0, 1059, 376, 0, 0, 0, 0, 1053, 598, 0, 0, 0, 0, 608, 608, 0, 0, 0, 0, 602, 692)
-}
-point_count = 21
+[ext_resource type="Script" path="res://scenes/path_spawner.gd" id="8_5lnom"]
 
 [node name="main" type="Node"]
 script = ExtResource("1_wop13")
 runner_scene = ExtResource("2_1dlbe")
 
-[node name="Button" type="Button" parent="."]
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -222.0
-offset_top = -111.0
-offset_right = -176.0
-offset_bottom = -80.0
-grow_horizontal = 2
-grow_vertical = 2
-scale = Vector2(9.97849, 7.46708)
-text = "Start"
-
 [node name="Map" parent="." instance=ExtResource("2_dpspi")]
-
-[node name="Path2D" type="Path2D" parent="."]
-curve = SubResource("Curve2D_mi2ma")
-
-[node name="PathFollow2D" type="PathFollow2D" parent="Path2D"]
-position = Vector2(3, 247)
-rotation = 0.0158717
-
-[node name="runner" parent="Path2D/PathFollow2D" instance=ExtResource("2_1dlbe")]
 
 [node name="rocket-dino" parent="." instance=ExtResource("4_qghg2")]
 visible = false
@@ -53,4 +24,11 @@ position = Vector2(639, 167)
 [node name="UI" parent="." instance=ExtResource("6_g2qh7")]
 script = ExtResource("7_cvgpi")
 
-[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[node name="Path_Spawner" type="Node2D" parent="."]
+script = ExtResource("8_5lnom")
+
+[node name="Timer" type="Timer" parent="Path_Spawner"]
+wait_time = 1.5
+autostart = true
+
+[connection signal="timeout" from="Path_Spawner/Timer" to="Path_Spawner" method="_on_timer_timeout"]
