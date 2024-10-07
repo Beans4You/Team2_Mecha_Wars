@@ -1,0 +1,2 @@
+extends tower
+class_name tower_shooting
