@@ -1,0 +1,3 @@
+[gd_scene format=3 uid="uid://bxtq54c7l5jvs"]
+
+[node name="Dino_Bullet" type="CharacterBody2D"]
