@@ -1,7 +1,7 @@
 extends CharacterBody2D
 
 @export var speed = 200
-
+var health = 10
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	$AnimatedSprite2D.play()
@@ -16,6 +16,8 @@ func _process(delta):
 	if get_parent().get_progress_ratio() == 1:
 		queue_free()
 	
+	if health <= 0:
+		get_parent().get_parent().queue_free()
 
 
 func _on_visible_on_screen_notifier_2d_screen_exited():

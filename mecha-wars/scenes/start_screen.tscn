@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://chjcyfjud2sxf"]
 
 [ext_resource type="Script" path="res://scenes/start_screen.gd" id="1_jbpd7"]
-[ext_resource type="PackedScene" uid="uid://bs3i7m6amjfm3" path="res://scenes/mechas/rocket_dino_mecha.tscn" id="2_pbldr"]
+[ext_resource type="Texture2D" uid="uid://cqnhc3cwkwuwn" path="res://Resources/rocket_dino/rocket_dino_mecha0.png" id="3_b1ka2"]
 [ext_resource type="Texture2D" uid="uid://mk2gxdqwn35p" path="res://Resources/Alien Sprites/scifi_alien_run_1.png" id="3_luvg2"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_rey21"]
@@ -21,10 +21,6 @@ layout_mode = 0
 offset_right = 1280.0
 offset_bottom = 704.0
 color = Color(0, 0.263706, 0.673969, 1)
-
-[node name="rocket-dino" parent="." instance=ExtResource("2_pbldr")]
-position = Vector2(229, 406)
-scale = Vector2(3, 3)
 
 [node name="Button" type="Button" parent="."]
 layout_mode = 1
@@ -58,5 +54,10 @@ label_settings = SubResource("LabelSettings_rey21")
 position = Vector2(992, 387)
 scale = Vector2(3, 3)
 texture = ExtResource("3_luvg2")
+
+[node name="RocketDinoMecha0" type="Sprite2D" parent="."]
+position = Vector2(257, 356)
+scale = Vector2(2.42188, 2.9375)
+texture = ExtResource("3_b1ka2")
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

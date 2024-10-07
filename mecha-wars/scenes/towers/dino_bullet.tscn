@@ -1,5 +1,6 @@
-[gd_scene load_steps=4 format=3 uid="uid://bxtq54c7l5jvs"]
+[gd_scene load_steps=5 format=3 uid="uid://bxtq54c7l5jvs"]
 
+[ext_resource type="Script" path="res://scenes/towers/dino_bullet.gd" id="1_ut46t"]
 [ext_resource type="Texture2D" uid="uid://bw1vua8lhsle0" path="res://Resources/Laser Sprites/02.png" id="1_y76ul"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_m6ctr"]
@@ -10,6 +11,8 @@ height = 86.0
 height = 44.8
 
 [node name="Dino_Bullet" type="CharacterBody2D"]
+scale = Vector2(0.65, 0.65)
+script = ExtResource("1_ut46t")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 scale = Vector2(2, 2)
@@ -27,3 +30,5 @@ position = Vector2(-5, 0)
 rotation = 1.5708
 scale = Vector2(2.5, 2.5)
 shape = SubResource("CapsuleShape2D_2lvxw")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
