@@ -16,6 +16,7 @@ func _process(_delta: float) -> void:
 
 func _on_button_pressed():
 	new_game()
+	
 
 
 func new_game():
