@@ -1,3 +1,29 @@
-[gd_scene format=3 uid="uid://bxtq54c7l5jvs"]
+[gd_scene load_steps=4 format=3 uid="uid://bxtq54c7l5jvs"]
+
+[ext_resource type="Texture2D" uid="uid://bw1vua8lhsle0" path="res://Resources/Laser Sprites/02.png" id="1_y76ul"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_m6ctr"]
+radius = 20.0
+height = 86.0
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_2lvxw"]
+height = 44.8
 
 [node name="Dino_Bullet" type="CharacterBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(2, 2)
+texture = ExtResource("1_y76ul")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-5, 0)
+rotation = 1.5708
+shape = SubResource("CapsuleShape2D_m6ctr")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(-5, 0)
+rotation = 1.5708
+scale = Vector2(2.5, 2.5)
+shape = SubResource("CapsuleShape2D_2lvxw")
