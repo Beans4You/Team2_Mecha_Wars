@@ -49,7 +49,6 @@ visible = false
 position = Vector2(639, 167)
 
 [node name="Start Screen" parent="." instance=ExtResource("5_lki52")]
-script = null
 
 [node name="UI" parent="." instance=ExtResource("6_g2qh7")]
 script = ExtResource("7_cvgpi")
