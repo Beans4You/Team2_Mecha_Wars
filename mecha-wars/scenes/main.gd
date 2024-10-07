@@ -16,7 +16,10 @@ func _process(_delta: float) -> void:
 		
 
 
-#
-#func new_game():
-	#
-	#print("st")
+func _on_button_pressed():
+	new_game()
+	
+
+
+func new_game():
+	pass
