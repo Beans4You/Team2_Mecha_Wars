@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://cpa1nagsmqgcy"]
 
-[ext_resource type="Script" path="res://tower.gd" id="1_r257c"]
+[ext_resource type="Script" path="res://scenes/towers/tower.gd" id="1_r257c"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2xunu"]
 bg_color = Color(0.6, 0.0117647, 0.0117647, 1)

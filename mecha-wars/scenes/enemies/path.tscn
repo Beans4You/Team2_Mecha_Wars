@@ -11,9 +11,9 @@ point_count = 18
 [node name="Path2D" type="Path2D"]
 curve = SubResource("Curve2D_r3rjb")
 
-[node name="PathFollow2D2" type="PathFollow2D" parent="."]
+[node name="PathFollow2D" type="PathFollow2D" parent="."]
 position = Vector2(3, 245)
 rotation = 0.239743
 loop = false
 
-[node name="runner" parent="PathFollow2D2" instance=ExtResource("1_b3e8q")]
+[node name="runner" parent="PathFollow2D" instance=ExtResource("1_b3e8q")]
