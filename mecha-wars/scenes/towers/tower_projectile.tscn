@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://dnwi2cwo0ksva"]
+
+[ext_resource type="PackedScene" uid="uid://cpa1nagsmqgcy" path="res://scenes/towers/tower.tscn" id="1_k1gat"]
+[ext_resource type="Script" path="res://scenes/towers/tower_projectile.gd" id="2_5yi8y"]
+
+[node name="tower_projectile" instance=ExtResource("1_k1gat")]
+script = ExtResource("2_5yi8y")
+
+[node name="bullet_container" type="Node" parent="." index="1"]

@@ -1,10 +1,10 @@
 extends Panel
 
-@onready var tower = preload("res://scenes/towers/rocket_dino.tscn")
+@onready var tower_scene = preload("res://scenes/towers/rocket_dino.tscn")
 var currTile
 
 func _on_gui_input(event):
-	var tempTower = tower.instantiate()
+	var tempTower = tower_scene.instantiate()
 	
 	if event is InputEventMouseButton and event.button_mask == 1:
 		#Left Click Down
@@ -17,7 +17,7 @@ func _on_gui_input(event):
 		get_child(1).global_position = event.global_position
 	elif event is InputEventMouseButton and event.button_mask == 0:
 		#Left Click Up
-		print("Left Button up")
+		#print("Left Button up")
 		get_child(1).queue_free()
 		
 		var path = get_tree().get_root()

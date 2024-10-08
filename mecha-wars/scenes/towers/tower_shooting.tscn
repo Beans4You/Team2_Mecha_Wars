@@ -5,5 +5,3 @@
 
 [node name="tower_shooting" instance=ExtResource("1_okhof")]
 script = ExtResource("2_tkv70")
-
-[node name="bullet_container" type="Node" parent="." index="1"]

@@ -1,25 +1,32 @@
 extends CharacterBody2D
+var target 
+var speed = 1000
+var bullet_damage = 5
 
 
-var target
-var Speed = 1000
-var pathName = ""
-var bulletDamage
+func set_target(target_in):
+	target = target_in
 
-func _physics_process(delta):
-	var pathSpawnerNode = get_tree().get_root().get_node("main/Path_Spawner")
-	for i in pathSpawnerNode.get_child_count():
-		if pathSpawnerNode.get_child(i).name == pathName:
-			target = pathSpawnerNode.get_child(1).get_child(0).get_child(0).global_position
 
-	velocity = global_position.direction_to(target) *Speed
 
-	look_at(target)
-
-	move_and_slide()
+func _physics_process(delta: float) -> void:
+	if target == null:
+		#print("null")
+		position += speed * Vector2.RIGHT.rotated(rotation) * delta
+		#position += Vector2(1,1) * speed * delta
+		return
+	look_at(target.global_position)
+	position = position.move_toward(target.global_position, speed * delta)
 
 
 func _on_area_2d_body_entered(body: Node2D) -> void:
-	if "runner" in body.name:
-		body.health -= bulletDamage
+	if body.is_in_group("enemy"):
+		body.health -= bullet_damage
+		#print("qfree")
 		queue_free()
+		
+
+func _on_visible_on_screen_notifier_2d_screen_exited() -> void:
+	#print("screen exit")
+	queue_free()
+	

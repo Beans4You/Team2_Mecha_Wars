@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://bjpysioef7mkn"
-path="res://.godot/imported/Tone3C_MajorTriadUp.wav-ed7670d6c21afad82c6de0015b621891.sample"
+path="res://.godot/imported/Tone3C_MajorTriadUp.wav-622808c94a91f852a44157c68486176d.sample"
 
 [deps]
 
-source_file="res://Resources/SCI-FI_UI_SFX_PACK/Tone3/Major/Tone3C_MajorTriadUp.wav"
-dest_files=["res://.godot/imported/Tone3C_MajorTriadUp.wav-ed7670d6c21afad82c6de0015b621891.sample"]
+source_file="res://resources/SCI-FI_UI_SFX_PACK/Tone3/Major/Tone3C_MajorTriadUp.wav"
+dest_files=["res://.godot/imported/Tone3C_MajorTriadUp.wav-622808c94a91f852a44157c68486176d.sample"]
 
 [params]
 

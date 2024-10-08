@@ -2,11 +2,11 @@
 
 [ext_resource type="PackedScene" uid="uid://cwm1h72ovnakg" path="res://scenes/enemies/enemy.tscn" id="1_jm8wu"]
 [ext_resource type="Script" path="res://runner.gd" id="2_i4i83"]
-[ext_resource type="Texture2D" uid="uid://mk2gxdqwn35p" path="res://Resources/Alien Sprites/scifi_alien_run_1.png" id="2_t62gp"]
-[ext_resource type="Texture2D" uid="uid://cmx0vwhn3iioj" path="res://Resources/Alien Sprites/scifi_alien_run_2.png" id="3_si3x4"]
-[ext_resource type="Texture2D" uid="uid://cltrjfre1fu7m" path="res://Resources/Alien Sprites/scifi_alien_run_3.png" id="4_1nk3a"]
-[ext_resource type="Texture2D" uid="uid://cduwy3vpbtc10" path="res://Resources/Alien Sprites/scifi_alien_run_4.png" id="5_g5eqo"]
-[ext_resource type="Texture2D" uid="uid://conxlwl8qd22s" path="res://Resources/Alien Sprites/scifi_alien_run_5.png" id="6_aj3cw"]
+[ext_resource type="Texture2D" uid="uid://mk2gxdqwn35p" path="res://resources/Alien Sprites/scifi_alien_run_1.png" id="2_t62gp"]
+[ext_resource type="Texture2D" uid="uid://cmx0vwhn3iioj" path="res://resources/Alien Sprites/scifi_alien_run_2.png" id="3_si3x4"]
+[ext_resource type="Texture2D" uid="uid://cltrjfre1fu7m" path="res://resources/Alien Sprites/scifi_alien_run_3.png" id="4_1nk3a"]
+[ext_resource type="Texture2D" uid="uid://cduwy3vpbtc10" path="res://resources/Alien Sprites/scifi_alien_run_4.png" id="5_g5eqo"]
+[ext_resource type="Texture2D" uid="uid://conxlwl8qd22s" path="res://resources/Alien Sprites/scifi_alien_run_5.png" id="6_aj3cw"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_edx1n"]
 animations = [{
@@ -38,10 +38,17 @@ height = 91.3892
 [node name="runner" instance=ExtResource("1_jm8wu")]
 script = ExtResource("2_i4i83")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." index="1"]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." index="0"]
 sprite_frames = SubResource("SpriteFrames_edx1n")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="." index="2"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." index="1"]
+position = Vector2(7, 11)
+rotation = -1.16432
+shape = SubResource("CapsuleShape2D_or3hg")
+
+[node name="hit_area" type="Area2D" parent="." index="2"]
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="hit_area" index="0"]
 position = Vector2(7, 11)
 rotation = -1.16432
 shape = SubResource("CapsuleShape2D_or3hg")
