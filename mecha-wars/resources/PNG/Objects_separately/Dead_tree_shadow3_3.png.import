@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bdn5f445ww1s8"
-path="res://.godot/imported/Dead_tree_shadow3_3.png-ca3a8565f9d5d5830903d53501870fb9.ctex"
+path="res://.godot/imported/Dead_tree_shadow3_3.png-17a553ba7d0feee1c55cfe7077f8e7fd.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://resources/PNG/Objects_separately/Dead_tree_shadow3_3.png"
-dest_files=["res://.godot/imported/Dead_tree_shadow3_3.png-ca3a8565f9d5d5830903d53501870fb9.ctex"]
+source_file="res://Resources/PNG/Objects_separately/Dead_tree_shadow3_3.png"
+dest_files=["res://.godot/imported/Dead_tree_shadow3_3.png-17a553ba7d0feee1c55cfe7077f8e7fd.ctex"]
 
 [params]
 
