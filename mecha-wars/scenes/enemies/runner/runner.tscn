@@ -1,7 +1,7 @@
 [gd_scene load_steps=10 format=3 uid="uid://h6nqnmhkcq1v"]
 
 [ext_resource type="PackedScene" uid="uid://cwm1h72ovnakg" path="res://scenes/enemies/enemy.tscn" id="1_jm8wu"]
-[ext_resource type="Script" path="res://scenes/enemies/runner.gd" id="2_i4i83"]
+[ext_resource type="Script" path="res://scenes/enemies/runner/runner.gd" id="2_i4i83"]
 [ext_resource type="Texture2D" uid="uid://mk2gxdqwn35p" path="res://resources/Alien Sprites/scifi_alien_run_1.png" id="2_t62gp"]
 [ext_resource type="Texture2D" uid="uid://cmx0vwhn3iioj" path="res://resources/Alien Sprites/scifi_alien_run_2.png" id="3_si3x4"]
 [ext_resource type="Texture2D" uid="uid://cltrjfre1fu7m" path="res://resources/Alien Sprites/scifi_alien_run_3.png" id="4_1nk3a"]

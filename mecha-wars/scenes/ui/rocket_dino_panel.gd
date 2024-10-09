@@ -1,6 +1,6 @@
 extends Panel
 
-@onready var tower_scene = preload("res://scenes/towers/rocket_dino.tscn")
+@onready var tower_scene = preload("res://scenes/towers/rocket_dino/rocket_dino.tscn")
 var currTile
 
 func _on_gui_input(event):

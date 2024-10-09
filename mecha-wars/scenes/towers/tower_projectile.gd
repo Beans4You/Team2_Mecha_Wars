@@ -3,7 +3,7 @@ extends tower
 class_name tower_projectile
 
 
-var bullet_scene = preload("res://scenes/towers/dino_bullet.tscn")
+var bullet_scene = preload("res://scenes/towers/rocket_dino/dino_bullet.tscn")
 
 var enemy_array = []
 var current_enemy

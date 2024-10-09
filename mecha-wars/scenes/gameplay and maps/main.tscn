@@ -1,7 +1,7 @@
 [gd_scene load_steps=9 format=3 uid="uid://buik30cn3d1er"]
 
 [ext_resource type="Script" path="res://scenes/gameplay and maps/main.gd" id="1_wop13"]
-[ext_resource type="PackedScene" uid="uid://h6nqnmhkcq1v" path="res://scenes/enemies/runner.tscn" id="2_1dlbe"]
+[ext_resource type="PackedScene" uid="uid://h6nqnmhkcq1v" path="res://scenes/enemies/runner/runner.tscn" id="2_1dlbe"]
 [ext_resource type="PackedScene" uid="uid://ui76qs4pk0i3" path="res://scenes/gameplay and maps/new_map.tscn" id="3_s624m"]
 [ext_resource type="PackedScene" uid="uid://chjcyfjud2sxf" path="res://scenes/ui/start_screen.tscn" id="5_lki52"]
 [ext_resource type="PackedScene" uid="uid://hxwjjftcvqr5" path="res://scenes/ui/ui.tscn" id="6_g2qh7"]

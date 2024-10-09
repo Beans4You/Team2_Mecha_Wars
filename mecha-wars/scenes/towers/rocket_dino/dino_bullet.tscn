@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://bxtq54c7l5jvs"]
 
-[ext_resource type="Script" path="res://scenes/towers/dino_bullet.gd" id="1_ut46t"]
-[ext_resource type="Texture2D" uid="uid://bw1vua8lhsle0" path="res://Resources/Laser Sprites/02.png" id="1_y76ul"]
+[ext_resource type="Script" path="res://scenes/towers/rocket_dino/dino_bullet.gd" id="1_ut46t"]
+[ext_resource type="Texture2D" uid="uid://bw1vua8lhsle0" path="res://resources/Laser Sprites/02.png" id="1_y76ul"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_m6ctr"]
 radius = 20.0
