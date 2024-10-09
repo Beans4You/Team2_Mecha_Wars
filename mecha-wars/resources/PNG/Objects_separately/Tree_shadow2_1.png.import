@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cggokfmgwtwg2"
-path="res://.godot/imported/Tree_shadow2_1.png-c79c92e645e7bd6800e32bc7b9034957.ctex"
+path="res://.godot/imported/Tree_shadow2_1.png-5dab3a761996e56f9c1af81f9ef713c0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Resources/PNG/Objects_separately/Tree_shadow2_1.png"
-dest_files=["res://.godot/imported/Tree_shadow2_1.png-c79c92e645e7bd6800e32bc7b9034957.ctex"]
+source_file="res://resources/PNG/Objects_separately/Tree_shadow2_1.png"
+dest_files=["res://.godot/imported/Tree_shadow2_1.png-5dab3a761996e56f9c1af81f9ef713c0.ctex"]
 
 [params]
 

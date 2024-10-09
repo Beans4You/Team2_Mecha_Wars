@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b8i465p8fo7c4"
-path="res://.godot/imported/Ruin_shadow1_2.png-9be73c5558d3624427829efd3c677887.ctex"
+path="res://.godot/imported/Ruin_shadow1_2.png-82cbd3ba420df83cfaa88bc62b69d037.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Resources/PNG/Objects_separately/Ruin_shadow1_2.png"
-dest_files=["res://.godot/imported/Ruin_shadow1_2.png-9be73c5558d3624427829efd3c677887.ctex"]
+source_file="res://resources/PNG/Objects_separately/Ruin_shadow1_2.png"
+dest_files=["res://.godot/imported/Ruin_shadow1_2.png-82cbd3ba420df83cfaa88bc62b69d037.ctex"]
 
 [params]
 

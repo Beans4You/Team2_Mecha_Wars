@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://conmvgnb4burm"
-path="res://.godot/imported/Pile_sculls_shadow1.png-69f90dcca8b3b484213df38cfb7a3006.ctex"
+path="res://.godot/imported/Pile_sculls_shadow1.png-4cca0a046dcf3ed3070a17cd43a7206e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Resources/PNG/Objects_separately/Pile_sculls_shadow1.png"
-dest_files=["res://.godot/imported/Pile_sculls_shadow1.png-69f90dcca8b3b484213df38cfb7a3006.ctex"]
+source_file="res://resources/PNG/Objects_separately/Pile_sculls_shadow1.png"
+dest_files=["res://.godot/imported/Pile_sculls_shadow1.png-4cca0a046dcf3ed3070a17cd43a7206e.ctex"]
 
 [params]
 
