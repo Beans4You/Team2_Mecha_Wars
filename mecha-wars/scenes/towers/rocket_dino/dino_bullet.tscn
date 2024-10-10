@@ -45,7 +45,7 @@ script = ExtResource("1_ut46t")
 scale = Vector2(2, 2)
 sprite_frames = SubResource("SpriteFrames_4kt07")
 animation = &"bullet_spin"
-frame_progress = 0.367784
+frame_progress = 0.0912146
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 visible = false
