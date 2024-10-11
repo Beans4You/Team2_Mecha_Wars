@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://d037v8qqhvdyr"
-path="res://.godot/imported/mainlevbuild.png-ad9b55dd8c274138ba37839f9fce4b5f.ctex"
+path="res://.godot/imported/mainlevbuild.png-6ce458dfdbbaaef228e79d63f7a68a68.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://resources/RF_Catacombs_v1.0/mainlevbuild.png"
-dest_files=["res://.godot/imported/mainlevbuild.png-ad9b55dd8c274138ba37839f9fce4b5f.ctex"]
+source_file="res://Resources/RF_Catacombs_v1.0/mainlevbuild.png"
+dest_files=["res://.godot/imported/mainlevbuild.png-6ce458dfdbbaaef228e79d63f7a68a68.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://yue8wpsyctya"
-path="res://.godot/imported/Crystal_shadow3_1.png-875dfded7f66f8b46aeac1d7960d3e9b.ctex"
+path="res://.godot/imported/Crystal_shadow3_1.png-e6ad840f352bfb7cc8ece1e0257552de.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://resources/PNG/Objects_separately/Crystal_shadow3_1.png"
-dest_files=["res://.godot/imported/Crystal_shadow3_1.png-875dfded7f66f8b46aeac1d7960d3e9b.ctex"]
+source_file="res://Resources/PNG/Objects_separately/Crystal_shadow3_1.png"
+dest_files=["res://.godot/imported/Crystal_shadow3_1.png-e6ad840f352bfb7cc8ece1e0257552de.ctex"]
 
 [params]
 
