@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://bsgvf0om1pcgi"
-path="res://.godot/imported/Tone3E_FifthOctaveUp.wav-8b25ccdf9ae43623033d72897a92909a.sample"
+path="res://.godot/imported/Tone3E_FifthOctaveUp.wav-63eb36fe99df54293bd20640ae2c6231.sample"
 
 [deps]
 
-source_file="res://resources/SCI-FI_UI_SFX_PACK/Tone3/Fifth/Tone3E_FifthOctaveUp.wav"
-dest_files=["res://.godot/imported/Tone3E_FifthOctaveUp.wav-8b25ccdf9ae43623033d72897a92909a.sample"]
+source_file="res://Resources/SCI-FI_UI_SFX_PACK/Tone3/Fifth/Tone3E_FifthOctaveUp.wav"
+dest_files=["res://.godot/imported/Tone3E_FifthOctaveUp.wav-63eb36fe99df54293bd20640ae2c6231.sample"]
 
 [params]
 

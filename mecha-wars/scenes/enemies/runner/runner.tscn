@@ -1,15 +1,40 @@
-[gd_scene load_steps=10 format=3 uid="uid://h6nqnmhkcq1v"]
+[gd_scene load_steps=15 format=3 uid="uid://h6nqnmhkcq1v"]
 
 [ext_resource type="PackedScene" uid="uid://cwm1h72ovnakg" path="res://scenes/enemies/enemy.tscn" id="1_jm8wu"]
 [ext_resource type="Script" path="res://scenes/enemies/runner/runner.gd" id="2_i4i83"]
-[ext_resource type="Texture2D" uid="uid://mk2gxdqwn35p" path="res://resources/Alien Sprites/scifi_alien_run_1.png" id="2_t62gp"]
-[ext_resource type="Texture2D" uid="uid://cmx0vwhn3iioj" path="res://resources/Alien Sprites/scifi_alien_run_2.png" id="3_si3x4"]
-[ext_resource type="Texture2D" uid="uid://cltrjfre1fu7m" path="res://resources/Alien Sprites/scifi_alien_run_3.png" id="4_1nk3a"]
-[ext_resource type="Texture2D" uid="uid://cduwy3vpbtc10" path="res://resources/Alien Sprites/scifi_alien_run_4.png" id="5_g5eqo"]
-[ext_resource type="Texture2D" uid="uid://conxlwl8qd22s" path="res://resources/Alien Sprites/scifi_alien_run_5.png" id="6_aj3cw"]
+[ext_resource type="Texture2D" uid="uid://mk2gxdqwn35p" path="res://Resources/Alien Sprites/scifi_alien_run_1.png" id="2_t62gp"]
+[ext_resource type="Texture2D" uid="uid://bkd0dpggoxjyc" path="res://Resources/Alien Sprites/scifi_alien_bite_1.png" id="3_l307w"]
+[ext_resource type="Texture2D" uid="uid://cmx0vwhn3iioj" path="res://Resources/Alien Sprites/scifi_alien_run_2.png" id="3_si3x4"]
+[ext_resource type="Texture2D" uid="uid://cltrjfre1fu7m" path="res://Resources/Alien Sprites/scifi_alien_run_3.png" id="4_1nk3a"]
+[ext_resource type="Texture2D" uid="uid://b2bfnxfvqxrjs" path="res://Resources/Alien Sprites/scifi_alien_bite_2.png" id="4_7mwq2"]
+[ext_resource type="Texture2D" uid="uid://cyq7v6fatksox" path="res://Resources/Alien Sprites/scifi_alien_bite_3.png" id="5_ca21w"]
+[ext_resource type="Texture2D" uid="uid://cduwy3vpbtc10" path="res://Resources/Alien Sprites/scifi_alien_run_4.png" id="5_g5eqo"]
+[ext_resource type="Texture2D" uid="uid://bbrypb305kkiq" path="res://Resources/Alien Sprites/scifi_alien_bite_4.png" id="6_8qm2s"]
+[ext_resource type="Texture2D" uid="uid://conxlwl8qd22s" path="res://Resources/Alien Sprites/scifi_alien_run_5.png" id="6_aj3cw"]
+[ext_resource type="Texture2D" uid="uid://dsc4hfcom0dr7" path="res://Resources/Alien Sprites/scifi_alien_bite_5.png" id="7_0vtgh"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_edx1n"]
 animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_l307w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_7mwq2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_ca21w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_8qm2s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_0vtgh")
+}],
+"loop": true,
+"name": &"attack",
+"speed": 7.0
+}, {
 "frames": [{
 "duration": 1.0,
 "texture": ExtResource("2_t62gp")
@@ -27,7 +52,7 @@ animations = [{
 "texture": ExtResource("6_aj3cw")
 }],
 "loop": true,
-"name": &"default",
+"name": &"move",
 "speed": 7.0
 }]
 
@@ -40,6 +65,7 @@ script = ExtResource("2_i4i83")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." index="0"]
 sprite_frames = SubResource("SpriteFrames_edx1n")
+animation = &"attack"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." index="1"]
 position = Vector2(7, 11)

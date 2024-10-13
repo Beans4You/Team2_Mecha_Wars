@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://blvsoavywg5wb"]
+
+[ext_resource type="Texture2D" uid="uid://wk0ulsj0mpqq" path="res://Resources/stronghold.png" id="1_4fcvq"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_nnv0d"]
+size = Vector2(331, 270)
+
+[node name="stronghold" type="StaticBody2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(2.5, -6)
+shape = SubResource("RectangleShape2D_nnv0d")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_4fcvq")
