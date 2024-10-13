@@ -78,3 +78,5 @@ shape = SubResource("CapsuleShape2D_or3hg")
 position = Vector2(7, 11)
 rotation = -1.16432
 shape = SubResource("CapsuleShape2D_or3hg")
+
+[connection signal="animation_looped" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_animation_looped"]
