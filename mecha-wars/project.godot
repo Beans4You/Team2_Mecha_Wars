@@ -14,6 +14,10 @@ config/name="Mecha Wars"
 run/main_scene="res://scenes/gameplay and maps/main.tscn"
 config/features=PackedStringArray("4.3", "Forward Plus")
 
+[autoload]
+
+EnemyDeathHandler="*res://scenes/enemies/enemy_death_handler.gd"
+
 [display]
 
 window/size/viewport_width=1280
