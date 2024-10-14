@@ -73,6 +73,7 @@ rotation = -1.16432
 shape = SubResource("CapsuleShape2D_or3hg")
 
 [node name="hit_area" type="Area2D" parent="." index="2"]
+collision_mask = 255
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="hit_area" index="0"]
 position = Vector2(7, 11)
@@ -80,3 +81,4 @@ rotation = -1.16432
 shape = SubResource("CapsuleShape2D_or3hg")
 
 [connection signal="animation_looped" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_animation_looped"]
+[connection signal="body_entered" from="hit_area" to="." method="_on_hit_area_body_entered"]
