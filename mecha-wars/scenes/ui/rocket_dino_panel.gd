@@ -18,12 +18,16 @@ func _on_gui_input(event):
 	elif event is InputEventMouseButton and event.button_mask == 0:
 		#Left Click Up
 		#print("Left Button up")
-		get_child(1).queue_free()
-		
-		var path = get_tree().get_root()
-		path.add_child(tempTower)
-		tempTower.global_position = event.global_position
-		tempTower.get_node("area").hide()
+		if event.global_position.x >= 1100:
+			if get_child_count() > 1:
+				get_child(1).queue_free()
+		else:
+			if get_child_count() > 1:
+				get_child(1).queue_free()
+			var path = get_tree().get_root()
+			path.add_child(tempTower)
+			tempTower.global_position = event.global_position
+			tempTower.get_node("area").hide()
 	else:
 		if get_child_count() > 1:
 				get_child(1).queue_free()

@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://s3ku7fbka1wd"]
 
 [ext_resource type="Script" path="res://scenes/ui/rocket_dino_panel.gd" id="1_ehgqv"]
-[ext_resource type="Texture2D" uid="uid://cqnhc3cwkwuwn" path="res://resources/rocket_dino/rocket_dino_mecha0.png" id="1_p1wqg"]
+[ext_resource type="Texture2D" uid="uid://cqnhc3cwkwuwn" path="res://Resources/rocket_dino/rocket_dino_mecha0.png" id="1_p1wqg"]
 
 [node name="RocketDinoPanel" type="Panel"]
 custom_minimum_size = Vector2(120, 120)
