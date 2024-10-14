@@ -1,7 +1,5 @@
-extends StaticBody2D
+extends ProgressBar
 
-const max_health = 100
-var health = 100
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -9,9 +7,6 @@ func _ready() -> void:
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(_delta: float) -> void:
-	if health <= 0:
-		visible = false
-
-func take_damage(damage):
-	health -= damage
+func _process(delta: float) -> void:
+	self.max_value = get_parent().max_health
+	self.value = get_parent().health
