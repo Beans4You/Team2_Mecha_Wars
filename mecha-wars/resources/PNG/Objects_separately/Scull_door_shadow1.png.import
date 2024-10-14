@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cs12bkgggofb"
-path="res://.godot/imported/Scull_door_shadow1.png-7853f2804f1cecaa48525b9bf7ee4f35.ctex"
+path="res://.godot/imported/Scull_door_shadow1.png-6f9d40aed6846b11f26ba1c87620255b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Resources/PNG/Objects_separately/Scull_door_shadow1.png"
-dest_files=["res://.godot/imported/Scull_door_shadow1.png-7853f2804f1cecaa48525b9bf7ee4f35.ctex"]
+source_file="res://resources/PNG/Objects_separately/Scull_door_shadow1.png"
+dest_files=["res://.godot/imported/Scull_door_shadow1.png-6f9d40aed6846b11f26ba1c87620255b.ctex"]
 
 [params]
 

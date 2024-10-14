@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c2bis8ua1otfp"
-path="res://.godot/imported/ship2_turbines.png-66dd9715cabf939031ab7cb14de6f1f1.ctex"
+path="res://.godot/imported/ship2_turbines.png-43bdcaf9d1ce855bf7cbd041da60ef5e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Resources/free-pixel-art-enemy-spaceship-2d-sprites/PNG_Parts&Spriter_Animation/Ship2/Parts/ship2_turbines.png"
-dest_files=["res://.godot/imported/ship2_turbines.png-66dd9715cabf939031ab7cb14de6f1f1.ctex"]
+source_file="res://resources/free-pixel-art-enemy-spaceship-2d-sprites/PNG_Parts&Spriter_Animation/Ship2/Parts/ship2_turbines.png"
+dest_files=["res://.godot/imported/ship2_turbines.png-43bdcaf9d1ce855bf7cbd041da60ef5e.ctex"]
 
 [params]
 

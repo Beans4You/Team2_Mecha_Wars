@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://qu0b4x0436gk"
-path="res://.godot/imported/Objects_animated3.png-6c256bbbb4539cf6a77f724d51f06f35.ctex"
+path="res://.godot/imported/Objects_animated3.png-b50f23ff3251edda1567f9ce07ccba68.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Resources/Free-Undead-Tileset-Top-Down-Pixel-Art/Tiled_files/Objects_animated3.png"
-dest_files=["res://.godot/imported/Objects_animated3.png-6c256bbbb4539cf6a77f724d51f06f35.ctex"]
+source_file="res://resources/Free-Undead-Tileset-Top-Down-Pixel-Art/Tiled_files/Objects_animated3.png"
+dest_files=["res://.godot/imported/Objects_animated3.png-b50f23ff3251edda1567f9ce07ccba68.ctex"]
 
 [params]
 

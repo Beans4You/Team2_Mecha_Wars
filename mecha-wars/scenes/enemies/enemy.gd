@@ -22,7 +22,7 @@ func _process(delta):
 
 
 # hit scan (tower shooting scene)
-func on_hit(damage):
-	health -= damage
+#func on_hit(damage):
+	#health -= damage
 	#if health <= 0:
 		#get_parent().get_parent().queue_free()
