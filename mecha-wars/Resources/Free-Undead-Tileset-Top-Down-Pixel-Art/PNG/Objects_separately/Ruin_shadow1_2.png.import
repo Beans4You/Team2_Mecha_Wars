@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ls7ct2f4g1a4"
-path="res://.godot/imported/Ruin_shadow1_2.png-7affd4fcbe87ff4905b161f3264f42e6.ctex"
+path="res://.godot/imported/Ruin_shadow1_2.png-7cb71521e451cb5cca3d69387790914a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://resources/Free-Undead-Tileset-Top-Down-Pixel-Art/PNG/Objects_separately/Ruin_shadow1_2.png"
-dest_files=["res://.godot/imported/Ruin_shadow1_2.png-7affd4fcbe87ff4905b161f3264f42e6.ctex"]
+source_file="res://Resources/Free-Undead-Tileset-Top-Down-Pixel-Art/PNG/Objects_separately/Ruin_shadow1_2.png"
+dest_files=["res://.godot/imported/Ruin_shadow1_2.png-7cb71521e451cb5cca3d69387790914a.ctex"]
 
 [params]
 
