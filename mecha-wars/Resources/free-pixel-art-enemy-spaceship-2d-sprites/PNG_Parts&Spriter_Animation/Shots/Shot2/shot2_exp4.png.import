@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://hx6jdlcm2wdy"
-path="res://.godot/imported/shot2_exp4.png-b4e9966d6577e01c94aa9082dc1e3ee3.ctex"
+path="res://.godot/imported/shot2_exp4.png-913e788893839752bc37940061ca7560.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://resources/free-pixel-art-enemy-spaceship-2d-sprites/PNG_Parts&Spriter_Animation/Shots/Shot2/shot2_exp4.png"
-dest_files=["res://.godot/imported/shot2_exp4.png-b4e9966d6577e01c94aa9082dc1e3ee3.ctex"]
+source_file="res://Resources/free-pixel-art-enemy-spaceship-2d-sprites/PNG_Parts&Spriter_Animation/Shots/Shot2/shot2_exp4.png"
+dest_files=["res://.godot/imported/shot2_exp4.png-913e788893839752bc37940061ca7560.ctex"]
 
 [params]
 

@@ -1,6 +1,6 @@
 [gd_scene load_steps=9 format=4 uid="uid://ui76qs4pk0i3"]
 
-[ext_resource type="Texture2D" uid="uid://dv0hck6jkeesy" path="res://resources/PALands_DEMO/32x32_DEMO.png" id="1_oryve"]
+[ext_resource type="Texture2D" uid="uid://dv0hck6jkeesy" path="res://Resources/PALands_DEMO/32x32_DEMO.png" id="1_oryve"]
 [ext_resource type="PackedScene" uid="uid://blvsoavywg5wb" path="res://scenes/towers/stronghold.tscn" id="2_pgkd5"]
 [ext_resource type="Script" path="res://scenes/gameplay and maps/tower_places.gd" id="3_10rwk"]
 

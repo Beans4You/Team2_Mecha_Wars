@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://uwe2crl7ad6t"
-path="res://.godot/imported/candleA_04.png-4c3998361e3fd9e2aa9bb034bdc0cd41.ctex"
+path="res://.godot/imported/candleA_04.png-967c4f0c0918a7c1444056652f1c0ccc.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://resources/RF_Catacombs_v1.0/candleA_04.png"
-dest_files=["res://.godot/imported/candleA_04.png-4c3998361e3fd9e2aa9bb034bdc0cd41.ctex"]
+source_file="res://Resources/RF_Catacombs_v1.0/candleA_04.png"
+dest_files=["res://.godot/imported/candleA_04.png-967c4f0c0918a7c1444056652f1c0ccc.ctex"]
 
 [params]
 

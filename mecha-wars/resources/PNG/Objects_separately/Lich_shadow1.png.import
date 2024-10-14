@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://blrre0w5stxyn"
-path="res://.godot/imported/Lich_shadow1.png-a809cbfc05ff29cb5c129bf6b701a4ad.ctex"
+path="res://.godot/imported/Lich_shadow1.png-c5520818f290dd4aca958ed2d17e3362.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://resources/PNG/Objects_separately/Lich_shadow1.png"
-dest_files=["res://.godot/imported/Lich_shadow1.png-a809cbfc05ff29cb5c129bf6b701a4ad.ctex"]
+source_file="res://Resources/PNG/Objects_separately/Lich_shadow1.png"
+dest_files=["res://.godot/imported/Lich_shadow1.png-c5520818f290dd4aca958ed2d17e3362.ctex"]
 
 [params]
 

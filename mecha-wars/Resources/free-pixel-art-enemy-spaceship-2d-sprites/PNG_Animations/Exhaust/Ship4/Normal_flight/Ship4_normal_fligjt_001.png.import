@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://brttutsl6kb24"
-path="res://.godot/imported/Ship4_normal_fligjt_001.png-06d1ffdebe8a1d8fda2f6ce2edbe35cd.ctex"
+path="res://.godot/imported/Ship4_normal_fligjt_001.png-95666ee5b1bfb64f82374bf75b8c9d90.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://resources/free-pixel-art-enemy-spaceship-2d-sprites/PNG_Animations/Exhaust/Ship4/Normal_flight/Ship4_normal_fligjt_001.png"
-dest_files=["res://.godot/imported/Ship4_normal_fligjt_001.png-06d1ffdebe8a1d8fda2f6ce2edbe35cd.ctex"]
+source_file="res://Resources/free-pixel-art-enemy-spaceship-2d-sprites/PNG_Animations/Exhaust/Ship4/Normal_flight/Ship4_normal_fligjt_001.png"
+dest_files=["res://.godot/imported/Ship4_normal_fligjt_001.png-95666ee5b1bfb64f82374bf75b8c9d90.ctex"]
 
 [params]
 

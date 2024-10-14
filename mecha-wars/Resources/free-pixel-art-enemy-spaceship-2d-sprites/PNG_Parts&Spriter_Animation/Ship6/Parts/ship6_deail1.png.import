@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bqwkvm8fdo8on"
-path="res://.godot/imported/ship6_deail1.png-55e16f28828996f01f4272bca22014e2.ctex"
+path="res://.godot/imported/ship6_deail1.png-5167008540dd8cccd6322c66533ea9cd.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://resources/free-pixel-art-enemy-spaceship-2d-sprites/PNG_Parts&Spriter_Animation/Ship6/Parts/ship6_deail1.png"
-dest_files=["res://.godot/imported/ship6_deail1.png-55e16f28828996f01f4272bca22014e2.ctex"]
+source_file="res://Resources/free-pixel-art-enemy-spaceship-2d-sprites/PNG_Parts&Spriter_Animation/Ship6/Parts/ship6_deail1.png"
+dest_files=["res://.godot/imported/ship6_deail1.png-5167008540dd8cccd6322c66533ea9cd.ctex"]
 
 [params]
 

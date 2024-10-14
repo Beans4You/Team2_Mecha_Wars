@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c3y06t0danyre"
-path="res://.godot/imported/Rock_shadow1_4.png-c696ff9b02239f02999b0194a865a637.ctex"
+path="res://.godot/imported/Rock_shadow1_4.png-b78974ba616850477dca749b86cabb11.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://resources/Free-Undead-Tileset-Top-Down-Pixel-Art/PNG/Objects_separately/Rock_shadow1_4.png"
-dest_files=["res://.godot/imported/Rock_shadow1_4.png-c696ff9b02239f02999b0194a865a637.ctex"]
+source_file="res://Resources/Free-Undead-Tileset-Top-Down-Pixel-Art/PNG/Objects_separately/Rock_shadow1_4.png"
+dest_files=["res://.godot/imported/Rock_shadow1_4.png-b78974ba616850477dca749b86cabb11.ctex"]
 
 [params]
 
