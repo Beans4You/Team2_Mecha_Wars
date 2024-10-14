@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://deoxrp72bncn0"
-path="res://.godot/imported/spike_3.png-db019ced4f2c4807cec0ee60c0341104.ctex"
+path="res://.godot/imported/spike_3.png-f7645c1ac9055d987ca1fdfbddd8aa7e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Resources/RF_Catacombs_v1.0/spike_3.png"
-dest_files=["res://.godot/imported/spike_3.png-db019ced4f2c4807cec0ee60c0341104.ctex"]
+source_file="res://resources/RF_Catacombs_v1.0/spike_3.png"
+dest_files=["res://.godot/imported/spike_3.png-f7645c1ac9055d987ca1fdfbddd8aa7e.ctex"]
 
 [params]
 

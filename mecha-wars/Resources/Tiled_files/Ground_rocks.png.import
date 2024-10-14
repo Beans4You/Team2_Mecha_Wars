@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://htdkw1j3f0u8"
-path="res://.godot/imported/Ground_rocks.png-bc665a534c3517eec0bb90c0f9e14b41.ctex"
+path="res://.godot/imported/Ground_rocks.png-7f8462e1a983fc82e91bb1d7f83d0d56.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Resources/Tiled_files/Ground_rocks.png"
-dest_files=["res://.godot/imported/Ground_rocks.png-bc665a534c3517eec0bb90c0f9e14b41.ctex"]
+source_file="res://resources/Tiled_files/Ground_rocks.png"
+dest_files=["res://.godot/imported/Ground_rocks.png-7f8462e1a983fc82e91bb1d7f83d0d56.ctex"]
 
 [params]
 

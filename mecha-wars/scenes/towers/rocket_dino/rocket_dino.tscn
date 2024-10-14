@@ -52,6 +52,7 @@ position = Vector2(39, 4)
 
 [node name="range_collision_shape" type="CollisionShape2D" parent="range" index="0"]
 shape = SubResource("CircleShape2D_02jkp")
+debug_color = Color(0.663517, 0.501309, 0.305957, 0.42)
 
 [connection signal="body_entered" from="range" to="." method="_on_range_body_entered"]
 [connection signal="body_exited" from="range" to="." method="_on_range_body_exited"]

@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://dq0bvkmqlfbuu"]
+
+[ext_resource type="Script" path="res://scenes/gameplay and maps/global_vars.gd" id="1_asjef"]
+
+[node name="global_vars" type="Node"]
+script = ExtResource("1_asjef")

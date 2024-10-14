@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dt6ax3at1gsmn"
-path="res://.godot/imported/Water_coasts.png-57e5ce09db8af7731c6caaa6026d665d.ctex"
+path="res://.godot/imported/Water_coasts.png-9f4c9862929e48c49f234b0c0353403b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Resources/Free-Undead-Tileset-Top-Down-Pixel-Art/PNG/Water_coasts.png"
-dest_files=["res://.godot/imported/Water_coasts.png-57e5ce09db8af7731c6caaa6026d665d.ctex"]
+source_file="res://resources/Free-Undead-Tileset-Top-Down-Pixel-Art/PNG/Water_coasts.png"
+dest_files=["res://.godot/imported/Water_coasts.png-9f4c9862929e48c49f234b0c0353403b.ctex"]
 
 [params]
 

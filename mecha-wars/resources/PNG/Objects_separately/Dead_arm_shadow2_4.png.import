@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bps2s05nuetwi"
-path="res://.godot/imported/Dead_arm_shadow2_4.png-dcfadca74d72a3266da5802336c4cc38.ctex"
+path="res://.godot/imported/Dead_arm_shadow2_4.png-04a928cddc9053427fa256e59659b1f3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Resources/PNG/Objects_separately/Dead_arm_shadow2_4.png"
-dest_files=["res://.godot/imported/Dead_arm_shadow2_4.png-dcfadca74d72a3266da5802336c4cc38.ctex"]
+source_file="res://resources/PNG/Objects_separately/Dead_arm_shadow2_4.png"
+dest_files=["res://.godot/imported/Dead_arm_shadow2_4.png-04a928cddc9053427fa256e59659b1f3.ctex"]
 
 [params]
 

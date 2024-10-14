@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ckkfmwgby6boj"
-path="res://.godot/imported/Bones_shadow2_5.png-51dc7d31a1e793cf756f2e5983954f2b.ctex"
+path="res://.godot/imported/Bones_shadow2_5.png-edab3549b0b1796fef39c53a1d503301.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Resources/Free-Undead-Tileset-Top-Down-Pixel-Art/PNG/Objects_separately/Bones_shadow2_5.png"
-dest_files=["res://.godot/imported/Bones_shadow2_5.png-51dc7d31a1e793cf756f2e5983954f2b.ctex"]
+source_file="res://resources/Free-Undead-Tileset-Top-Down-Pixel-Art/PNG/Objects_separately/Bones_shadow2_5.png"
+dest_files=["res://.godot/imported/Bones_shadow2_5.png-edab3549b0b1796fef39c53a1d503301.ctex"]
 
 [params]
 
