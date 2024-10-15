@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cnhw5gsaekdkm"
-path="res://.godot/imported/Ship5_normal_flight_006.png-5951abb1fbc08be70687f95a1c69a049.ctex"
+path="res://.godot/imported/Ship5_normal_flight_006.png-1ba177a701c8d670fc9667dcf98de918.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Resources/free-pixel-art-enemy-spaceship-2d-sprites/PNG_Animations/Exhaust/Ship5/Normal_flight/Ship5_normal_flight_006.png"
-dest_files=["res://.godot/imported/Ship5_normal_flight_006.png-5951abb1fbc08be70687f95a1c69a049.ctex"]
+source_file="res://resources/free-pixel-art-enemy-spaceship-2d-sprites/PNG_Animations/Exhaust/Ship5/Normal_flight/Ship5_normal_flight_006.png"
+dest_files=["res://.godot/imported/Ship5_normal_flight_006.png-1ba177a701c8d670fc9667dcf98de918.ctex"]
 
 [params]
 

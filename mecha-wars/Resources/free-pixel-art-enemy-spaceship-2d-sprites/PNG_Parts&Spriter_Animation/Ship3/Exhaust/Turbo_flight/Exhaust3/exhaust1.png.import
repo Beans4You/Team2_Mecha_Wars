@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://v2yp5u20mo6g"
-path="res://.godot/imported/exhaust1.png-31b9b0e901a8a497f8477a8fbcbe3943.ctex"
+path="res://.godot/imported/exhaust1.png-68e99aae58972efa274e5bd8a86cadeb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Resources/free-pixel-art-enemy-spaceship-2d-sprites/PNG_Parts&Spriter_Animation/Ship3/Exhaust/Turbo_flight/Exhaust3/exhaust1.png"
-dest_files=["res://.godot/imported/exhaust1.png-31b9b0e901a8a497f8477a8fbcbe3943.ctex"]
+source_file="res://resources/free-pixel-art-enemy-spaceship-2d-sprites/PNG_Parts&Spriter_Animation/Ship3/Exhaust/Turbo_flight/Exhaust3/exhaust1.png"
+dest_files=["res://.godot/imported/exhaust1.png-68e99aae58972efa274e5bd8a86cadeb.ctex"]
 
 [params]
 

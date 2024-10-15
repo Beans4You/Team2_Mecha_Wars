@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bux464sc5fviq"
-path="res://.godot/imported/water_detilazation.png-ef4a67c34849c7d96f512d92e3bd2697.ctex"
+path="res://.godot/imported/water_detilazation.png-2c6a8a6a201bf144bf2c7c567f9a4128.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Resources/Tiled_files/water_detilazation.png"
-dest_files=["res://.godot/imported/water_detilazation.png-ef4a67c34849c7d96f512d92e3bd2697.ctex"]
+source_file="res://resources/Tiled_files/water_detilazation.png"
+dest_files=["res://.godot/imported/water_detilazation.png-2c6a8a6a201bf144bf2c7c567f9a4128.ctex"]
 
 [params]
 
