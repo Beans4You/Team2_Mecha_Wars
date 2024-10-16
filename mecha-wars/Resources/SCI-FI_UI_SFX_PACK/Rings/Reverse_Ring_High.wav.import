@@ -2,13 +2,13 @@
 
 importer="wav"
 type="AudioStreamWAV"
-uid="uid://bd0x77pdgxi16"
-path="res://.godot/imported/Reverse_Ring_High.wav-056992c691dad79677e624157fcd7436.sample"
+uid="uid://lf0rcetg6ebm"
+path="res://.godot/imported/Reverse_Ring_High.wav-5b78dd2688e63f36228615c470783dd2.sample"
 
 [deps]
 
-source_file="res://Resources/SCI-FI_UI_SFX_PACK/Rings/Reverse_Ring_High.wav"
-dest_files=["res://.godot/imported/Reverse_Ring_High.wav-056992c691dad79677e624157fcd7436.sample"]
+source_file="res://resources/SCI-FI_UI_SFX_PACK/Rings/Reverse_Ring_High.wav"
+dest_files=["res://.godot/imported/Reverse_Ring_High.wav-5b78dd2688e63f36228615c470783dd2.sample"]
 
 [params]
 

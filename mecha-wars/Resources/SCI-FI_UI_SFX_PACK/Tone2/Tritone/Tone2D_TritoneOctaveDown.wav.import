@@ -2,13 +2,13 @@
 
 importer="wav"
 type="AudioStreamWAV"
-uid="uid://wxhsu6abowme"
-path="res://.godot/imported/Tone2D_TritoneOctaveDown.wav-fe006cfb6388babda6e601cc171e3f0c.sample"
+uid="uid://cxitkobqnoj8t"
+path="res://.godot/imported/Tone2D_TritoneOctaveDown.wav-4943306505c879a64619471c3a859557.sample"
 
 [deps]
 
-source_file="res://Resources/SCI-FI_UI_SFX_PACK/Tone2/Tritone/Tone2D_TritoneOctaveDown.wav"
-dest_files=["res://.godot/imported/Tone2D_TritoneOctaveDown.wav-fe006cfb6388babda6e601cc171e3f0c.sample"]
+source_file="res://resources/SCI-FI_UI_SFX_PACK/Tone2/Tritone/Tone2D_TritoneOctaveDown.wav"
+dest_files=["res://.godot/imported/Tone2D_TritoneOctaveDown.wav-4943306505c879a64619471c3a859557.sample"]
 
 [params]
 

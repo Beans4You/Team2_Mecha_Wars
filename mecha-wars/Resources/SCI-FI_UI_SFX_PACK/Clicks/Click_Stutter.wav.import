@@ -2,13 +2,13 @@
 
 importer="wav"
 type="AudioStreamWAV"
-uid="uid://cd0n0dmsjay37"
-path="res://.godot/imported/Click_Stutter.wav-6f458e1ec49d34eb31cca17db10d1617.sample"
+uid="uid://vescwd6g25ew"
+path="res://.godot/imported/Click_Stutter.wav-5b3a4e8ce7dd26cd7845c6fe4b00c585.sample"
 
 [deps]
 
-source_file="res://Resources/SCI-FI_UI_SFX_PACK/Clicks/Click_Stutter.wav"
-dest_files=["res://.godot/imported/Click_Stutter.wav-6f458e1ec49d34eb31cca17db10d1617.sample"]
+source_file="res://resources/SCI-FI_UI_SFX_PACK/Clicks/Click_Stutter.wav"
+dest_files=["res://.godot/imported/Click_Stutter.wav-5b3a4e8ce7dd26cd7845c6fe4b00c585.sample"]
 
 [params]
 
