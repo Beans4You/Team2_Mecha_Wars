@@ -5,6 +5,8 @@ class_name enemy
 var health = 10
 var attack_damage = 5
 
+var gold_worth = 100
+
 var at_stronghold = false
 var stronghold
 
@@ -30,6 +32,7 @@ func _process(delta):
 	
 	if health <=0:
 		get_parent().get_parent().queue_free()
+		global_vars.curr_gold += self.gold_worth
 
 
 # hit scan (tower shooting scene)
