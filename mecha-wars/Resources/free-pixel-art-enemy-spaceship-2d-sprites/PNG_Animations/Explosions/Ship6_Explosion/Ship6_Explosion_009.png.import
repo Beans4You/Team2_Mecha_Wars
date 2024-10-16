@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://d2so0i8fjn3ms"
-path="res://.godot/imported/Ship6_Explosion_009.png-53a2054c3824c1960510f74efe351927.ctex"
+path="res://.godot/imported/Ship6_Explosion_009.png-0b6233ac07d7aad326a696803b621868.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://resources/free-pixel-art-enemy-spaceship-2d-sprites/PNG_Animations/Explosions/Ship6_Explosion/Ship6_Explosion_009.png"
-dest_files=["res://.godot/imported/Ship6_Explosion_009.png-53a2054c3824c1960510f74efe351927.ctex"]
+source_file="res://Resources/free-pixel-art-enemy-spaceship-2d-sprites/PNG_Animations/Explosions/Ship6_Explosion/Ship6_Explosion_009.png"
+dest_files=["res://.godot/imported/Ship6_Explosion_009.png-0b6233ac07d7aad326a696803b621868.ctex"]
 
 [params]
 

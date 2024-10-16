@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bx3rp8vv3ylqa"
-path="res://.godot/imported/Grave_shadow3_11.png-420f129fddeaf966ce216ece93e5367e.ctex"
+path="res://.godot/imported/Grave_shadow3_11.png-18f42e9486e7afce3fb69e7cb5a8086c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://resources/Free-Undead-Tileset-Top-Down-Pixel-Art/PNG/Objects_separately/Grave_shadow3_11.png"
-dest_files=["res://.godot/imported/Grave_shadow3_11.png-420f129fddeaf966ce216ece93e5367e.ctex"]
+source_file="res://Resources/Free-Undead-Tileset-Top-Down-Pixel-Art/PNG/Objects_separately/Grave_shadow3_11.png"
+dest_files=["res://.godot/imported/Grave_shadow3_11.png-18f42e9486e7afce3fb69e7cb5a8086c.ctex"]
 
 [params]
 

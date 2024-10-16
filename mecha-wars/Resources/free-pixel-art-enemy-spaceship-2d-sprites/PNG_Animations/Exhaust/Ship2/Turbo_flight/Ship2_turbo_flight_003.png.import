@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dbwtk4xswgqob"
-path="res://.godot/imported/Ship2_turbo_flight_003.png-a2eab12ca6d7aae4e67ce693b5c2e0d2.ctex"
+path="res://.godot/imported/Ship2_turbo_flight_003.png-78bd18b69c9b65616721fd81f95db1e5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://resources/free-pixel-art-enemy-spaceship-2d-sprites/PNG_Animations/Exhaust/Ship2/Turbo_flight/Ship2_turbo_flight_003.png"
-dest_files=["res://.godot/imported/Ship2_turbo_flight_003.png-a2eab12ca6d7aae4e67ce693b5c2e0d2.ctex"]
+source_file="res://Resources/free-pixel-art-enemy-spaceship-2d-sprites/PNG_Animations/Exhaust/Ship2/Turbo_flight/Ship2_turbo_flight_003.png"
+dest_files=["res://.godot/imported/Ship2_turbo_flight_003.png-78bd18b69c9b65616721fd81f95db1e5.ctex"]
 
 [params]
 

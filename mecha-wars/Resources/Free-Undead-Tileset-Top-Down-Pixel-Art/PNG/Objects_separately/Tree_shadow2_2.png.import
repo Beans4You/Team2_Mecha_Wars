@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bpvjymmkv1123"
-path="res://.godot/imported/Tree_shadow2_2.png-feff48a352c170af2eb7eac8d61c6971.ctex"
+path="res://.godot/imported/Tree_shadow2_2.png-603d2c5933aa217888135ef79047505f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://resources/Free-Undead-Tileset-Top-Down-Pixel-Art/PNG/Objects_separately/Tree_shadow2_2.png"
-dest_files=["res://.godot/imported/Tree_shadow2_2.png-feff48a352c170af2eb7eac8d61c6971.ctex"]
+source_file="res://Resources/Free-Undead-Tileset-Top-Down-Pixel-Art/PNG/Objects_separately/Tree_shadow2_2.png"
+dest_files=["res://.godot/imported/Tree_shadow2_2.png-603d2c5933aa217888135ef79047505f.ctex"]
 
 [params]
 
