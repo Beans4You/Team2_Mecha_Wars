@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://74uhausuyttv"
-path="res://.godot/imported/rocket_dino_mecha0.png-4c13f73a4431409960eebcad54788f08.ctex"
+path="res://.godot/imported/rocket_dino_mecha0.png-56c2d36911b3450738f3ab21857a874b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://resources/rocket_dino/rocket_dino_mecha0.png"
-dest_files=["res://.godot/imported/rocket_dino_mecha0.png-4c13f73a4431409960eebcad54788f08.ctex"]
+source_file="res://Resources/rocket_dino/rocket_dino_mecha0.png"
+dest_files=["res://.godot/imported/rocket_dino_mecha0.png-56c2d36911b3450738f3ab21857a874b.ctex"]
 
 [params]
 

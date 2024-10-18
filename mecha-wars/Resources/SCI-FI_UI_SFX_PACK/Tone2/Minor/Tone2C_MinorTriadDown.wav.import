@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://c2p3m3tj7o3an"
-path="res://.godot/imported/Tone2C_MinorTriadDown.wav-a7dc1df1ac32b3eaefcb01f19a885828.sample"
+path="res://.godot/imported/Tone2C_MinorTriadDown.wav-900266b3b031b307b104f46bad846348.sample"
 
 [deps]
 
-source_file="res://resources/SCI-FI_UI_SFX_PACK/Tone2/Minor/Tone2C_MinorTriadDown.wav"
-dest_files=["res://.godot/imported/Tone2C_MinorTriadDown.wav-a7dc1df1ac32b3eaefcb01f19a885828.sample"]
+source_file="res://Resources/SCI-FI_UI_SFX_PACK/Tone2/Minor/Tone2C_MinorTriadDown.wav"
+dest_files=["res://.godot/imported/Tone2C_MinorTriadDown.wav-900266b3b031b307b104f46bad846348.sample"]
 
 [params]
 

@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://d2u2jn0qbtx8j"
-path="res://.godot/imported/Ring_Pitched_Up_1.wav-ffecbddf608568ecadfd3447ea0593f9.sample"
+path="res://.godot/imported/Ring_Pitched_Up_1.wav-766294a3cfa781690e03cda887cc6e84.sample"
 
 [deps]
 
-source_file="res://resources/SCI-FI_UI_SFX_PACK/Rings/Ring_Pitched_Up_1.wav"
-dest_files=["res://.godot/imported/Ring_Pitched_Up_1.wav-ffecbddf608568ecadfd3447ea0593f9.sample"]
+source_file="res://Resources/SCI-FI_UI_SFX_PACK/Rings/Ring_Pitched_Up_1.wav"
+dest_files=["res://.godot/imported/Ring_Pitched_Up_1.wav-766294a3cfa781690e03cda887cc6e84.sample"]
 
 [params]
 

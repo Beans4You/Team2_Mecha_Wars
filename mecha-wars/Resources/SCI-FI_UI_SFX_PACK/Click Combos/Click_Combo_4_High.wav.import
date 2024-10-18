@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://cofneysbc2je"
-path="res://.godot/imported/Click_Combo_4_High.wav-c71b7ceb951420f1f4d03353a6b116fa.sample"
+path="res://.godot/imported/Click_Combo_4_High.wav-be245dd7bf3b086ebd56bab069e5231c.sample"
 
 [deps]
 
-source_file="res://resources/SCI-FI_UI_SFX_PACK/Click Combos/Click_Combo_4_High.wav"
-dest_files=["res://.godot/imported/Click_Combo_4_High.wav-c71b7ceb951420f1f4d03353a6b116fa.sample"]
+source_file="res://Resources/SCI-FI_UI_SFX_PACK/Click Combos/Click_Combo_4_High.wav"
+dest_files=["res://.godot/imported/Click_Combo_4_High.wav-be245dd7bf3b086ebd56bab069e5231c.sample"]
 
 [params]
 
