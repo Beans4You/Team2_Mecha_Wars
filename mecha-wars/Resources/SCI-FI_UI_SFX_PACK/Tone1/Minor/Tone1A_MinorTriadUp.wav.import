@@ -2,13 +2,18 @@
 
 importer="wav"
 type="AudioStreamWAV"
+<<<<<<< Updated upstream
 uid="uid://c71cy3xql6gvf"
 path="res://.godot/imported/Tone1A_MinorTriadUp.wav-c2edb477fbc99d3f38b62d5b97faa6cf.sample"
+=======
+uid="uid://cn82moyy63y0i"
+path="res://.godot/imported/Tone1A_MinorTriadUp.wav-8f24f54e223d37934c8381adebc83f92.sample"
+>>>>>>> Stashed changes
 
 [deps]
 
-source_file="res://resources/SCI-FI_UI_SFX_PACK/Tone1/Minor/Tone1A_MinorTriadUp.wav"
-dest_files=["res://.godot/imported/Tone1A_MinorTriadUp.wav-c2edb477fbc99d3f38b62d5b97faa6cf.sample"]
+source_file="res://Resources/SCI-FI_UI_SFX_PACK/Tone1/Minor/Tone1A_MinorTriadUp.wav"
+dest_files=["res://.godot/imported/Tone1A_MinorTriadUp.wav-8f24f54e223d37934c8381adebc83f92.sample"]
 
 [params]
 

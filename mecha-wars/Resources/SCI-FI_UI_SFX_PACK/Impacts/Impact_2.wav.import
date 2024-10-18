@@ -2,13 +2,18 @@
 
 importer="wav"
 type="AudioStreamWAV"
+<<<<<<< Updated upstream
 uid="uid://oqb6tkidr6lp"
 path="res://.godot/imported/Impact_2.wav-8dbcc22e9c5b8c6e9ad94e83192a2cd3.sample"
+=======
+uid="uid://b6qjb7g6okycy"
+path="res://.godot/imported/Impact_2.wav-f476147f990999eca76fed4c66886473.sample"
+>>>>>>> Stashed changes
 
 [deps]
 
-source_file="res://resources/SCI-FI_UI_SFX_PACK/Impacts/Impact_2.wav"
-dest_files=["res://.godot/imported/Impact_2.wav-8dbcc22e9c5b8c6e9ad94e83192a2cd3.sample"]
+source_file="res://Resources/SCI-FI_UI_SFX_PACK/Impacts/Impact_2.wav"
+dest_files=["res://.godot/imported/Impact_2.wav-f476147f990999eca76fed4c66886473.sample"]
 
 [params]
 

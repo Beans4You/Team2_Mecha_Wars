@@ -2,13 +2,18 @@
 
 importer="wav"
 type="AudioStreamWAV"
+<<<<<<< Updated upstream
 uid="uid://dvpnn4y6pihff"
 path="res://.godot/imported/Tone1A_FifthDown.wav-52ab05f17566ed2b79929b77db87bede.sample"
+=======
+uid="uid://ddo5be6owvmvf"
+path="res://.godot/imported/Tone1A_FifthDown.wav-eece821890d29c43dc216c3798ad3d68.sample"
+>>>>>>> Stashed changes
 
 [deps]
 
-source_file="res://resources/SCI-FI_UI_SFX_PACK/Tone1/Fifth/Tone1A_FifthDown.wav"
-dest_files=["res://.godot/imported/Tone1A_FifthDown.wav-52ab05f17566ed2b79929b77db87bede.sample"]
+source_file="res://Resources/SCI-FI_UI_SFX_PACK/Tone1/Fifth/Tone1A_FifthDown.wav"
+dest_files=["res://.godot/imported/Tone1A_FifthDown.wav-eece821890d29c43dc216c3798ad3d68.sample"]
 
 [params]
 

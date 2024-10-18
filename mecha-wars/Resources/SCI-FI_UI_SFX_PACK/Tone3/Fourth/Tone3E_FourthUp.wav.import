@@ -2,13 +2,18 @@
 
 importer="wav"
 type="AudioStreamWAV"
+<<<<<<< Updated upstream
 uid="uid://daa8c2i2hbegx"
 path="res://.godot/imported/Tone3E_FourthUp.wav-5dbf4c62b2394309e571be8735bd131f.sample"
+=======
+uid="uid://dojhesliqbfm"
+path="res://.godot/imported/Tone3E_FourthUp.wav-a50560d83be592e14f14445cda775297.sample"
+>>>>>>> Stashed changes
 
 [deps]
 
-source_file="res://resources/SCI-FI_UI_SFX_PACK/Tone3/Fourth/Tone3E_FourthUp.wav"
-dest_files=["res://.godot/imported/Tone3E_FourthUp.wav-5dbf4c62b2394309e571be8735bd131f.sample"]
+source_file="res://Resources/SCI-FI_UI_SFX_PACK/Tone3/Fourth/Tone3E_FourthUp.wav"
+dest_files=["res://.godot/imported/Tone3E_FourthUp.wav-a50560d83be592e14f14445cda775297.sample"]
 
 [params]
 

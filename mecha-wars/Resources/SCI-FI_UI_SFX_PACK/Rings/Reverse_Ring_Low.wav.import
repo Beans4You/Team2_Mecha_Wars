@@ -2,13 +2,18 @@
 
 importer="wav"
 type="AudioStreamWAV"
+<<<<<<< Updated upstream
 uid="uid://hbx4tpwpep7q"
 path="res://.godot/imported/Reverse_Ring_Low.wav-760042090e4c5f6138980ca53292e2bd.sample"
+=======
+uid="uid://bc85um4yw5db6"
+path="res://.godot/imported/Reverse_Ring_Low.wav-d1c2b3644f5f6760e8a70f366c0f790b.sample"
+>>>>>>> Stashed changes
 
 [deps]
 
-source_file="res://resources/SCI-FI_UI_SFX_PACK/Rings/Reverse_Ring_Low.wav"
-dest_files=["res://.godot/imported/Reverse_Ring_Low.wav-760042090e4c5f6138980ca53292e2bd.sample"]
+source_file="res://Resources/SCI-FI_UI_SFX_PACK/Rings/Reverse_Ring_Low.wav"
+dest_files=["res://.godot/imported/Reverse_Ring_Low.wav-d1c2b3644f5f6760e8a70f366c0f790b.sample"]
 
 [params]
 

@@ -2,13 +2,18 @@
 
 importer="wav"
 type="AudioStreamWAV"
+<<<<<<< Updated upstream
 uid="uid://bbnqbqnwlwe6r"
 path="res://.godot/imported/Tone3A_Double.wav-d993c42095fd441301b4eed854ce15a9.sample"
+=======
+uid="uid://dmqcdt7mqbno5"
+path="res://.godot/imported/Tone3A_Double.wav-061b7e18ac3397ac11c8bbf166bccd1c.sample"
+>>>>>>> Stashed changes
 
 [deps]
 
-source_file="res://resources/SCI-FI_UI_SFX_PACK/Tone3/Basic Tones/Tone3A_Double.wav"
-dest_files=["res://.godot/imported/Tone3A_Double.wav-d993c42095fd441301b4eed854ce15a9.sample"]
+source_file="res://Resources/SCI-FI_UI_SFX_PACK/Tone3/Basic Tones/Tone3A_Double.wav"
+dest_files=["res://.godot/imported/Tone3A_Double.wav-061b7e18ac3397ac11c8bbf166bccd1c.sample"]
 
 [params]
 

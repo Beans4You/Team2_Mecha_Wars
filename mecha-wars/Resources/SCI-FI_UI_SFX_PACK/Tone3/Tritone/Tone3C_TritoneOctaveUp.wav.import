@@ -2,13 +2,18 @@
 
 importer="wav"
 type="AudioStreamWAV"
+<<<<<<< Updated upstream
 uid="uid://bs1jeq5p18lsq"
 path="res://.godot/imported/Tone3C_TritoneOctaveUp.wav-aefa011ddf538645fc103cb476e40d33.sample"
+=======
+uid="uid://cj3vupdglibrd"
+path="res://.godot/imported/Tone3C_TritoneOctaveUp.wav-446fe2849e9a2cfd28a942dcf62e91b1.sample"
+>>>>>>> Stashed changes
 
 [deps]
 
-source_file="res://resources/SCI-FI_UI_SFX_PACK/Tone3/Tritone/Tone3C_TritoneOctaveUp.wav"
-dest_files=["res://.godot/imported/Tone3C_TritoneOctaveUp.wav-aefa011ddf538645fc103cb476e40d33.sample"]
+source_file="res://Resources/SCI-FI_UI_SFX_PACK/Tone3/Tritone/Tone3C_TritoneOctaveUp.wav"
+dest_files=["res://.godot/imported/Tone3C_TritoneOctaveUp.wav-446fe2849e9a2cfd28a942dcf62e91b1.sample"]
 
 [params]
 

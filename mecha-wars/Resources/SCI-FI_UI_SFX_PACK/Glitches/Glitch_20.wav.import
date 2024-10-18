@@ -2,13 +2,18 @@
 
 importer="wav"
 type="AudioStreamWAV"
+<<<<<<< Updated upstream
 uid="uid://d2kkhuihj1q70"
 path="res://.godot/imported/Glitch_20.wav-5b29dc497d46e5561a731da3931d88e8.sample"
+=======
+uid="uid://exlhu5mpyf84"
+path="res://.godot/imported/Glitch_20.wav-171063d3896715033eefa2ed45761d63.sample"
+>>>>>>> Stashed changes
 
 [deps]
 
-source_file="res://resources/SCI-FI_UI_SFX_PACK/Glitches/Glitch_20.wav"
-dest_files=["res://.godot/imported/Glitch_20.wav-5b29dc497d46e5561a731da3931d88e8.sample"]
+source_file="res://Resources/SCI-FI_UI_SFX_PACK/Glitches/Glitch_20.wav"
+dest_files=["res://.godot/imported/Glitch_20.wav-171063d3896715033eefa2ed45761d63.sample"]
 
 [params]
 

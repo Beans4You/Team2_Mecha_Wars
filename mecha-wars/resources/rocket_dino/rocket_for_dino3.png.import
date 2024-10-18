@@ -2,16 +2,21 @@
 
 importer="texture"
 type="CompressedTexture2D"
+<<<<<<< Updated upstream
 uid="uid://d0j25y35sesli"
 path="res://.godot/imported/rocket_for_dino3.png-12b24e379fc392fb568a6ce1002a0c05.ctex"
+=======
+uid="uid://b30d4we8535c1"
+path="res://.godot/imported/rocket_for_dino3.png-76fccad030cd582ffee5f5283df4d588.ctex"
+>>>>>>> Stashed changes
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://resources/rocket_dino/rocket_for_dino3.png"
-dest_files=["res://.godot/imported/rocket_for_dino3.png-12b24e379fc392fb568a6ce1002a0c05.ctex"]
+source_file="res://Resources/rocket_dino/rocket_for_dino3.png"
+dest_files=["res://.godot/imported/rocket_for_dino3.png-76fccad030cd582ffee5f5283df4d588.ctex"]
 
 [params]
 

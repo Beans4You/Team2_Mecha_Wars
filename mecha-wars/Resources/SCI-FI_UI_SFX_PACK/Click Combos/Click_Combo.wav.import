@@ -2,13 +2,18 @@
 
 importer="wav"
 type="AudioStreamWAV"
+<<<<<<< Updated upstream
 uid="uid://j5ujqshph4ex"
 path="res://.godot/imported/Click_Combo.wav-dcc718bd3e13d4e00e2428928b241fa1.sample"
+=======
+uid="uid://cju4hi1hv3pjv"
+path="res://.godot/imported/Click_Combo.wav-8fb67b8c7517631713c515fbb27e185f.sample"
+>>>>>>> Stashed changes
 
 [deps]
 
-source_file="res://resources/SCI-FI_UI_SFX_PACK/Click Combos/Click_Combo.wav"
-dest_files=["res://.godot/imported/Click_Combo.wav-dcc718bd3e13d4e00e2428928b241fa1.sample"]
+source_file="res://Resources/SCI-FI_UI_SFX_PACK/Click Combos/Click_Combo.wav"
+dest_files=["res://.godot/imported/Click_Combo.wav-8fb67b8c7517631713c515fbb27e185f.sample"]
 
 [params]
 

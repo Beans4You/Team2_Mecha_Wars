@@ -2,13 +2,18 @@
 
 importer="wav"
 type="AudioStreamWAV"
+<<<<<<< Updated upstream
 uid="uid://dmitp4da67f82"
 path="res://.godot/imported/Tone1A_MajorThirdDown.wav-97546833da6cb243b2244cfd8d2faf6b.sample"
+=======
+uid="uid://on16y3vowsin"
+path="res://.godot/imported/Tone1A_MajorThirdDown.wav-d14fea375cdd66a8a5e9921936477ff9.sample"
+>>>>>>> Stashed changes
 
 [deps]
 
-source_file="res://resources/SCI-FI_UI_SFX_PACK/Tone1/Major/Tone1A_MajorThirdDown.wav"
-dest_files=["res://.godot/imported/Tone1A_MajorThirdDown.wav-97546833da6cb243b2244cfd8d2faf6b.sample"]
+source_file="res://Resources/SCI-FI_UI_SFX_PACK/Tone1/Major/Tone1A_MajorThirdDown.wav"
+dest_files=["res://.godot/imported/Tone1A_MajorThirdDown.wav-d14fea375cdd66a8a5e9921936477ff9.sample"]
 
 [params]
 

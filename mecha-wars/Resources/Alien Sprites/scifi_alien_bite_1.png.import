@@ -2,16 +2,21 @@
 
 importer="texture"
 type="CompressedTexture2D"
+<<<<<<< Updated upstream
 uid="uid://bkd0dpggoxjyc"
 path="res://.godot/imported/scifi_alien_bite_1.png-e95f16f820ba2f8bc63f716f8560a582.ctex"
+=======
+uid="uid://ctxdoc1mvx606"
+path="res://.godot/imported/scifi_alien_bite_1.png-12bdf8d778bdaa3d365e7caa28dc3efe.ctex"
+>>>>>>> Stashed changes
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://resources/Alien Sprites/scifi_alien_bite_1.png"
-dest_files=["res://.godot/imported/scifi_alien_bite_1.png-e95f16f820ba2f8bc63f716f8560a582.ctex"]
+source_file="res://Resources/Alien Sprites/scifi_alien_bite_1.png"
+dest_files=["res://.godot/imported/scifi_alien_bite_1.png-12bdf8d778bdaa3d365e7caa28dc3efe.ctex"]
 
 [params]
 

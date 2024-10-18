@@ -2,13 +2,18 @@
 
 importer="wav"
 type="AudioStreamWAV"
+<<<<<<< Updated upstream
 uid="uid://d1ii3wcp6l4d4"
 path="res://.godot/imported/Click_Pitched_Up.wav-c6681e12ea6345ecea8ea8a94f39ffeb.sample"
+=======
+uid="uid://dvyb34npjyby1"
+path="res://.godot/imported/Click_Pitched_Up.wav-c724e64e6256759c7e207600022747f3.sample"
+>>>>>>> Stashed changes
 
 [deps]
 
-source_file="res://resources/SCI-FI_UI_SFX_PACK/Clicks/Click_Pitched_Up.wav"
-dest_files=["res://.godot/imported/Click_Pitched_Up.wav-c6681e12ea6345ecea8ea8a94f39ffeb.sample"]
+source_file="res://Resources/SCI-FI_UI_SFX_PACK/Clicks/Click_Pitched_Up.wav"
+dest_files=["res://.godot/imported/Click_Pitched_Up.wav-c724e64e6256759c7e207600022747f3.sample"]
 
 [params]
 
