@@ -7,6 +7,7 @@ var currTile
 func _on_gui_input(event):
 	var tempTower = tower_scene.instantiate()
 	var placement = placement_check.instantiate()
+
 	
 	if event is InputEventMouseButton and event.button_mask == 1:
 		#Left Click Down
