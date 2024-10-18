@@ -2,13 +2,13 @@
 
 importer="wav"
 type="AudioStreamWAV"
-uid="uid://cpn4ulpvvpbwo"
-path="res://.godot/imported/Glitch_7.wav-7a17c407f4f4f47b398898b261cbdb74.sample"
+uid="uid://bvkwh2kq421jk"
+path="res://.godot/imported/Glitch_7.wav-037341ac82b0f4c6f0638b83dff6ec8b.sample"
 
 [deps]
 
-source_file="res://resources/SCI-FI_UI_SFX_PACK/Glitches/Glitch_7.wav"
-dest_files=["res://.godot/imported/Glitch_7.wav-7a17c407f4f4f47b398898b261cbdb74.sample"]
+source_file="res://Resources/SCI-FI_UI_SFX_PACK/Glitches/Glitch_7.wav"
+dest_files=["res://.godot/imported/Glitch_7.wav-037341ac82b0f4c6f0638b83dff6ec8b.sample"]
 
 [params]
 

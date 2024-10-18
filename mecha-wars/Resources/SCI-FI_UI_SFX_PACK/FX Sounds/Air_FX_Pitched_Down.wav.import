@@ -2,13 +2,13 @@
 
 importer="wav"
 type="AudioStreamWAV"
-uid="uid://dxtxuu7u054tu"
-path="res://.godot/imported/Air_FX_Pitched_Down.wav-b96e3b55eb97b0dd23909673d3ba29c3.sample"
+uid="uid://cxqedqnd2ylux"
+path="res://.godot/imported/Air_FX_Pitched_Down.wav-bd4ea3ad963fc9da2cb80d3011576e4b.sample"
 
 [deps]
 
-source_file="res://resources/SCI-FI_UI_SFX_PACK/FX Sounds/Air_FX_Pitched_Down.wav"
-dest_files=["res://.godot/imported/Air_FX_Pitched_Down.wav-b96e3b55eb97b0dd23909673d3ba29c3.sample"]
+source_file="res://Resources/SCI-FI_UI_SFX_PACK/FX Sounds/Air_FX_Pitched_Down.wav"
+dest_files=["res://.godot/imported/Air_FX_Pitched_Down.wav-bd4ea3ad963fc9da2cb80d3011576e4b.sample"]
 
 [params]
 

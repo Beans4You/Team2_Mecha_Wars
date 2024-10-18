@@ -2,13 +2,13 @@
 
 importer="wav"
 type="AudioStreamWAV"
-uid="uid://b4p1o50ue26yo"
-path="res://.godot/imported/High_Click_2.wav-167521a0d06aa8977ec2ceff8d61ac3f.sample"
+uid="uid://c3mdbqlajhoy2"
+path="res://.godot/imported/High_Click_2.wav-8edeb3853b4d62c96bc1d9856b579d27.sample"
 
 [deps]
 
-source_file="res://resources/SCI-FI_UI_SFX_PACK/Clicks/High_Click_2.wav"
-dest_files=["res://.godot/imported/High_Click_2.wav-167521a0d06aa8977ec2ceff8d61ac3f.sample"]
+source_file="res://Resources/SCI-FI_UI_SFX_PACK/Clicks/High_Click_2.wav"
+dest_files=["res://.godot/imported/High_Click_2.wav-8edeb3853b4d62c96bc1d9856b579d27.sample"]
 
 [params]
 

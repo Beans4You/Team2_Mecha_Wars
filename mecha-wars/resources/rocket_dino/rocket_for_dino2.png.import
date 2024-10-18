@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d06be6s6hfrkh"
-path="res://.godot/imported/rocket_for_dino2.png-2681ab04764f8b299fa8e8c725a8d34f.ctex"
+uid="uid://dnr6jt5xdjvl8"
+path="res://.godot/imported/rocket_for_dino2.png-906bce5db08d04860eb54b9e4078c500.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://resources/rocket_dino/rocket_for_dino2.png"
-dest_files=["res://.godot/imported/rocket_for_dino2.png-2681ab04764f8b299fa8e8c725a8d34f.ctex"]
+source_file="res://Resources/rocket_dino/rocket_for_dino2.png"
+dest_files=["res://.godot/imported/rocket_for_dino2.png-906bce5db08d04860eb54b9e4078c500.ctex"]
 
 [params]
 

@@ -2,13 +2,13 @@
 
 importer="wav"
 type="AudioStreamWAV"
-uid="uid://cnas282wauxn4"
-path="res://.godot/imported/Click_Combo_Pitched_Up.wav-708152856dc68bc5fee2d8f36b039543.sample"
+uid="uid://bnj2d5s3pussy"
+path="res://.godot/imported/Click_Combo_Pitched_Up.wav-d7cac06541d313012cf46aa5bb6d791a.sample"
 
 [deps]
 
-source_file="res://resources/SCI-FI_UI_SFX_PACK/Click Combos/Click_Combo_Pitched_Up.wav"
-dest_files=["res://.godot/imported/Click_Combo_Pitched_Up.wav-708152856dc68bc5fee2d8f36b039543.sample"]
+source_file="res://Resources/SCI-FI_UI_SFX_PACK/Click Combos/Click_Combo_Pitched_Up.wav"
+dest_files=["res://.godot/imported/Click_Combo_Pitched_Up.wav-d7cac06541d313012cf46aa5bb6d791a.sample"]
 
 [params]
 
