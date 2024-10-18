@@ -1,13 +1,12 @@
-[gd_scene load_steps=9 format=3 uid="uid://buik30cn3d1er"]
+[gd_scene load_steps=8 format=3 uid="uid://buik30cn3d1er"]
 
 [ext_resource type="Script" path="res://scenes/gameplay and maps/main.gd" id="1_wop13"]
 [ext_resource type="PackedScene" uid="uid://h6nqnmhkcq1v" path="res://scenes/enemies/runner/runner.tscn" id="2_1dlbe"]
 [ext_resource type="PackedScene" uid="uid://ui76qs4pk0i3" path="res://scenes/gameplay and maps/new_map.tscn" id="3_s624m"]
 [ext_resource type="PackedScene" uid="uid://chjcyfjud2sxf" path="res://scenes/ui/start_screen.tscn" id="5_lki52"]
 [ext_resource type="PackedScene" uid="uid://hxwjjftcvqr5" path="res://scenes/ui/ui.tscn" id="6_g2qh7"]
-[ext_resource type="Script" path="res://scenes/ui/ui.gd" id="7_cvgpi"]
 [ext_resource type="Script" path="res://scenes/gameplay and maps/path_spawner.gd" id="8_5lnom"]
-[ext_resource type="AudioStream" uid="uid://c8buh00p5nomb" path="res://Resources/SCI-FI_UI_SFX_PACK/fight.wav" id="9_wnohp"]
+[ext_resource type="AudioStream" uid="uid://c8buh00p5nomb" path="res://resources/SCI-FI_UI_SFX_PACK/fight.wav" id="9_wnohp"]
 
 [node name="main" type="Node"]
 script = ExtResource("1_wop13")
@@ -19,7 +18,6 @@ z_index = 0
 [node name="Start Screen" parent="." instance=ExtResource("5_lki52")]
 
 [node name="UI" parent="." instance=ExtResource("6_g2qh7")]
-script = ExtResource("7_cvgpi")
 
 [node name="Path_Spawner" type="Node2D" parent="."]
 script = ExtResource("8_5lnom")

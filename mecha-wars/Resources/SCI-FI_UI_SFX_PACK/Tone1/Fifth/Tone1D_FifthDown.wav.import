@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://byihlcvwht87u"
-path="res://.godot/imported/Tone1D_FifthDown.wav-ca25d8286b0758deb181684cf2f0d8cf.sample"
+path="res://.godot/imported/Tone1D_FifthDown.wav-d0167096bd7774920eb9a0e72370bc97.sample"
 
 [deps]
 
-source_file="res://Resources/SCI-FI_UI_SFX_PACK/Tone1/Fifth/Tone1D_FifthDown.wav"
-dest_files=["res://.godot/imported/Tone1D_FifthDown.wav-ca25d8286b0758deb181684cf2f0d8cf.sample"]
+source_file="res://resources/SCI-FI_UI_SFX_PACK/Tone1/Fifth/Tone1D_FifthDown.wav"
+dest_files=["res://.godot/imported/Tone1D_FifthDown.wav-d0167096bd7774920eb9a0e72370bc97.sample"]
 
 [params]
 
