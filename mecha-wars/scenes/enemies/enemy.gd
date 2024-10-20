@@ -28,6 +28,9 @@ func _process(delta):
 		else:
 			speed = 200
 			$AnimatedSprite2D.play('move')
+			
+	if global_vars.game_over == true:
+		get_tree().call_group("enemy", "queue_free")
 	
 	
 	if health <=0:

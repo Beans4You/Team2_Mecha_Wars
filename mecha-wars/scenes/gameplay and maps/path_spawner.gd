@@ -8,6 +8,10 @@ func _ready() -> void:
 	pass # Replace with function body.
 
 
+func _process(delta):
+	if global_vars.game_over == true:
+		$Timer.stop()
+
 
 func _on_timer_timeout() -> void:
 	var temp_path = path.instantiate()

@@ -4,7 +4,6 @@ class_name tower
 
 var tower_range = Vector2(350, 350)
 var gold_cost = 300
-var paid_for = false
 
 
 func _onready():
@@ -13,8 +12,3 @@ func _onready():
 
 func _ready():
 	pass
-
-func pay_for():
-	if global_vars.curr_gold >= gold_cost and paid_for == false:
-		global_vars.curr_gold -= gold_cost
-		self.paid_for = true
