@@ -6,5 +6,5 @@ func _ready():
 	hide()
 	$GoldLabel.text = str("Gold: ", global_vars.curr_gold)
 
-func _process(delta):
+func _process(_delta):
 	$GoldLabel.text = str("Gold: ", global_vars.curr_gold)

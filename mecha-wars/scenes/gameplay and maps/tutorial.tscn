@@ -1,9 +1,9 @@
 [gd_scene load_steps=12 format=4 uid="uid://wxp0tugaw7uj"]
 
 [ext_resource type="Script" path="res://scenes/gameplay and maps/tutorial.gd" id="1_s225i"]
-[ext_resource type="Texture2D" uid="uid://byrwdo7m40kkr" path="res://Resources/PALands_DEMO/32x32_DEMO.png" id="2_6x1mb"]
+[ext_resource type="Texture2D" uid="uid://dv0hck6jkeesy" path="res://resources/PALands_DEMO/32x32_DEMO.png" id="2_6x1mb"]
 [ext_resource type="PackedScene" uid="uid://hxwjjftcvqr5" path="res://scenes/ui/ui.tscn" id="3_0ici5"]
-[ext_resource type="Texture2D" uid="uid://c2cd2w1gbqt4t" path="res://Resources/random stuff/outline.png" id="4_ntu4i"]
+[ext_resource type="Texture2D" uid="uid://dhfyinbcau2uo" path="res://resources/random stuff/outline.png" id="4_ntu4i"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_5jem0"]
 texture = ExtResource("2_6x1mb")
