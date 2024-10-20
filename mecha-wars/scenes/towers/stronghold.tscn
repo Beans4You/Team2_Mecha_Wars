@@ -1,6 +1,6 @@
 [gd_scene load_steps=8 format=3 uid="uid://blvsoavywg5wb"]
 
-[ext_resource type="Texture2D" uid="uid://ddm1gjxqnbbpj" path="res://Resources/stronghold.png" id="1_4fcvq"]
+[ext_resource type="Texture2D" uid="uid://c06dljo5vysbc" path="res://Resources/stronghold.png" id="1_4fcvq"]
 [ext_resource type="Script" path="res://scenes/towers/stronghold.gd" id="1_6fpwm"]
 [ext_resource type="Script" path="res://scenes/towers/progress_bar.gd" id="3_3f4ip"]
 

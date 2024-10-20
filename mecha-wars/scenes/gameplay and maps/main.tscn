@@ -6,7 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://chjcyfjud2sxf" path="res://scenes/ui/start_screen.tscn" id="5_lki52"]
 [ext_resource type="PackedScene" uid="uid://hxwjjftcvqr5" path="res://scenes/ui/ui.tscn" id="6_g2qh7"]
 [ext_resource type="Script" path="res://scenes/gameplay and maps/path_spawner.gd" id="8_5lnom"]
-[ext_resource type="AudioStream" uid="uid://c8buh00p5nomb" path="res://resources/SCI-FI_UI_SFX_PACK/fight.wav" id="9_wnohp"]
+[ext_resource type="AudioStream" uid="uid://da6s5w4mdl4wa" path="res://resources/SCI-FI_UI_SFX_PACK/fight.wav" id="9_wnohp"]
 
 [node name="main" type="Node"]
 script = ExtResource("1_wop13")
