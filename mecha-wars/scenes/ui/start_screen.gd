@@ -16,3 +16,8 @@ func _on_button_pressed() -> void:
 	var timer = parent.get_node("Path_Spawner/Timer")
 	timer.start()
 	
+ 
+
+
+func _on_button_2_pressed() -> void:
+	get_tree().change_scene_to_file("res://scenes/gameplay and maps/tutorial.tscn") # Replace with function body.
