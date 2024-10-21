@@ -4,6 +4,7 @@ extends Panel
 @onready var placement_check = preload("res://scenes/gameplay and maps/placement_check.tscn")
 var currTile
 
+
 func _on_gui_input(event):
 	var tempTower = tower_scene.instantiate()
 	
@@ -12,6 +13,7 @@ func _on_gui_input(event):
 		
 		if event is InputEventMouseButton and event.button_mask == 1:
 			#Left Click Down
+			global_vars.show_next_box()
 			add_child(tempTower)
 			tempTower.get_node("area").show()
 			

@@ -38,7 +38,6 @@ grow_vertical = 2
 theme_override_font_sizes/font_size = 32
 text = "Start Game"
 
-<<<<<<< HEAD
 [node name="Tutorial Button" type="Button" parent="."]
 layout_mode = 1
 anchors_preset = -1
@@ -53,14 +52,6 @@ offset_bottom = 82.16
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_font_sizes/font_size = 32
-=======
-[node name="Button2" type="Button" parent="."]
-layout_mode = 0
-offset_left = 561.0
-offset_top = 252.0
-offset_right = 716.0
-offset_bottom = 301.0
->>>>>>> 50154af035eda5e7d2ef9097b61bf295a4d26683
 text = "Tutorial"
 
 [node name="Label" type="Label" parent="."]
@@ -86,10 +77,5 @@ position = Vector2(257, 356)
 scale = Vector2(2.42188, 2.9375)
 texture = ExtResource("3_b1ka2")
 
-<<<<<<< HEAD
 [connection signal="pressed" from="Start Button" to="." method="_on_button_start_pressed"]
 [connection signal="pressed" from="Tutorial Button" to="." method="_on_button_tutorial_pressed"]
-=======
-[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
-[connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]
->>>>>>> 50154af035eda5e7d2ef9097b61bf295a4d26683
