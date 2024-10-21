@@ -29,4 +29,4 @@ func _on_button_pressed() -> void:
 
 
 func _on_button_2_pressed() -> void:
-	get_tree().change_scene_to_file("res://scenes/ui/start_screen.tscn") # Replace with function body.
+	get_tree().change_scene_to_file("res://scenes/gameplay and maps/main.tscn") # Replace with function body.
