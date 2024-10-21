@@ -2,7 +2,7 @@ extends CharacterBody2D
 
 class_name tower
 
-var tower_range = Vector2(350, 350)
+var tower_range = Vector2(400, 400)
 var gold_cost = 300
 
 

@@ -1,6 +1,6 @@
 extends CharacterBody2D
 var target 
-var speed = 600
+var speed = 500
 var bullet_damage = 5
 
 

@@ -57,8 +57,8 @@ animations = [{
 }]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_or3hg"]
-radius = 24.1612
-height = 91.3892
+radius = 41.0899
+height = 111.086
 
 [node name="runner" instance=ExtResource("1_jm8wu")]
 script = ExtResource("2_i4i83")
@@ -76,7 +76,7 @@ shape = SubResource("CapsuleShape2D_or3hg")
 collision_mask = 255
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="hit_area" index="0"]
-position = Vector2(7, 11)
+position = Vector2(7, 10)
 rotation = -1.16432
 shape = SubResource("CapsuleShape2D_or3hg")
 
