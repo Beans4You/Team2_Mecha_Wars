@@ -22,4 +22,11 @@ script = ExtResource("1_ehgqv")
 position = Vector2(65, 55)
 texture = ExtResource("1_p1wqg")
 
+[node name="Label" type="Label" parent="RocketDinoMecha0"]
+offset_left = -29.0
+offset_top = 60.0
+offset_right = 39.0
+offset_bottom = 83.0
+text = "300 Gold"
+
 [connection signal="gui_input" from="." to="." method="_on_gui_input"]

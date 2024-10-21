@@ -1,9 +1,8 @@
-[gd_scene load_steps=16 format=4 uid="uid://wxp0tugaw7uj"]
+[gd_scene load_steps=15 format=4 uid="uid://wxp0tugaw7uj"]
 
 [ext_resource type="Script" path="res://scenes/gameplay and maps/tutorial.gd" id="1_s225i"]
-[ext_resource type="Texture2D" uid="uid://1sgqwphk4qt8" path="res://resources/PALands_DEMO/32x32_DEMO.png" id="2_6x1mb"]
+[ext_resource type="Texture2D" uid="uid://1sgqwphk4qt8" path="res://Resources/PALands_DEMO/32x32_DEMO.png" id="2_6x1mb"]
 [ext_resource type="PackedScene" uid="uid://hxwjjftcvqr5" path="res://scenes/ui/ui.tscn" id="3_0ici5"]
-[ext_resource type="Texture2D" uid="uid://dwbcps8bauc2k" path="res://resources/random stuff/outline.png" id="4_ntu4i"]
 [ext_resource type="Script" path="res://scenes/gameplay and maps/tower_places.gd" id="5_iudiv"]
 [ext_resource type="Texture2D" uid="uid://dwbcps8bauc2k" path="res://Resources/random stuff/outline.png" id="5_qn53s"]
 
@@ -8659,7 +8658,7 @@ text = "Aliens will
 spawn here
 
 Click to Advance"
-icon = ExtResource("4_ntu4i")
+icon = ExtResource("5_qn53s")
 icon_alignment = 1
 expand_icon = true
 
@@ -8707,6 +8706,15 @@ position = Vector2(226.5, 52.5)
 scale = Vector2(4.09375, 4.09375)
 texture = ExtResource("5_qn53s")
 
+[node name="Button2" type="Button" parent="."]
+offset_left = 427.0
+offset_top = 569.0
+offset_right = 577.0
+offset_bottom = 658.0
+theme_override_font_sizes/font_size = 25
+text = "Go to Game"
+
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
 [connection signal="area_entered" from="tower_places" to="tower_places" method="_on_area_entered"]
 [connection signal="area_exited" from="tower_places" to="tower_places" method="_on_area_exited"]
+[connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]
