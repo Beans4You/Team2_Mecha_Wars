@@ -1,7 +1,9 @@
-[gd_scene load_steps=5 format=3 uid="uid://chjcyfjud2sxf"]
+[gd_scene load_steps=7 format=3 uid="uid://chjcyfjud2sxf"]
 
 [ext_resource type="Script" path="res://scenes/ui/start_screen.gd" id="1_jbpd7"]
+[ext_resource type="Texture2D" uid="uid://ca3hdf6oay0g1" path="res://Resources/PALands_DEMO/206cf8f59014a954f979ba8125091bf3.png" id="2_0374b"]
 [ext_resource type="Texture2D" uid="uid://bbpf7ggsrdudg" path="res://Resources/rocket_dino/rocket_dino_mecha0.png" id="3_b1ka2"]
+[ext_resource type="FontFile" uid="uid://cl5yav47mg3gv" path="res://Resources/fonts/hells-font/HellspersonaluseRegular-L3zVZ.otf" id="3_lt718"]
 [ext_resource type="Texture2D" uid="uid://cqiwy6t3gykxl" path="res://Resources/Alien Sprites/scifi_alien_run_1.png" id="3_luvg2"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_rey21"]
@@ -16,11 +18,11 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_jbpd7")
 
-[node name="ColorRect" type="ColorRect" parent="."]
+[node name="TextureRect" type="TextureRect" parent="."]
 layout_mode = 0
-offset_right = 1280.0
-offset_bottom = 704.0
-color = Color(0, 0.263706, 0.673969, 1)
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("2_0374b")
 
 [node name="Start Button" type="Button" parent="."]
 layout_mode = 1
@@ -35,6 +37,7 @@ offset_right = 110.4
 offset_bottom = 82.16
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_fonts/font = ExtResource("3_lt718")
 theme_override_font_sizes/font_size = 32
 text = "Start Game"
 
@@ -51,6 +54,7 @@ offset_right = 353.4
 offset_bottom = 82.16
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_fonts/font = ExtResource("3_lt718")
 theme_override_font_sizes/font_size = 32
 text = "Tutorial"
 
@@ -59,11 +63,12 @@ layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = -281.0
-offset_top = 101.0
-offset_right = 281.0
-offset_bottom = 231.0
+offset_left = -259.0
+offset_top = 119.0
+offset_right = 235.0
+offset_bottom = 249.0
 grow_horizontal = 2
+theme_override_fonts/font = ExtResource("3_lt718")
 text = "Mecha Wars"
 label_settings = SubResource("LabelSettings_rey21")
 
