@@ -1,8 +1,9 @@
-[gd_scene load_steps=15 format=4 uid="uid://wxp0tugaw7uj"]
+[gd_scene load_steps=16 format=4 uid="uid://wxp0tugaw7uj"]
 
 [ext_resource type="Script" path="res://scenes/gameplay and maps/tutorial.gd" id="1_s225i"]
 [ext_resource type="Texture2D" uid="uid://1sgqwphk4qt8" path="res://Resources/PALands_DEMO/32x32_DEMO.png" id="2_6x1mb"]
 [ext_resource type="PackedScene" uid="uid://hxwjjftcvqr5" path="res://scenes/ui/ui.tscn" id="3_0ici5"]
+[ext_resource type="FontFile" uid="uid://cl5yav47mg3gv" path="res://Resources/fonts/hells-font/HellspersonaluseRegular-L3zVZ.otf" id="3_82tb5"]
 [ext_resource type="Script" path="res://scenes/gameplay and maps/tower_places.gd" id="5_iudiv"]
 [ext_resource type="Texture2D" uid="uid://dwbcps8bauc2k" path="res://Resources/random stuff/outline.png" id="5_qn53s"]
 
@@ -8649,11 +8650,12 @@ anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 offset_left = -3.0
-offset_top = -4.0
+offset_top = 93.0
 offset_right = -1130.0
-offset_bottom = -555.0
+offset_bottom = -458.0
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_fonts/font = ExtResource("3_82tb5")
 text = "Aliens will 
 spawn here
 
@@ -8678,6 +8680,7 @@ offset_left = -53.0
 offset_top = -24.0
 offset_right = 40.0
 offset_bottom = 25.0
+theme_override_fonts/font = ExtResource("3_82tb5")
 text = "Place Tower 
 Here"
 horizontal_alignment = 1
@@ -8690,10 +8693,11 @@ texture = ExtResource("5_qn53s")
 [node name="UI" parent="." instance=ExtResource("3_0ici5")]
 
 [node name="tower_message" type="Label" parent="."]
-offset_left = 957.0
-offset_top = 23.0
-offset_right = 1091.0
-offset_bottom = 98.0
+offset_left = 955.0
+offset_top = 25.0
+offset_right = 1089.0
+offset_bottom = 100.0
+theme_override_fonts/font = ExtResource("3_82tb5")
 text = "Click and Drag
 the Tower to
 place on the map"
@@ -8711,8 +8715,9 @@ offset_left = 427.0
 offset_top = 569.0
 offset_right = 577.0
 offset_bottom = 658.0
+theme_override_fonts/font = ExtResource("3_82tb5")
 theme_override_font_sizes/font_size = 25
-text = "Go to Game"
+text = "Go to back to main menu"
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
 [connection signal="area_entered" from="tower_places" to="tower_places" method="_on_area_entered"]

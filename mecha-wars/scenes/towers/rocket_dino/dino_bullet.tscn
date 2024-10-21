@@ -1,11 +1,11 @@
 [gd_scene load_steps=10 format=3 uid="uid://bxtq54c7l5jvs"]
 
 [ext_resource type="Script" path="res://scenes/towers/rocket_dino/dino_bullet.gd" id="1_ut46t"]
-[ext_resource type="Texture2D" uid="uid://yyvfna2r067a" path="res://resources/rocket_dino/rocket_for_dino0.png" id="2_511jd"]
-[ext_resource type="Texture2D" uid="uid://3o8grdjwnwac" path="res://resources/rocket_dino/rocket_for_dino1.png" id="3_0oya5"]
-[ext_resource type="Texture2D" uid="uid://cu0m0p3173g65" path="res://resources/rocket_dino/rocket_for_dino2.png" id="4_14yvj"]
-[ext_resource type="Texture2D" uid="uid://u5hleh85pba8" path="res://resources/rocket_dino/rocket_for_dino3.png" id="5_oi7k7"]
-[ext_resource type="Texture2D" uid="uid://53f5vco3ac8d" path="res://resources/rocket_dino/rocket_for_dino4.png" id="6_6felx"]
+[ext_resource type="Texture2D" uid="uid://yyvfna2r067a" path="res://Resources/rocket_dino/rocket_for_dino0.png" id="2_511jd"]
+[ext_resource type="Texture2D" uid="uid://3o8grdjwnwac" path="res://Resources/rocket_dino/rocket_for_dino1.png" id="3_0oya5"]
+[ext_resource type="Texture2D" uid="uid://cu0m0p3173g65" path="res://Resources/rocket_dino/rocket_for_dino2.png" id="4_14yvj"]
+[ext_resource type="Texture2D" uid="uid://u5hleh85pba8" path="res://Resources/rocket_dino/rocket_for_dino3.png" id="5_oi7k7"]
+[ext_resource type="Texture2D" uid="uid://53f5vco3ac8d" path="res://Resources/rocket_dino/rocket_for_dino4.png" id="6_6felx"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_4kt07"]
 animations = [{
@@ -31,11 +31,11 @@ animations = [{
 }]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_m6ctr"]
-radius = 20.0
-height = 86.0
+radius = 50.7692
+height = 180.769
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_2lvxw"]
-radius = 12.9231
+radius = 19.6923
 height = 72.3077
 
 [node name="Dino_Bullet" type="CharacterBody2D"]
@@ -49,7 +49,6 @@ animation = &"bullet_spin"
 frame_progress = 0.0912146
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-visible = false
 position = Vector2(-5, 0)
 rotation = 1.5708
 shape = SubResource("CapsuleShape2D_m6ctr")

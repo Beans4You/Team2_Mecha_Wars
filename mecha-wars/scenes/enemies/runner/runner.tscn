@@ -57,8 +57,8 @@ animations = [{
 }]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_or3hg"]
-radius = 41.0899
-height = 111.086
+radius = 44.3807
+height = 136.828
 
 [node name="runner" instance=ExtResource("1_jm8wu")]
 script = ExtResource("2_i4i83")
