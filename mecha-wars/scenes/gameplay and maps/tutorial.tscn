@@ -4,7 +4,10 @@
 [ext_resource type="Texture2D" uid="uid://1sgqwphk4qt8" path="res://resources/PALands_DEMO/32x32_DEMO.png" id="2_6x1mb"]
 [ext_resource type="PackedScene" uid="uid://hxwjjftcvqr5" path="res://scenes/ui/ui.tscn" id="3_0ici5"]
 [ext_resource type="Texture2D" uid="uid://dwbcps8bauc2k" path="res://resources/random stuff/outline.png" id="4_ntu4i"]
+<<<<<<< HEAD
 [ext_resource type="Script" path="res://scenes/gameplay and maps/tower_places.gd" id="5_iudiv"]
+=======
+>>>>>>> 50154af035eda5e7d2ef9097b61bf295a4d26683
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_5jem0"]
 texture = ExtResource("2_6x1mb")
