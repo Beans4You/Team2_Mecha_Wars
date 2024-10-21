@@ -1,8 +1,8 @@
 [gd_scene load_steps=5 format=3 uid="uid://chjcyfjud2sxf"]
 
 [ext_resource type="Script" path="res://scenes/ui/start_screen.gd" id="1_jbpd7"]
-[ext_resource type="Texture2D" uid="uid://bbpf7ggsrdudg" path="res://resources/rocket_dino/rocket_dino_mecha0.png" id="3_b1ka2"]
-[ext_resource type="Texture2D" uid="uid://cqiwy6t3gykxl" path="res://resources/Alien Sprites/scifi_alien_run_1.png" id="3_luvg2"]
+[ext_resource type="Texture2D" uid="uid://bbpf7ggsrdudg" path="res://Resources/rocket_dino/rocket_dino_mecha0.png" id="3_b1ka2"]
+[ext_resource type="Texture2D" uid="uid://cqiwy6t3gykxl" path="res://Resources/Alien Sprites/scifi_alien_run_1.png" id="3_luvg2"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_rey21"]
 font_size = 95
@@ -22,21 +22,37 @@ offset_right = 1280.0
 offset_bottom = 704.0
 color = Color(0, 0.263706, 0.673969, 1)
 
-[node name="Button" type="Button" parent="."]
+[node name="Start Button" type="Button" parent="."]
 layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -110.0
-offset_top = -34.0
-offset_right = 111.0
-offset_bottom = 130.0
+anchors_preset = -1
+anchor_left = 0.395
+anchor_top = 0.585
+anchor_right = 0.395
+anchor_bottom = 0.585
+offset_left = -110.6
+offset_top = -81.84
+offset_right = 110.4
+offset_bottom = 82.16
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_font_sizes/font_size = 32
 text = "Start Game"
+
+[node name="Tutorial Button" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.395
+anchor_top = 0.585
+anchor_right = 0.395
+anchor_bottom = 0.585
+offset_left = 132.4
+offset_top = -81.84
+offset_right = 353.4
+offset_bottom = 82.16
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 32
+text = "Tutorial"
 
 [node name="Label" type="Label" parent="."]
 layout_mode = 1
@@ -61,4 +77,5 @@ position = Vector2(257, 356)
 scale = Vector2(2.42188, 2.9375)
 texture = ExtResource("3_b1ka2")
 
-[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Start Button" to="." method="_on_button_start_pressed"]
+[connection signal="pressed" from="Tutorial Button" to="." method="_on_button_tutorial_pressed"]
