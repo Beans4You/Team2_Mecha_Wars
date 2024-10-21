@@ -1,10 +1,10 @@
 [gd_scene load_steps=15 format=4 uid="uid://wxp0tugaw7uj"]
 
 [ext_resource type="Script" path="res://scenes/gameplay and maps/tutorial.gd" id="1_s225i"]
-[ext_resource type="Texture2D" uid="uid://1sgqwphk4qt8" path="res://Resources/PALands_DEMO/32x32_DEMO.png" id="2_6x1mb"]
+[ext_resource type="Texture2D" uid="uid://1sgqwphk4qt8" path="res://resources/PALands_DEMO/32x32_DEMO.png" id="2_6x1mb"]
 [ext_resource type="PackedScene" uid="uid://hxwjjftcvqr5" path="res://scenes/ui/ui.tscn" id="3_0ici5"]
 [ext_resource type="Script" path="res://scenes/gameplay and maps/tower_places.gd" id="5_iudiv"]
-[ext_resource type="Texture2D" uid="uid://dwbcps8bauc2k" path="res://Resources/random stuff/outline.png" id="5_qn53s"]
+[ext_resource type="Texture2D" uid="uid://dwbcps8bauc2k" path="res://resources/random stuff/outline.png" id="5_qn53s"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_5jem0"]
 texture = ExtResource("2_6x1mb")

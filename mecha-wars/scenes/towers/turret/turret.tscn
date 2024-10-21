@@ -1,0 +1,58 @@
+[gd_scene load_steps=10 format=3 uid="uid://gw8xcii473kl"]
+
+[ext_resource type="PackedScene" uid="uid://bhrok0a2cdblv" path="res://scenes/towers/tower_shooting.tscn" id="1_tgik2"]
+[ext_resource type="Texture2D" uid="uid://cpg2mx00t0xjn" path="res://resources/Hit-Scan-Tower/laser_turret_0.png" id="2_3ku2y"]
+[ext_resource type="Script" path="res://scenes/towers/turret/turret.gd" id="2_tetk3"]
+[ext_resource type="Texture2D" uid="uid://cn282i1ipjxi2" path="res://resources/Hit-Scan-Tower/laser_turret_1.png" id="3_vgrsk"]
+[ext_resource type="Texture2D" uid="uid://da8sscyv05k7l" path="res://resources/Hit-Scan-Tower/laser_turret_2.png" id="4_8fudb"]
+[ext_resource type="Texture2D" uid="uid://cile0mmte3hj6" path="res://resources/Hit-Scan-Tower/laser_turret_3.png" id="5_73hbo"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_uruhg"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_3ku2y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_vgrsk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_8fudb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_73hbo")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_vhvui"]
+radius = 21.0
+height = 102.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_dbc2p"]
+radius = 174.04
+
+[node name="turret" instance=ExtResource("1_tgik2")]
+script = ExtResource("2_tetk3")
+
+[node name="animated_sprite" type="AnimatedSprite2D" parent="." index="1"]
+sprite_frames = SubResource("SpriteFrames_uruhg")
+animation = &"idle"
+frame_progress = 0.625581
+
+[node name="character_collision_shape" type="CollisionShape2D" parent="." index="2"]
+shape = SubResource("CapsuleShape2D_vhvui")
+
+[node name="aim" type="Marker2D" parent="." index="3"]
+
+[node name="range" type="Area2D" parent="." index="4"]
+position = Vector2(0, -25)
+
+[node name="range_collision_shape" type="CollisionShape2D" parent="range" index="0"]
+position = Vector2(0, 25)
+shape = SubResource("CircleShape2D_dbc2p")
+
+[connection signal="body_entered" from="range" to="." method="_on_range_body_entered"]
+[connection signal="body_exited" from="range" to="." method="_on_range_body_exited"]

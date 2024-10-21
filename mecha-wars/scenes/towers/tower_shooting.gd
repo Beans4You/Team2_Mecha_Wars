@@ -4,11 +4,8 @@ class_name tower_shooting
 var enemy_array = []
 var enemy
 var shoot_ready = true
-var damage = 5
-var rate_of_fire = 1
-
-
-
+var damage = 1
+var rate_of_fire = 0.1
 
 
 func _physics_process(_delta):
@@ -46,5 +43,4 @@ func shoot():
 	enemy.on_hit(damage)
 	await(get_tree().create_timer(rate_of_fire).timeout)
 	shoot_ready = true
-	
 	
