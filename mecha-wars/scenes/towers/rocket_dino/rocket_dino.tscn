@@ -1,11 +1,11 @@
 [gd_scene load_steps=10 format=3 uid="uid://c2isihlke4e4t"]
 
 [ext_resource type="PackedScene" uid="uid://dnwi2cwo0ksva" path="res://scenes/towers/tower_projectile.tscn" id="1_div88"]
-[ext_resource type="Texture2D" uid="uid://bbpf7ggsrdudg" path="res://Resources/rocket_dino/rocket_dino_mecha0.png" id="2_04m6f"]
+[ext_resource type="Texture2D" uid="uid://bbpf7ggsrdudg" path="res://resources/rocket_dino/rocket_dino_mecha0.png" id="2_04m6f"]
 [ext_resource type="Script" path="res://scenes/towers/rocket_dino/rocket_dino.gd" id="2_7h3dq"]
-[ext_resource type="Texture2D" uid="uid://fuf2k7miecpk" path="res://Resources/rocket_dino/rocket_dino_mecha1.png" id="3_sfokh"]
-[ext_resource type="Texture2D" uid="uid://bhc6fd6gtnvwi" path="res://Resources/rocket_dino/rocket_dino_mecha2.png" id="4_dcjd5"]
-[ext_resource type="Texture2D" uid="uid://c3rpj1kne1bdj" path="res://Resources/rocket_dino/rocket_dino_mecha3.png" id="5_s6v0l"]
+[ext_resource type="Texture2D" uid="uid://fuf2k7miecpk" path="res://resources/rocket_dino/rocket_dino_mecha1.png" id="3_sfokh"]
+[ext_resource type="Texture2D" uid="uid://bhc6fd6gtnvwi" path="res://resources/rocket_dino/rocket_dino_mecha2.png" id="4_dcjd5"]
+[ext_resource type="Texture2D" uid="uid://c3rpj1kne1bdj" path="res://resources/rocket_dino/rocket_dino_mecha3.png" id="5_s6v0l"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_y5mq4"]
 animations = [{
@@ -41,9 +41,10 @@ script = ExtResource("2_7h3dq")
 offset_top = -177.0
 offset_right = 173.0
 
-[node name="rocket_dino_animated_sprite" type="AnimatedSprite2D" parent="." index="1"]
+[node name="animated_sprite" type="AnimatedSprite2D" parent="." index="1"]
 sprite_frames = SubResource("SpriteFrames_y5mq4")
 animation = &"idle"
+frame_progress = 0.0548623
 
 [node name="character_collision_shape" type="CollisionShape2D" parent="." index="2"]
 position = Vector2(1, 4)

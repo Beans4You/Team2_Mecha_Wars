@@ -8,7 +8,7 @@ func _ready() -> void:
 	pass # Replace with function body.
 
 
-func _process(delta):
+func _process(_delta):
 	if global_vars.game_over == true:
 		$Timer.stop()
 

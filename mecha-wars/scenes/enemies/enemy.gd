@@ -1,7 +1,7 @@
 extends CharacterBody2D
 class_name enemy
 
-@export var speed = 150
+@export var speed = 120
 var health = 10
 var attack_damage = 5
 
@@ -39,10 +39,10 @@ func _process(delta):
 
 
 # hit scan (tower shooting scene)
-#func on_hit(damage):
-	#health -= damage
-	#if health <= 0:
-		#get_parent().get_parent().queue_free()
+func on_hit(damage):
+	health -= damage
+	if health <= 0:
+		get_parent().get_parent().queue_free()
 
 
 #checking to see if enemy is at the stronghold
