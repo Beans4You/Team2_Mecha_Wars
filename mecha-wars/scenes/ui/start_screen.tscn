@@ -1,10 +1,10 @@
 [gd_scene load_steps=7 format=3 uid="uid://chjcyfjud2sxf"]
 
 [ext_resource type="Script" path="res://scenes/ui/start_screen.gd" id="1_jbpd7"]
-[ext_resource type="Texture2D" uid="uid://ca3hdf6oay0g1" path="res://Resources/PALands_DEMO/206cf8f59014a954f979ba8125091bf3.png" id="2_0374b"]
-[ext_resource type="Texture2D" uid="uid://bbpf7ggsrdudg" path="res://Resources/rocket_dino/rocket_dino_mecha0.png" id="3_b1ka2"]
-[ext_resource type="FontFile" uid="uid://cl5yav47mg3gv" path="res://Resources/fonts/hells-font/HellspersonaluseRegular-L3zVZ.otf" id="3_lt718"]
-[ext_resource type="Texture2D" uid="uid://cqiwy6t3gykxl" path="res://Resources/Alien Sprites/scifi_alien_run_1.png" id="3_luvg2"]
+[ext_resource type="Texture2D" uid="uid://ca3hdf6oay0g1" path="res://resources/PALands_DEMO/206cf8f59014a954f979ba8125091bf3.png" id="2_0374b"]
+[ext_resource type="Texture2D" uid="uid://bbpf7ggsrdudg" path="res://resources/rocket_dino/rocket_dino_mecha0.png" id="3_b1ka2"]
+[ext_resource type="FontFile" uid="uid://cl5yav47mg3gv" path="res://resources/fonts/hells-font/HellspersonaluseRegular-L3zVZ.otf" id="3_lt718"]
+[ext_resource type="Texture2D" uid="uid://cqiwy6t3gykxl" path="res://resources/Alien Sprites/scifi_alien_run_1.png" id="3_luvg2"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_rey21"]
 font_size = 95

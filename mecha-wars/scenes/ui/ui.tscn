@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://hxwjjftcvqr5"]
+[gd_scene load_steps=4 format=3 uid="uid://hxwjjftcvqr5"]
 
 [ext_resource type="Script" path="res://scenes/ui/ui.gd" id="1_nm4ml"]
 [ext_resource type="PackedScene" uid="uid://s3ku7fbka1wd" path="res://scenes/ui/rocket_dino_panel.tscn" id="1_rccfv"]
+[ext_resource type="PackedScene" uid="uid://d2p81cnifgyy8" path="res://scenes/ui/turret_panel.tscn" id="3_kk757"]
 
 [node name="UI" type="CanvasLayer"]
 script = ExtResource("1_nm4ml")
@@ -35,6 +36,10 @@ theme_override_constants/h_separation = 10
 theme_override_constants/v_separation = 10
 
 [node name="RocketDinoPanel" parent="Panel/FlowContainer" instance=ExtResource("1_rccfv")]
+layout_mode = 2
+
+[node name="TurretPanel" parent="Panel/FlowContainer" instance=ExtResource("3_kk757")]
+visible = true
 layout_mode = 2
 
 [node name="GoldLabel" type="Label" parent="."]

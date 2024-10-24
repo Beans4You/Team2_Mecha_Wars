@@ -1,0 +1,29 @@
+[gd_scene load_steps=3 format=3 uid="uid://d2p81cnifgyy8"]
+
+[ext_resource type="Script" path="res://turret_panel.gd" id="1_ufado"]
+[ext_resource type="Texture2D" uid="uid://cpg2mx00t0xjn" path="res://resources/Hit-Scan-Tower/laser_turret_0.png" id="2_bruwl"]
+
+[node name="TurretPanel" type="Panel"]
+visible = false
+custom_minimum_size = Vector2(120, 120)
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_ufado")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(60, 47)
+texture = ExtResource("2_bruwl")
+
+[node name="Label" type="Label" parent="Sprite2D"]
+anchors_preset = -1
+anchor_left = 0.133
+anchor_top = 0.94
+anchor_right = 0.133
+anchor_bottom = 0.94
+offset_left = -53.024
+offset_top = -72.32
+offset_right = 31.976
+offset_bottom = -49.32
+text = "500 Gold"
+
+[connection signal="gui_input" from="." to="." method="_on_gui_input"]
