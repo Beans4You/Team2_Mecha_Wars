@@ -1,0 +1,42 @@
+[gd_scene load_steps=8 format=3 uid="uid://cshildx1ua72x"]
+
+[ext_resource type="Texture2D" uid="uid://d3ji017quvet3" path="res://resources/rocket_dino/rocket_explosion0.png" id="1_4yj5r"]
+[ext_resource type="Texture2D" uid="uid://cauonv0pdd2y7" path="res://resources/rocket_dino/rocket_explosion1.png" id="2_mfltx"]
+[ext_resource type="Texture2D" uid="uid://weckpciw08ya" path="res://resources/rocket_dino/rocket_explosion2.png" id="3_pfs8c"]
+[ext_resource type="Texture2D" uid="uid://dp5as3v2w88xo" path="res://resources/rocket_dino/rocket_explosion3.png" id="4_w1mul"]
+[ext_resource type="Texture2D" uid="uid://bose604xawh40" path="res://resources/rocket_dino/rocket_explosion4.png" id="5_2vap8"]
+[ext_resource type="Script" path="res://scenes/towers/rocket_dino/explosion.gd" id="6_706nt"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_jonnk"]
+resource_local_to_scene = true
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_4yj5r")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_mfltx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_pfs8c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_w1mul")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_2vap8")
+}],
+"loop": false,
+"name": &"default",
+"speed": 10.0
+}]
+
+[node name="explosion" type="Area2D"]
+collision_layer = 0
+collision_mask = 0
+script = ExtResource("6_706nt")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_jonnk")
+
+[connection signal="animation_finished" from="AnimatedSprite2D" to="." method="_on_animation_finished"]

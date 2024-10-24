@@ -31,37 +31,39 @@ animations = [{
 }]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_m6ctr"]
-radius = 50.7692
-height = 180.769
+radius = 13.8461
+height = 46.1539
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_2lvxw"]
-radius = 19.6923
-height = 72.3077
+radius = 6.15385
+height = 18.4615
 
 [node name="Dino_Bullet" type="CharacterBody2D"]
 scale = Vector2(0.65, 0.65)
 script = ExtResource("1_ut46t")
 
 [node name="Sprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(-66.1538, 3.07692)
 scale = Vector2(2, 2)
 sprite_frames = SubResource("SpriteFrames_4kt07")
 animation = &"bullet_spin"
 frame_progress = 0.0912146
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-5, 0)
+position = Vector2(-60, 0)
 rotation = 1.5708
 shape = SubResource("CapsuleShape2D_m6ctr")
 
 [node name="Area2D" type="Area2D" parent="."]
+position = Vector2(-60, 0)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-position = Vector2(-5, 0)
 rotation = 1.5708
 scale = Vector2(2.5, 2.5)
 shape = SubResource("CapsuleShape2D_2lvxw")
 
 [node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
+position = Vector2(-60, 0)
 
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
 [connection signal="screen_exited" from="VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_exited"]

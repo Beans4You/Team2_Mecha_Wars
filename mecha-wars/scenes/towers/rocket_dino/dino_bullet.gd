@@ -2,7 +2,7 @@ extends CharacterBody2D
 var target 
 var speed = 500
 var bullet_damage = 5
-
+var explosion = preload("res://scenes/towers/rocket_dino/explosion.tscn")
 
 func set_target(target_in):
 	target = target_in
@@ -22,7 +22,9 @@ func _physics_process(delta: float) -> void:
 func _on_area_2d_body_entered(body: Node2D) -> void:
 	if body.is_in_group("enemy"):
 		body.health -= bullet_damage
-		#print("qfree")
+		var expl = explosion.instantiate()
+		add_sibling(expl)
+		expl.position = position
 		queue_free()
 		
 
