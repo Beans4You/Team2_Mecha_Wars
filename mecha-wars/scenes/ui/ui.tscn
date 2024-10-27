@@ -27,9 +27,9 @@ anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 offset_left = -70.0
-offset_top = -337.5
+offset_top = -330.0
 offset_right = 70.0
-offset_bottom = 337.5
+offset_bottom = 330.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_constants/h_separation = 10
@@ -37,10 +37,11 @@ theme_override_constants/v_separation = 10
 
 [node name="RocketDinoPanel" parent="Panel/FlowContainer" instance=ExtResource("1_rccfv")]
 layout_mode = 2
+size_flags_horizontal = 6
 
 [node name="TurretPanel" parent="Panel/FlowContainer" instance=ExtResource("3_kk757")]
-visible = true
 layout_mode = 2
+size_flags_horizontal = 6
 
 [node name="GoldLabel" type="Label" parent="."]
 offset_right = 256.0

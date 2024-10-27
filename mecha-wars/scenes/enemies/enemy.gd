@@ -43,6 +43,7 @@ func on_hit(damage):
 	health -= damage
 	if health <= 0:
 		get_parent().get_parent().queue_free()
+		global_vars.curr_gold += self.gold_worth
 
 
 #checking to see if enemy is at the stronghold
@@ -50,6 +51,7 @@ func _on_hit_area_body_entered(body) -> void:
 	if body.is_in_group("stronghold"):
 		at_stronghold = true
 		stronghold = body
+
 
 #when attack animation loops, do damage to the stronghold
 func _on_animated_sprite_2d_animation_looped() -> void:

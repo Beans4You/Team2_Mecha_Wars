@@ -20,7 +20,7 @@ global_vars="*res://scenes/gameplay and maps/global_vars.gd"
 
 [display]
 
-window/size/viewport_width=1280
+window/size/viewport_width=1455
 window/size/viewport_height=704
 window/stretch/mode="canvas_items"
 

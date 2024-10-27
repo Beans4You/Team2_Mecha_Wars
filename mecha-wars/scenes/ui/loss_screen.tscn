@@ -8,13 +8,13 @@ font_size = 95
 [node name="loss_screen" type="Control"]
 layout_mode = 3
 anchors_preset = 0
-offset_right = 1280.0
+offset_right = 1455.0
 offset_bottom = 704.0
 script = ExtResource("1_bn21b")
 
 [node name="ColorRect" type="ColorRect" parent="."]
 layout_mode = 0
-offset_right = 1280.0
+offset_right = 1455.0
 offset_bottom = 704.0
 color = Color(0.454902, 0.0470588, 0.0117647, 1)
 
