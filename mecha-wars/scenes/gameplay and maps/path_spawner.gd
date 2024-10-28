@@ -10,7 +10,7 @@ func _ready() -> void:
 
 func _process(_delta):
 	if global_vars.game_over == true:
-		$Timer.stop()
+		$timer.stop()
 
 
 func _on_timer_timeout() -> void:

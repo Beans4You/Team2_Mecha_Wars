@@ -1,0 +1,113 @@
+[gd_scene load_steps=5 format=3 uid="uid://ceioosipxcrl3"]
+
+[ext_resource type="Texture2D" uid="uid://ca3hdf6oay0g1" path="res://resources/PALands_DEMO/206cf8f59014a954f979ba8125091bf3.png" id="1_7sxl1"]
+[ext_resource type="Texture2D" uid="uid://xr3cb5ojr2ye" path="res://resources/kenney_ui/PNG/Red/Double/bar_round_gloss_large.png" id="2_eem0p"]
+[ext_resource type="Texture2D" uid="uid://cpg2mx00t0xjn" path="res://resources/Hit-Scan-Tower/laser_turret_0.png" id="2_mnsab"]
+[ext_resource type="FontFile" uid="uid://drhirowf88pbx" path="res://resources/kenney_ui/Font/Kenney Future.ttf" id="3_bixkk"]
+
+[node name="main_menu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="background" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_7sxl1")
+
+[node name="mecha" type="TextureRect" parent="."]
+custom_minimum_size = Vector2(500, 500)
+layout_mode = 2
+offset_left = 98.0
+offset_top = 102.0
+offset_right = 598.0
+offset_bottom = 602.0
+size_flags_horizontal = 0
+size_flags_vertical = 4
+texture = ExtResource("2_mnsab")
+
+[node name="m" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 50
+theme_override_constants/margin_top = 50
+theme_override_constants/margin_right = 50
+theme_override_constants/margin_bottom = 50
+
+[node name="title" type="Label" parent="m"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 0
+theme_override_colors/font_color = Color(0.476339, 0.0381652, 0.128721, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_bixkk")
+theme_override_font_sizes/font_size = 92
+text = "Mecha Wars"
+
+[node name="vb" type="VBoxContainer" parent="m"]
+custom_minimum_size = Vector2(500, 0)
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 4
+
+[node name="start" type="TextureButton" parent="m/vb"]
+modulate = Color(0, 0.831373, 0.831373, 1)
+custom_minimum_size = Vector2(0, 130)
+layout_mode = 2
+texture_normal = ExtResource("2_eem0p")
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="m/vb/start"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.371254, 1, 0.999024, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_bixkk")
+theme_override_font_sizes/font_size = 57
+text = "Start"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Control" type="Control" parent="m/vb"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+
+[node name="tutorial" type="TextureButton" parent="m/vb"]
+modulate = Color(0, 0.831373, 0.831373, 1)
+custom_minimum_size = Vector2(0, 130)
+layout_mode = 2
+texture_normal = ExtResource("2_eem0p")
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="m/vb/tutorial"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.371254, 1, 0.999024, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_bixkk")
+theme_override_font_sizes/font_size = 57
+text = "Tutorial"
+horizontal_alignment = 1
+vertical_alignment = 1
