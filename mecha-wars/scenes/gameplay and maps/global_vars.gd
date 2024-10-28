@@ -1,20 +1,21 @@
 extends Node
 
-var can_place = false
+#var can_place = false
+#
+#const starting_gold = 500
+#var curr_gold
+#
+#var game_over = false
 
-const starting_gold = 500
-var curr_gold
+#signal restart_game
+#signal show_next
 
-var game_over = false
-
-signal restart_game
-signal show_next
-
-var tutorial = true
+#var tutorial = true
 
 func _ready() -> void:
-	global_vars.connect("restart_game", start_game)
-	start_game()
+	pass
+	#global_vars.connect("restart_game", start_game)
+	#start_game()
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -23,9 +24,11 @@ func _process(_delta: float) -> void:
 
 
 func start_game():
-	curr_gold = starting_gold
+	pass
+	#curr_gold = starting_gold
 	
 func show_next_box():
-	if tutorial:
-		show_next.emit()
-		tutorial = false
+	pass
+	#if tutorial:
+		##show_next.emit()
+		#tutorial = false

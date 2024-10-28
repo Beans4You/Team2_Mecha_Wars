@@ -25,6 +25,7 @@ func game_start():
 	#$loss_screen.hide()
 	var game_scene = load("res://scenes/gameplay and maps/game_scene.tscn").instantiate()
 	add_child(game_scene)
+	$main_menu.queue_free()
 	
 func play_tutorial():
 	var tutorial_scene = load("res://scenes/gameplay and maps/tutorial.tscn").instantiate()
