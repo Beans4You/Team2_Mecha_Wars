@@ -41,9 +41,8 @@ func _process(delta):
 # hit scan (tower shooting scene)
 func on_hit(damage):
 	health -= damage
-	if health <= 0:
-		get_parent().get_parent().queue_free()
-		global_vars.curr_gold += self.gold_worth
+	#if health <= 0:
+		#get_parent().get_parent().queue_free()
 
 
 #checking to see if enemy is at the stronghold

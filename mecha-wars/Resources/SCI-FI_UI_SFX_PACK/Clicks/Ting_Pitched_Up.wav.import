@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://cq0bg4nuirc0i"
-path="res://.godot/imported/Ting_Pitched_Up.wav-55ab76299997f2da6347fd52c78c17c2.sample"
+path="res://.godot/imported/Ting_Pitched_Up.wav-e894a96578576249115a5eb87c1b0da5.sample"
 
 [deps]
 
-source_file="res://Resources/SCI-FI_UI_SFX_PACK/Clicks/Ting_Pitched_Up.wav"
-dest_files=["res://.godot/imported/Ting_Pitched_Up.wav-55ab76299997f2da6347fd52c78c17c2.sample"]
+source_file="res://resources/SCI-FI_UI_SFX_PACK/Clicks/Ting_Pitched_Up.wav"
+dest_files=["res://.godot/imported/Ting_Pitched_Up.wav-e894a96578576249115a5eb87c1b0da5.sample"]
 
 [params]
 
