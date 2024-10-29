@@ -1,5 +1,5 @@
 extends CharacterBody2D
-class_name enemy
+class_name enemy_script
 
 @export var speed = 120
 
@@ -10,6 +10,7 @@ var gold_worth = 100
 
 var at_stronghold = false
 var stronghold
+@onready var game_scene = get_parent().get_parent().get_parent().get_parent()
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -37,15 +38,15 @@ func _process(delta):
 	
 	if health <=0:
 		get_parent().get_parent().queue_free()
-		#game_scene.curr_gold += self.gold_worth
+		game_scene.curr_gold += self.gold_worth
 		# to do: add gold to gold amount, likely need connection or from hit function
 
 
 # hit scan (tower shooting scene)
 func on_hit(damage):
 	health -= damage
-	if health <= 0:
-		get_parent().get_parent().queue_free()
+	#if health <= 0:
+		#get_parent().get_parent().queue_free()
 
 
 #checking to see if enemy is at the stronghold

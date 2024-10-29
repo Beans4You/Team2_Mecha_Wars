@@ -23,8 +23,8 @@ func _process(_delta: float) -> void:
 func game_start():
 	#global_vars.game_over = false
 	#$loss_screen.hide()
-	var game_scene = load("res://scenes/gameplay and maps/game_scene.tscn").instantiate()
-	add_child(game_scene)
+	var game_scene_tree = load("res://scenes/gameplay and maps/game_scene.tscn").instantiate()
+	add_child(game_scene_tree)
 	$main_menu.queue_free()
 	
 func play_tutorial():

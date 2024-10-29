@@ -16,7 +16,7 @@ func _on_gui_input(event):
 		
 		if event is InputEventMouseButton and event.button_mask == 1:
 			#Left Click Down
-			game_scene.show_next_box()
+			#game_scene.show_next_box()
 			add_child(tempTower)
 			tempTower.get_node("area").show()
 			
