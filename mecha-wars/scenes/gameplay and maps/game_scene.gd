@@ -11,11 +11,24 @@ extends Node2D
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	$path_spawner/timer.start()
+	$path_spawner/timer.start() # modify in future for round system
 	curr_gold = starting_gold
 	#$music.play()
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta: float) -> void:
-	pass
+	if game_over == true:
+		game_over_process()
+
+func game_over_process():
+	# delete game scene and bring in loss screen to make a fresh one
+	queue_free()
+	var main_scene = get_parent()
+	var loss_screen = load("res://scenes/ui/loss_screen.tscn").instantiate()
+	
+	main_scene.add_child(loss_screen)
+
+	
+	
+	

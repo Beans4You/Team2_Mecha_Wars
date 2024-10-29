@@ -30,5 +30,5 @@ func game_start():
 func play_tutorial():
 	var tutorial_scene = load("res://scenes/gameplay and maps/tutorial.tscn").instantiate()
 	add_child(tutorial_scene)
-	
+	$main_menu.queue_free()
 	

@@ -1,9 +1,8 @@
-[gd_scene load_steps=7 format=3 uid="uid://b5lytpvpaq8sa"]
+[gd_scene load_steps=6 format=3 uid="uid://b5lytpvpaq8sa"]
 
 [ext_resource type="Script" path="res://scenes/gameplay and maps/game_scene.gd" id="1_oknfx"]
 [ext_resource type="PackedScene" uid="uid://ui76qs4pk0i3" path="res://scenes/gameplay and maps/new_map.tscn" id="2_a0k0b"]
 [ext_resource type="PackedScene" uid="uid://hxwjjftcvqr5" path="res://scenes/ui/ui.tscn" id="3_jlfpq"]
-[ext_resource type="PackedScene" uid="uid://de2yhvutk318e" path="res://scenes/ui/loss_screen.tscn" id="4_yimwj"]
 [ext_resource type="Script" path="res://scenes/gameplay and maps/path_spawner.gd" id="5_cdey6"]
 [ext_resource type="AudioStream" uid="uid://da6s5w4mdl4wa" path="res://resources/SCI-FI_UI_SFX_PACK/fight.wav" id="6_gjkit"]
 
@@ -14,9 +13,6 @@ script = ExtResource("1_oknfx")
 z_index = 0
 
 [node name="UI" parent="." instance=ExtResource("3_jlfpq")]
-
-[node name="loss_screen" parent="." instance=ExtResource("4_yimwj")]
-visible = false
 
 [node name="path_spawner" type="Node2D" parent="."]
 script = ExtResource("5_cdey6")
