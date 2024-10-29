@@ -24,6 +24,7 @@ func _on_gui_input(event):
 
 		elif event is InputEventMouseMotion and event.button_mask == 1:
 			#Left Click Drag
+			
 			get_child(2).global_position = event.global_position
 			get_child(1).global_position = event.global_position
 		#This is the "drop" action for the dino
