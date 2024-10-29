@@ -1,10 +1,10 @@
 [gd_scene load_steps=7 format=3 uid="uid://chjcyfjud2sxf"]
 
 [ext_resource type="Script" path="res://scenes/ui/start_screen.gd" id="1_jbpd7"]
-[ext_resource type="Texture2D" uid="uid://ca3hdf6oay0g1" path="res://resources/PALands_DEMO/206cf8f59014a954f979ba8125091bf3.png" id="2_0374b"]
-[ext_resource type="Texture2D" uid="uid://bbpf7ggsrdudg" path="res://resources/rocket_dino/rocket_dino_mecha0.png" id="3_b1ka2"]
-[ext_resource type="FontFile" uid="uid://cl5yav47mg3gv" path="res://resources/fonts/hells-font/HellspersonaluseRegular-L3zVZ.otf" id="3_lt718"]
-[ext_resource type="Texture2D" uid="uid://cqiwy6t3gykxl" path="res://resources/Alien Sprites/scifi_alien_run_1.png" id="3_luvg2"]
+[ext_resource type="Texture2D" uid="uid://ca3hdf6oay0g1" path="res://Resources/PALands_DEMO/206cf8f59014a954f979ba8125091bf3.png" id="2_0374b"]
+[ext_resource type="Texture2D" uid="uid://bbpf7ggsrdudg" path="res://Resources/rocket_dino/rocket_dino_mecha0.png" id="3_b1ka2"]
+[ext_resource type="FontFile" uid="uid://cl5yav47mg3gv" path="res://Resources/fonts/hells-font/HellspersonaluseRegular-L3zVZ.otf" id="3_lt718"]
+[ext_resource type="Texture2D" uid="uid://cqiwy6t3gykxl" path="res://Resources/Alien Sprites/scifi_alien_run_1.png" id="3_luvg2"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_rey21"]
 font_size = 95
@@ -20,21 +20,21 @@ script = ExtResource("1_jbpd7")
 
 [node name="TextureRect" type="TextureRect" parent="."]
 layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
+offset_right = 1455.0
+offset_bottom = 720.0
 texture = ExtResource("2_0374b")
 
 [node name="Start Button" type="Button" parent="."]
 layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.395
-anchor_top = 0.585
-anchor_right = 0.395
-anchor_bottom = 0.585
-offset_left = -110.6
-offset_top = -81.84
-offset_right = 110.4
-offset_bottom = 82.16
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -235.5
+offset_top = -22.0
+offset_right = -14.5
+offset_bottom = 142.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_fonts/font = ExtResource("3_lt718")
@@ -43,15 +43,15 @@ text = "Start Game"
 
 [node name="Tutorial Button" type="Button" parent="."]
 layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.395
-anchor_top = 0.585
-anchor_right = 0.395
-anchor_bottom = 0.585
-offset_left = 132.4
-offset_top = -81.84
-offset_right = 353.4
-offset_bottom = 82.16
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 14.3
+offset_top = -22.0
+offset_right = 235.7
+offset_bottom = 142.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_fonts/font = ExtResource("3_lt718")
@@ -63,17 +63,17 @@ layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = -259.0
-offset_top = 119.0
-offset_right = 235.0
-offset_bottom = 249.0
+offset_left = -247.0
+offset_top = 120.0
+offset_right = 247.0
+offset_bottom = 250.0
 grow_horizontal = 2
 theme_override_fonts/font = ExtResource("3_lt718")
 text = "Mecha Wars"
 label_settings = SubResource("LabelSettings_rey21")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(992, 387)
+position = Vector2(1167, 387)
 scale = Vector2(3, 3)
 texture = ExtResource("3_luvg2")
 

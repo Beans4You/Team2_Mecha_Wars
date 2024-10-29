@@ -9,3 +9,22 @@ script = ExtResource("1_wop13")
 runner_scene = ExtResource("2_1dlbe")
 
 [node name="main_menu" parent="." instance=ExtResource("3_x3sfm")]
+[node name="NewMap" parent="." instance=ExtResource("3_s624m")]
+z_index = 0
+
+[node name="loss_screen" parent="." instance=ExtResource("8_3y3v3")]
+z_index = 10
+
+[node name="UI" parent="." instance=ExtResource("6_g2qh7")]
+
+[node name="Path_Spawner" type="Node2D" parent="."]
+script = ExtResource("8_5lnom")
+
+[node name="Timer" type="Timer" parent="Path_Spawner"]
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("9_wnohp")
+volume_db = -21.295
+autoplay = true
+
+[connection signal="timeout" from="Path_Spawner/Timer" to="Path_Spawner" method="_on_timer_timeout"]

@@ -55,6 +55,7 @@ func _on_hit_area_body_entered(body) -> void:
 		at_stronghold = true
 		stronghold = body
 
+
 #when attack animation loops, do damage to the stronghold
 func _on_animated_sprite_2d_animation_looped() -> void:
 	if $AnimatedSprite2D.animation == 'attack':

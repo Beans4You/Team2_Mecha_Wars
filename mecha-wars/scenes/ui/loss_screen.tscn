@@ -10,7 +10,7 @@
 z_index = 10
 layout_mode = 3
 anchors_preset = 0
-offset_right = 1280.0
+offset_right = 1455.0
 offset_bottom = 704.0
 script = ExtResource("1_bn21b")
 

@@ -27,7 +27,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"bullet_spin",
-"speed": 15.0
+"speed": 10.0
 }]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_m6ctr"]
@@ -47,7 +47,7 @@ position = Vector2(-66.1538, 3.07692)
 scale = Vector2(2, 2)
 sprite_frames = SubResource("SpriteFrames_4kt07")
 animation = &"bullet_spin"
-frame_progress = 0.0912146
+frame_progress = 0.284501
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-60, 0)

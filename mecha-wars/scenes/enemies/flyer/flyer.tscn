@@ -1,0 +1,41 @@
+[gd_scene load_steps=8 format=3 uid="uid://cbunrqcsmhwm8"]
+
+[ext_resource type="Script" path="res://scenes/enemies/flyer/flyer.gd" id="1_hbfx4"]
+[ext_resource type="Texture2D" uid="uid://cg8twbbe2iuou" path="res://Resources/Alien Sprites/flyer_sprites/flyer_0.png" id="2_7ivq4"]
+[ext_resource type="Texture2D" uid="uid://hj7jnx1it05x" path="res://Resources/Alien Sprites/flyer_sprites/flyer_1.png" id="3_v2dev"]
+[ext_resource type="Texture2D" uid="uid://cxww01bbwcy1x" path="res://Resources/Alien Sprites/flyer_sprites/flyer_2.png" id="4_8a4nq"]
+[ext_resource type="Texture2D" uid="uid://dyfj5srp5lhke" path="res://Resources/Alien Sprites/flyer_sprites/flyer_3.png" id="5_0w3ka"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_atlml"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_7ivq4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_v2dev")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_8a4nq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_0w3ka")
+}],
+"loop": true,
+"name": &"move",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ai2jd"]
+size = Vector2(84, 40)
+
+[node name="flyer" type="CharacterBody2D"]
+script = ExtResource("1_hbfx4")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_atlml")
+animation = &"move"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(22, -2)
+shape = SubResource("RectangleShape2D_ai2jd")
