@@ -1,1 +1,1 @@
-extends enemy_script
+extends enemy

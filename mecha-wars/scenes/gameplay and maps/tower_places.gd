@@ -1,5 +1,5 @@
 extends Area2D
-@onready var game_scene = get_parent().get_parent()
+
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -12,8 +12,8 @@ func _process(_delta: float) -> void:
 
 
 func _on_area_entered(_area: Area2D) -> void:
-	game_scene.can_place = true
+	global_vars.can_place = true
 
 
 func _on_area_exited(_area: Area2D) -> void:
-	game_scene.can_place = false
+	global_vars.can_place = false

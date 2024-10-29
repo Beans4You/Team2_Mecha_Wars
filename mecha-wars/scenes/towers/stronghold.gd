@@ -2,11 +2,10 @@ extends StaticBody2D
 
 const max_health = 100
 var health = 100
-@onready var game_scene = get_parent().get_parent()
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	#global_vars.connect("restart_game", start_game)
+	global_vars.connect("restart_game", start_game)
 	start_game()
 
 
@@ -14,7 +13,7 @@ func _ready() -> void:
 func _process(_delta: float) -> void:
 	if health < 0:
 		visible = false
-		game_scene.game_over = true
+		global_vars.game_over = true
 
 func start_game():
 	health = max_health

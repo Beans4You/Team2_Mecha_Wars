@@ -1,8 +1,7 @@
 extends CharacterBody2D
-class_name enemy_script
+class_name enemy
 
 @export var speed = 120
-
 var health = 10
 var attack_damage = 5
 
@@ -10,7 +9,6 @@ var gold_worth = 100
 
 var at_stronghold = false
 var stronghold
-@onready var game_scene = get_parent().get_parent().get_parent().get_parent()
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -31,15 +29,13 @@ func _process(delta):
 			speed = 200
 			$AnimatedSprite2D.play('move')
 			
-	#if game_scene.game_over == true:
-		#get_tree().call_group("enemy", "queue_free")
-		# to do: adjust game over function to encompass this
+	if global_vars.game_over == true:
+		get_tree().call_group("enemy", "queue_free")
 	
 	
 	if health <=0:
 		get_parent().get_parent().queue_free()
-		game_scene.curr_gold += self.gold_worth
-		# to do: add gold to gold amount, likely need connection or from hit function
+		global_vars.curr_gold += self.gold_worth
 
 
 # hit scan (tower shooting scene)
