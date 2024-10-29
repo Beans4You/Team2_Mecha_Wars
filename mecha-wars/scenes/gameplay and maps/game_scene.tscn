@@ -1,0 +1,28 @@
+[gd_scene load_steps=6 format=3 uid="uid://b5lytpvpaq8sa"]
+
+[ext_resource type="Script" path="res://scenes/gameplay and maps/game_scene.gd" id="1_oknfx"]
+[ext_resource type="PackedScene" uid="uid://ui76qs4pk0i3" path="res://scenes/gameplay and maps/new_map.tscn" id="2_a0k0b"]
+[ext_resource type="PackedScene" uid="uid://hxwjjftcvqr5" path="res://scenes/ui/ui.tscn" id="3_jlfpq"]
+[ext_resource type="Script" path="res://scenes/gameplay and maps/path_spawner.gd" id="5_cdey6"]
+[ext_resource type="AudioStream" uid="uid://da6s5w4mdl4wa" path="res://resources/SCI-FI_UI_SFX_PACK/fight.wav" id="6_gjkit"]
+
+[node name="game_scene_node" type="Node2D"]
+script = ExtResource("1_oknfx")
+
+[node name="NewMap" parent="." instance=ExtResource("2_a0k0b")]
+z_index = 0
+
+[node name="UI" parent="." instance=ExtResource("3_jlfpq")]
+
+[node name="path_spawner" type="Node2D" parent="."]
+script = ExtResource("5_cdey6")
+
+[node name="timer" type="Timer" parent="path_spawner"]
+wait_time = 2.0
+
+[node name="music" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("6_gjkit")
+volume_db = -21.295
+autoplay = true
+
+[connection signal="timeout" from="path_spawner/timer" to="path_spawner" method="_on_timer_timeout"]
