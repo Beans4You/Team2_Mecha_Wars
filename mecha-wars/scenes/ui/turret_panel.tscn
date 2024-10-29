@@ -1,4 +1,4 @@
-[gd_scene load_steps=3 format=3 uid="uid://d2p81cnifgyy8"]
+[gd_scene load_steps=3 format=3 uid="uid://erdr1ugipt2u"]
 
 [ext_resource type="Script" path="res://turret_panel.gd" id="1_ufado"]
 [ext_resource type="Texture2D" uid="uid://cpg2mx00t0xjn" path="res://Resources/Hit-Scan-Tower/laser_turret_0.png" id="2_bruwl"]

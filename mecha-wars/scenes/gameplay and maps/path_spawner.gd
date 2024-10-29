@@ -2,6 +2,7 @@ extends Node2D
 
 
 @onready var path = preload("res://scenes/enemies/path.tscn")
+@onready var game_scene = get_parent()
 var enemies_spawned = 0
 
 # Called when the node enters the scene tree for the first time.
@@ -10,8 +11,8 @@ func _ready() -> void:
 
 
 func _process(_delta):
-	if global_vars.game_over == true:
-		$Timer.stop()
+	if game_scene.game_over == true:
+		$timer.stop()
 
 
 func _on_timer_timeout() -> void:
