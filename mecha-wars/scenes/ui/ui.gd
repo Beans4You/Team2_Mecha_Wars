@@ -12,6 +12,6 @@ func _ready():
 func _process(_delta):
 	$GoldLabel.text = str("Gold: ",game_scene.curr_gold)
 	#game_over = get_parent().game_over
-	if game_scene.game_over == true:
-		hide()
-		get_tree().call_group("towers", "queue_free")
+	#if game_scene.game_over == true:
+		#hide()
+		#get_tree().call_group("towers", "queue_free")
