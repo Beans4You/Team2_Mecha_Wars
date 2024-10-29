@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://ceioosipxcrl3"]
+[gd_scene load_steps=6 format=3 uid="uid://ceioosipxcrl3"]
 
 [ext_resource type="Texture2D" uid="uid://ca3hdf6oay0g1" path="res://resources/PALands_DEMO/206cf8f59014a954f979ba8125091bf3.png" id="1_7sxl1"]
 [ext_resource type="Texture2D" uid="uid://xr3cb5ojr2ye" path="res://resources/kenney_ui/PNG/Red/Double/bar_round_gloss_large.png" id="2_eem0p"]
 [ext_resource type="Texture2D" uid="uid://cpg2mx00t0xjn" path="res://resources/Hit-Scan-Tower/laser_turret_0.png" id="2_mnsab"]
 [ext_resource type="FontFile" uid="uid://drhirowf88pbx" path="res://resources/kenney_ui/Font/Kenney Future.ttf" id="3_bixkk"]
+[ext_resource type="Texture2D" uid="uid://jbpuhgryhkl3" path="res://resources/kenney_ui/PNG/custom_button_pressed.png" id="5_kvx8t"]
 
 [node name="main_menu" type="Control"]
 layout_mode = 3
@@ -67,6 +68,7 @@ modulate = Color(0, 0.831373, 0.831373, 1)
 custom_minimum_size = Vector2(0, 130)
 layout_mode = 2
 texture_normal = ExtResource("2_eem0p")
+texture_pressed = ExtResource("5_kvx8t")
 stretch_mode = 0
 
 [node name="Label" type="Label" parent="m/vb/start"]
@@ -94,6 +96,7 @@ modulate = Color(0, 0.831373, 0.831373, 1)
 custom_minimum_size = Vector2(0, 130)
 layout_mode = 2
 texture_normal = ExtResource("2_eem0p")
+texture_pressed = ExtResource("5_kvx8t")
 stretch_mode = 0
 
 [node name="Label" type="Label" parent="m/vb/tutorial"]

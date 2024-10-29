@@ -7,7 +7,7 @@
 [ext_resource type="Script" path="res://scenes/gameplay and maps/tower_places.gd" id="5_htsgr"]
 [ext_resource type="PackedScene" uid="uid://hxwjjftcvqr5" path="res://scenes/ui/ui.tscn" id="6_qy4b3"]
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_0kp1x"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_o45r5"]
 texture = ExtResource("2_s261n")
 24:0/0 = 0
 25:0/0 = 0
@@ -2875,9 +2875,9 @@ texture = ExtResource("2_s261n")
 navigation_layer_0/layers = 7
 custom_data_layer_0/name = ""
 custom_data_layer_0/type = 0
-sources/0 = SubResource("TileSetAtlasSource_0kp1x")
+sources/0 = SubResource("TileSetAtlasSource_o45r5")
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_g8vif"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_kvf68"]
 texture = ExtResource("2_s261n")
 24:0/0 = 0
 25:0/0 = 0
@@ -5742,9 +5742,9 @@ texture = ExtResource("2_s261n")
 21:51/0 = 0
 
 [sub_resource type="TileSet" id="TileSet_bpx1c"]
-sources/0 = SubResource("TileSetAtlasSource_g8vif")
+sources/0 = SubResource("TileSetAtlasSource_kvf68")
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_5qth8"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_b5k2v"]
 texture = ExtResource("2_s261n")
 24:0/0 = 0
 25:0/0 = 0
@@ -8609,7 +8609,7 @@ texture = ExtResource("2_s261n")
 21:51/0 = 0
 
 [sub_resource type="TileSet" id="TileSet_i72jv"]
-sources/0 = SubResource("TileSetAtlasSource_5qth8")
+sources/0 = SubResource("TileSetAtlasSource_b5k2v")
 
 [sub_resource type="Curve2D" id="Curve2D_tlcvc"]
 _data = {
