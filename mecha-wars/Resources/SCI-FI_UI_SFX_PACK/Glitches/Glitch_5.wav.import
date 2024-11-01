@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://c3wuep3u8xgqu"
-path="res://.godot/imported/Glitch_5.wav-c306b7c8b729e1d62e3f05dbc6fcd38d.sample"
+path="res://.godot/imported/Glitch_5.wav-9dcc497b2f269fc2d435afa602b70f18.sample"
 
 [deps]
 
-source_file="res://Resources/SCI-FI_UI_SFX_PACK/Glitches/Glitch_5.wav"
-dest_files=["res://.godot/imported/Glitch_5.wav-c306b7c8b729e1d62e3f05dbc6fcd38d.sample"]
+source_file="res://resources/SCI-FI_UI_SFX_PACK/Glitches/Glitch_5.wav"
+dest_files=["res://.godot/imported/Glitch_5.wav-9dcc497b2f269fc2d435afa602b70f18.sample"]
 
 [params]
 

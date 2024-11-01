@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bkhf2vk1myjbb"
-path="res://.godot/imported/button_square_header_small_square_screws.png-c69a7d2f328bebb2efd675d1684be65e.ctex"
+path="res://.godot/imported/button_square_header_small_square_screws.png-6c5fe9dd8dfc76a15d3e3af16ada0f16.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Resources/kenney_ui/PNG/Yellow/Double/button_square_header_small_square_screws.png"
-dest_files=["res://.godot/imported/button_square_header_small_square_screws.png-c69a7d2f328bebb2efd675d1684be65e.ctex"]
+source_file="res://resources/kenney_ui/PNG/Yellow/Double/button_square_header_small_square_screws.png"
+dest_files=["res://.godot/imported/button_square_header_small_square_screws.png-6c5fe9dd8dfc76a15d3e3af16ada0f16.ctex"]
 
 [params]
 
