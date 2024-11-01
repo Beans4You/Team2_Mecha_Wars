@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://m0l1nffnm2ot"
-path="res://.godot/imported/button_square_header_large_rectangle.png-4b8a4f54990f3648ba5d730391686e7d.ctex"
+path="res://.godot/imported/button_square_header_large_rectangle.png-bb71ae9a4dbcc1be963b3463f39de123.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://resources/kenney_ui/PNG/Red/Double/button_square_header_large_rectangle.png"
-dest_files=["res://.godot/imported/button_square_header_large_rectangle.png-4b8a4f54990f3648ba5d730391686e7d.ctex"]
+source_file="res://Resources/kenney_ui/PNG/Red/Double/button_square_header_large_rectangle.png"
+dest_files=["res://.godot/imported/button_square_header_large_rectangle.png-bb71ae9a4dbcc1be963b3463f39de123.ctex"]
 
 [params]
 

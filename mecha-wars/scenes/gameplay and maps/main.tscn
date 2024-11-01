@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://scenes/gameplay and maps/main.gd" id="1_wop13"]
 [ext_resource type="PackedScene" uid="uid://h6nqnmhkcq1v" path="res://scenes/enemies/runner/runner.tscn" id="2_1dlbe"]
-[ext_resource type="PackedScene" uid="uid://ceioosipxcrl3" path="res://scenes/ui/main_menu.tscn" id="3_x3sfm"]
+[ext_resource type="PackedScene" uid="uid://bcg3lt5ejmqg8" path="res://scenes/ui/main_menu.tscn" id="3_x3sfm"]
 
 [node name="main" type="Node"]
 script = ExtResource("1_wop13")
