@@ -13,7 +13,7 @@ anchor_left = 1.0
 anchor_top = 0.5
 anchor_right = 1.0
 anchor_bottom = 0.5
-offset_left = -175.0
+offset_left = -160.0
 offset_top = -351.5
 offset_bottom = 351.5
 grow_horizontal = 0
@@ -34,6 +34,7 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_constants/h_separation = 10
 theme_override_constants/v_separation = 10
+alignment = 1
 
 [node name="RocketDinoPanel" parent="Panel/FlowContainer" instance=ExtResource("1_rccfv")]
 layout_mode = 2
