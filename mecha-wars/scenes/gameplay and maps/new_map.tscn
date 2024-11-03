@@ -2871,7 +2871,7 @@ texture = ExtResource("1_oryve")
 [sub_resource type="TileSet" id="TileSet_yvaae"]
 sources/0 = SubResource("TileSetAtlasSource_gyu0i")
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_0d06n"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_0swuv"]
 texture = ExtResource("1_oryve")
 24:0/0 = 0
 25:0/0 = 0
@@ -5736,7 +5736,7 @@ texture = ExtResource("1_oryve")
 21:51/0 = 0
 
 [sub_resource type="TileSet" id="TileSet_5vnmd"]
-sources/0 = SubResource("TileSetAtlasSource_0d06n")
+sources/0 = SubResource("TileSetAtlasSource_0swuv")
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ctjot"]
 size = Vector2(113, 112)
