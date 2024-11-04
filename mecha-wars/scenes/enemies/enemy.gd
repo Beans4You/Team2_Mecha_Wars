@@ -14,8 +14,7 @@ var stronghold
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	$AnimatedSprite2D.play('move')
-	$AnimatedSprite2D.flip_h = true
+	pass
 
 
 func _process(delta):
@@ -28,7 +27,7 @@ func _process(delta):
 			speed = 0
 			$AnimatedSprite2D.play('attack')
 		else:
-			speed = 200
+			speed = 120
 			$AnimatedSprite2D.play('move')
 			
 	#if game_scene.game_over == true:
@@ -54,6 +53,7 @@ func _on_hit_area_body_entered(body) -> void:
 	if body.is_in_group("stronghold"):
 		at_stronghold = true
 		stronghold = body
+
 
 #when attack animation loops, do damage to the stronghold
 func _on_animated_sprite_2d_animation_looped() -> void:

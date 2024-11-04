@@ -1,0 +1,34 @@
+[gd_scene load_steps=4 format=3 uid="uid://c73f8v32xscxe"]
+
+[ext_resource type="PackedScene" uid="uid://doit18r6cjp3" path="res://scenes/enemies/flyer/flyer.tscn" id="1_fmxe2"]
+
+[sub_resource type="Curve2D" id="Curve2D_r3rjb"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 3, 245, 0, 0, 0, 0, 383, 245, 0, 0, 0, 0, 504, 485, 0, 0, 0, 0, 544, 571, 0, 0, 0, 0, 584, 601, 0, 0, 0, 0, 619, 598, 0, 0, 0, 0, 772, 327, 0, 0, 0, 0, 1502, 332)
+}
+point_count = 8
+
+[sub_resource type="GDScript" id="GDScript_8bhrm"]
+script/source = "extends Path2D
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready() -> void:
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(_delta: float) -> void:
+	pass
+"
+
+[node name="Path2D" type="Path2D"]
+position = Vector2(0, -50)
+curve = SubResource("Curve2D_r3rjb")
+script = SubResource("GDScript_8bhrm")
+
+[node name="PathFollow2D" type="PathFollow2D" parent="."]
+position = Vector2(3, 245)
+loop = false
+
+[node name="flyer" parent="PathFollow2D" instance=ExtResource("1_fmxe2")]

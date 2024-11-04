@@ -1,0 +1,76 @@
+[gd_scene load_steps=10 format=3 uid="uid://doit18r6cjp3"]
+
+[ext_resource type="Script" path="res://scenes/enemies/flyer/flyer.gd" id="1_id6n8"]
+[ext_resource type="Texture2D" uid="uid://krtq4t14tx8w" path="res://resources/Alien Sprites/flyer/flyer_0.png" id="1_p6xi3"]
+[ext_resource type="PackedScene" uid="uid://cwm1h72ovnakg" path="res://scenes/enemies/enemy.tscn" id="1_qnmhe"]
+[ext_resource type="Texture2D" uid="uid://bkwj64vg8vjx3" path="res://resources/Alien Sprites/flyer/flyer_1.png" id="2_w6fd1"]
+[ext_resource type="Texture2D" uid="uid://hnduho4nle5s" path="res://resources/Alien Sprites/flyer/flyer_2.png" id="3_yhvqj"]
+[ext_resource type="Texture2D" uid="uid://q4wtpj2fubjf" path="res://resources/Alien Sprites/flyer/flyer_3.png" id="4_1c043"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_g80vt"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_p6xi3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_w6fd1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_yhvqj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_1c043")
+}],
+"loop": true,
+"name": &"attack",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_p6xi3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_w6fd1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_yhvqj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_1c043")
+}],
+"loop": true,
+"name": &"move",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_esr1n"]
+radius = 23.0
+height = 98.0
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_36vj2"]
+radius = 19.0
+height = 248.0
+
+[node name="flyer" instance=ExtResource("1_qnmhe")]
+script = ExtResource("1_id6n8")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." index="0"]
+sprite_frames = SubResource("SpriteFrames_g80vt")
+animation = &"attack"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." index="1"]
+position = Vector2(23, -1)
+rotation = 1.5708
+shape = SubResource("CapsuleShape2D_esr1n")
+
+[node name="hit_area" type="Area2D" parent="." index="2"]
+position = Vector2(67, -1)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="hit_area" index="0"]
+position = Vector2(35, 0)
+rotation = 1.5708
+shape = SubResource("CapsuleShape2D_36vj2")
+
+[connection signal="animation_looped" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_animation_looped"]
+[connection signal="body_entered" from="hit_area" to="." method="_on_hit_area_body_entered"]

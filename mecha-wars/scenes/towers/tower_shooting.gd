@@ -21,8 +21,6 @@ func _on_range_body_entered(body: Node2D) -> void:
 		enemy_array.append(body)
 
 
-	
-
 func _on_range_body_exited(body: Node2D) -> void:
 	if body.is_in_group("enemy"):
 		enemy_array.erase(body)
