@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dt7iva70fjd5k"
-path="res://.godot/imported/panel_rectangle_screws.png-c5cf018671c733ad4b6564754a32ec9a.ctex"
+path="res://.godot/imported/panel_rectangle_screws.png-92bbe7553ae1b6162056439c232c24a6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://resources/kenney_ui/PNG/Extra/Double/panel_rectangle_screws.png"
-dest_files=["res://.godot/imported/panel_rectangle_screws.png-c5cf018671c733ad4b6564754a32ec9a.ctex"]
+source_file="res://Resources/kenney_ui/PNG/Extra/Double/panel_rectangle_screws.png"
+dest_files=["res://.godot/imported/panel_rectangle_screws.png-92bbe7553ae1b6162056439c232c24a6.ctex"]
 
 [params]
 
