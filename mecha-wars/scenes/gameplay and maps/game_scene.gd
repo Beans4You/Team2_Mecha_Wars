@@ -31,4 +31,7 @@ func game_over_process():
 
 	
 	
-	
+# showing area of towers
+#func _input(event):
+	#if event is InputEventMouseButton and event.button_mask == 0:
+		#$area.show()
