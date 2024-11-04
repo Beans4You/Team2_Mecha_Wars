@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3 uid="uid://bl0gt6tiryde5"]
+
+[ext_resource type="PackedScene" uid="uid://h6nqnmhkcq1v" path="res://scenes/enemies/runner/runner.tscn" id="1_xqdw3"]
+
+[sub_resource type="Curve2D" id="Curve2D_2v88g"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 13, 325, 0, 0, 0, 0, 1081, 325)
+}
+point_count = 2
+
+[node name="Path2D" type="Path2D"]
+position = Vector2(-10, 50)
+curve = SubResource("Curve2D_2v88g")
+
+[node name="PathFollow2D" type="PathFollow2D" parent="."]
+position = Vector2(13, 325)
+loop = false
+metadata/_edit_group_ = true
+
+[node name="runner" parent="PathFollow2D" instance=ExtResource("1_xqdw3")]

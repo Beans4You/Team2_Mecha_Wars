@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://c8bl7umlnwp1x" path="res://resources/output-onlinepngtools (2).png" id="2_1g5aa"]
 [ext_resource type="PackedScene" uid="uid://blvsoavywg5wb" path="res://scenes/towers/stronghold.tscn" id="3_jg8km"]
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_i6g17"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_i4wp4"]
 texture = ExtResource("1_tw8ng")
 texture_region_size = Vector2i(32, 32)
 8:0/0 = 0
@@ -1037,9 +1037,9 @@ tile_size = Vector2i(32, 32)
 terrain_set_0/mode = 0
 terrain_set_0/terrain_0/name = "path"
 terrain_set_0/terrain_0/color = Color(0.5, 0.34375, 0.25, 1)
-sources/0 = SubResource("TileSetAtlasSource_i6g17")
+sources/0 = SubResource("TileSetAtlasSource_i4wp4")
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_0hloh"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_n3tkl"]
 texture = ExtResource("1_tw8ng")
 texture_region_size = Vector2i(32, 32)
 8:0/0 = 0
@@ -1840,9 +1840,9 @@ texture_region_size = Vector2i(32, 32)
 
 [sub_resource type="TileSet" id="TileSet_if3fe"]
 tile_size = Vector2i(32, 32)
-sources/0 = SubResource("TileSetAtlasSource_0hloh")
+sources/0 = SubResource("TileSetAtlasSource_n3tkl")
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_2y3ar"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_0xboi"]
 texture = ExtResource("2_1g5aa")
 0:0/0 = 0
 0:0/0/terrain_set = 0
@@ -1927,7 +1927,7 @@ texture = ExtResource("2_1g5aa")
 terrain_set_0/mode = 0
 terrain_set_0/terrain_0/name = "path"
 terrain_set_0/terrain_0/color = Color(0.5, 0.34375, 0.25, 1)
-sources/0 = SubResource("TileSetAtlasSource_2y3ar")
+sources/0 = SubResource("TileSetAtlasSource_0xboi")
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_rjsmm"]
 texture = ExtResource("1_tw8ng")
