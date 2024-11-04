@@ -35,11 +35,12 @@ position = Vector2(1.5, 96.5)
 shape = SubResource("RectangleShape2D_geua2")
 
 [node name="ProgressBar" type="ProgressBar" parent="."]
-offset_left = 175.0
-offset_top = 200.0
-offset_right = 425.0
-offset_bottom = 215.0
-rotation = 4.71239
+offset_left = -125.0
+offset_top = 137.0
+offset_right = 125.0
+offset_bottom = 152.0
+size_flags_horizontal = 4
+size_flags_vertical = 8
 theme_override_styles/background = SubResource("StyleBoxFlat_kdq1s")
 theme_override_styles/fill = SubResource("StyleBoxFlat_36aec")
 show_percentage = false
