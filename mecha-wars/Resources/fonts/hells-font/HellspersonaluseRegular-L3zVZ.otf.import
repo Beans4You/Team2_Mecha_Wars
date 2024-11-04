@@ -3,12 +3,12 @@
 importer="font_data_dynamic"
 type="FontFile"
 uid="uid://cl5yav47mg3gv"
-path="res://.godot/imported/HellspersonaluseRegular-L3zVZ.otf-5479245d9ef14d03a3ccf3849933dafa.fontdata"
+path="res://.godot/imported/HellspersonaluseRegular-L3zVZ.otf-2e2900e845682a903760a2ba93170a50.fontdata"
 
 [deps]
 
-source_file="res://Resources/fonts/hells-font/HellspersonaluseRegular-L3zVZ.otf"
-dest_files=["res://.godot/imported/HellspersonaluseRegular-L3zVZ.otf-5479245d9ef14d03a3ccf3849933dafa.fontdata"]
+source_file="res://resources/fonts/hells-font/HellspersonaluseRegular-L3zVZ.otf"
+dest_files=["res://.godot/imported/HellspersonaluseRegular-L3zVZ.otf-2e2900e845682a903760a2ba93170a50.fontdata"]
 
 [params]
 

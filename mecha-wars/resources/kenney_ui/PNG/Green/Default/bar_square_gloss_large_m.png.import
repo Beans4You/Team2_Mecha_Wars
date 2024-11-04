@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dijmbl6qfc1ib"
-path="res://.godot/imported/bar_square_gloss_large_m.png-eaa4004768406fabff1996648cf14097.ctex"
+path="res://.godot/imported/bar_square_gloss_large_m.png-1ba35b52cc2be2d8cc3a8d99a384f763.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Resources/kenney_ui/PNG/Green/Default/bar_square_gloss_large_m.png"
-dest_files=["res://.godot/imported/bar_square_gloss_large_m.png-eaa4004768406fabff1996648cf14097.ctex"]
+source_file="res://resources/kenney_ui/PNG/Green/Default/bar_square_gloss_large_m.png"
+dest_files=["res://.godot/imported/bar_square_gloss_large_m.png-1ba35b52cc2be2d8cc3a8d99a384f763.ctex"]
 
 [params]
 
