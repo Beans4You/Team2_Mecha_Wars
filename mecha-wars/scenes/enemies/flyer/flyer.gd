@@ -3,7 +3,9 @@ extends enemy_script
 func _ready():
 	$AnimatedSprite2D.play('move')
 	self.speed = 90
-	self.attack_damage = 5
+	self.attack_damage = 10
+	self.health = 20
+	self.gold_worth = 25
 
 
 
