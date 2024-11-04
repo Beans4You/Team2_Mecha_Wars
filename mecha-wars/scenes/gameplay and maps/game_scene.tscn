@@ -17,7 +17,7 @@ script = ExtResource("1_oknfx")
 script = ExtResource("5_cdey6")
 
 [node name="timer" type="Timer" parent="path_spawner"]
-wait_time = 2.0
+wait_time = 1.25
 
 [node name="music" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("6_gjkit")
