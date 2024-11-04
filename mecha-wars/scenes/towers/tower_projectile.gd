@@ -59,6 +59,7 @@ func create_bullet(target_in):
 	get_tree().root.add_child(bullet)
 
 
-func _input(event):
-	if event is InputEventMouseButton and event.button_mask == 0:
-		$area.show()
+"""clickability for upgrades in future"""
+#func _input(event):
+	#if event is InputEventMouseButton and event.button_mask == 0:
+		#$area.show()
