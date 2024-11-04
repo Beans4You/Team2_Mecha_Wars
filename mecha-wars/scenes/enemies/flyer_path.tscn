@@ -4,9 +4,9 @@
 
 [sub_resource type="Curve2D" id="Curve2D_r3rjb"]
 _data = {
-"points": PackedVector2Array(0, 0, 0, 0, 3, 245, 0, 0, 0, 0, 383, 245, 0, 0, 0, 0, 504, 485, 0, 0, 0, 0, 544, 571, 0, 0, 0, 0, 584, 601, 0, 0, 0, 0, 619, 598, 0, 0, 0, 0, 772, 327, 0, 0, 0, 0, 1502, 332)
+"points": PackedVector2Array(0, 0, 0, 0, 0.00787403, 101, 0, 0, 0, 0, 438.853, 101, 0, 0, 0, 0, 438.853, 293, 0, 0, 0, 0, 215.441, 293, 0, 0, 0, 0, 215.441, 565, 0, 0, 0, 0, 598.433, 573, 0, 0, 0, 0, 598.433, 133, 0, 0, 0, 0, 973.446, 133, 0, 0, 0, 0, 989.404, 485, 0, 0, 0, 0, 1276.65, 485)
 }
-point_count = 8
+point_count = 10
 
 [sub_resource type="GDScript" id="GDScript_8bhrm"]
 script/source = "extends Path2D
@@ -23,12 +23,12 @@ func _process(_delta: float) -> void:
 "
 
 [node name="Path2D" type="Path2D"]
-position = Vector2(0, -50)
+scale = Vector2(1.00263, 1)
 curve = SubResource("Curve2D_r3rjb")
 script = SubResource("GDScript_8bhrm")
 
 [node name="PathFollow2D" type="PathFollow2D" parent="."]
-position = Vector2(3, 245)
+position = Vector2(0.00787403, 101)
 loop = false
 
 [node name="flyer" parent="PathFollow2D" instance=ExtResource("1_fmxe2")]
