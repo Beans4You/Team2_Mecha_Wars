@@ -1,4 +1,4 @@
-[gd_scene load_steps=4 format=3 uid="uid://c73f8v32xscxe"]
+[gd_scene load_steps=4 format=3 uid="uid://8ecltl44rlk5"]
 
 [ext_resource type="PackedScene" uid="uid://doit18r6cjp3" path="res://scenes/enemies/flyer/flyer.tscn" id="1_fmxe2"]
 
