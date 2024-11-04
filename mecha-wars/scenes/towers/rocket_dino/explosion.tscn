@@ -28,7 +28,7 @@ animations = [{
 }],
 "loop": false,
 "name": &"default",
-"speed": 10.0
+"speed": 25.0
 }]
 
 [node name="explosion" type="Area2D"]

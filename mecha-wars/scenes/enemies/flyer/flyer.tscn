@@ -72,7 +72,7 @@ position = Vector2(35, 0)
 rotation = 1.5708
 shape = SubResource("CapsuleShape2D_36vj2")
 
-[node name="hit_marks" parent="." index="3"]
+[node name="hit_marks" parent="." index="4"]
 position = Vector2(24, 0)
 
 [connection signal="animation_looped" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_animation_looped"]
