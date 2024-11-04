@@ -27,9 +27,8 @@ animations = [{
 "speed": 5.0
 }]
 
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_vhvui"]
-radius = 21.0
-height = 102.0
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jgx74"]
+size = Vector2(32, 72)
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_dbc2p"]
 radius = 174.04
@@ -43,7 +42,8 @@ animation = &"idle"
 frame_progress = 0.625581
 
 [node name="character_collision_shape" type="CollisionShape2D" parent="." index="2"]
-shape = SubResource("CapsuleShape2D_vhvui")
+position = Vector2(0, 4)
+shape = SubResource("RectangleShape2D_jgx74")
 
 [node name="aim" type="Marker2D" parent="." index="3"]
 

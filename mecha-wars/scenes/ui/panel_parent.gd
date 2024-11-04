@@ -9,7 +9,7 @@ class_name panel_parent_script
 @onready var map_root_node = game_scene.get_child(0)
 
 var currTile
-var tile_size = 32 #* 5
+var tile_size = 32 
 var placing_active = false
 
 func _on_gui_input(event):
@@ -41,8 +41,10 @@ func _on_gui_input(event):
 			#print("Left Button up")
 			# checking if the place put down is on the path
 			var path_layer = map_root_node.get_child(1)
-			var cell_coords = path_layer.local_to_map(event.global_position)
-			var not_on_path = path_layer.get_cell_tile_data(cell_coords) == null
+			# make sure character area is not in path either
+			var character_shape = tempTower.get_node("character_collision_shape").shape
+			var not_on_path = loop_through_capsule_area_and_check_for_path_collision(character_shape.extents.x, character_shape.extents.y, event.global_position)
+			#var not_on_path = path_layer.get_cell_tile_data(cell_coords) == null
 			#print(not_on_path)
 			#print(path_layer.get_cell_tile_data(cell_coords))
 
@@ -66,4 +68,17 @@ func _on_gui_input(event):
 			if get_child_count() > 1:
 					get_child(1).queue_free()
 		
+
+# loops through every point in the characters area and checks if the point overlaps with path
+func loop_through_capsule_area_and_check_for_path_collision(area_width, area_height, mouse_position):
+	var no_path_collision = true
+	var path_layer = map_root_node.get_child(1)
+	for x in range(-int(area_width), int(area_width)):
+		for y in range(-int(area_height), int(area_height)):
+			var point = Vector2(x, y)
+			var cell_coords = path_layer.local_to_map(mouse_position + point)
+			no_path_collision = no_path_collision and path_layer.get_cell_tile_data(cell_coords) == null
 	
+			#print(path_layer.get_cell_tile_data(cell_coords + point))
+			
+	return no_path_collision
