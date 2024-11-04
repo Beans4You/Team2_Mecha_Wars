@@ -38,8 +38,8 @@ func _on_gui_input(event):
 			# here we check that the tower isn't in the ui section, and is not in the path layer
 			if event.global_position.x < 1280 and not_on_path: 
 				get_child(1).queue_free()
-				var path = get_tree().get_root()
-				path.add_child(tempTower)
+				#var game_scene = get_parent().get_child(0) #get_tree().get_root()
+				game_scene.add_child(tempTower)
 				# grid snap
 				tempTower.global_position = event.global_position.snapped(Vector2(tile_size, tile_size))
 				tempTower.get_node("area").hide()

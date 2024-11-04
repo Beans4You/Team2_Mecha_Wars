@@ -2,7 +2,7 @@ extends Control
 
 #var start = preload("res://scenes/ui/start_screen.tscn")
 var level_path = "res://scenes/gameplay and maps/game_scene.tscn"
-#@onready var game_scene = get_parent()
+@onready var game_scene = get_parent()
 
 
 # Called when the node enters the scene tree for the first time.
@@ -19,7 +19,8 @@ func _process(_delta):
 
 
 func _on_restart_pressed() -> void:
-	var main = get_parent()
+	game_scene.queue_free()
+	var main = get_parent().get_parent()
 	var level = load(level_path).instantiate()
 	main.add_child(level)
 	queue_free()
