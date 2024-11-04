@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ccu2nfq8h6tpv"
-path="res://.godot/imported/button_square_header_notch_rectangle.png-6e148314b506ed89d4bc3beec08f20bb.ctex"
+path="res://.godot/imported/button_square_header_notch_rectangle.png-d8d8479a90a6c074674c1f09b0630230.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://resources/fonts/kenney_ui/PNG/Yellow/Double/button_square_header_notch_rectangle.png"
-dest_files=["res://.godot/imported/button_square_header_notch_rectangle.png-6e148314b506ed89d4bc3beec08f20bb.ctex"]
+source_file="res://Resources/fonts/kenney_ui/PNG/Yellow/Double/button_square_header_notch_rectangle.png"
+dest_files=["res://.godot/imported/button_square_header_notch_rectangle.png-d8d8479a90a6c074674c1f09b0630230.ctex"]
 
 [params]
 
