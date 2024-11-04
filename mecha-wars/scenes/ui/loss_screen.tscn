@@ -1,10 +1,7 @@
-[gd_scene load_steps=7 format=3 uid="uid://de2yhvutk318e"]
+[gd_scene load_steps=4 format=3 uid="uid://de2yhvutk318e"]
 
 [ext_resource type="Script" path="res://scenes/ui/loss_screen.gd" id="1_bn21b"]
 [ext_resource type="Texture2D" uid="uid://ca3hdf6oay0g1" path="res://resources/PALands_DEMO/206cf8f59014a954f979ba8125091bf3.png" id="2_6tsuq"]
-[ext_resource type="FontFile" path="res://resources/kenney_ui/Font/Kenney Future.ttf" id="3_aeony"]
-[ext_resource type="Texture2D" path="res://resources/kenney_ui/PNG/Red/Double/bar_round_gloss_large.png" id="4_8t2y1"]
-[ext_resource type="Texture2D" path="res://resources/kenney_ui/PNG/custom_button_pressed.png" id="5_538qx"]
 [ext_resource type="AudioStream" uid="uid://biohilv5wsdcs" path="res://resources/mixkit-player-losing-or-failing-2042.wav" id="6_dc7c6"]
 
 [node name="loss_screen" type="Control"]
@@ -41,7 +38,6 @@ size_flags_vertical = 0
 theme_override_colors/font_color = Color(0.682353, 0.054902, 0.054902, 1)
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("3_aeony")
 theme_override_font_sizes/font_size = 116
 text = "Game Over!
 "
@@ -61,8 +57,6 @@ offset_right = 337.0
 offset_bottom = 65.0
 grow_horizontal = 2
 grow_vertical = 2
-texture_normal = ExtResource("4_8t2y1")
-texture_pressed = ExtResource("5_538qx")
 stretch_mode = 0
 
 [node name="Label" type="Label" parent="restart"]
@@ -75,7 +69,6 @@ grow_vertical = 2
 theme_override_colors/font_color = Color(0.371254, 1, 0.999024, 1)
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("3_aeony")
 theme_override_font_sizes/font_size = 54
 text = "Restart Level"
 horizontal_alignment = 1

@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://be10a16eoc0h0"
-path="res://.godot/imported/Tone2B_OctaveDown.wav-7aacf95a3fc0fb97e4312b84f1f7577d.sample"
+path="res://.godot/imported/Tone2B_OctaveDown.wav-30211e469709e44a92d300661194a096.sample"
 
 [deps]
 
-source_file="res://Resources/SCI-FI_UI_SFX_PACK/Tone2/Octave/Tone2B_OctaveDown.wav"
-dest_files=["res://.godot/imported/Tone2B_OctaveDown.wav-7aacf95a3fc0fb97e4312b84f1f7577d.sample"]
+source_file="res://resources/SCI-FI_UI_SFX_PACK/Tone2/Octave/Tone2B_OctaveDown.wav"
+dest_files=["res://.godot/imported/Tone2B_OctaveDown.wav-30211e469709e44a92d300661194a096.sample"]
 
 [params]
 

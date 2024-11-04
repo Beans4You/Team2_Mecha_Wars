@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bmc1eb6gcum1c"
-path="res://.godot/imported/panel_square.png-2bcc30564defa70ee2f22a8211131a4e.ctex"
+path="res://.godot/imported/panel_square.png-a4d06edc4ede9f994bcb55e6f0411fa2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Resources/fonts/kenney_ui/PNG/Extra/Double/panel_square.png"
-dest_files=["res://.godot/imported/panel_square.png-2bcc30564defa70ee2f22a8211131a4e.ctex"]
+source_file="res://resources/fonts/kenney_ui/PNG/Extra/Double/panel_square.png"
+dest_files=["res://.godot/imported/panel_square.png-a4d06edc4ede9f994bcb55e6f0411fa2.ctex"]
 
 [params]
 
