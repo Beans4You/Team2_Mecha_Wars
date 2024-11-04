@@ -6,6 +6,8 @@ class_name panel_parent_script
 @onready var game_scene = get_parent().get_parent().get_parent().get_parent()
 #@onready var tile_overlap = preload("res")
 
+@onready var map_root_node = game_scene.get_child(0)
+
 var currTile
 var tile_size = 32 * 3
 var placing_active = false
@@ -37,18 +39,28 @@ func _on_gui_input(event):
 		elif placing_active and event is InputEventMouseButton and event.button_mask == 0:
 			#Left Click Up
 			#print("Left Button up")
-			if event.global_position.x < 1280: #game_scene.can_place == true:
+			# checking if the place put down is on the path
+			var path_layer = map_root_node.get_child(1)
+			var cell_coords = path_layer.local_to_map(event.global_position)
+			var not_on_path = path_layer.get_cell_tile_data(cell_coords) == null
+			#print(not_on_path)
+			#print(path_layer.get_cell_tile_data(cell_coords))
+
+			# here we check that the tower isn't in the ui section, and is not in the path layer
+			if event.global_position.x < 1280 and not_on_path: #game_scene.can_place == true:
 				get_child(1).queue_free()
 				var path = get_tree().get_root()
 				path.add_child(tempTower)
-				tempTower.global_position = event.global_position.snapped(Vector2(tile_size, tile_size))
+				tempTower.global_position = event.global_position#.snapped(Vector2(tile_size, tile_size))
 				""" here we can fix the grid snapping by adjusting the position"""
 				"need to add a visual cue showing you the tile"
 				tempTower.get_node("area").hide()
 				game_scene.curr_gold -= tempTower.gold_cost
 				placing_active = false
 			else:
+				#print(map_root_node.get_child(1).get_cell_source_id(Vector2(event.global_position.x, event.global_position.y)))
 				get_child(1).queue_free()
+				
 				#get_child(2).queue_free()
 		else:
 			if get_child_count() > 1:
