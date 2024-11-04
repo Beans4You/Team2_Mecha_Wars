@@ -1,10 +1,10 @@
 [gd_scene load_steps=13 format=4 uid="uid://wxp0tugaw7uj"]
 
 [ext_resource type="Script" path="res://scenes/gameplay and maps/tutorial.gd" id="1_s225i"]
-[ext_resource type="Texture2D" uid="uid://1sgqwphk4qt8" path="res://Resources/PALands_DEMO/32x32_DEMO.png" id="2_6x1mb"]
+[ext_resource type="Texture2D" uid="uid://1sgqwphk4qt8" path="res://resources/PALands_DEMO/32x32_DEMO.png" id="2_6x1mb"]
 [ext_resource type="PackedScene" uid="uid://hxwjjftcvqr5" path="res://scenes/ui/ui.tscn" id="3_0ici5"]
-[ext_resource type="FontFile" uid="uid://drhirowf88pbx" path="res://Resources/kenney_ui/Font/Kenney Future.ttf" id="4_rpghe"]
-[ext_resource type="Texture2D" uid="uid://dkh5r5o87q46d" path="res://Resources/random stuff/pngtree-neon-square-frame-png-image_4039636-removebg-preview.png" id="5_i48yj"]
+[ext_resource type="FontFile" uid="uid://drhirowf88pbx" path="res://resources/kenney_ui/Font/Kenney Future.ttf" id="4_rpghe"]
+[ext_resource type="Texture2D" uid="uid://dkh5r5o87q46d" path="res://resources/random stuff/pngtree-neon-square-frame-png-image_4039636-removebg-preview.png" id="5_i48yj"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_1ma58"]
 texture = ExtResource("2_6x1mb")

@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://cwm1h72ovnakg"]
+[gd_scene load_steps=6 format=3 uid="uid://cwm1h72ovnakg"]
 
 [ext_resource type="Script" path="res://scenes/enemies/enemy.gd" id="1_2nbq3"]
 [ext_resource type="Texture2D" uid="uid://drlhiw2dv1jjc" path="res://resources/Hit-Scan-Tower/turret_hit_marker1.png" id="2_6xl7x"]
+[ext_resource type="AudioStream" uid="uid://jhpin4bttscj" path="res://resources/mixkit-video-game-blood-pop-2361.wav" id="2_avqo3"]
 [ext_resource type="Texture2D" uid="uid://bjf208ft8b4fo" path="res://resources/Hit-Scan-Tower/turret_hit_marker0.png" id="3_uph4j"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_somen"]
@@ -44,6 +45,10 @@ animations = [{
 
 [node name="enemy" type="CharacterBody2D" groups=["enemy"]]
 script = ExtResource("1_2nbq3")
+
+[node name="damaged_audio" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("2_avqo3")
+volume_db = -16.561
 
 [node name="hit_marks" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_somen")

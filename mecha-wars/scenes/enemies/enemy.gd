@@ -44,6 +44,7 @@ func _process(delta):
 # hit scan (tower shooting scene)
 func on_hit(damage):
 	health -= damage
+	$damaged_audio.play()
 	#if health <= 0:
 		#get_parent().get_parent().queue_free()
 
