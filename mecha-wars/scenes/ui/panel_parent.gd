@@ -9,7 +9,7 @@ class_name panel_parent_script
 @onready var map_root_node = game_scene.get_child(0)
 
 var currTile
-var tile_size = 32 * 3
+var tile_size = 32 #* 5
 var placing_active = false
 
 func _on_gui_input(event):
@@ -51,7 +51,7 @@ func _on_gui_input(event):
 				get_child(1).queue_free()
 				var path = get_tree().get_root()
 				path.add_child(tempTower)
-				tempTower.global_position = event.global_position#.snapped(Vector2(tile_size, tile_size))
+				tempTower.global_position = event.global_position.snapped(Vector2(tile_size, tile_size))
 				""" here we can fix the grid snapping by adjusting the position"""
 				"need to add a visual cue showing you the tile"
 				tempTower.get_node("area").hide()
