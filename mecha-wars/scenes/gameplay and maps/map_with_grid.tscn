@@ -1,7 +1,7 @@
 [gd_scene load_steps=12 format=4 uid="uid://df227y6fg578t"]
 
-[ext_resource type="Texture2D" uid="uid://1sgqwphk4qt8" path="res://resources/PALands_DEMO/32x32_DEMO.png" id="1_tw8ng"]
-[ext_resource type="Texture2D" uid="uid://c8bl7umlnwp1x" path="res://resources/output-onlinepngtools (2).png" id="2_1g5aa"]
+[ext_resource type="Texture2D" uid="uid://1sgqwphk4qt8" path="res://Resources/PALands_DEMO/32x32_DEMO.png" id="1_tw8ng"]
+[ext_resource type="Texture2D" uid="uid://c8bl7umlnwp1x" path="res://Resources/output-onlinepngtools (2).png" id="2_1g5aa"]
 [ext_resource type="PackedScene" uid="uid://blvsoavywg5wb" path="res://scenes/towers/stronghold.tscn" id="3_jg8km"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_i4wp4"]
