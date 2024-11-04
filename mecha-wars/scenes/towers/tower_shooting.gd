@@ -43,7 +43,7 @@ func shoot():
 	shoot_ready = false
 	enemy.on_hit(damage)
 	if !enemy_array.is_empty():
-		print(enemy.health)
+		#print(enemy.health)
 		enemy.get_child(-1).play('turret_hit')
 	await(get_tree().create_timer(rate_of_fire).timeout)
 	shoot_ready = true

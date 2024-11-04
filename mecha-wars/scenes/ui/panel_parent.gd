@@ -67,7 +67,7 @@ func _on_gui_input(event):
 # loops through every point in the characters area and checks if the point overlaps with path
 func loop_through_capsule_area_and_check_for_path_collision(area_width, area_height, mouse_position):
 	var no_path_collision = true
-	var path_layer = map_root_node.get_child(1)
+	var path_layer = map_root_node.get_child(2)
 	for x in range(-int(area_width), int(area_width)):
 		for y in range(-int(area_height), int(area_height)):
 			var point = Vector2(x, y)

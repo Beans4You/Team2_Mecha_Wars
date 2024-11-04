@@ -1,0 +1,29 @@
+[gd_scene load_steps=4 format=3 uid="uid://be7sphxi64nb8"]
+
+[ext_resource type="Script" path="res://turret_laser.gd" id="1_udw5p"]
+[ext_resource type="Texture2D" uid="uid://divlsuy0c6eow" path="res://resources/Laser Sprites/18.png" id="2_xd6pn"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ondpm"]
+height = 144.0
+
+[node name="turret_laser" type="CharacterBody2D"]
+scale = Vector2(0.6, 0.6)
+script = ExtResource("1_udw5p")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_xd6pn")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+rotation = 1.5708
+shape = SubResource("CapsuleShape2D_ondpm")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+rotation = 1.5708
+shape = SubResource("CapsuleShape2D_ondpm")
+
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
+position = Vector2(48, 0)
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

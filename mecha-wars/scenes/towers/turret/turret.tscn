@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://gw8xcii473kl"]
+[gd_scene load_steps=12 format=3 uid="uid://gw8xcii473kl"]
 
 [ext_resource type="PackedScene" uid="uid://bhrok0a2cdblv" path="res://scenes/towers/tower_shooting.tscn" id="1_tgik2"]
 [ext_resource type="Texture2D" uid="uid://bnunhorp1r521" path="res://resources/Hit-Scan-Tower/laser_turret_0.png" id="2_3ku2y"]
@@ -6,7 +6,6 @@
 [ext_resource type="Texture2D" uid="uid://cxfq10vobvtrj" path="res://resources/Hit-Scan-Tower/laser_turret_1.png" id="3_vgrsk"]
 [ext_resource type="Texture2D" uid="uid://4xlf6vs8gff4" path="res://resources/Hit-Scan-Tower/laser_turret_2.png" id="4_8fudb"]
 [ext_resource type="Texture2D" uid="uid://bi4nr02igtk6p" path="res://resources/Hit-Scan-Tower/laser_turret_3.png" id="5_73hbo"]
-[ext_resource type="Texture2D" uid="uid://dnotcp225i6aw" path="res://resources/Hit-Scan-Tower/turret_shoot0.png" id="7_lmha1"]
 [ext_resource type="Texture2D" uid="uid://chpjy58vrqnfg" path="res://resources/Hit-Scan-Tower/turret_shoot1.png" id="8_esfg1"]
 [ext_resource type="Texture2D" uid="uid://bqqjebxgcahns" path="res://resources/Hit-Scan-Tower/turret_shoot2.png" id="9_8hp0t"]
 
@@ -31,17 +30,20 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("7_lmha1")
+"texture": ExtResource("8_esfg1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_8hp0t")
 }, {
 "duration": 1.0,
 "texture": ExtResource("8_esfg1")
 }, {
 "duration": 1.0,
-"texture": ExtResource("9_8hp0t")
+"texture": ExtResource("3_vgrsk")
 }],
 "loop": false,
 "name": &"shoot",
-"speed": 8.0
+"speed": 10.0
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_jgx74"]
@@ -52,8 +54,6 @@ radius = 174.04
 
 [node name="turret" instance=ExtResource("1_tgik2")]
 script = ExtResource("2_tetk3")
-damage = 2
-rate_of_fire = 0.5
 
 [node name="animated_sprite" type="AnimatedSprite2D" parent="." index="1"]
 sprite_frames = SubResource("SpriteFrames_uruhg")
@@ -65,6 +65,7 @@ position = Vector2(0, 4)
 shape = SubResource("RectangleShape2D_jgx74")
 
 [node name="aim" type="Marker2D" parent="." index="3"]
+position = Vector2(0, -24)
 
 [node name="range" type="Area2D" parent="." index="4"]
 position = Vector2(0, -25)
