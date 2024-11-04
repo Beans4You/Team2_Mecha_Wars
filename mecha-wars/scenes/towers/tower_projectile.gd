@@ -57,3 +57,8 @@ func create_bullet(target_in):
 	bullet.set_target(target)
 	bullet.global_position = $aim.global_position
 	get_tree().root.add_child(bullet)
+
+
+func _input(event):
+	if event is InputEventMouseButton and event.button_mask == 0:
+		$area.show()
