@@ -1,10 +1,11 @@
-[gd_scene load_steps=6 format=3 uid="uid://de2yhvutk318e"]
+[gd_scene load_steps=7 format=3 uid="uid://de2yhvutk318e"]
 
 [ext_resource type="Script" path="res://scenes/ui/loss_screen.gd" id="1_bn21b"]
 [ext_resource type="Texture2D" uid="uid://ca3hdf6oay0g1" path="res://resources/PALands_DEMO/206cf8f59014a954f979ba8125091bf3.png" id="2_6tsuq"]
 [ext_resource type="FontFile" uid="uid://drhirowf88pbx" path="res://resources/kenney_ui/Font/Kenney Future.ttf" id="3_aeony"]
 [ext_resource type="Texture2D" uid="uid://xr3cb5ojr2ye" path="res://resources/kenney_ui/PNG/Red/Double/bar_round_gloss_large.png" id="4_8t2y1"]
 [ext_resource type="Texture2D" uid="uid://jbpuhgryhkl3" path="res://resources/kenney_ui/PNG/custom_button_pressed.png" id="5_538qx"]
+[ext_resource type="AudioStream" uid="uid://biohilv5wsdcs" path="res://resources/mixkit-player-losing-or-failing-2042.wav" id="6_dc7c6"]
 
 [node name="loss_screen" type="Control"]
 z_index = 10
@@ -79,5 +80,8 @@ theme_override_font_sizes/font_size = 54
 text = "Restart Level"
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="game_over_sound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("6_dc7c6")
 
 [connection signal="pressed" from="restart" to="." method="_on_restart_pressed"]
