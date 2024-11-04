@@ -1,12 +1,12 @@
-[gd_scene load_steps=4 format=3 uid="uid://cvni6pek30lhf"]
+[gd_scene load_steps=4 format=3 uid="uid://c73f8v32xscxe"]
 
-[ext_resource type="PackedScene" uid="uid://h6nqnmhkcq1v" path="res://scenes/enemies/runner/runner.tscn" id="1_b3e8q"]
+[ext_resource type="PackedScene" uid="uid://doit18r6cjp3" path="res://scenes/enemies/flyer/flyer.tscn" id="1_fmxe2"]
 
 [sub_resource type="Curve2D" id="Curve2D_r3rjb"]
 _data = {
-"points": PackedVector2Array(0, 0, 0, 0, 8, 152, 0, 0, 0, 0, 416, 152, 0, 0, 0, 0, 416, 288, 0, 0, 0, 0, 232, 296, 0, 0, 0, 0, 232, 568, 0, 0, 0, 0, 608, 576, 0, 0, 0, 0, 616, 152, 0, 0, 0, 0, 960, 160, 0, 0, 0, 0, 976, 504, 0, 0, 0, 0, 1296, 496)
+"points": PackedVector2Array(0, 0, 0, 0, 3, 245, 0, 0, 0, 0, 383, 245, 0, 0, 0, 0, 504, 485, 0, 0, 0, 0, 544, 571, 0, 0, 0, 0, 584, 601, 0, 0, 0, 0, 619, 598, 0, 0, 0, 0, 772, 327, 0, 0, 0, 0, 1502, 332)
 }
-point_count = 10
+point_count = 8
 
 [sub_resource type="GDScript" id="GDScript_8bhrm"]
 script/source = "extends Path2D
@@ -23,11 +23,12 @@ func _process(_delta: float) -> void:
 "
 
 [node name="Path2D" type="Path2D"]
+position = Vector2(0, -50)
 curve = SubResource("Curve2D_r3rjb")
 script = SubResource("GDScript_8bhrm")
 
 [node name="PathFollow2D" type="PathFollow2D" parent="."]
-position = Vector2(8, 152)
+position = Vector2(3, 245)
 loop = false
 
-[node name="runner" parent="PathFollow2D" instance=ExtResource("1_b3e8q")]
+[node name="flyer" parent="PathFollow2D" instance=ExtResource("1_fmxe2")]
