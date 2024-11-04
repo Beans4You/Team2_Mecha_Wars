@@ -40,13 +40,8 @@ func _on_gui_input(event):
 			#Left Click Up
 			#print("Left Button up")
 			# checking if the place put down is on the path
-			var path_layer = map_root_node.get_child(1)
-			# make sure character area is not in path either
 			var character_shape = tempTower.get_node("character_collision_shape").shape
 			var not_on_path = loop_through_capsule_area_and_check_for_path_collision(character_shape.extents.x, character_shape.extents.y, event.global_position)
-			#var not_on_path = path_layer.get_cell_tile_data(cell_coords) == null
-			#print(not_on_path)
-			#print(path_layer.get_cell_tile_data(cell_coords))
 
 			# here we check that the tower isn't in the ui section, and is not in the path layer
 			if event.global_position.x < 1280 and not_on_path: #game_scene.can_place == true:
@@ -79,6 +74,5 @@ func loop_through_capsule_area_and_check_for_path_collision(area_width, area_hei
 			var cell_coords = path_layer.local_to_map(mouse_position + point)
 			no_path_collision = no_path_collision and path_layer.get_cell_tile_data(cell_coords) == null
 	
-			#print(path_layer.get_cell_tile_data(cell_coords + point))
 			
 	return no_path_collision

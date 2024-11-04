@@ -6,7 +6,8 @@ extends Node2D
 @onready var game_scene = get_parent()
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	var rng = RandomNumberGenerator.new()
+	pass
+	#var rng = RandomNumberGenerator.new()
 	#pass # Replace with function body.
 
 
