@@ -1,0 +1,34 @@
+[remap]
+
+importer="font_data_dynamic"
+type="FontFile"
+uid="uid://dao8v1663e66f"
+path="res://.godot/imported/Kenney Future.ttf-113fd04cb9e0414745e3c90c4f57ff30.fontdata"
+
+[deps]
+
+source_file="res://resources/kenney_ui/Font/Kenney Future.ttf"
+dest_files=["res://.godot/imported/Kenney Future.ttf-113fd04cb9e0414745e3c90c4f57ff30.fontdata"]
+
+[params]
+
+Rendering=null
+antialiasing=1
+generate_mipmaps=false
+disable_embedded_bitmaps=true
+multichannel_signed_distance_field=false
+msdf_pixel_range=8
+msdf_size=48
+allow_system_fallback=true
+force_autohinter=false
+hinting=1
+subpixel_positioning=1
+oversampling=0.0
+Fallbacks=null
+fallbacks=[]
+Compress=null
+compress=true
+preload=[]
+language_support={}
+script_support={}
+opentype_features={}
