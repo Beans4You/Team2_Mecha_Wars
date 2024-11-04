@@ -37,7 +37,7 @@ func _on_gui_input(event):
 		elif placing_active and event is InputEventMouseButton and event.button_mask == 0:
 			#Left Click Up
 			#print("Left Button up")
-			if true: #game_scene.can_place == true:
+			if event.global_position.x < 1280: #game_scene.can_place == true:
 				get_child(1).queue_free()
 				var path = get_tree().get_root()
 				path.add_child(tempTower)
