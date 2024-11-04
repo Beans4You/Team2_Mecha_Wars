@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bufqu6dc0t0ef"
-path="res://.godot/imported/laser_turret_shoot_3.png-9f77a686155ee5ff5c5158a229bec870.ctex"
+uid="uid://bjf208ft8b4fo"
+path="res://.godot/imported/turret_hit_marker0.png-125e7051e316a9945125d9c19f67fd57.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://resources/Hit-Scan-Tower/laser_turret_shoot_3.png"
-dest_files=["res://.godot/imported/laser_turret_shoot_3.png-9f77a686155ee5ff5c5158a229bec870.ctex"]
+source_file="res://resources/Hit-Scan-Tower/turret_hit_marker0.png"
+dest_files=["res://.godot/imported/turret_hit_marker0.png-125e7051e316a9945125d9c19f67fd57.ctex"]
 
 [params]
 

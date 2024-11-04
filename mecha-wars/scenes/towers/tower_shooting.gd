@@ -4,8 +4,8 @@ class_name tower_shooting
 var enemy_array = []
 var enemy
 var shoot_ready = true
-var damage = 1
-var rate_of_fire = 0.1
+@export var damage = 1
+@export var rate_of_fire = 0.1
 
 
 func _physics_process(_delta):
@@ -14,6 +14,8 @@ func _physics_process(_delta):
 		if shoot_ready:
 			shoot()
 	else:
+		if !$animated_sprite.is_playing():
+			$animated_sprite.play('idle')
 		enemy = null
 
 func _on_range_body_entered(body: Node2D) -> void:
@@ -37,8 +39,12 @@ func select_enemy():
 		
 
 func shoot():
+	$animated_sprite.play('shoot')
 	shoot_ready = false
 	enemy.on_hit(damage)
+	if !enemy_array.is_empty():
+		print(enemy.health)
+		enemy.get_child(-1).play('turret_hit')
 	await(get_tree().create_timer(rate_of_fire).timeout)
 	shoot_ready = true
 	

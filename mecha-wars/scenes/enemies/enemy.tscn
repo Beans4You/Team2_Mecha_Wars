@@ -1,6 +1,50 @@
-[gd_scene load_steps=2 format=3 uid="uid://cwm1h72ovnakg"]
+[gd_scene load_steps=5 format=3 uid="uid://cwm1h72ovnakg"]
 
 [ext_resource type="Script" path="res://scenes/enemies/enemy.gd" id="1_2nbq3"]
+[ext_resource type="Texture2D" uid="uid://drlhiw2dv1jjc" path="res://resources/Hit-Scan-Tower/turret_hit_marker1.png" id="2_6xl7x"]
+[ext_resource type="Texture2D" uid="uid://bjf208ft8b4fo" path="res://resources/Hit-Scan-Tower/turret_hit_marker0.png" id="3_uph4j"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_somen"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_uph4j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_uph4j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_uph4j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_6xl7x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_6xl7x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_6xl7x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_6xl7x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_6xl7x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_6xl7x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_uph4j")
+}],
+"loop": false,
+"name": &"turret_hit",
+"speed": 30.0
+}]
 
 [node name="enemy" type="CharacterBody2D" groups=["enemy"]]
 script = ExtResource("1_2nbq3")
+
+[node name="hit_marks" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_somen")
+animation = &"turret_hit"
