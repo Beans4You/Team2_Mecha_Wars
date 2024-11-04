@@ -25,7 +25,10 @@ func _physics_process(delta: float) -> void:
 func _on_area_2d_body_entered(body: Node2D) -> void:
 	if body.is_in_group("enemy"):
 		body.health -= bullet_damage
-		body.get_child(-1).play('turret_hit')
+		body.get_child(-1).play('turret_hit') # hit marker
+		#print(body)
+		#$damage_audio.play() # damage audio
+		body.get_child(-2).play()
 		if explosion != null:
 			var expl = explosion.instantiate()
 			add_sibling(expl)

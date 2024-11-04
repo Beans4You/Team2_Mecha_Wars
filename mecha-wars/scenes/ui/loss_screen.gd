@@ -7,7 +7,7 @@ var level_path = "res://scenes/gameplay and maps/game_scene.tscn"
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	pass
+	$game_over_sound.play()
 
 
 
