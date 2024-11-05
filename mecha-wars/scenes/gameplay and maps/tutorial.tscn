@@ -1,11 +1,12 @@
-[gd_scene load_steps=7 format=3 uid="uid://wxp0tugaw7uj"]
+[gd_scene load_steps=8 format=3 uid="uid://wxp0tugaw7uj"]
 
 [ext_resource type="Script" path="res://scenes/gameplay and maps/tutorial.gd" id="1_s225i"]
 [ext_resource type="PackedScene" uid="uid://hxwjjftcvqr5" path="res://scenes/ui/ui.tscn" id="3_0ici5"]
 [ext_resource type="PackedScene" uid="uid://dw56be7m8sl6e" path="res://scenes/gameplay and maps/tutorial_map.tscn" id="3_qncny"]
 [ext_resource type="Script" path="res://scenes/gameplay and maps/tutorial_path.gd" id="4_j4nn2"]
-[ext_resource type="FontFile" uid="uid://dddmw4yp2dra" path="res://Resources/fonts/kenney_ui/Font/Kenney Future Narrow.ttf" id="5_rvm02"]
-[ext_resource type="Texture2D" uid="uid://dwbcps8bauc2k" path="res://Resources/random stuff/outline.png" id="6_wrm7x"]
+[ext_resource type="FontFile" uid="uid://dddmw4yp2dra" path="res://resources/fonts/kenney_ui/Font/Kenney Future Narrow.ttf" id="5_rvm02"]
+[ext_resource type="Texture2D" uid="uid://dwbcps8bauc2k" path="res://resources/random stuff/outline.png" id="6_wrm7x"]
+[ext_resource type="FontFile" uid="uid://drhirowf88pbx" path="res://resources/fonts/kenney_ui/Font/Kenney Future.ttf" id="7_du7ax"]
 
 [node name="tutorial_scene" type="Node2D"]
 script = ExtResource("1_s225i")
@@ -20,10 +21,10 @@ script = ExtResource("4_j4nn2")
 [node name="Timer" type="Timer" parent="tutorial_path"]
 
 [node name="Button" type="Button" parent="."]
-offset_left = 528.0
-offset_top = 224.0
-offset_right = 796.0
-offset_bottom = 294.0
+offset_left = 504.0
+offset_top = 456.0
+offset_right = 772.0
+offset_bottom = 526.0
 theme_override_fonts/font = ExtResource("5_rvm02")
 theme_override_font_sizes/font_size = 25
 text = "Press to Start"
@@ -58,8 +59,8 @@ text = "Place Tower Here"
 
 [node name="Box3" type="Sprite2D" parent="."]
 modulate = Color(1, 0, 0, 1)
-position = Vector2(1004.5, 84.5)
-scale = Vector2(16.0938, 2.34375)
+position = Vector2(1004.5, 99.5)
+scale = Vector2(16.0938, 3.28125)
 texture = ExtResource("6_wrm7x")
 
 [node name="Label3" type="Label" parent="."]
@@ -69,7 +70,22 @@ offset_right = 1217.0
 offset_bottom = 98.0
 theme_override_fonts/font = ExtResource("5_rvm02")
 theme_override_font_sizes/font_size = 25
-text = "Drag  a  tower  from  here"
+text = "Drag  a  tower  from  here
+                   using gold"
+
+[node name="Label4" type="Label" parent="."]
+offset_left = 400.0
+offset_top = 208.0
+offset_right = 901.0
+offset_bottom = 279.0
+size_flags_horizontal = 4
+theme_override_colors/font_color = Color(0.427213, 0, 0.00898527, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("7_du7ax")
+theme_override_font_sizes/font_size = 29
+text = "Protect the stronghold 
+           from enemies!"
 
 [connection signal="timeout" from="tutorial_path/Timer" to="tutorial_path" method="_on_timer_timeout"]
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://btn48y4ybci0j"
-path="res://.godot/imported/crosshair_color_d.png-ebb2214a8a7f4c00d9144319e1f028e6.ctex"
+path="res://.godot/imported/crosshair_color_d.png-2906a32b2e783f491334a4d1c5264cff.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Resources/fonts/kenney_ui/PNG/Green/Double/crosshair_color_d.png"
-dest_files=["res://.godot/imported/crosshair_color_d.png-ebb2214a8a7f4c00d9144319e1f028e6.ctex"]
+source_file="res://resources/fonts/kenney_ui/PNG/Green/Double/crosshair_color_d.png"
+dest_files=["res://.godot/imported/crosshair_color_d.png-2906a32b2e783f491334a4d1c5264cff.ctex"]
 
 [params]
 
