@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c7fwqf4gpvphk"
-path="res://.godot/imported/panel_rectangle.png-3b488ba6cd119bba331331836f04c372.ctex"
+path="res://.godot/imported/panel_rectangle.png-84f34a047832d7468555a386e7bf246a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://resources/fonts/kenney_ui/PNG/Extra/Double/panel_rectangle.png"
-dest_files=["res://.godot/imported/panel_rectangle.png-3b488ba6cd119bba331331836f04c372.ctex"]
+source_file="res://Resources/fonts/kenney_ui/PNG/Extra/Double/panel_rectangle.png"
+dest_files=["res://.godot/imported/panel_rectangle.png-84f34a047832d7468555a386e7bf246a.ctex"]
 
 [params]
 
