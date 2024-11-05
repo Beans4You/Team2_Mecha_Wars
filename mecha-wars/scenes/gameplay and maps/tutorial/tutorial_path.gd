@@ -3,7 +3,6 @@ extends Node2D
 
 
 @onready var runner_path = preload("res://scenes/gameplay and maps/tutorial/tutorial_enemy_path.tscn")
-@onready var main = preload("res://scenes/gameplay and maps/main.tscn")
 @onready var game_scene = get_parent()
 
 var enemy_array = [1, 1, 1, 1, 1, 1, 1, 1]
@@ -17,10 +16,6 @@ func _process(_delta):
 		$Timer.stop()
 		$Timer.queue_free()
 		array_spot += 1
-	if get_child_count() == 0:
-		var swap = main.instantiate()
-		get_parent().get_parent().add_child(swap)
-		get_parent().queue_free()
 
 
 func _on_timer_timeout() -> void:

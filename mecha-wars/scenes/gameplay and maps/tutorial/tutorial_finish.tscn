@@ -5,27 +5,45 @@
 
 [sub_resource type="LabelSettings" id="LabelSettings_24dno"]
 font = ExtResource("1_idpju")
-font_size = 30
+font_size = 38
+font_color = Color(0.477092, 0.932061, 0, 1)
 outline_size = 8
-outline_color = Color(0.0189859, 0.137935, 0.225136, 1)
+outline_color = Color(0.0272828, 0.394438, 3.36915e-07, 1)
 
-[node name="tutorial_finish" type="Node2D"]
+[node name="message" type="Node2D"]
+position = Vector2(740, 333)
 script = ExtResource("1_wuy13")
+metadata/_edit_group_ = true
 
-[node name="ColorRect" type="ColorRect" parent="."]
-offset_right = 437.0
-offset_bottom = 238.0
-color = Color(0.391962, 0.527171, 0.604581, 1)
+[node name="back" type="ColorRect" parent="."]
+offset_left = -316.0
+offset_top = -172.0
+offset_right = 316.0
+offset_bottom = 172.0
+color = Color(0.000113828, 0.000113828, 0.000113828, 1)
 
-[node name="Label" type="Label" parent="."]
-offset_right = 438.0
-offset_bottom = 238.0
+[node name="Label" type="Label" parent="back"]
+offset_left = 3.0
+offset_top = 1.0
+offset_right = 633.0
+offset_bottom = 346.0
 theme_override_fonts/font = ExtResource("1_idpju")
 text = "Incoming Message...
-
-Now YOU are ready
- to defend Earth"
+                
+"
 label_settings = SubResource("LabelSettings_24dno")
 horizontal_alignment = 1
 vertical_alignment = 1
-visible_ratio = -0.0181818
+visible_characters = 0
+visible_ratio = -0.0212766
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 0.05
+autostart = true
+
+[node name="Total_Timer" type="Timer" parent="."]
+wait_time = 4096.0
+one_shot = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+[connection signal="timeout" from="Total_Timer" to="." method="_on_total_timer_timeout"]
