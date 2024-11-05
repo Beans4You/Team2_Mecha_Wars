@@ -1,10 +1,10 @@
 [gd_scene load_steps=8 format=3 uid="uid://cshildx1ua72x"]
 
-[ext_resource type="Texture2D" uid="uid://d3ji017quvet3" path="res://resources/rocket_dino/rocket_explosion0.png" id="1_4yj5r"]
-[ext_resource type="Texture2D" uid="uid://cauonv0pdd2y7" path="res://resources/rocket_dino/rocket_explosion1.png" id="2_mfltx"]
-[ext_resource type="Texture2D" uid="uid://weckpciw08ya" path="res://resources/rocket_dino/rocket_explosion2.png" id="3_pfs8c"]
-[ext_resource type="Texture2D" uid="uid://dp5as3v2w88xo" path="res://resources/rocket_dino/rocket_explosion3.png" id="4_w1mul"]
-[ext_resource type="Texture2D" uid="uid://bose604xawh40" path="res://resources/rocket_dino/rocket_explosion4.png" id="5_2vap8"]
+[ext_resource type="Texture2D" uid="uid://d3ji017quvet3" path="res://Resources/rocket_dino/rocket_explosion0.png" id="1_4yj5r"]
+[ext_resource type="Texture2D" uid="uid://cauonv0pdd2y7" path="res://Resources/rocket_dino/rocket_explosion1.png" id="2_mfltx"]
+[ext_resource type="Texture2D" uid="uid://weckpciw08ya" path="res://Resources/rocket_dino/rocket_explosion2.png" id="3_pfs8c"]
+[ext_resource type="Texture2D" uid="uid://dp5as3v2w88xo" path="res://Resources/rocket_dino/rocket_explosion3.png" id="4_w1mul"]
+[ext_resource type="Texture2D" uid="uid://bose604xawh40" path="res://Resources/rocket_dino/rocket_explosion4.png" id="5_2vap8"]
 [ext_resource type="Script" path="res://scenes/towers/rocket_dino/explosion.gd" id="6_706nt"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_jonnk"]

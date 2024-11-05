@@ -1,11 +1,11 @@
 [gd_scene load_steps=10 format=3 uid="uid://doit18r6cjp3"]
 
 [ext_resource type="Script" path="res://scenes/enemies/flyer/flyer.gd" id="1_id6n8"]
-[ext_resource type="Texture2D" uid="uid://krtq4t14tx8w" path="res://resources/Alien Sprites/flyer/flyer_0.png" id="1_p6xi3"]
+[ext_resource type="Texture2D" uid="uid://krtq4t14tx8w" path="res://Resources/Alien Sprites/flyer/flyer_0.png" id="1_p6xi3"]
 [ext_resource type="PackedScene" uid="uid://cwm1h72ovnakg" path="res://scenes/enemies/enemy.tscn" id="1_qnmhe"]
-[ext_resource type="Texture2D" uid="uid://bkwj64vg8vjx3" path="res://resources/Alien Sprites/flyer/flyer_1.png" id="2_w6fd1"]
-[ext_resource type="Texture2D" uid="uid://hnduho4nle5s" path="res://resources/Alien Sprites/flyer/flyer_2.png" id="3_yhvqj"]
-[ext_resource type="Texture2D" uid="uid://q4wtpj2fubjf" path="res://resources/Alien Sprites/flyer/flyer_3.png" id="4_1c043"]
+[ext_resource type="Texture2D" uid="uid://bkwj64vg8vjx3" path="res://Resources/Alien Sprites/flyer/flyer_1.png" id="2_w6fd1"]
+[ext_resource type="Texture2D" uid="uid://hnduho4nle5s" path="res://Resources/Alien Sprites/flyer/flyer_2.png" id="3_yhvqj"]
+[ext_resource type="Texture2D" uid="uid://q4wtpj2fubjf" path="res://Resources/Alien Sprites/flyer/flyer_3.png" id="4_1c043"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_g80vt"]
 animations = [{
@@ -72,7 +72,7 @@ position = Vector2(35, 0)
 rotation = 1.5708
 shape = SubResource("CapsuleShape2D_36vj2")
 
-[node name="hit_marks" parent="." index="3"]
+[node name="hit_marks" parent="." index="4"]
 position = Vector2(24, 0)
 
 [connection signal="animation_looped" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_animation_looped"]

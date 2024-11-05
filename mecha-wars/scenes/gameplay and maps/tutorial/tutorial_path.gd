@@ -2,7 +2,7 @@ extends Node2D
 
 
 
-@onready var runner_path = preload("res://scenes/gameplay and maps/tutorial_enemy_path.tscn")
+@onready var runner_path = preload("res://scenes/gameplay and maps/tutorial/tutorial_enemy_path.tscn")
 @onready var main = preload("res://scenes/gameplay and maps/main.tscn")
 @onready var game_scene = get_parent()
 

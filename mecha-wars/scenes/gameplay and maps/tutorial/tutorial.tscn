@@ -1,21 +1,21 @@
 [gd_scene load_steps=7 format=3 uid="uid://njd2kpovtb5c"]
 
-[ext_resource type="Script" path="res://scenes/gameplay and maps/tutorial.gd" id="1_s225i"]
-[ext_resource type="PackedScene" uid="uid://hxwjjftcvqr5" path="res://scenes/ui/ui.tscn" id="3_0ici5"]
-[ext_resource type="PackedScene" uid="uid://dw56be7m8sl6e" path="res://scenes/gameplay and maps/tutorial_map.tscn" id="3_qncny"]
-[ext_resource type="Script" path="res://scenes/gameplay and maps/tutorial_path.gd" id="4_j4nn2"]
-[ext_resource type="FontFile" uid="uid://dao8v1663e66f" path="res://resources/kenney_ui/Font/Kenney Future.ttf" id="5_2rc63"]
-[ext_resource type="Texture2D" uid="uid://dwbcps8bauc2k" path="res://resources/random stuff/outline.png" id="6_wrm7x"]
+[ext_resource type="Script" path="res://scenes/gameplay and maps/tutorial/tutorial.gd" id="1_ppk4p"]
+[ext_resource type="PackedScene" uid="uid://dw56be7m8sl6e" path="res://scenes/gameplay and maps/tutorial/tutorial_map.tscn" id="2_1eqk4"]
+[ext_resource type="PackedScene" uid="uid://hxwjjftcvqr5" path="res://scenes/ui/ui.tscn" id="3_51uas"]
+[ext_resource type="Script" path="res://scenes/gameplay and maps/tutorial/tutorial_path.gd" id="4_r6cv6"]
+[ext_resource type="FontFile" uid="uid://dao8v1663e66f" path="res://Resources/kenney_ui/Font/Kenney Future.ttf" id="5_q7hg3"]
+[ext_resource type="Texture2D" uid="uid://dwbcps8bauc2k" path="res://Resources/random stuff/outline.png" id="6_py6in"]
 
 [node name="tutorial_scene" type="Node2D"]
-script = ExtResource("1_s225i")
+script = ExtResource("1_ppk4p")
 
-[node name="tutorial_map" parent="." instance=ExtResource("3_qncny")]
+[node name="tutorial_map" parent="." instance=ExtResource("2_1eqk4")]
 
-[node name="UI" parent="." instance=ExtResource("3_0ici5")]
+[node name="UI" parent="." instance=ExtResource("3_51uas")]
 
 [node name="tutorial_path" type="Node2D" parent="."]
-script = ExtResource("4_j4nn2")
+script = ExtResource("4_r6cv6")
 
 [node name="Timer" type="Timer" parent="tutorial_path"]
 
@@ -24,26 +24,26 @@ offset_left = 504.0
 offset_top = 456.0
 offset_right = 772.0
 offset_bottom = 526.0
-theme_override_fonts/font = ExtResource("5_2rc63")
+theme_override_fonts/font = ExtResource("5_q7hg3")
 theme_override_font_sizes/font_size = 25
 text = "Press to Start"
 
 [node name="Box1" type="Sprite2D" parent="."]
 position = Vector2(285.5, 231)
 scale = Vector2(5.15625, 4.625)
-texture = ExtResource("6_wrm7x")
+texture = ExtResource("6_py6in")
 
 [node name="Box2" type="Sprite2D" parent="."]
 position = Vector2(293.5, 520.5)
 scale = Vector2(5.21875, 4.40625)
-texture = ExtResource("6_wrm7x")
+texture = ExtResource("6_py6in")
 
 [node name="Label" type="Label" parent="."]
 offset_left = 134.0
 offset_top = 612.0
 offset_right = 444.0
 offset_bottom = 641.0
-theme_override_fonts/font = ExtResource("5_2rc63")
+theme_override_fonts/font = ExtResource("5_q7hg3")
 theme_override_font_sizes/font_size = 25
 text = "Place Tower Here "
 
@@ -52,7 +52,7 @@ offset_left = 118.0
 offset_top = 121.0
 offset_right = 424.0
 offset_bottom = 150.0
-theme_override_fonts/font = ExtResource("5_2rc63")
+theme_override_fonts/font = ExtResource("5_q7hg3")
 theme_override_font_sizes/font_size = 25
 text = "Place Tower Here"
 
@@ -60,14 +60,14 @@ text = "Place Tower Here"
 modulate = Color(1, 0, 0, 1)
 position = Vector2(1004.5, 99.5)
 scale = Vector2(16.0938, 3.28125)
-texture = ExtResource("6_wrm7x")
+texture = ExtResource("6_py6in")
 
 [node name="Label3" type="Label" parent="."]
 offset_left = 790.0
 offset_top = 69.0
 offset_right = 1217.0
 offset_bottom = 98.0
-theme_override_fonts/font = ExtResource("5_2rc63")
+theme_override_fonts/font = ExtResource("5_q7hg3")
 theme_override_font_sizes/font_size = 25
 text = "Drag  a  tower  from  here
                    using gold"
@@ -81,7 +81,7 @@ size_flags_horizontal = 4
 theme_override_colors/font_color = Color(0.427213, 0, 0.00898527, 1)
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("5_2rc63")
+theme_override_fonts/font = ExtResource("5_q7hg3")
 theme_override_font_sizes/font_size = 29
 text = "Protect the stronghold 
            from enemies!"

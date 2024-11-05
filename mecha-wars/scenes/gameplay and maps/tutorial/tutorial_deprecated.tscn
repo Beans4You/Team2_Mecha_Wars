@@ -1,9 +1,9 @@
 [gd_scene load_steps=16 format=4 uid="uid://bb6w4tbvk1rsi"]
 
-[ext_resource type="Script" path="res://scenes/gameplay and maps/tutorial_deprecated.gd" id="1_atb56"]
-[ext_resource type="Texture2D" uid="uid://1sgqwphk4qt8" path="res://resources/PALands_DEMO/32x32_DEMO.png" id="2_s261n"]
-[ext_resource type="FontFile" uid="uid://cl5yav47mg3gv" path="res://resources/fonts/hells-font/HellspersonaluseRegular-L3zVZ.otf" id="3_7ktek"]
-[ext_resource type="Texture2D" uid="uid://dwbcps8bauc2k" path="res://resources/random stuff/outline.png" id="4_f86bd"]
+[ext_resource type="Script" path="res://scenes/gameplay and maps/tutorial/tutorial_deprecated.gd" id="1_atb56"]
+[ext_resource type="Texture2D" uid="uid://1sgqwphk4qt8" path="res://Resources/PALands_DEMO/32x32_DEMO.png" id="2_s261n"]
+[ext_resource type="FontFile" uid="uid://cl5yav47mg3gv" path="res://Resources/fonts/hells-font/HellspersonaluseRegular-L3zVZ.otf" id="3_7ktek"]
+[ext_resource type="Texture2D" uid="uid://dwbcps8bauc2k" path="res://Resources/random stuff/outline.png" id="4_f86bd"]
 [ext_resource type="Script" path="res://scenes/gameplay and maps/tower_places.gd" id="5_htsgr"]
 [ext_resource type="PackedScene" uid="uid://hxwjjftcvqr5" path="res://scenes/ui/ui.tscn" id="6_qy4b3"]
 
