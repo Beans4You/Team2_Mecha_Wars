@@ -23,6 +23,7 @@ offset_bottom = 172.0
 color = Color(0.000113828, 0.000113828, 0.000113828, 1)
 
 [node name="Label" type="Label" parent="back"]
+layout_mode = 0
 offset_left = 3.0
 offset_top = 1.0
 offset_right = 633.0
@@ -35,7 +36,7 @@ label_settings = SubResource("LabelSettings_24dno")
 horizontal_alignment = 1
 vertical_alignment = 1
 visible_characters = 0
-visible_ratio = -0.0212766
+visible_ratio = 0.0
 
 [node name="Timer" type="Timer" parent="."]
 wait_time = 0.05

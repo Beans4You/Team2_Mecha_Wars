@@ -10,7 +10,11 @@ extends Node
 @onready var main = preload("res://scenes/gameplay and maps/main.tscn")
 @onready var win_message = preload("res://scenes/ui/message.tscn")
 
-
+func _ready() -> void:
+	var win = win_message.instantiate()
+	add_child(win)
+	win.set_message("Drag tower from Right side and defend tower")
+	
 func _on_button_pressed() -> void:
 	$tutorial_path/Timer.start() # Replace with function body.
 	$Button.queue_free()
