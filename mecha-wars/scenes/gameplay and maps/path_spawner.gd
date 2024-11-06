@@ -27,5 +27,5 @@ func _on_timer_timeout() -> void:
 		
 	array_spot += 1
 	
-	if (array_spot % 10 == 0 and $timer.wait_time > 0.5):
+	if (array_spot % 15 == 0 and $timer.wait_time > 0.5):
 		$timer.wait_time -= 0.25
