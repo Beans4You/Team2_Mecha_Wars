@@ -14,7 +14,7 @@ var placing_active = false
 
 func _on_gui_input(event):
 	var tempTower = tower_scene.instantiate()
-	
+	tempTower._ready() # may need to switch to ._init at some point
 	if game_scene.curr_gold >= tempTower.gold_cost:
 	
 		if event is InputEventMouseButton and event.button_mask == 1:

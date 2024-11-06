@@ -4,22 +4,22 @@ extends Node2D
 
 func _ready() -> void:
 	#for testing only
-	$Total_Timer.wait_time = len($back/Label.text)/20 + 3
+	$Total_Timer.wait_time = float(len($back/Label.text))/20.0 + 3.0
 	$Total_Timer.start()
 	pass
 
-func _process(delta: float) -> void:
+func _process(_delta: float) -> void:
 	pass
 
-func set_message(str):
-	$back/Label.text += str
-	$Total_Timer.wait_time = len($back/Label.text)/20 + 3
+func set_message(message):
+	$back/Label.text += message
+	$Total_Timer.wait_time = float(len($back/Label.text))/20.0 + 3.0
 	$Total_Timer.start()
 
 
 func _on_timer_timeout() -> void:
 	$back/Label.visible_characters += 1
-	if $back/Label.visible_characters == len($back/Label.text):
+	if $back/Label.visible_characters == float(len($back/Label.text)):
 		$Timer.queue_free()
 
 

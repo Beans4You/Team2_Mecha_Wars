@@ -3,7 +3,7 @@ extends CharacterBody2D
 class_name tower
 
 var tower_range = 400
-var gold_cost =300
+var gold_cost = 300
 
 
 func _ready():
