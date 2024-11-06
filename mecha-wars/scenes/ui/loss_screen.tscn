@@ -1,11 +1,11 @@
 [gd_scene load_steps=7 format=3 uid="uid://de2yhvutk318e"]
 
 [ext_resource type="Script" path="res://scenes/ui/loss_screen.gd" id="1_bn21b"]
-[ext_resource type="Texture2D" uid="uid://ca3hdf6oay0g1" path="res://resources/PALands_DEMO/206cf8f59014a954f979ba8125091bf3.png" id="2_6tsuq"]
-[ext_resource type="Texture2D" uid="uid://dd2tvy4vud7at" path="res://resources/kenney_ui/PNG/Red/Double/bar_round_gloss_large.png" id="3_2i1ib"]
-[ext_resource type="Texture2D" uid="uid://c24grqtc666ko" path="res://resources/kenney_ui/PNG/custom_button_pressed.png" id="4_g6u5o"]
-[ext_resource type="FontFile" uid="uid://dao8v1663e66f" path="res://resources/kenney_ui/Font/Kenney Future.ttf" id="5_chds7"]
-[ext_resource type="AudioStream" uid="uid://biohilv5wsdcs" path="res://resources/mixkit-player-losing-or-failing-2042.wav" id="6_dc7c6"]
+[ext_resource type="Texture2D" uid="uid://cj55e54lilpp2" path="res://resources/PALands_DEMO/206cf8f59014a954f979ba8125091bf3.png" id="2_6tsuq"]
+[ext_resource type="Texture2D" uid="uid://cyvnayl4e0n6h" path="res://resources/kenney_ui/PNG/Red/Double/bar_round_gloss_large.png" id="3_2i1ib"]
+[ext_resource type="Texture2D" uid="uid://bxuy0ktk30asv" path="res://resources/kenney_ui/PNG/custom_button_pressed.png" id="4_g6u5o"]
+[ext_resource type="FontFile" uid="uid://sjhf4o0o8c2m" path="res://resources/kenney_ui/Font/Kenney Future.ttf" id="5_chds7"]
+[ext_resource type="AudioStream" uid="uid://cq76wh5wy66yd" path="res://resources/mixkit-player-losing-or-failing-2042.wav" id="6_dc7c6"]
 
 [node name="loss_screen" type="Control"]
 z_index = 10
