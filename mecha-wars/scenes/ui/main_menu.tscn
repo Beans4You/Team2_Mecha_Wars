@@ -1,10 +1,10 @@
 [gd_scene load_steps=6 format=3 uid="uid://bcg3lt5ejmqg8"]
 
-[ext_resource type="Texture2D" uid="uid://ca3hdf6oay0g1" path="res://resources/PALands_DEMO/206cf8f59014a954f979ba8125091bf3.png" id="1_7sxl1"]
-[ext_resource type="Texture2D" uid="uid://bnunhorp1r521" path="res://resources/Hit-Scan-Tower/laser_turret_0.png" id="2_mnsab"]
-[ext_resource type="Texture2D" uid="uid://dd2tvy4vud7at" path="res://resources/kenney_ui/PNG/Red/Double/bar_round_gloss_large.png" id="4_rcduc"]
-[ext_resource type="Texture2D" uid="uid://c24grqtc666ko" path="res://resources/kenney_ui/PNG/custom_button_pressed.png" id="5_nteke"]
-[ext_resource type="FontFile" uid="uid://dao8v1663e66f" path="res://resources/kenney_ui/Font/Kenney Future.ttf" id="6_ckn8t"]
+[ext_resource type="Texture2D" uid="uid://ca3hdf6oay0g1" path="res://Resources/PALands_DEMO/206cf8f59014a954f979ba8125091bf3.png" id="1_7sxl1"]
+[ext_resource type="Texture2D" uid="uid://bnunhorp1r521" path="res://Resources/Hit-Scan-Tower/laser_turret_0.png" id="2_mnsab"]
+[ext_resource type="Texture2D" uid="uid://dd2tvy4vud7at" path="res://Resources/kenney_ui/PNG/Red/Double/bar_round_gloss_large.png" id="4_rcduc"]
+[ext_resource type="Texture2D" uid="uid://c24grqtc666ko" path="res://Resources/kenney_ui/PNG/custom_button_pressed.png" id="5_nteke"]
+[ext_resource type="FontFile" uid="uid://dao8v1663e66f" path="res://Resources/kenney_ui/Font/Kenney Future.ttf" id="6_ckn8t"]
 
 [node name="main_menu" type="Control"]
 layout_mode = 3

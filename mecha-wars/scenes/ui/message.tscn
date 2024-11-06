@@ -31,6 +31,7 @@ grow_vertical = 2
 color = Color(0.000113828, 0.000113828, 0.000113828, 1)
 
 [node name="Label" type="Label" parent="back"]
+layout_mode = 0
 offset_left = 6.0
 offset_top = 7.0
 offset_right = 830.0
@@ -44,7 +45,7 @@ horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 2
 visible_characters = 0
-visible_ratio = -0.0212766
+visible_ratio = 0.0
 
 [node name="Sprite2D" type="Sprite2D" parent="back"]
 position = Vector2(422.5, 243.5)
