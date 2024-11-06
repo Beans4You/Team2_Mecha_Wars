@@ -4,7 +4,6 @@
 [ext_resource type="Texture2D" uid="uid://bnunhorp1r521" path="res://resources/Hit-Scan-Tower/laser_turret_0.png" id="2_bruwl"]
 
 [node name="TurretPanel" type="Panel"]
-visible = false
 custom_minimum_size = Vector2(120, 120)
 offset_right = 40.0
 offset_bottom = 40.0
@@ -24,6 +23,6 @@ offset_left = -53.024
 offset_top = -72.32
 offset_right = 31.976
 offset_bottom = -49.32
-text = "500 Gold"
+text = "450 Gold"
 
 [connection signal="gui_input" from="." to="." method="_on_gui_input"]
