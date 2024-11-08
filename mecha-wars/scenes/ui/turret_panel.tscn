@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://d2p81cnifgyy8"]
 
 [ext_resource type="Script" path="res://scenes/ui/turret_panel.gd" id="1_ufado"]
-[ext_resource type="Texture2D" uid="uid://cv7dr2rhjdhf0" path="res://resources/Hit-Scan-Tower/laser_turret_0.png" id="2_bruwl"]
+[ext_resource type="Texture2D" uid="uid://cv7dr2rhjdhf0" path="res://Resources/Hit-Scan-Tower/laser_turret_0.png" id="2_bruwl"]
 
 [node name="TurretPanel" type="Panel"]
 custom_minimum_size = Vector2(120, 120)
