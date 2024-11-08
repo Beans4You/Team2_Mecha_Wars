@@ -1,0 +1,172 @@
+[gd_scene load_steps=28 format=3 uid="uid://s8w3876sjf3x"]
+
+[ext_resource type="Texture2D" uid="uid://b7nutyostt41b" path="res://Resources/Alien Sprites/cthulhu/1atk_1.png" id="1_cp26m"]
+[ext_resource type="Script" path="res://scenes/enemies/cthulhu/cthulhu.gd" id="1_gyr6m"]
+[ext_resource type="Texture2D" uid="uid://cmjqxllsrbgms" path="res://Resources/Alien Sprites/cthulhu/1atk_2.png" id="2_5hpcq"]
+[ext_resource type="Texture2D" uid="uid://oair2bxub8wk" path="res://Resources/Alien Sprites/cthulhu/1atk_3.png" id="3_ariwm"]
+[ext_resource type="Texture2D" uid="uid://qshgo3txnfwd" path="res://Resources/Alien Sprites/cthulhu/1atk_4.png" id="4_imdxj"]
+[ext_resource type="Texture2D" uid="uid://dosex1k2l30j4" path="res://Resources/Alien Sprites/cthulhu/1atk_5.png" id="5_gewon"]
+[ext_resource type="Texture2D" uid="uid://wd5aln8xckmv" path="res://Resources/Alien Sprites/cthulhu/1atk_6.png" id="6_pvv5j"]
+[ext_resource type="Texture2D" uid="uid://paw8y1je12x4" path="res://Resources/Alien Sprites/cthulhu/1atk_7.png" id="7_m0xrl"]
+[ext_resource type="Texture2D" uid="uid://cw8e7rpn2bsdf" path="res://Resources/Alien Sprites/cthulhu/walk_1.png" id="8_jmkjh"]
+[ext_resource type="Texture2D" uid="uid://ipx0amw1s5m3" path="res://Resources/Alien Sprites/cthulhu/walk_2.png" id="9_bdb2j"]
+[ext_resource type="Texture2D" uid="uid://f3sta7dlgt4m" path="res://Resources/Alien Sprites/cthulhu/walk_3.png" id="10_1l1bx"]
+[ext_resource type="Texture2D" uid="uid://bg8gnlmo4i47h" path="res://Resources/Alien Sprites/cthulhu/walk_4.png" id="11_s1734"]
+[ext_resource type="Texture2D" uid="uid://d02vdpm8sxed2" path="res://Resources/Alien Sprites/cthulhu/walk_5.png" id="12_jvu8t"]
+[ext_resource type="Texture2D" uid="uid://b5iishhh4d325" path="res://Resources/Alien Sprites/cthulhu/walk_6.png" id="13_hb28o"]
+[ext_resource type="Texture2D" uid="uid://c1w00d1myx1uo" path="res://Resources/Alien Sprites/cthulhu/walk_7.png" id="14_lj5k5"]
+[ext_resource type="Texture2D" uid="uid://hkuyykxipgah" path="res://Resources/Alien Sprites/cthulhu/walk_8.png" id="15_r1cu7"]
+[ext_resource type="Texture2D" uid="uid://dalku0sj0hy5u" path="res://Resources/Alien Sprites/cthulhu/walk_9.png" id="16_03jnx"]
+[ext_resource type="Texture2D" uid="uid://bp5l5ov0l8r43" path="res://Resources/Alien Sprites/cthulhu/walk_10.png" id="17_1gssg"]
+[ext_resource type="Texture2D" uid="uid://cti4mtyobtgql" path="res://Resources/Alien Sprites/cthulhu/walk_11.png" id="18_xc7dn"]
+[ext_resource type="Texture2D" uid="uid://cshfmawd3g8pi" path="res://Resources/Alien Sprites/cthulhu/walk_12.png" id="19_ktwbr"]
+[ext_resource type="Texture2D" uid="uid://ctpjxaoiivor4" path="res://Resources/Hit-Scan-Tower/turret_hit_marker0.png" id="21_8yq1t"]
+[ext_resource type="AudioStream" uid="uid://bvnrigqcqv0yp" path="res://Resources/mixkit-video-game-blood-pop-2361.wav" id="21_x845q"]
+[ext_resource type="Texture2D" uid="uid://dr4drts85iy6q" path="res://Resources/Hit-Scan-Tower/turret_hit_marker1.png" id="22_41cu1"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_5aw40"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_cp26m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_5hpcq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_ariwm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_imdxj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_gewon")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_pvv5j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_m0xrl")
+}],
+"loop": true,
+"name": &"attack",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("8_jmkjh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_bdb2j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_1l1bx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_s1734")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_jvu8t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_hb28o")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_lj5k5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_r1cu7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_03jnx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_1gssg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_xc7dn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_ktwbr")
+}],
+"loop": true,
+"name": &"move",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_gxccw"]
+radius = 35.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_xyws1"]
+radius = 35.0143
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_j5o86"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("21_8yq1t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_8yq1t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_8yq1t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_41cu1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_41cu1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_41cu1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_41cu1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_41cu1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_41cu1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_8yq1t")
+}],
+"loop": false,
+"name": &"turret_hit",
+"speed": 30.0
+}]
+
+[node name="cthulhu" type="CharacterBody2D" groups=["enemy"]]
+script = ExtResource("1_gyr6m")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+scale = Vector2(2.25, 2.25)
+sprite_frames = SubResource("SpriteFrames_5aw40")
+animation = &"attack"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 15)
+scale = Vector2(1.5, 1.5)
+shape = SubResource("CircleShape2D_gxccw")
+
+[node name="hit_area" type="Area2D" parent="."]
+position = Vector2(0, 5)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="hit_area"]
+position = Vector2(0, 10)
+shape = SubResource("CircleShape2D_xyws1")
+
+[node name="damaged_audio" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("21_x845q")
+volume_db = -16.561
+
+[node name="hit_marks" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, 13)
+scale = Vector2(2.25, 2.25)
+sprite_frames = SubResource("SpriteFrames_j5o86")
+animation = &"turret_hit"
+
+[connection signal="frame_changed" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_frame_changed"]
+[connection signal="body_entered" from="hit_area" to="." method="_on_hit_area_body_entered"]

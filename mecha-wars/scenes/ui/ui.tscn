@@ -40,7 +40,6 @@ alignment = 1
 layout_mode = 2
 
 [node name="TurretPanel" parent="Panel/FlowContainer" instance=ExtResource("3_kk757")]
-visible = true
 layout_mode = 2
 
 [node name="GoldLabel" type="Label" parent="."]

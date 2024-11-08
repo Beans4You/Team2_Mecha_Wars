@@ -11,6 +11,5 @@ func _ready():
 
 func _on_hit_area_body_entered(body) -> void:
 	if body.is_in_group("stronghold"):
-		print("here")
 		at_stronghold = true
 		stronghold = body

@@ -3,9 +3,10 @@ extends Node2D
 
 @onready var runner_path = preload("res://scenes/enemies/runner_path.tscn")
 @onready var flyer_path = preload("res://scenes/enemies/flyer_path.tscn")
+@onready var cthulhu_path = preload("res://scenes/enemies/cthulhu/cthulhu_path.tscn")
 @onready var game_scene = get_parent()
 
-var enemy_array = [1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 2, 1, 1, 2, 1, 1, 2, 1, 1, 2, 1, 1, 2, 1, 2, 1, 1, 1, 1, 2, 2, 2, 1, 2, 1, 2, 1, 1, 2, 1, 1, 2, 1, 1, 2, 2, 1, 1, 1, 2, 2, 1, 1, 1, 2, 2, 1, 1, 2, 2, 2, 1, 1, 1, 2, 1, 1, 1, 2, 1, 1, 2, 1, 1, 2, 1, 1, 1, 1, 1]
+var enemy_array = [1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 2, 1, 1, 2, 1, 1, 2, 1, 1, 2, 1, 1, 2, 1, 2, 1, 1, 1, 1, 2, 2, 2, 1, 2, 1, 2, 1, 1, 2, 1, 1, 2, 1, 1, 2, 2, 1, 1, 1, 2, 2, 1, 1, 1, 2, 2, 1, 1, 2, 2, 2, 1, 1, 1, 2, 1, 1, 2, 1, 1, 0, 0, 3, 0, 0, 1, 1, 2, 1, 1, 2, 1, 1, 2, 1, 1, 1, 2, 1, 1, 2, 1, 2, 1, 1, 1]
 var array_spot = 0
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -23,6 +24,9 @@ func _on_timer_timeout() -> void:
 		add_child(temp_path)
 	elif (enemy_array[array_spot] == 2):
 		var temp_path = flyer_path.instantiate()
+		add_child(temp_path)
+	elif (enemy_array[array_spot] == 3):
+		var temp_path = cthulhu_path.instantiate()
 		add_child(temp_path)
 		
 	array_spot += 1
