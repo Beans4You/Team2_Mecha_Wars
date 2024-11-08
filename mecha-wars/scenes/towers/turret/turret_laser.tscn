@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://be7sphxi64nb8"]
 
 [ext_resource type="Script" path="res://scenes/towers/turret/turret_laser.gd" id="1_udw5p"]
-[ext_resource type="Texture2D" uid="uid://4aenkfxwmdgm" path="res://resources/Laser Sprites/18.png" id="2_xd6pn"]
+[ext_resource type="Texture2D" uid="uid://k51sqrmpt18w" path="res://resources/Laser Sprites/18.png" id="2_xd6pn"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ondpm"]
 height = 144.0
