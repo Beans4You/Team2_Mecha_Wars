@@ -27,6 +27,12 @@ func _on_gui_input(event):
 		elif placing_active and event is InputEventMouseMotion and event.button_mask == 1:
 			##Left Click Drag
 			get_child(1).global_position = event.global_position
+			var character_shape = tempTower.get_node("character_collision_shape").shape
+			var not_on_path = loop_through_capsule_area_and_check_for_path_collision(character_shape.extents.x, character_shape.extents.y, event.global_position)
+			if not not_on_path:
+				var stylebox = tempTower.get_node("area").get_theme_stylebox("Panel") 
+				stylebox.bg_color = Color(200, 0, 0) # Set to red
+				#tempTower.get_node("area").self_modulate(256, 0, 0)
 
 		#This is the "drop" action for the dino
 		elif placing_active and event is InputEventMouseButton and event.button_mask == 0:
