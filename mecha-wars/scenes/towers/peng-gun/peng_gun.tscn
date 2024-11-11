@@ -92,10 +92,14 @@ animation = &"idle"
 position = Vector2(-0.5, 2)
 shape = SubResource("RectangleShape2D_cq6j2")
 
+[node name="aim" type="Marker2D" parent="."]
+
 [node name="range" type="Area2D" parent="."]
 position = Vector2(-3, -1)
-metadata/_edit_group_ = true
 
 [node name="range_collision_shape" type="CollisionShape2D" parent="range"]
 position = Vector2(2, 0)
 shape = SubResource("CircleShape2D_va6x8")
+
+[connection signal="body_entered" from="range" to="." method="_on_range_body_entered"]
+[connection signal="body_exited" from="range" to="." method="_on_range_body_exited"]
