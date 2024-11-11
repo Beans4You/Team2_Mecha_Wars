@@ -1,7 +1,6 @@
-[gd_scene load_steps=5 format=3 uid="uid://c2xarbdxnyrkt"]
+[gd_scene load_steps=4 format=3 uid="uid://c2xarbdxnyrkt"]
 
 [ext_resource type="PackedScene" uid="uid://s8w3876sjf3x" path="res://scenes/enemies/cthulhu/cthulhu.tscn" id="1_qq4ko"]
-[ext_resource type="PackedScene" uid="uid://df227y6fg578t" path="res://scenes/gameplay and maps/map_with_grid.tscn" id="2_xrngn"]
 
 [sub_resource type="Curve2D" id="Curve2D_r3rjb"]
 _data = {
@@ -34,5 +33,3 @@ loop = false
 
 [node name="cthulhu" parent="PathFollow2D" instance=ExtResource("1_qq4ko")]
 position = Vector2(4.15542, -82.9924)
-
-[node name="map_with_grid" parent="." instance=ExtResource("2_xrngn")]
