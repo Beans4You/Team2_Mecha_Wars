@@ -1,9 +1,9 @@
 [gd_scene load_steps=7 format=3 uid="uid://njd2kpovtb5c"]
 
-[ext_resource type="Script" path="res://scenes/gameplay and maps/tutorial/tutorial.gd" id="1_ppk4p"]
-[ext_resource type="PackedScene" uid="uid://dw56be7m8sl6e" path="res://scenes/gameplay and maps/tutorial/tutorial_map.tscn" id="2_1eqk4"]
+[ext_resource type="Script" path="res://scenes/gameplay_and_maps/tutorial/tutorial.gd" id="1_ppk4p"]
+[ext_resource type="PackedScene" uid="uid://dw56be7m8sl6e" path="res://scenes/gameplay_and_maps/tutorial/tutorial_map.tscn" id="2_1eqk4"]
 [ext_resource type="PackedScene" uid="uid://hxwjjftcvqr5" path="res://scenes/ui/ui.tscn" id="3_51uas"]
-[ext_resource type="Script" path="res://scenes/gameplay and maps/tutorial/tutorial_path.gd" id="4_r6cv6"]
+[ext_resource type="Script" path="res://scenes/gameplay_and_maps/tutorial/tutorial_path.gd" id="4_r6cv6"]
 [ext_resource type="FontFile" uid="uid://wge3vupq5r6q" path="res://Resources/kenney_ui/Font/Kenney Future.ttf" id="5_q7hg3"]
 [ext_resource type="Texture2D" uid="uid://dun2var8fyvko" path="res://Resources/random stuff/outline.png" id="6_py6in"]
 

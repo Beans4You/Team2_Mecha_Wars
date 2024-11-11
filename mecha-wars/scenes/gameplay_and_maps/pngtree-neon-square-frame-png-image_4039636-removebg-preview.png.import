@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cd7e8my8ihsgx"
-path="res://.godot/imported/pngtree-neon-square-frame-png-image_4039636-removebg-preview.png-aeacb716102ecf46a8bf006a1f6a8ff5.ctex"
+path="res://.godot/imported/pngtree-neon-square-frame-png-image_4039636-removebg-preview.png-84e6b7f4d56b310e4263d04fe5605268.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://scenes/gameplay and maps/pngtree-neon-square-frame-png-image_4039636-removebg-preview.png"
-dest_files=["res://.godot/imported/pngtree-neon-square-frame-png-image_4039636-removebg-preview.png-aeacb716102ecf46a8bf006a1f6a8ff5.ctex"]
+source_file="res://scenes/gameplay_and_maps/pngtree-neon-square-frame-png-image_4039636-removebg-preview.png"
+dest_files=["res://.godot/imported/pngtree-neon-square-frame-png-image_4039636-removebg-preview.png-84e6b7f4d56b310e4263d04fe5605268.ctex"]
 
 [params]
 

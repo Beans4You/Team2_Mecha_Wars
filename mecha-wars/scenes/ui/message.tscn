@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://byc5tnhycy83s"]
 
-[ext_resource type="Script" path="res://scenes/gameplay and maps/tutorial/tutorial_finish.gd" id="1_4ux6i"]
+[ext_resource type="Script" path="res://scenes/gameplay_and_maps/tutorial/tutorial_finish.gd" id="1_4ux6i"]
 [ext_resource type="FontFile" uid="uid://wge3vupq5r6q" path="res://Resources/kenney_ui/Font/Kenney Future.ttf" id="2_geq6l"]
 [ext_resource type="Texture2D" uid="uid://dun2var8fyvko" path="res://Resources/random stuff/outline.png" id="3_ynxfd"]
 
