@@ -37,7 +37,8 @@ func victory_process():
 	queue_free()
 	var main_scene = get_parent()
 	var victory_screen = load("res://scenes/ui/victory_screen.tscn").instantiate()
-	main_scene.add_child(victory_screen)
+	main_scene.add_child(victory_screen) 
+	# TODO make it go to level 3
 	
 	
 # showing area of towers

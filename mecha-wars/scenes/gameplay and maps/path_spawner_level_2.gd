@@ -5,8 +5,9 @@ extends Node2D
 @onready var flyer_path = preload("res://scenes/enemies/flyer/flyer_path_level_2.tscn")
 @onready var cthulhu_path = preload("res://scenes/enemies/cthulhu/cthulhu_path_level_2.tscn")
 @onready var game_scene = get_parent()
+@onready var last_enemy_out = false
 
-var enemy_array = [1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 2, 1, 1, 2, 1, 1, 2, 1, 1, 2, 1, 1, 2, 1, 2, 1, 1, 1, 1, 2, 2, 2, 1, 2, 1, 2, 1, 1, 2, 1, 1, 2, 1, 1, 2, 2, 1, 1, 1, 2, 2, 1, 1, 1, 2, 2, 1, 1, 2, 2, 2, 1, 1, 1, 2, 1, 1, 2, 1, 1, 0, 0, 3, 0, 0, 1, 1, 2, 1, 1, 2, 1, 1, 2, 1, 1, 1, 2, 1, 1, 2, 1, 2, 1, 1, 1]
+var enemy_array = [1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 2, 1, 1, 2, 1, 1, 2, 1, 1, 2, 1, 1, 2, 1, 2, 1, 1, 1, 1, 2, 2, 2, 1, 2, 1, 2, 1, 1, 2, 1, 1, 2, 1, 1, 2, 2, 1, 1, 1, 2, 2, 1, 1, 1, 2, 2, 1, 1, 2, 2, 2, 1, 1, 1, 2, 1, 1, 2, 1, 1, 0, 0, 3, 0, 0, 1, 1, 2, 1, 1, 2, 1, 1, 2, 1, 1, 1, 2, 1, 1, 2, 1, 2, 1, 1, 1, -10]
 var array_spot = 0
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -16,9 +17,9 @@ func _ready() -> void:
 func _process(_delta):
 	if game_scene.game_over == true or array_spot == len(enemy_array):
 		$timer.stop()
-		if game_scene.game_over == false:
-			game_scene.victory = true
-			print("victory")
+	
+	if game_scene.game_over == false and last_enemy_out and len(get_children()) == 1:
+		game_scene.victory = true
 
 
 func _on_timer_timeout() -> void:
@@ -31,6 +32,8 @@ func _on_timer_timeout() -> void:
 	elif (enemy_array[array_spot] == 3):
 		var temp_path = cthulhu_path.instantiate()
 		add_child(temp_path)
+	elif(enemy_array[array_spot] == -10):
+		last_enemy_out = true
 		
 	array_spot += 1
 	
