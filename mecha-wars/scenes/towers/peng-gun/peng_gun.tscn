@@ -93,6 +93,7 @@ position = Vector2(-0.5, 2)
 shape = SubResource("RectangleShape2D_cq6j2")
 
 [node name="aim" type="Marker2D" parent="."]
+position = Vector2(-38, 2)
 
 [node name="range" type="Area2D" parent="."]
 position = Vector2(-3, -1)
