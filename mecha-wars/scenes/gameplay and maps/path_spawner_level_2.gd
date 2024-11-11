@@ -1,9 +1,9 @@
 extends Node2D
 
 
-@onready var runner_path = preload("res://scenes/enemies/runner_path.tscn")
-@onready var flyer_path = preload("res://scenes/enemies/flyer_path.tscn")
-@onready var cthulhu_path = preload("res://scenes/enemies/cthulhu/cthulhu_path.tscn")
+@onready var runner_path = preload("res://scenes/enemies/runner/runner_path_level_2.tscn")
+@onready var flyer_path = preload("res://scenes/enemies/flyer/flyer_path_level_2.tscn")
+@onready var cthulhu_path = preload("res://scenes/enemies/cthulhu/cthulhu_path_level_2.tscn")
 @onready var game_scene = get_parent()
 
 var enemy_array = [1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 2, 1, 1, 2, 1, 1, 2, 1, 1, 2, 1, 1, 2, 1, 2, 1, 1, 1, 1, 2, 2, 2, 1, 2, 1, 2, 1, 1, 2, 1, 1, 2, 1, 1, 2, 2, 1, 1, 1, 2, 2, 1, 1, 1, 2, 2, 1, 1, 2, 2, 2, 1, 1, 1, 2, 1, 1, 2, 1, 1, 0, 0, 3, 0, 0, 1, 1, 2, 1, 1, 2, 1, 1, 2, 1, 1, 1, 2, 1, 1, 2, 1, 2, 1, 1, 1]

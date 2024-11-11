@@ -13,7 +13,7 @@ extends Node2D
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	$path_spawner/timer.start() # modify in future for round system
+	$path_spawner_level_2/timer.start() # modify in future for round system
 	curr_gold = starting_gold
 	#$music.play()
 
@@ -30,7 +30,7 @@ func game_over_process():
 	queue_free()
 	var main_scene = get_parent()
 	var loss_screen = load("res://scenes/ui/loss_screen.tscn").instantiate()
-	
+	loss_screen.level_path = "res://scenes/gameplay and maps/game_scene_level_2.tscn"
 	main_scene.add_child(loss_screen)
 
 func victory_process():

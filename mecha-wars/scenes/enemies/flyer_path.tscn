@@ -4,7 +4,7 @@
 
 [sub_resource type="Curve2D" id="Curve2D_r3rjb"]
 _data = {
-"points": PackedVector2Array(0, 0, 0, 0, 0.00787403, 101, 0, 0, 0, 0, 438.853, 101, 0, 0, 0, 0, 438.853, 293, 0, 0, 0, 0, 215.441, 293, 0, 0, 0, 0, 215.441, 565, 0, 0, 0, 0, 598.433, 573, 0, 0, 0, 0, 598.433, 133, 0, 0, 0, 0, 973.446, 133, 0, 0, 0, 0, 989.404, 485, 0, 0, 0, 0, 1276.65, 485)
+"points": PackedVector2Array(0, 0, 0, 0, 0, 104, 0, 0, 0, 0, 430.867, 104, 0, 0, 0, 0, 430.867, 288, 0, 0, 0, 0, 247.349, 296, 0, 0, 0, 0, 247.349, 560, 0, 0, 0, 0, 598.426, 560, 0, 0, 0, 0, 598.426, 144, 0, 0, 0, 0, 973.44, 128, 0, 0, 0, 0, 981.419, 488, 0, 0, 0, 0, 1101.1, 488)
 }
 point_count = 10
 
@@ -28,7 +28,7 @@ curve = SubResource("Curve2D_r3rjb")
 script = SubResource("GDScript_8bhrm")
 
 [node name="PathFollow2D" type="PathFollow2D" parent="."]
-position = Vector2(0.00787403, 101)
+position = Vector2(0, 104)
 loop = false
 
 [node name="flyer" parent="PathFollow2D" instance=ExtResource("1_fmxe2")]

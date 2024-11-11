@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://dwpg3v3x0ej10"]
+
+[ext_resource type="PackedScene" uid="uid://s8w3876sjf3x" path="res://scenes/enemies/cthulhu/cthulhu.tscn" id="1_injgm"]
+
+[sub_resource type="Curve2D" id="Curve2D_j045k"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, -8, 136, 0, 0, 0, 0, 656, 144, 0, 0, 0, 0, 656, 360, 0, 0, 0, 0, 400, 368, 0, 0, 0, 0, 400, 568, 0, 0, 0, 0, 1048, 576)
+}
+point_count = 6
+
+[node name="Path2D" type="Path2D"]
+curve = SubResource("Curve2D_j045k")
+
+[node name="PathFollow2D" type="PathFollow2D" parent="."]
+position = Vector2(-8, 136)
+rotation = 0.0120476
+
+[node name="cthulhu" parent="PathFollow2D" instance=ExtResource("1_injgm")]
