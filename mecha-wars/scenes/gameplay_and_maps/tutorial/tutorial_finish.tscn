@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://dxvtix6w2vgk1"]
 
 [ext_resource type="FontFile" uid="uid://wge3vupq5r6q" path="res://Resources/kenney_ui/Font/Kenney Future.ttf" id="1_idpju"]
-[ext_resource type="Script" path="res://scenes/gameplay and maps/tutorial/tutorial_finish.gd" id="1_wuy13"]
+[ext_resource type="Script" path="res://scenes/gameplay_and_maps/tutorial/tutorial_finish.gd" id="1_wuy13"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_24dno"]
 font = ExtResource("1_idpju")

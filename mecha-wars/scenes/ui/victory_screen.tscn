@@ -8,6 +8,7 @@
 [ext_resource type="AudioStream" uid="uid://bd334olpf5gpd" path="res://Resources/brass-fanfare-with-timpani-and-winchimes-reverberated-146260.mp3" id="5_dvrq7"]
 
 [node name="victory_screen" type="Control"]
+z_index = 10
 layout_mode = 3
 anchors_preset = 0
 offset_left = 640.0

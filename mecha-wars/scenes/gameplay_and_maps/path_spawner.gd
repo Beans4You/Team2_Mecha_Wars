@@ -1,5 +1,5 @@
 extends Node2D
-
+class_name path_spawner_parent_script
 
 @onready var runner_path = preload("res://scenes/enemies/runner_path.tscn")
 @onready var flyer_path = preload("res://scenes/enemies/flyer_path.tscn")
@@ -19,6 +19,7 @@ func _process(_delta):
 	
 	if game_scene.game_over == false and last_enemy_out and len(get_children()) == 1:
 		game_scene.victory = true
+		print("victory")
 
 
 func _on_timer_timeout() -> void:

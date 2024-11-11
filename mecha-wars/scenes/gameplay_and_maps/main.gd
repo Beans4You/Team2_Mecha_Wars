@@ -13,18 +13,13 @@ func _ready() -> void:
 	
 
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(_delta: float) -> void:
-	pass
-
-
 func game_start():
-	var game_scene_tree = load("res://scenes/gameplay and maps/game_scene.tscn").instantiate()
+	var game_scene_tree = load("res://scenes/gameplay_and_maps/game_scene.tscn").instantiate()
 	add_child(game_scene_tree)
 	$main_menu.queue_free()
 	
 func play_tutorial():
-	var tutorial_scene = load("res://scenes/gameplay and maps/tutorial/tutorial.tscn").instantiate()
+	var tutorial_scene = load("res://scenes/gameplay_and_maps/tutorial/tutorial.tscn").instantiate()
 	add_child(tutorial_scene)
 	$main_menu.queue_free()
 	

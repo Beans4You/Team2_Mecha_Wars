@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://buik30cn3d1er"]
 
-[ext_resource type="Script" path="res://scenes/gameplay and maps/main.gd" id="1_wop13"]
+[ext_resource type="Script" path="res://scenes/gameplay_and_maps/main.gd" id="1_wop13"]
 [ext_resource type="PackedScene" uid="uid://h6nqnmhkcq1v" path="res://scenes/enemies/runner/runner.tscn" id="2_1dlbe"]
 [ext_resource type="PackedScene" uid="uid://bcg3lt5ejmqg8" path="res://scenes/ui/main_menu.tscn" id="3_x3sfm"]
 
