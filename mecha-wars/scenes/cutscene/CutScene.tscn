@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://c63uj7prhm6a"]
+
+[ext_resource type="Texture2D" uid="uid://cmmftq1a0mwp7" path="res://Resources/random stuff/Dino_landscape.png" id="1_1kgjf"]
+
+[sub_resource type="TileSet" id="TileSet_2pe1y"]
+tile_size = Vector2i(32, 32)
+
+[node name="CutScene" type="Node2D"]
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(736, 316)
+scale = Vector2(0.84933, 0.797852)
+texture = ExtResource("1_1kgjf")
+
+[node name="TileMapLayer" type="TileMapLayer" parent="."]
+tile_set = SubResource("TileSet_2pe1y")
+rendering_quadrant_size = 32

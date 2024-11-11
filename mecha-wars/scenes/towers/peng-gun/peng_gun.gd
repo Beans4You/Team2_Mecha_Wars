@@ -1,0 +1,1 @@
+extends tower_shooting
