@@ -1,0 +1,26 @@
+[gd_scene load_steps=3 format=3 uid="uid://m5hm2ng2gk4q"]
+
+[ext_resource type="Script" path="res://scenes/ui/peng_panel.gd" id="1_5a3yc"]
+[ext_resource type="Texture2D" uid="uid://cclgue40mak7t" path="res://Resources/peng-gun/peng-gun7.png" id="2_l7mje"]
+
+[node name="Pengpanel" type="Panel"]
+offset_left = 1.0
+offset_top = 1.0
+offset_right = 121.0
+offset_bottom = 124.0
+script = ExtResource("1_5a3yc")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(62, 43)
+scale = Vector2(0.753198, 0.74375)
+texture = ExtResource("2_l7mje")
+
+[node name="Label" type="Label" parent="Sprite2D"]
+offset_left = -45.0
+offset_top = 80.0
+offset_right = 60.0
+offset_bottom = 108.0
+theme_override_font_sizes/font_size = 20
+text = "250 Gold "
+
+[connection signal="gui_input" from="." to="." method="_on_gui_input"]
