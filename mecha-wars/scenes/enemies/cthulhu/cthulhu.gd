@@ -5,8 +5,10 @@ func _ready():
 	$AnimatedSprite2D.play('move')
 	self.speed = 65
 	self.attack_damage = 25
-	self.health = 200
+	var max_health = 200
+	self.health = max_health
 	self.gold_worth = 250
+	$health_bar.max_value = max_health
 
 
 func _on_hit_area_body_entered(body) -> void:
