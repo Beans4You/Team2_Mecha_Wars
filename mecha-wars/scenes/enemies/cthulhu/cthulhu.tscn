@@ -1,4 +1,4 @@
-[gd_scene load_steps=31 format=3 uid="uid://s8w3876sjf3x"]
+[gd_scene load_steps=53 format=3 uid="uid://s8w3876sjf3x"]
 
 [ext_resource type="Texture2D" uid="uid://b7nutyostt41b" path="res://Resources/Alien Sprites/cthulhu/1atk_1.png" id="1_cp26m"]
 [ext_resource type="Script" path="res://scenes/enemies/cthulhu/cthulhu.gd" id="1_gyr6m"]
@@ -10,20 +10,42 @@
 [ext_resource type="Texture2D" uid="uid://paw8y1je12x4" path="res://Resources/Alien Sprites/cthulhu/1atk_7.png" id="7_m0xrl"]
 [ext_resource type="Texture2D" uid="uid://cw8e7rpn2bsdf" path="res://Resources/Alien Sprites/cthulhu/walk_1.png" id="8_jmkjh"]
 [ext_resource type="Texture2D" uid="uid://ipx0amw1s5m3" path="res://Resources/Alien Sprites/cthulhu/walk_2.png" id="9_bdb2j"]
+[ext_resource type="Texture2D" uid="uid://blgb4kd6cq6q0" path="res://Resources/Alien Sprites/cthulhu/death_1.png" id="9_tvcuf"]
 [ext_resource type="Texture2D" uid="uid://f3sta7dlgt4m" path="res://Resources/Alien Sprites/cthulhu/walk_3.png" id="10_1l1bx"]
+[ext_resource type="Texture2D" uid="uid://bn5lr0nwpnr3o" path="res://Resources/Alien Sprites/cthulhu/death_2.png" id="10_vssrj"]
+[ext_resource type="Texture2D" uid="uid://duiv11ku1my8r" path="res://Resources/Alien Sprites/cthulhu/death_3.png" id="11_0jjs0"]
 [ext_resource type="Texture2D" uid="uid://bg8gnlmo4i47h" path="res://Resources/Alien Sprites/cthulhu/walk_4.png" id="11_s1734"]
 [ext_resource type="Texture2D" uid="uid://d02vdpm8sxed2" path="res://Resources/Alien Sprites/cthulhu/walk_5.png" id="12_jvu8t"]
+[ext_resource type="Texture2D" uid="uid://bmgajttiaoja1" path="res://Resources/Alien Sprites/cthulhu/death_4.png" id="12_x01uy"]
+[ext_resource type="Texture2D" uid="uid://cojbpndro607s" path="res://Resources/Alien Sprites/cthulhu/death_5.png" id="13_5jl1x"]
 [ext_resource type="Texture2D" uid="uid://b5iishhh4d325" path="res://Resources/Alien Sprites/cthulhu/walk_6.png" id="13_hb28o"]
+[ext_resource type="Texture2D" uid="uid://bgh71tligkhmf" path="res://Resources/Alien Sprites/cthulhu/death_6.png" id="14_61xcd"]
 [ext_resource type="Texture2D" uid="uid://c1w00d1myx1uo" path="res://Resources/Alien Sprites/cthulhu/walk_7.png" id="14_lj5k5"]
 [ext_resource type="Texture2D" uid="uid://hkuyykxipgah" path="res://Resources/Alien Sprites/cthulhu/walk_8.png" id="15_r1cu7"]
+[ext_resource type="Texture2D" uid="uid://dedjuimk7uia4" path="res://Resources/Alien Sprites/cthulhu/death_7.png" id="15_wneqq"]
 [ext_resource type="Texture2D" uid="uid://dalku0sj0hy5u" path="res://Resources/Alien Sprites/cthulhu/walk_9.png" id="16_03jnx"]
+[ext_resource type="Texture2D" uid="uid://dmol8si0ftaim" path="res://Resources/Alien Sprites/cthulhu/death_8.png" id="16_ebpcv"]
 [ext_resource type="Texture2D" uid="uid://bp5l5ov0l8r43" path="res://Resources/Alien Sprites/cthulhu/walk_10.png" id="17_1gssg"]
+[ext_resource type="Texture2D" uid="uid://mvexdw51cp2a" path="res://Resources/Alien Sprites/cthulhu/death_9.png" id="17_mmbdx"]
+[ext_resource type="Texture2D" uid="uid://daigx8rd5b4hw" path="res://Resources/Alien Sprites/cthulhu/death_10.png" id="18_vc1a1"]
 [ext_resource type="Texture2D" uid="uid://cti4mtyobtgql" path="res://Resources/Alien Sprites/cthulhu/walk_11.png" id="18_xc7dn"]
+[ext_resource type="Texture2D" uid="uid://bkbwgodlue4bh" path="res://Resources/Alien Sprites/cthulhu/death_11.png" id="19_jggv5"]
 [ext_resource type="Texture2D" uid="uid://cshfmawd3g8pi" path="res://Resources/Alien Sprites/cthulhu/walk_12.png" id="19_ktwbr"]
+[ext_resource type="Texture2D" uid="uid://cspaq3deg88p4" path="res://Resources/Alien Sprites/cthulhu/fly_1.png" id="20_fbqpl"]
+[ext_resource type="Texture2D" uid="uid://u2iu860q1fay" path="res://Resources/Alien Sprites/cthulhu/fly_2.png" id="21_8r6x1"]
 [ext_resource type="Texture2D" uid="uid://ctpjxaoiivor4" path="res://Resources/Hit-Scan-Tower/turret_hit_marker0.png" id="21_8yq1t"]
 [ext_resource type="Script" path="res://scenes/enemies/cthulhu/health_bar.gd" id="21_l74u7"]
 [ext_resource type="AudioStream" uid="uid://bvnrigqcqv0yp" path="res://Resources/mixkit-video-game-blood-pop-2361.wav" id="21_x845q"]
 [ext_resource type="Texture2D" uid="uid://dr4drts85iy6q" path="res://Resources/Hit-Scan-Tower/turret_hit_marker1.png" id="22_41cu1"]
+[ext_resource type="Texture2D" uid="uid://b1dky7152nnps" path="res://Resources/Alien Sprites/cthulhu/fly_3.png" id="22_qqrql"]
+[ext_resource type="Texture2D" uid="uid://bxtp5nabr3l3s" path="res://Resources/Alien Sprites/cthulhu/fly_4.png" id="23_a6fj6"]
+[ext_resource type="Texture2D" uid="uid://dknermnvp811d" path="res://Resources/Alien Sprites/cthulhu/fly_5.png" id="24_vrt7l"]
+[ext_resource type="Texture2D" uid="uid://c7bju6mjg3ehp" path="res://Resources/Alien Sprites/cthulhu/fly_6.png" id="25_0xjr0"]
+[ext_resource type="Texture2D" uid="uid://bu77coec2be08" path="res://Resources/Alien Sprites/cthulhu/hurt_1.png" id="38_dx8ir"]
+[ext_resource type="Texture2D" uid="uid://qv8kmcjq0bum" path="res://Resources/Alien Sprites/cthulhu/hurt_2.png" id="39_mvnkx"]
+[ext_resource type="Texture2D" uid="uid://bqs6vgsavl2fd" path="res://Resources/Alien Sprites/cthulhu/hurt_3.png" id="40_e8tcd"]
+[ext_resource type="Texture2D" uid="uid://cbjds23tlxivb" path="res://Resources/Alien Sprites/cthulhu/hurt_4.png" id="41_xnj2d"]
+[ext_resource type="Texture2D" uid="uid://ec77ln42bl6n" path="res://Resources/Alien Sprites/cthulhu/hurt_5.png" id="42_t8yey"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_5aw40"]
 animations = [{
@@ -51,6 +73,67 @@ animations = [{
 }],
 "loop": true,
 "name": &"attack",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("9_tvcuf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_vssrj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_0jjs0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_x01uy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_5jl1x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_61xcd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_wneqq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_ebpcv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_mmbdx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_vc1a1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_jggv5")
+}],
+"loop": false,
+"name": &"death",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("20_fbqpl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_8r6x1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_qqrql")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_a6fj6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_vrt7l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_0xjr0")
+}],
+"loop": true,
+"name": &"flying",
 "speed": 5.0
 }, {
 "frames": [{
@@ -93,6 +176,26 @@ animations = [{
 "loop": true,
 "name": &"move",
 "speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("38_dx8ir")
+}, {
+"duration": 1.0,
+"texture": ExtResource("39_mvnkx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("40_e8tcd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("41_xnj2d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("42_t8yey")
+}],
+"loop": true,
+"name": &"transform",
+"speed": 7.0
 }]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_gxccw"]
@@ -151,7 +254,9 @@ script = ExtResource("1_gyr6m")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 scale = Vector2(2.25, 2.25)
 sprite_frames = SubResource("SpriteFrames_5aw40")
-animation = &"attack"
+animation = &"flying"
+frame = 5
+frame_progress = 0.219987
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, 15)
