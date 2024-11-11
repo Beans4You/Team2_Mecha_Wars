@@ -14,8 +14,8 @@ func _ready() -> void:
 
 
 func _on_next_level_pressed() -> void:
-	game_scene.queue_free()
-	var main = get_parent().get_parent()
+	queue_free()
+	var main = get_parent()
 	var level = load(level_path).instantiate()
 	main.add_child(level)
-	queue_free()
+	

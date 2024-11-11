@@ -1,5 +1,5 @@
 extends Node2D
-
+class_name game_scene_parent_script
 
 @onready var can_place = false
 
