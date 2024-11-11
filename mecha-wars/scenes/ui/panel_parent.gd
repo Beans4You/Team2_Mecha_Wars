@@ -42,7 +42,7 @@ func _on_gui_input(event):
 			var not_on_path = loop_through_capsule_area_and_check_for_path_collision(character_shape.extents.x, character_shape.extents.y, event.global_position)
 
 			# here we check that the tower isn't in the ui section, and is not in the path layer
-			if event.global_position.x < 1280 and not_on_path: 
+			if event.global_position.x < 1280 and not_on_path and event.global_position.x > 0 and event.global_position.y > 5 and event.global_position.y < 700: 
 				get_child(1).queue_free()
 				#var game_scene = get_parent().get_child(0) #get_tree().get_root()
 				game_scene.add_child(tempTower)

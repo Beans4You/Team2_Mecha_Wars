@@ -47,7 +47,7 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_jgx74"]
-size = Vector2(32, 72)
+size = Vector2(32, 48)
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_dbc2p"]
 radius = 174.04
@@ -61,7 +61,7 @@ animation = &"shoot"
 autoplay = "idle"
 
 [node name="character_collision_shape" type="CollisionShape2D" parent="." index="2"]
-position = Vector2(0, 4)
+position = Vector2(0, 16)
 shape = SubResource("RectangleShape2D_jgx74")
 
 [node name="aim" type="Marker2D" parent="." index="3"]
