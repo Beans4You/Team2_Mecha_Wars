@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://dan1mabkk5iud"]
+
+[ext_resource type="PackedScene" uid="uid://doit18r6cjp3" path="res://scenes/enemies/flyer/flyer.tscn" id="1_nfiwb"]
+
+[sub_resource type="Curve2D" id="Curve2D_qfng1"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 0, 144, 0, 0, 0, 0, 264, 144, 0, 0, 0, 0, 272, 152, 0, 0, 0, 0, 280, 560, 0, 0, 0, 0, 936, 552, 0, 0, 0, 0, 944, 568, 0, 0, 0, 0, 936, 136, 0, 0, 0, 0, 1072, 136)
+}
+point_count = 8
+
+[node name="Path2D" type="Path2D"]
+curve = SubResource("Curve2D_qfng1")
+
+[node name="PathFollow2D" type="PathFollow2D" parent="."]
+position = Vector2(0, 144)
+
+[node name="flyer" parent="PathFollow2D" instance=ExtResource("1_nfiwb")]
