@@ -44,4 +44,6 @@ func victory_process():
 # showing area of towers
 #func _input(event):
 	#if event is InputEventMouseButton and event.button_mask == 0:
+		#var coords = event.gloabl_position
+		#
 		#$area.show()

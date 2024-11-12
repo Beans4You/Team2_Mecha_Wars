@@ -1,0 +1,92 @@
+[gd_scene load_steps=14 format=3 uid="uid://dshhbww8osv5u"]
+
+[ext_resource type="PackedScene" uid="uid://bhrok0a2cdblv" path="res://scenes/towers/tower_shooting.tscn" id="1_rxmb3"]
+[ext_resource type="Texture2D" uid="uid://cl35nf7meert" path="res://Resources/peng-gun/peng-gun4.png" id="2_01uhs"]
+[ext_resource type="Script" path="res://scenes/towers/peng_gun/peng_gun.gd" id="2_fr20w"]
+[ext_resource type="Texture2D" uid="uid://dx4jyadosytmi" path="res://Resources/peng-gun/peng-gun5.png" id="3_payeb"]
+[ext_resource type="Texture2D" uid="uid://2dkckpqn8yid" path="res://Resources/peng-gun/peng-gun6.png" id="4_lanv3"]
+[ext_resource type="Texture2D" uid="uid://cclgue40mak7t" path="res://Resources/peng-gun/peng-gun7.png" id="5_srmdj"]
+[ext_resource type="Texture2D" uid="uid://dowqohta1dx68" path="res://Resources/peng-gun/peng-gun3.png" id="6_wmw4h"]
+[ext_resource type="Texture2D" uid="uid://bp0jsxj3bde3k" path="res://Resources/peng-gun/peng-gun0.png" id="7_rkiv4"]
+[ext_resource type="Texture2D" uid="uid://begwylu1ur7qt" path="res://Resources/peng-gun/peng-gun1.png" id="8_03trj"]
+[ext_resource type="Texture2D" uid="uid://dgul3ycpm7klp" path="res://Resources/peng-gun/peng-gun2.png" id="9_omhgr"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_gcqc8"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_01uhs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_payeb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_lanv3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_payeb")
+}, {
+"duration": 2.0,
+"texture": ExtResource("2_01uhs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_srmdj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_01uhs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_srmdj")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_wmw4h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_rkiv4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_03trj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_omhgr")
+}],
+"loop": false,
+"name": &"shoot",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2aer5"]
+size = Vector2(57, 86)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_vqyak"]
+radius = 174.04
+
+[node name="peng_gun" instance=ExtResource("1_rxmb3")]
+script = ExtResource("2_fr20w")
+
+[node name="animated_sprite" type="AnimatedSprite2D" parent="." index="1"]
+scale = Vector2(0.75, 0.75)
+sprite_frames = SubResource("SpriteFrames_gcqc8")
+animation = &"idle"
+
+[node name="character_collision_shape" type="CollisionShape2D" parent="." index="2"]
+position = Vector2(-0.5, 2)
+shape = SubResource("RectangleShape2D_2aer5")
+
+[node name="aim" type="Marker2D" parent="." index="3"]
+position = Vector2(-38, 2)
+
+[node name="range" type="Area2D" parent="." index="4"]
+position = Vector2(-3, -1)
+
+[node name="range_collision_shape" type="CollisionShape2D" parent="range" index="0"]
+position = Vector2(2, 0)
+shape = SubResource("CircleShape2D_vqyak")
+
+[connection signal="body_entered" from="range" to="." method="_on_range_body_entered"]
+[connection signal="body_exited" from="range" to="." method="_on_range_body_exited"]

@@ -10,6 +10,7 @@ corner_radius_bottom_right = 450
 corner_radius_bottom_left = 450
 
 [node name="tower" type="CharacterBody2D" groups=["towers"]]
+input_pickable = true
 script = ExtResource("1_r257c")
 
 [node name="area" type="Panel" parent="."]
@@ -19,3 +20,5 @@ offset_top = -175.0
 offset_right = 175.0
 offset_bottom = 175.0
 theme_override_styles/panel = SubResource("StyleBoxFlat_2xunu")
+
+[connection signal="input_event" from="." to="." method="_on_input_event"]
