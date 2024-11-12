@@ -28,7 +28,7 @@ func _process(delta):
 			speed = self.speed
 			$AnimatedSprite2D.play('move')
 	
-	if (self.health <= max_health / 2 and phase == 1):
+	if (float(self.health) <= float(max_health) / 2.0 and phase == 1):
 		phase = 2
 		transform()
 	
