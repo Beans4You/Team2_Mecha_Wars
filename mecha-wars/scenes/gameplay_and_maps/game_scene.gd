@@ -41,8 +41,23 @@ func victory_process():
 	
 	
 # showing area of towers
-#func _input(event):
-	#if event is InputEventMouseButton and event.button_mask == 0:
-		#var coords = event.gloabl_position
-		#
-		#$area.show()
+func _input(event):
+	if event is InputEventMouseButton and event.button_mask == 0:
+		#print("click in game scene")
+		var towers = $tower_container.get_children()
+		for t in towers:
+			t.tower_ui_off()
+			var local_mouse_pos = t.to_local(event.global_position)
+			var clicked_tower = shape_contains_point(t.get_node("character_collision_shape"), local_mouse_pos)
+			if clicked_tower:
+				t.tower_ui_on()
+			
+# check if mouse click is in rectangle (uses local mouse position)
+func shape_contains_point(collision_area, local_mouse_position):
+	var extents = collision_area.shape.extents
+	if abs(local_mouse_position.x) <= extents.x and abs(local_mouse_position.y) <= extents.y:
+		return true
+	else:
+		return false
+	
+			

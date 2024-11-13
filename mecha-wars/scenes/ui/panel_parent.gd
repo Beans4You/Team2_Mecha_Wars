@@ -25,8 +25,9 @@ func _on_gui_input(event):
 			tempTower = tower_scene.instantiate()
 			tempTower._ready() # may need to switch to ._init at some point
 			#Left Click Down
-			game_scene.add_child(tempTower)
+			game_scene.get_node("tower_container").add_child(tempTower)
 			tempTower.get_node("area").show()
+			tempTower.position = event.global_position
 			
 			# prevent shooting stuff
 			tempTower.process_mode = Node.PROCESS_MODE_DISABLED
@@ -63,7 +64,7 @@ func _on_gui_input(event):
 				tempTower.process_mode = Node.PROCESS_MODE_INHERIT
 			else:
 				# remove potential tower
-				game_scene.remove_child(tempTower)
+				game_scene.get_node("tower_container").remove_child(tempTower)
 				tempTower.queue_free()
 
 		#else:
@@ -84,3 +85,6 @@ func loop_through_capsule_area_and_check_for_path_collision(area_width, area_hei
 	
 			
 	return no_path_collision
+
+	# might be able to use round shapes if you switch this code to collision_shape.shape.contains_point(event.global_position)
+	# might not work with the path logic however

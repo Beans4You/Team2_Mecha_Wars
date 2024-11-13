@@ -24,4 +24,6 @@ stream = ExtResource("5_iuiyq")
 volume_db = -21.295
 autoplay = true
 
+[node name="tower_container" type="Node" parent="."]
+
 [connection signal="timeout" from="path_spawner_level_2/timer" to="path_spawner_level_2" method="_on_timer_timeout"]

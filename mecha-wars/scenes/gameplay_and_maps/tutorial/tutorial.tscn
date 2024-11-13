@@ -70,5 +70,7 @@ theme_override_font_sizes/font_size = 29
 text = "Protect the stronghold 
            from enemies!"
 
+[node name="tower_container" type="Node" parent="."]
+
 [connection signal="timeout" from="tutorial_path/Timer" to="tutorial_path" method="_on_timer_timeout"]
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
