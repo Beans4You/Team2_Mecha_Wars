@@ -4,7 +4,7 @@
 
 [sub_resource type="Curve2D" id="Curve2D_j045k"]
 _data = {
-"points": PackedVector2Array(0, 0, 0, 0, -8, 136, 0, 0, 0, 0, 656, 144, 0, 0, 0, 0, 656, 360, 0, 0, 0, 0, 400, 368, 0, 0, 0, 0, 400, 568, 0, 0, 0, 0, 1048, 576)
+"points": PackedVector2Array(0, 0, 0, 0, 0, 136, 0, 0, 0, 0, 655, 137, 0, 0, 0, 0, 655, 369, 0, 0, 0, 0, 399, 370, 0, 0, 0, 0, 400, 568, 0, 0, 0, 0, 1045, 569)
 }
 point_count = 6
 
@@ -12,7 +12,7 @@ point_count = 6
 curve = SubResource("Curve2D_j045k")
 
 [node name="PathFollow2D" type="PathFollow2D" parent="."]
-position = Vector2(-8, 136)
-rotation = 0.0120476
+position = Vector2(0, 136)
+rotation = 0.00152672
 
 [node name="cthulhu" parent="PathFollow2D" instance=ExtResource("1_injgm")]

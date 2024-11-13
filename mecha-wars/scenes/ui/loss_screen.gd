@@ -1,7 +1,7 @@
 extends Control
 
 #var start = preload("res://scenes/ui/start_screen.tscn")
-var level_path = "res://scenes/gameplay and maps/game_scene.tscn"
+var level_path = "res://scenes/gameplay_and_maps/game_scene.tscn"
 @onready var game_scene = get_parent()
 
 

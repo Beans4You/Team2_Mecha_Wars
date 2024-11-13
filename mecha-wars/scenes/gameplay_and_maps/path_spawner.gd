@@ -19,7 +19,7 @@ func _process(_delta):
 	
 	if game_scene.game_over == false and last_enemy_out and len(get_children()) == 1:
 		game_scene.victory = true
-		print("victory")
+		
 
 
 func _on_timer_timeout() -> void:

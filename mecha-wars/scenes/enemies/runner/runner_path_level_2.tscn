@@ -4,7 +4,7 @@
 
 [sub_resource type="Curve2D" id="Curve2D_hdt61"]
 _data = {
-"points": PackedVector2Array(0, 0, 0, 0, 0, 144, 0, 0, 0, 0, 656, 136, 0, 0, 0, 0, 656, 368, 0, 0, 0, 0, 392, 368, 0, 0, 0, 0, 392, 568, 0, 0, 0, 0, 1048, 576)
+"points": PackedVector2Array(0, 0, 0, 0, 0, 152, 0, 0, 0, 0, 664, 152, 0, 0, 0, 0, 664, 360, 0, 0, 0, 0, 392, 360, 0, 0, 0, 0, 392, 560, 0, 0, 0, 0, 1056, 560)
 }
 point_count = 6
 
@@ -12,7 +12,6 @@ point_count = 6
 curve = SubResource("Curve2D_hdt61")
 
 [node name="PathFollow2D" type="PathFollow2D" parent="."]
-position = Vector2(0, 144)
-rotation = -0.0121945
+position = Vector2(0, 152)
 
 [node name="runner" parent="PathFollow2D" instance=ExtResource("1_fitc2")]

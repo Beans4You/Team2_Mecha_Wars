@@ -7,8 +7,9 @@ extends Node
 
 @onready var game_over = false
 
-@onready var main = preload("res://scenes/gameplay and maps/main.tscn")
-@onready var win_message = preload("res://scenes/ui/message.tscn")
+@onready var main = load("res://scenes/gameplay_and_maps/main.tscn")
+@onready var win_message = load("res://scenes/ui/message.tscn")
+@onready var main_menu = load("res://scenes/ui/main_menu.tscn")
 
 func _ready() -> void:
 	var win = win_message.instantiate()
@@ -31,15 +32,16 @@ func tutorial_won():
 	var win = win_message.instantiate()
 	add_child(win)
 	win.set_message("Now you know how to defend earth... \n\ngood luck soldier")
-	var swap = main.instantiate()
+	var main_menu = main_menu.instantiate() #main.instantiate()
 	await get_child(win.get_index()).get_child(2).timeout
-	get_parent().add_child(swap)
+	get_parent().add_child(main_menu)
+	get_parent()._ready() # reconnect nodes in main
 	queue_free()
 
 func tutorial_failed():
 		var loss_screen_scene = load("res://scenes/ui/loss_screen.tscn")
 		var loss_screen = loss_screen_scene.instantiate()
-		loss_screen.level_path = "res://scenes/gameplay and maps/tutorial.tscn"
+		loss_screen.level_path = "res://scenes/gameplay_and_maps/tutorial.tscn"
 		get_parent().add_child(loss_screen)
 		queue_free()
 		
