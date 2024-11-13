@@ -47,7 +47,7 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_8gus3"]
-size = Vector2(64, 72)
+size = Vector2(64, 74)
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_02jkp"]
 radius = 175.385
@@ -65,7 +65,7 @@ sprite_frames = SubResource("SpriteFrames_y5mq4")
 animation = &"shoot"
 
 [node name="character_collision_shape" type="CollisionShape2D" parent="." index="2"]
-position = Vector2(0, 12)
+position = Vector2(0, 6)
 shape = SubResource("RectangleShape2D_8gus3")
 
 [node name="aim" type="Marker2D" parent="." index="3"]
