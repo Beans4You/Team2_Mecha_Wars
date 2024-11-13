@@ -34,6 +34,7 @@ func _process(delta):
 	
 	if health <= 0 and alive:
 		alive = false
+		$CollisionShape2D.disabled = true
 		$AnimatedSprite2D.play("death")
 		self.speed = 0
 		await $AnimatedSprite2D.animation_finished
