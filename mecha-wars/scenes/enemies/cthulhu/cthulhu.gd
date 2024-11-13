@@ -8,6 +8,7 @@ var alive = true
 func _ready():
 	$AnimatedSprite2D.play('move')
 	
+	#self.speed = 150
 	self.speed = 65
 	self.attack_damage = 25
 	self.health = max_health
@@ -20,7 +21,7 @@ func _process(delta):
 	if get_parent().get_progress_ratio() == 1:
 		queue_free()
 	
-	if at_stronghold:
+	if at_stronghold and alive:
 		if stronghold.visible:
 			speed = 0
 			$AnimatedSprite2D.play('attack')
@@ -35,6 +36,7 @@ func _process(delta):
 	if health <= 0 and alive:
 		alive = false
 		$CollisionShape2D.disabled = true
+		$hit_area/CollisionShape2D.disabled = true
 		$AnimatedSprite2D.play("death")
 		self.speed = 0
 		await $AnimatedSprite2D.animation_finished

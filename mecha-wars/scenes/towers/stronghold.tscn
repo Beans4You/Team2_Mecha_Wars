@@ -5,10 +5,10 @@
 [ext_resource type="Script" path="res://scenes/towers/progress_bar.gd" id="3_3f4ip"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_nnv0d"]
-size = Vector2(331, 270)
+size = Vector2(288, 238)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_geua2"]
-size = Vector2(335, 155)
+size = Vector2(335, 89)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kdq1s"]
 bg_color = Color(0.886936, 0.0114895, 0.019927, 1)
@@ -20,7 +20,7 @@ bg_color = Color(0.0156863, 0.960784, 0.027451, 1)
 script = ExtResource("1_6fpwm")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(2.5, -6)
+position = Vector2(0, -22)
 shape = SubResource("RectangleShape2D_nnv0d")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
@@ -31,7 +31,7 @@ collision_layer = 2
 collision_mask = 255
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="stronghold_area"]
-position = Vector2(1.5, 96.5)
+position = Vector2(1.5, 129.5)
 shape = SubResource("RectangleShape2D_geua2")
 
 [node name="ProgressBar" type="ProgressBar" parent="."]
