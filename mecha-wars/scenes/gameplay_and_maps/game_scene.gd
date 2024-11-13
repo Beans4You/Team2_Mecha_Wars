@@ -30,7 +30,6 @@ func game_over_process():
 	queue_free()
 	var main_scene = get_parent()
 	var loss_screen = load("res://scenes/ui/loss_screen.tscn").instantiate()
-	
 	main_scene.add_child(loss_screen)
 
 func victory_process():
