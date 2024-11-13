@@ -1,7 +1,7 @@
 extends Node2D
 class_name game_scene_parent_script
 
-@onready var can_place = false
+@onready var placing_active = false
 
 @onready var starting_gold = 500
 @onready var curr_gold
@@ -45,12 +45,14 @@ func _input(event):
 	if event is InputEventMouseButton and event.button_mask == 0:
 		#print("click in game scene")
 		var towers = $tower_container.get_children()
+		# loop thorugh towers and decide if ui should be on or off
 		for t in towers:
-			t.tower_ui_off()
 			var local_mouse_pos = t.to_local(event.global_position)
 			var clicked_tower = shape_contains_point(t.get_node("character_collision_shape"), local_mouse_pos)
-			if clicked_tower:
+			if clicked_tower and not placing_active:
 				t.tower_ui_on()
+			else:
+				t.tower_ui_off()
 			
 # check if mouse click is in rectangle (uses local mouse position)
 func shape_contains_point(collision_area, local_mouse_position):

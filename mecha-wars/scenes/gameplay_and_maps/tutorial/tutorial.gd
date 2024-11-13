@@ -1,6 +1,6 @@
 extends Node
 
-@onready var can_place = false
+@onready var placing_active = false
 
 @onready var starting_gold = 800
 @onready var curr_gold = starting_gold

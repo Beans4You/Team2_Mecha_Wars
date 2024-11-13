@@ -10,7 +10,7 @@ class_name panel_parent_script
 
 var currTile
 var tile_size = 32 
-var placing_active = false
+#var placing_active = false
 var tempTower
 var gold_check_tower
 
@@ -31,9 +31,9 @@ func _on_gui_input(event):
 			
 			# prevent shooting stuff
 			tempTower.process_mode = Node.PROCESS_MODE_DISABLED
-			placing_active = true
+			game_scene.placing_active = true
 
-		elif placing_active and event is InputEventMouseMotion and event.button_mask == 1:
+		elif game_scene.placing_active and event is InputEventMouseMotion and event.button_mask == 1:
 			##Left Click Drag
 			tempTower.global_position = event.global_position
 			var character_shape = tempTower.get_node("character_collision_shape").shape
@@ -47,7 +47,7 @@ func _on_gui_input(event):
 				tempTower.get_node("area").modulate = Color(0, 0, 0, 0.3137)
 
 		#This is the "drop" action for the dino
-		elif placing_active and event is InputEventMouseButton and event.button_mask == 0:
+		elif game_scene.placing_active and event is InputEventMouseButton and event.button_mask == 0:
 			#Left Click Up
 			# checking if the place put down is on the path
 			var character_shape = tempTower.get_node("character_collision_shape").shape
@@ -59,7 +59,7 @@ func _on_gui_input(event):
 				tempTower.global_position = event.global_position.snapped(Vector2(tile_size, tile_size))
 				tempTower.get_node("area").hide()
 				game_scene.curr_gold -= tempTower.gold_cost
-				placing_active = false
+				game_scene.placing_active = false
 				# re enable shooting
 				tempTower.process_mode = Node.PROCESS_MODE_INHERIT
 			else:
