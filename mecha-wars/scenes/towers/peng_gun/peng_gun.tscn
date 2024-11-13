@@ -75,7 +75,6 @@ sprite_frames = SubResource("SpriteFrames_gcqc8")
 animation = &"idle"
 
 [node name="character_collision_shape" type="CollisionShape2D" parent="." index="2"]
-position = Vector2(-0.5, 2)
 shape = SubResource("RectangleShape2D_2aer5")
 
 [node name="aim" type="Marker2D" parent="." index="3"]
