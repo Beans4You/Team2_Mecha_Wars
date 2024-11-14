@@ -31,10 +31,10 @@ func shoot():
 		$animated_sprite.frame = 5
 	
 	
-	enemy.on_hit(damage)
+	current_enemy.on_hit(damage)
 	if !enemy_array.is_empty():
 		#print(enemy.health)
-		enemy.get_child(-1).play('turret_hit')
+		current_enemy.get_child(-1).play('turret_hit')
 	await(get_tree().create_timer(rate_of_fire).timeout)
 	if enemy_array.is_empty():
 		$animated_sprite.play("idle")
