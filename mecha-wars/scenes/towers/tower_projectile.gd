@@ -55,6 +55,7 @@ func create_bullet(target_in):
 	var target = target_in
 	var bullet = bullet_scene.instantiate()
 	bullet.set_target(target)
+	bullet.bullet_damage = damage
 	bullet.global_position = $aim.global_position
 	get_tree().root.add_child(bullet)
 

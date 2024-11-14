@@ -63,8 +63,7 @@ func shape_contains_point(collision_area, local_mouse_position):
 		return false
 
 func clicked_ui(mouse_position):
-	if mouse_position.x > 703:
+	if mouse_position.x > 1280:
 		return true
 	return false
 	
-			

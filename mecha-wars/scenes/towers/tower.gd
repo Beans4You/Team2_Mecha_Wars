@@ -16,7 +16,12 @@ func _ready():
 	#$range.position = -1 * Vector2(tower_range, tower_range) / 2
 	$animated_sprite.play("idle")
 	$area.mouse_filter = Control.MOUSE_FILTER_IGNORE # makes area node unclickable for handling clicking input
-		
+
+func update_range():
+	$area.size = Vector2(tower_range, tower_range)
+	$area.position = -1 * Vector2(tower_range, tower_range) / 2
+	$range/range_collision_shape.shape.radius = float(tower_range) / 2
+
 func select_enemy():
 	if targeting_mode == "first":
 		first_select_enemy()

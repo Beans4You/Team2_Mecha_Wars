@@ -40,7 +40,7 @@ func _on_gui_input(event):
 			var not_on_path = loop_through_capsule_area_and_check_for_path_collision(character_shape.extents.x, character_shape.extents.y, event.global_position)
 			if not not_on_path:
 				# make red
-				tempTower.get_node("area").modulate = Color(255,0,0, 0.3)
+				tempTower.get_node("area").modulate = Color(1,0,0, 0.3)
 				tempTower.get_node("area").show()
 			else:
 				# switch back to grey

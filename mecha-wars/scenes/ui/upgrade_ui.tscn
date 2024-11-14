@@ -10,7 +10,7 @@ script = ExtResource("1_qiwqi")
 offset_left = 1280.0
 offset_right = 1440.0
 offset_bottom = 703.0
-color = Color(0.713518, 0.713518, 0.713518, 1)
+color = Color(0.139517, 0.189163, 0.24007, 1)
 
 [node name="FlowContainer" type="FlowContainer" parent="."]
 anchors_preset = 8
@@ -53,9 +53,51 @@ theme_override_font_sizes/font_size = 16
 custom_minimum_size = Vector2(130, 300)
 layout_mode = 2
 
+[node name="Label" type="Label" parent="FlowContainer/damage"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -0.5
+offset_top = -40.5
+offset_right = 0.5
+offset_bottom = 40.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("2_uu4ny")
+theme_override_font_sizes/font_size = 21
+text = "Double Damage Upgrade
+
+Gold: 150"
+horizontal_alignment = 1
+autowrap_mode = 2
+
 [node name="range" type="Panel" parent="FlowContainer"]
 custom_minimum_size = Vector2(130, 300)
 layout_mode = 2
+
+[node name="Label" type="Label" parent="FlowContainer/range"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -0.5
+offset_top = -40.5
+offset_right = 0.5
+offset_bottom = 40.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("2_uu4ny")
+theme_override_font_sizes/font_size = 21
+text = "upgrade range by 25%
+
+Gold: 100"
+horizontal_alignment = 1
+autowrap_mode = 2
 
 [connection signal="gui_input" from="FlowContainer/targeting" to="." method="_on_targeting_gui_input"]
 [connection signal="gui_input" from="FlowContainer/damage" to="." method="_on_damage_gui_input"]
