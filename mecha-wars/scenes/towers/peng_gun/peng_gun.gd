@@ -12,7 +12,7 @@ func _ready():
 func shoot():
 	shoot_ready = false
 	
-	#enemy_relative = enemy.get_parent().get_parent().position - position
+	enemy_relative = current_enemy.get_parent().get_parent().position - position
 		#for directional shooting, need to find the proper parent that is the path follow 2D...
 	
 	angle = atan2(enemy_relative.y, enemy_relative.x)
