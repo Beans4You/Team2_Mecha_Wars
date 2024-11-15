@@ -8,6 +8,8 @@ var upgrade_ui = load("res://scenes/ui/upgrade_ui.tscn")
 var current_enemy
 var enemy_array = []
 var targeting_mode = "first"
+var damage_upgrade_counter = 0
+var range_upgrade_counter = 0
 
 func _ready():
 	$area.size = Vector2(tower_range, tower_range)
