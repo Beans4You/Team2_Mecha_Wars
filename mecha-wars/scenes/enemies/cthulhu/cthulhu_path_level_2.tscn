@@ -14,5 +14,6 @@ curve = SubResource("Curve2D_j045k")
 [node name="PathFollow2D" type="PathFollow2D" parent="."]
 position = Vector2(0, 136)
 rotation = 0.00152672
+rotates = false
 
 [node name="cthulhu" parent="PathFollow2D" instance=ExtResource("1_injgm")]
