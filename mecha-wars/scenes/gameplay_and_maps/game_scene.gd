@@ -48,11 +48,13 @@ func _input(event):
 		# loop thorugh towers and decide if ui should be on or off
 		for t in towers:
 			var local_mouse_pos = t.to_local(event.global_position)
-			var clicked_tower_or_ui = shape_contains_point(t.get_node("character_collision_shape"), local_mouse_pos) or clicked_ui(event.global_position)
-			if clicked_tower_or_ui and not placing_active:
+			var clicked_tower = shape_contains_point(t.get_node("character_collision_shape"), local_mouse_pos)
+			if clicked_tower and not placing_active:
 				t.tower_ui_on()
+			elif clicked_ui(event.global_position):
+				pass # don't change anything if ui is clicked
 			else:
-				t.tower_ui_off()
+				t.tower_ui_off() # clicked off tower
 			
 # check if mouse click is in rectangle (uses local mouse position)
 func shape_contains_point(collision_area, local_mouse_position):

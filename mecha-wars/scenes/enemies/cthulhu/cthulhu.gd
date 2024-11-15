@@ -3,10 +3,14 @@ extends enemy_script
 var max_health = 200
 var phase = 1
 var alive = true
+var path
+var cur_x
+var last_x = 0
 
 
 func _ready():
 	$AnimatedSprite2D.play('move')
+	path = get_parent().get_parent()
 	
 	#self.speed = 150
 	self.speed = 65
@@ -20,6 +24,16 @@ func _process(delta):
 	get_parent().set_progress(get_parent().get_progress() + speed * delta)
 	if get_parent().get_progress_ratio() == 1:
 		queue_free()
+	
+	cur_x = round(global_position.x)
+	if (cur_x < last_x):
+		$AnimatedSprite2D.flip_h = true
+	else:
+		$AnimatedSprite2D.flip_h = false
+	last_x = cur_x
+	
+	#if velocity.x < 0:
+	#	$AnimatedSprite2D.flip_h
 	
 	if at_stronghold and alive:
 		if stronghold.visible:
