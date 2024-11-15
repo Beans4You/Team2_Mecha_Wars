@@ -54,6 +54,8 @@ radius = 175.385
 
 [node name="rocket_dino" instance=ExtResource("1_div88")]
 script = ExtResource("2_7h3dq")
+damage = 5
+rate_of_fire = 1.0
 
 [node name="area" parent="." index="0"]
 offset_top = -177.0

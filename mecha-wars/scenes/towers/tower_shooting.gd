@@ -27,16 +27,6 @@ func _on_range_body_exited(body: Node2D) -> void:
 	if body.is_in_group("enemy"):
 		enemy_array.erase(body)
 
-	
-
-func select_enemy():
-	var enemy_progress_array = []
-	for i in enemy_array:
-		enemy_progress_array.append(i.get_parent().get_progress())
-	var max_progress = enemy_progress_array.max()
-	var enemy_index = enemy_progress_array.find(max_progress)
-	current_enemy = enemy_array[enemy_index]
-		
 
 func shoot():
 	$animated_sprite.play('shoot')

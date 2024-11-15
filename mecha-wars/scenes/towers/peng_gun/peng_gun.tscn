@@ -65,7 +65,7 @@ animations = [{
 }],
 "loop": false,
 "name": &"shoot",
-"speed": 5.0
+"speed": 0.0
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_2aer5"]
@@ -76,6 +76,10 @@ radius = 174.04
 
 [node name="peng_gun" instance=ExtResource("1_rxmb3")]
 script = ExtResource("2_fr20w")
+damage = 5
+rate_of_fire = 1.5
+tower_range = 800
+gold_cost = 200
 
 [node name="animated_sprite" type="AnimatedSprite2D" parent="." index="1"]
 scale = Vector2(0.75, 0.75)
