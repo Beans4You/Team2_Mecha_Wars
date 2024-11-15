@@ -2,11 +2,13 @@ extends CanvasLayer
 @onready var twr = get_parent()
 var targeting_text = "◄ First►"
 var upgrade_panel_color = Color(0.08, 0.3, 0.6, 1)
+
 @onready var game_scene = get_parent().get_parent().get_parent()
 
 func _ready():
-	$FlowContainer/damage.modulate = upgrade_panel_color
-	$FlowContainer/range.modulate = upgrade_panel_color
+	$FlowContainer/targeting.self_modulate = upgrade_panel_color
+	$FlowContainer/damage.self_modulate = upgrade_panel_color
+	$FlowContainer/range.self_modulate = upgrade_panel_color
 	
 	if twr.targeting_mode == "first":
 		targeting_text = "◄ First►"
