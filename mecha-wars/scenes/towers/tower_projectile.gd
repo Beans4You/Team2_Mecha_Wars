@@ -8,8 +8,8 @@ var bullet_scene = preload("res://scenes/towers/rocket_dino/dino_bullet.tscn")
 #var enemy_array = []
 #var current_enemy
 var shoot_ready = true
-var damage = 5
-var rate_of_fire = 1
+@export var damage = 5
+@export var rate_of_fire = 1.0
 
 func _physics_process(_delta):
 	if enemy_array.size() != 0:

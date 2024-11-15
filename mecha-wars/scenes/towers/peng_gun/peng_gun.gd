@@ -4,9 +4,6 @@ var enemy_relative
 var angle
 
 func _ready():
-	tower_range = 1500
-	gold_cost = 200
-
 	super._ready()
 
 func shoot():

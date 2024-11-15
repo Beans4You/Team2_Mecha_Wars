@@ -54,6 +54,10 @@ radius = 174.04
 
 [node name="turret" instance=ExtResource("1_nbqb2")]
 script = ExtResource("2_wqs8m")
+damage = 5
+rate_of_fire = 0.3
+tower_range = 600
+gold_cost = 500
 
 [node name="animated_sprite" type="AnimatedSprite2D" parent="." index="1"]
 sprite_frames = SubResource("SpriteFrames_3cso6")

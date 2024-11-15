@@ -2,8 +2,8 @@ extends CharacterBody2D
 
 class_name tower
 
-var tower_range = 400
-var gold_cost = 300
+@export var tower_range = 400
+@export var gold_cost = 300
 var upgrade_ui = load("res://scenes/ui/upgrade_ui.tscn")
 var current_enemy
 var enemy_array = []
