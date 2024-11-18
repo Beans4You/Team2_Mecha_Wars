@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://d2p81cnifgyy8"]
+[gd_scene load_steps=4 format=3 uid="uid://d2p81cnifgyy8"]
 
 [ext_resource type="Script" path="res://scenes/ui/turret_panel.gd" id="1_ufado"]
 [ext_resource type="Texture2D" uid="uid://cv7dr2rhjdhf0" path="res://Resources/Hit-Scan-Tower/laser_turret_0.png" id="2_bruwl"]
+[ext_resource type="FontFile" uid="uid://wge3vupq5r6q" path="res://Resources/kenney_ui/Font/Kenney Future.ttf" id="3_qi347"]
 
 [node name="TurretPanel" type="Panel"]
 custom_minimum_size = Vector2(120, 120)
@@ -19,10 +20,12 @@ anchor_left = 0.133
 anchor_top = 0.94
 anchor_right = 0.133
 anchor_bottom = 0.94
-offset_left = -53.024
+offset_left = -69.024
 offset_top = -72.32
-offset_right = 31.976
+offset_right = 53.976
 offset_bottom = -49.32
-text = "500 Gold"
+theme_override_fonts/font = ExtResource("3_qi347")
+theme_override_font_sizes/font_size = 18
+text = "500  Gold"
 
 [connection signal="gui_input" from="." to="." method="_on_gui_input"]

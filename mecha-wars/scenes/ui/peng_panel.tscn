@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://m5hm2ng2gk4q"]
+[gd_scene load_steps=4 format=3 uid="uid://m5hm2ng2gk4q"]
 
 [ext_resource type="Script" path="res://scenes/ui/peng_panel.gd" id="1_5a3yc"]
 [ext_resource type="Texture2D" uid="uid://cclgue40mak7t" path="res://Resources/peng-gun/peng-gun7.png" id="2_l7mje"]
+[ext_resource type="FontFile" uid="uid://wge3vupq5r6q" path="res://Resources/kenney_ui/Font/Kenney Future.ttf" id="3_05ic0"]
 
 [node name="Pengpanel" type="Panel"]
 offset_left = 1.0
@@ -16,11 +17,12 @@ scale = Vector2(0.753198, 0.74375)
 texture = ExtResource("2_l7mje")
 
 [node name="Label" type="Label" parent="Sprite2D"]
-offset_left = -45.0
-offset_top = 80.0
-offset_right = 60.0
-offset_bottom = 108.0
-theme_override_font_sizes/font_size = 20
-text = "200 Gold "
+offset_left = -73.022
+offset_top = 79.3277
+offset_right = 74.978
+offset_bottom = 107.328
+theme_override_fonts/font = ExtResource("3_05ic0")
+theme_override_font_sizes/font_size = 23
+text = "200  Gold "
 
 [connection signal="gui_input" from="." to="." method="_on_gui_input"]
