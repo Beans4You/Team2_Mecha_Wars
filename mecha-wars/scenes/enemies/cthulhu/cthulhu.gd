@@ -1,6 +1,6 @@
 extends enemy_script
 
-var max_health = 200
+var max_health = 100#200
 var phase = 1
 var alive = true
 var path
@@ -63,7 +63,8 @@ func transform():
 	$CollisionShape2D.disabled = true
 	$AnimatedSprite2D.play("transform")
 	await get_tree().create_timer(3.5).timeout
-	
+	#print(get_tree())
+	# await create_timer(3.5).timeout
 	$AnimatedSprite2D.play("flying")
 	self.speed = 120
 	self.health = max_health

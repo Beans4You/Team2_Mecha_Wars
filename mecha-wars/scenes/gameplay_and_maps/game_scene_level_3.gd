@@ -12,7 +12,7 @@ func game_over_process():
 	queue_free()
 	var main_scene = get_parent()
 	var loss_screen = load("res://scenes/ui/loss_screen.tscn").instantiate()
-	loss_screen.level_path = "res://scenes/gameplay and maps/game_scene_level_3.tscn"
+	loss_screen.level_path = "res://scenes/gameplay_and_maps/game_scene_level_3.tscn"
 	main_scene.add_child(loss_screen)
 #
 func victory_process():

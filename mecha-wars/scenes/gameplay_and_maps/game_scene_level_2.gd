@@ -35,7 +35,7 @@ func game_over_process():
 	queue_free()
 	var main_scene = get_parent()
 	var loss_screen = load("res://scenes/ui/loss_screen.tscn").instantiate()
-	loss_screen.level_path = "res://scenes/gameplay and maps/game_scene_level_2.tscn"
+	loss_screen.level_path = "res://scenes/gameplay_and_maps/game_scene_level_2.tscn"
 	main_scene.add_child(loss_screen)
 #
 func victory_process():
@@ -44,9 +44,7 @@ func victory_process():
 	var victory_screen = load("res://scenes/ui/victory_screen.tscn").instantiate()
 	victory_screen.level_path = "res://scenes/gameplay_and_maps/game_scene_level_3.tscn"
 	main_scene.add_child(victory_screen) 
-	# TODO make it go to level 3
-	#
-	#
+	
 ## showing area of towers
 ##func _input(event):
 	##if event is InputEventMouseButton and event.button_mask == 0:

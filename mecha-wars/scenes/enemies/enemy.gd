@@ -38,13 +38,16 @@ func _process(delta):
 	if health <=0:
 		get_parent().get_parent().queue_free()
 		game_scene.curr_gold += self.gold_worth
-		# to do: add gold to gold amount, likely need connection or from hit function
+		
 
 
 # hit scan (tower shooting scene)
 func on_hit(damage):
 	health -= damage
 	$damaged_audio.play()
+	# TODO is this needed
+	
+	
 	#if health <= 0:
 		#get_parent().get_parent().queue_free()
 
