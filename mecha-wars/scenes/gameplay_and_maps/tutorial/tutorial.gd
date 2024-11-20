@@ -45,3 +45,33 @@ func tutorial_failed():
 		get_parent().add_child(loss_screen)
 		queue_free()
 		
+
+# showing area of towers
+func _input(event):
+	if event is InputEventMouseButton and event.button_mask == 0:
+		#print("click in game scene")
+		var towers = $tower_container.get_children()
+		# loop thorugh towers and decide if ui should be on or off
+		for t in towers:
+			var local_mouse_pos = t.to_local(event.global_position)
+			var clicked_tower = shape_contains_point(t.get_node("character_collision_shape"), local_mouse_pos)
+			if clicked_tower and not placing_active:
+				t.tower_ui_on()
+			elif clicked_ui(event.global_position):
+				pass # don't change anything if ui is clicked
+			else:
+				t.tower_ui_off() # clicked off tower
+			
+# check if mouse click is in rectangle (uses local mouse position)
+func shape_contains_point(collision_area, local_mouse_position):
+	var extents = collision_area.shape.extents
+	if abs(local_mouse_position.x) <= extents.x and abs(local_mouse_position.y) <= extents.y:
+		return true
+	else:
+		return false
+
+func clicked_ui(mouse_position):
+	if mouse_position.x > 1280:
+		return true
+	return false
+	
