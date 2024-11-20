@@ -32,7 +32,7 @@ func tutorial_won():
 	var win = win_message.instantiate()
 	add_child(win)
 	win.set_message("Now you know how to defend earth... \n\ngood luck soldier")
-	var main_menu = main_menu.instantiate() #main.instantiate()
+	main_menu = main_menu.instantiate() #main.instantiate()
 	await get_child(win.get_index()).get_child(2).timeout
 	get_parent().add_child(main_menu)
 	get_parent()._ready() # reconnect nodes in main

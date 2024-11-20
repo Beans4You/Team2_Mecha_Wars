@@ -50,7 +50,6 @@ func _on_damage_gui_input(event: InputEvent) -> void:
 			game_scene.curr_gold -= 150
 		else:
 			pass
-			#print(twr.damage)
 
 
 func _on_range_gui_input(event: InputEvent) -> void:
