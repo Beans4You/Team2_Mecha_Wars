@@ -47,8 +47,7 @@ offset_bottom = 11.5
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_colors/font_color = Color(0, 0.831373, 0.831373, 1)
-theme_override_fonts/font = ExtResource("2_uu4ny")
-theme_override_font_sizes/font_size = 16
+theme_override_font_sizes/font_size = 20
 
 [node name="damage" type="Panel" parent="FlowContainer"]
 custom_minimum_size = Vector2(130, 300)
