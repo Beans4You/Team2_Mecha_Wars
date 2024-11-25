@@ -19,16 +19,29 @@ func shoot():
 		angle += 2*PI
 	if angle < PI/3:
 		$animated_sprite.frame = 5
+		$aim.rotation_degrees = 118
+		$aim/AnimatedSprite2D.position.y = -60
 	elif angle < 2*PI/3:
 		$animated_sprite.frame = 4
+		$aim.rotation_degrees = 180
+		$aim/AnimatedSprite2D.position.y = -43
 	elif angle < 3*PI/3:
 		$animated_sprite.frame = 3
+		$aim.rotation_degrees = -118
+		$aim/AnimatedSprite2D.position.y = -60
 	elif angle < 4*PI/3:
 		$animated_sprite.frame = 2
+		$aim.rotation_degrees = -58
+		$aim/AnimatedSprite2D.position.y = -57
 	elif angle < 5*PI/3:
 		$animated_sprite.frame = 1
+		$aim.rotation_degrees = 0
+		$aim/AnimatedSprite2D.position.y = -43
 	else:
 		$animated_sprite.frame = 0
+		$aim.rotation_degrees = 60
+		$aim/AnimatedSprite2D.position.y = -57
+	$aim/AnimatedSprite2D.play()
 	
 	
 	current_enemy.on_hit(damage)

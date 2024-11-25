@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cl35nf7meert"
-path="res://.godot/imported/peng-gun4.png-c283988b8fb3c204075513bcecced59a.ctex"
+uid="uid://dqsl7uxmqi1kg"
+path="res://.godot/imported/flash1.png-c638cddd56604653807d2504ca603280.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Resources/peng-gun/peng-gun4.png"
-dest_files=["res://.godot/imported/peng-gun4.png-c283988b8fb3c204075513bcecced59a.ctex"]
+source_file="res://Resources/peng-gun/muzzle_flash/flash1.png"
+dest_files=["res://.godot/imported/flash1.png-c638cddd56604653807d2504ca603280.ctex"]
 
 [params]
 

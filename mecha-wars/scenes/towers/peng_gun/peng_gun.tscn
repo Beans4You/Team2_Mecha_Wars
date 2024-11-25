@@ -1,44 +1,47 @@
-[gd_scene load_steps=16 format=3 uid="uid://dshhbww8osv5u"]
+[gd_scene load_steps=20 format=3 uid="uid://dshhbww8osv5u"]
 
 [ext_resource type="PackedScene" uid="uid://bhrok0a2cdblv" path="res://scenes/towers/tower_shooting.tscn" id="1_rxmb3"]
-[ext_resource type="Texture2D" uid="uid://cl35nf7meert" path="res://Resources/peng-gun/peng-gun4.png" id="2_01uhs"]
 [ext_resource type="Script" path="res://scenes/towers/peng_gun/peng_gun.gd" id="2_fr20w"]
-[ext_resource type="Texture2D" uid="uid://dx4jyadosytmi" path="res://Resources/peng-gun/peng-gun5.png" id="3_payeb"]
-[ext_resource type="Texture2D" uid="uid://2dkckpqn8yid" path="res://Resources/peng-gun/peng-gun6.png" id="4_lanv3"]
-[ext_resource type="Texture2D" uid="uid://cclgue40mak7t" path="res://Resources/peng-gun/peng-gun7.png" id="5_srmdj"]
-[ext_resource type="Texture2D" uid="uid://dowqohta1dx68" path="res://Resources/peng-gun/peng-gun3.png" id="6_wmw4h"]
-[ext_resource type="Texture2D" uid="uid://yerraggeb42" path="res://Resources/peng-gun/peng_gun_down.png" id="7_qy6ae"]
-[ext_resource type="Texture2D" uid="uid://bp0jsxj3bde3k" path="res://Resources/peng-gun/peng-gun0.png" id="7_rkiv4"]
-[ext_resource type="Texture2D" uid="uid://begwylu1ur7qt" path="res://Resources/peng-gun/peng-gun1.png" id="8_03trj"]
-[ext_resource type="Texture2D" uid="uid://dgul3ycpm7klp" path="res://Resources/peng-gun/peng-gun2.png" id="9_omhgr"]
-[ext_resource type="Texture2D" uid="uid://bwg0eml841jut" path="res://Resources/peng-gun/peng_gun_up.png" id="10_3rkuf"]
+[ext_resource type="Texture2D" uid="uid://dtwy685q07b47" path="res://Resources/peng-gun/penguin/peng06.png" id="3_iptja"]
+[ext_resource type="Texture2D" uid="uid://yt08o2boms4p" path="res://Resources/peng-gun/penguin/peng07.png" id="4_yvyur"]
+[ext_resource type="Texture2D" uid="uid://ch4e3y47h6thc" path="res://Resources/peng-gun/penguin/peng08.png" id="5_w3uq0"]
+[ext_resource type="Texture2D" uid="uid://btwrwa566piu2" path="res://Resources/peng-gun/penguin/peng09.png" id="6_ppiq1"]
+[ext_resource type="Texture2D" uid="uid://6y3e8tnm5xi8" path="res://Resources/peng-gun/penguin/peng05.png" id="7_8d53b"]
+[ext_resource type="Texture2D" uid="uid://bj2n0u3kr5yh5" path="res://Resources/peng-gun/penguin/peng04.png" id="8_uvqbf"]
+[ext_resource type="Texture2D" uid="uid://cnlvw1lmyhddx" path="res://Resources/peng-gun/penguin/peng03.png" id="9_locnx"]
+[ext_resource type="Texture2D" uid="uid://bcuhqoronli4c" path="res://Resources/peng-gun/penguin/peng02.png" id="10_3tue6"]
+[ext_resource type="Texture2D" uid="uid://bs5ljoqh7ev1b" path="res://Resources/peng-gun/penguin/peng01.png" id="11_qy1al"]
+[ext_resource type="Texture2D" uid="uid://b2c486uoienjj" path="res://Resources/peng-gun/penguin/peng00.png" id="12_iy8ls"]
+[ext_resource type="Texture2D" uid="uid://byv1kucr88ir7" path="res://Resources/peng-gun/muzzle_flash/flash0.png" id="13_0w8al"]
+[ext_resource type="Texture2D" uid="uid://dqsl7uxmqi1kg" path="res://Resources/peng-gun/muzzle_flash/flash1.png" id="14_oq18s"]
+[ext_resource type="Texture2D" uid="uid://bmy4s8dml4wfd" path="res://Resources/peng-gun/muzzle_flash/flash2.png" id="15_ubt3s"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_gcqc8"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("2_01uhs")
+"texture": ExtResource("3_iptja")
 }, {
 "duration": 1.0,
-"texture": ExtResource("3_payeb")
+"texture": ExtResource("4_yvyur")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_lanv3")
+"texture": ExtResource("5_w3uq0")
 }, {
 "duration": 1.0,
-"texture": ExtResource("3_payeb")
+"texture": ExtResource("4_yvyur")
 }, {
 "duration": 2.0,
-"texture": ExtResource("2_01uhs")
+"texture": ExtResource("3_iptja")
 }, {
 "duration": 1.0,
-"texture": ExtResource("5_srmdj")
+"texture": ExtResource("6_ppiq1")
 }, {
 "duration": 1.0,
-"texture": ExtResource("2_01uhs")
+"texture": ExtResource("3_iptja")
 }, {
 "duration": 1.0,
-"texture": ExtResource("5_srmdj")
+"texture": ExtResource("6_ppiq1")
 }],
 "loop": true,
 "name": &"idle",
@@ -46,22 +49,22 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("6_wmw4h")
+"texture": ExtResource("7_8d53b")
 }, {
 "duration": 1.0,
-"texture": ExtResource("7_qy6ae")
+"texture": ExtResource("8_uvqbf")
 }, {
 "duration": 1.0,
-"texture": ExtResource("9_omhgr")
+"texture": ExtResource("9_locnx")
 }, {
 "duration": 1.0,
-"texture": ExtResource("8_03trj")
+"texture": ExtResource("10_3tue6")
 }, {
 "duration": 1.0,
-"texture": ExtResource("10_3rkuf")
+"texture": ExtResource("11_qy1al")
 }, {
 "duration": 1.0,
-"texture": ExtResource("7_rkiv4")
+"texture": ExtResource("12_iy8ls")
 }],
 "loop": false,
 "name": &"shoot",
@@ -70,6 +73,29 @@ animations = [{
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_2aer5"]
 size = Vector2(57, 86)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_8hnuv"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": null
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_0w8al")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_oq18s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_ubt3s")
+}, {
+"duration": 1.0,
+"texture": null
+}],
+"loop": false,
+"name": &"default",
+"speed": 16.0
+}]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_vqyak"]
 radius = 174.04
@@ -90,13 +116,19 @@ animation = &"shoot"
 shape = SubResource("RectangleShape2D_2aer5")
 
 [node name="aim" type="Marker2D" parent="." index="3"]
-position = Vector2(-38, 2)
+position = Vector2(0, -16)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="aim" index="0"]
+position = Vector2(0, -55)
+sprite_frames = SubResource("SpriteFrames_8hnuv")
+frame = 4
+frame_progress = 1.0
 
 [node name="range" type="Area2D" parent="." index="4"]
 position = Vector2(-3, -1)
 
 [node name="range_collision_shape" type="CollisionShape2D" parent="range" index="0"]
-position = Vector2(2, 0)
+position = Vector2(4, 1)
 shape = SubResource("CircleShape2D_vqyak")
 
 [connection signal="body_entered" from="range" to="." method="_on_range_body_entered"]
