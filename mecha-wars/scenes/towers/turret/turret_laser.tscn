@@ -8,6 +8,7 @@ height = 144.0
 
 [node name="turret_laser" type="CharacterBody2D"]
 scale = Vector2(0.6, 0.6)
+collision_mask = 2
 script = ExtResource("1_udw5p")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]

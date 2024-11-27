@@ -22,6 +22,6 @@ func _on_restart_pressed() -> void:
 	#game_scene.queue_free()
 	var main = get_parent()
 	print(level_path)
- 	var level = load(level_path).instantiate()
+	var level = load(level_path).instantiate()
 	main.add_child(level)
 	queue_free()
