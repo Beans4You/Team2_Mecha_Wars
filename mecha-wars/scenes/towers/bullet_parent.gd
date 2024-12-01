@@ -18,11 +18,15 @@ func _physics_process(delta: float) -> void:
 		position += speed * Vector2.RIGHT.rotated(rotation) * delta
 		#position += Vector2(1,1) * speed * delta
 		return
+	elif target.get_child(1).disabled:
+		target = null
+		return
 	look_at(target.global_position)
 	position = position.move_toward(target.global_position, speed * delta)
 
 
 func _on_area_2d_body_entered(body: Node2D) -> void:
+	#print(body)
 	if body.is_in_group("enemy"):
 		body.health -= bullet_damage
 		body.get_child(-1).play('turret_hit') # hit marker

@@ -6,7 +6,7 @@ class_name path_spawner_parent_script
 @onready var cthulhu_path = preload("res://scenes/enemies/cthulhu/cthulhu_path.tscn")
 @onready var game_scene = get_parent()
 @onready var last_enemy_out = false
-var enemy_array = [1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 2, 1, 1, 2, 1, 1, 2, 1, 1, 2, 1, 1, 2, 1, 2, 1, 1, 1, 1, 2, 2, 2, 1, 2, 1, 2, 1, 1, 2, 1, 1, 2, 1, 1, 2, 2, 1, 1, 1, 2, 2, 1, 1, 1, 2, 2, 1, 1, 2, 2, 2, 1, 1, 1, 2, 1, 1, 2, 1, 1, 0, 0, 3, 0, 0, 1, 1, 2, 1, 1, 2, 1, 1, 2, 1, 1, 1, 2, 1, 1, 2, 1, 2, 1, 1, 1, -10]
+var enemy_array = [3, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 2, 1, 1, 2, 1, 1, 2, 1, 1, 2, 1, 1, 2, 1, 2, 1, 1, 1, 1, 2, 2, 2, 1, 2, 1, 2, 1, 1, 2, 1, 1, 2, 1, 1, 2, 2, 1, 1, 1, 2, 2, 1, 1, 1, 2, 2, 1, 1, 2, 2, 2, 1, 1, 1, 2, 1, 1, 2, 1, 1, 0, 0, 3, 0, 0, 1, 1, 2, 1, 1, 2, 1, 1, 2, 1, 1, 1, 2, 1, 1, 2, 1, 2, 1, 1, 1, -10]
 var array_spot = 0
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -19,8 +19,6 @@ func _process(_delta):
 
 	if game_scene.game_over == false and last_enemy_out and len(get_children()) == 1:
 		game_scene.victory = true
-
-		
 
 
 func _on_timer_timeout() -> void:

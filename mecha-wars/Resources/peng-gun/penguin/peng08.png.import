@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://begwylu1ur7qt"
-path="res://.godot/imported/peng-gun1.png-2c84ad56d853100d5a1694645a9a47b3.ctex"
+uid="uid://ch4e3y47h6thc"
+path="res://.godot/imported/peng08.png-ce187069e710851a73d88a44e8a67ae5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://resources/peng-gun/peng-gun1.png"
-dest_files=["res://.godot/imported/peng-gun1.png-2c84ad56d853100d5a1694645a9a47b3.ctex"]
+source_file="res://Resources/peng-gun/penguin/peng08.png"
+dest_files=["res://.godot/imported/peng08.png-ce187069e710851a73d88a44e8a67ae5.ctex"]
 
 [params]
 
