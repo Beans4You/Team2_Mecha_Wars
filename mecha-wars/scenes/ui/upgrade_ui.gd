@@ -9,13 +9,15 @@ func _ready():
 	$FlowContainer/targeting.self_modulate = upgrade_panel_color
 	$FlowContainer/damage.self_modulate = upgrade_panel_color
 	$FlowContainer/range.self_modulate = upgrade_panel_color
-	
+	#print("◄".unicode_at(0))
+	#print("►".unicode_at(0))
+	#print("◄".to_ascii_buffer()[0])
 	if twr.targeting_mode == "first":
-		targeting_text = "◄ First►"
+		targeting_text = "◄ First ►"
 	elif twr.targeting_mode == "strong":
 		targeting_text = "◄ Strong ►"
 	elif twr.targeting_mode == "last":
-		targeting_text = "◄ Last►"
+		targeting_text = "◄ Last ►"
 	$FlowContainer/targeting/Label.text = str(targeting_text)
 	
 	if twr.damage_upgrade_counter > 0:
@@ -30,10 +32,10 @@ func _on_targeting_gui_input(event: InputEvent) -> void:
 			targeting_text = "◄ Strong ►"
 		elif twr.targeting_mode == "strong":
 			twr.targeting_mode = "last"
-			targeting_text = "◄ Last►"
+			targeting_text = "◄ Last ►"
 		elif twr.targeting_mode == "last":
 			twr.targeting_mode = "first"
-			targeting_text = "◄ First►"
+			targeting_text = "◄ First ►"
 		else:
 			print("targeting error")
 			

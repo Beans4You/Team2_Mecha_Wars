@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dowqohta1dx68"
-path="res://.godot/imported/peng-gun3.png-128055f2830e4a89a9b82682e33e7b67.ctex"
+path="res://.godot/imported/peng-gun3.png-bcfbc5492ab2be75255bd7c9d2483c4c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Resources/peng-gun/peng-gun3.png"
-dest_files=["res://.godot/imported/peng-gun3.png-128055f2830e4a89a9b82682e33e7b67.ctex"]
+source_file="res://resources/peng-gun/peng-gun3.png"
+dest_files=["res://.godot/imported/peng-gun3.png-bcfbc5492ab2be75255bd7c9d2483c4c.ctex"]
 
 [params]
 

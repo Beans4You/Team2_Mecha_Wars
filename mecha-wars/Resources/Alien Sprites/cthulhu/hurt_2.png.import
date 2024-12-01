@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://qv8kmcjq0bum"
-path="res://.godot/imported/hurt_2.png-005e116850a8214d8413d96318d875ad.ctex"
+path="res://.godot/imported/hurt_2.png-f25cd7b9a7f9027ff2a124bdf97a4af9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Resources/Alien Sprites/cthulhu/hurt_2.png"
-dest_files=["res://.godot/imported/hurt_2.png-005e116850a8214d8413d96318d875ad.ctex"]
+source_file="res://resources/Alien Sprites/cthulhu/hurt_2.png"
+dest_files=["res://.godot/imported/hurt_2.png-f25cd7b9a7f9027ff2a124bdf97a4af9.ctex"]
 
 [params]
 

@@ -1,7 +1,12 @@
-[gd_scene load_steps=3 format=3 uid="uid://d24hax5v8y6ud"]
+[gd_scene load_steps=5 format=3 uid="uid://d24hax5v8y6ud"]
 
 [ext_resource type="Script" path="res://scenes/ui/upgrade_ui.gd" id="1_qiwqi"]
-[ext_resource type="FontFile" uid="uid://wge3vupq5r6q" path="res://Resources/kenney_ui/Font/Kenney Future.ttf" id="2_uu4ny"]
+[ext_resource type="FontFile" uid="uid://ds27v1s8el1ir" path="res://resources/kenney_ui/Font/NotoSansSymbols2-Regular.ttf" id="2_ur065"]
+[ext_resource type="FontFile" uid="uid://wge3vupq5r6q" path="res://resources/kenney_ui/Font/Kenney Future.ttf" id="2_uu4ny"]
+
+[sub_resource type="FontVariation" id="FontVariation_ey1j3"]
+fallbacks = Array[Font]([ExtResource("2_ur065")])
+base_font = ExtResource("2_uu4ny")
 
 [node name="upgrade_ui" type="CanvasLayer"]
 script = ExtResource("1_qiwqi")
@@ -47,7 +52,7 @@ offset_bottom = 11.5
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_colors/font_color = Color(0, 0.831373, 0.831373, 1)
-theme_override_fonts/font = ExtResource("2_uu4ny")
+theme_override_fonts/font = SubResource("FontVariation_ey1j3")
 theme_override_font_sizes/font_size = 16
 
 [node name="damage" type="Panel" parent="FlowContainer"]
