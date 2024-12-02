@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cspaq3deg88p4"
-path="res://.godot/imported/fly_1.png-e42656cc5eea76ca92e596abb0cbf647.ctex"
+path="res://.godot/imported/fly_1.png-527afbb9694c5497449b1c56dd1dc771.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://resources/Alien Sprites/cthulhu/fly_1.png"
-dest_files=["res://.godot/imported/fly_1.png-e42656cc5eea76ca92e596abb0cbf647.ctex"]
+source_file="res://Resources/Alien Sprites/cthulhu/fly_1.png"
+dest_files=["res://.godot/imported/fly_1.png-527afbb9694c5497449b1c56dd1dc771.ctex"]
 
 [params]
 

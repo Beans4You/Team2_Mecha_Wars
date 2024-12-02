@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bgeyxry6s1ncu"
-path="res://.godot/imported/Mothership0.png-ea080b5471fbdef404f6b37ae8b2e5f2.ctex"
+path="res://.godot/imported/Mothership0.png-199b6a70776534719a33bd87e9143e8c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://resources/Alien Sprites/mothership/Mothership0.png"
-dest_files=["res://.godot/imported/Mothership0.png-ea080b5471fbdef404f6b37ae8b2e5f2.ctex"]
+source_file="res://Resources/Alien Sprites/mothership/Mothership0.png"
+dest_files=["res://.godot/imported/Mothership0.png-199b6a70776534719a33bd87e9143e8c.ctex"]
 
 [params]
 

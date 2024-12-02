@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b5iishhh4d325"
-path="res://.godot/imported/walk_6.png-8dd801b18237f45c3d8a962646746f0c.ctex"
+path="res://.godot/imported/walk_6.png-b31be4c451460f800e7600694660e64a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://resources/Alien Sprites/cthulhu/walk_6.png"
-dest_files=["res://.godot/imported/walk_6.png-8dd801b18237f45c3d8a962646746f0c.ctex"]
+source_file="res://Resources/Alien Sprites/cthulhu/walk_6.png"
+dest_files=["res://.godot/imported/walk_6.png-b31be4c451460f800e7600694660e64a.ctex"]
 
 [params]
 

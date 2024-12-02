@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dtulcvkddnacy"
-path="res://.godot/imported/shot6_exp2.png-af7b680a1fd440085f35d8f219b03704.ctex"
+path="res://.godot/imported/shot6_exp2.png-8ff27b1b34022be089e8b16283dc498b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://resources/Alien Sprites/mothership/spawn_animation/shot6_exp2.png"
-dest_files=["res://.godot/imported/shot6_exp2.png-af7b680a1fd440085f35d8f219b03704.ctex"]
+source_file="res://Resources/Alien Sprites/mothership/spawn_animation/shot6_exp2.png"
+dest_files=["res://.godot/imported/shot6_exp2.png-8ff27b1b34022be089e8b16283dc498b.ctex"]
 
 [params]
 

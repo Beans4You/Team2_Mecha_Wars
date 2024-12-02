@@ -2,11 +2,11 @@
 
 [ext_resource type="PackedScene" uid="uid://bhrok0a2cdblv" path="res://scenes/towers/tower_shooting.tscn" id="1_6lh7w"]
 [ext_resource type="Script" path="res://scenes/towers/machine_gun/machine_gun.gd" id="2_ilk3k"]
-[ext_resource type="Texture2D" uid="uid://jas8blq6tyjo" path="res://resources/turrets_unmanned/Tower.png" id="3_5hor3"]
-[ext_resource type="Texture2D" uid="uid://dokxvuy0cuosg" path="res://resources/turrets_unmanned/MG.png" id="4_usmgb"]
-[ext_resource type="Texture2D" uid="uid://byv1kucr88ir7" path="res://resources/peng-gun/muzzle_flash/flash0.png" id="5_xnjsc"]
-[ext_resource type="Texture2D" uid="uid://dqsl7uxmqi1kg" path="res://resources/peng-gun/muzzle_flash/flash1.png" id="6_xk6kk"]
-[ext_resource type="Texture2D" uid="uid://bmy4s8dml4wfd" path="res://resources/peng-gun/muzzle_flash/flash2.png" id="7_5x6s5"]
+[ext_resource type="Texture2D" uid="uid://jas8blq6tyjo" path="res://Resources/turrets_unmanned/Tower.png" id="3_5hor3"]
+[ext_resource type="Texture2D" uid="uid://dokxvuy0cuosg" path="res://Resources/turrets_unmanned/MG.png" id="4_usmgb"]
+[ext_resource type="Texture2D" uid="uid://byv1kucr88ir7" path="res://Resources/peng-gun/muzzle_flash/flash0.png" id="5_xnjsc"]
+[ext_resource type="Texture2D" uid="uid://dqsl7uxmqi1kg" path="res://Resources/peng-gun/muzzle_flash/flash1.png" id="6_xk6kk"]
+[ext_resource type="Texture2D" uid="uid://bmy4s8dml4wfd" path="res://Resources/peng-gun/muzzle_flash/flash2.png" id="7_5x6s5"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_fqh82"]
 animations = [{
