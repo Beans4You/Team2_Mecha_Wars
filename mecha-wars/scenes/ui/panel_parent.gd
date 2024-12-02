@@ -38,7 +38,11 @@ func _on_gui_input(event):
 			tempTower.global_position = event.global_position
 			var character_shape = tempTower.get_node("character_collision_shape").shape
 			var not_on_path = loop_through_capsule_area_and_check_for_path_collision(character_shape.extents.x, character_shape.extents.y, event.global_position)
-			if not not_on_path:
+			
+			var character_area = tempTower.get_node("overlap_check")
+			var not_overlapping_tower = check_for_overlapping_towers(character_area)
+			
+			if not not_on_path or not not_overlapping_tower:
 				# make red
 				tempTower.get_node("area").modulate = Color(1,0,0, 0.3)
 				tempTower.get_node("area").show()
@@ -52,9 +56,12 @@ func _on_gui_input(event):
 			# checking if the place put down is on the path
 			var character_shape = tempTower.get_node("character_collision_shape").shape
 			var not_on_path = loop_through_capsule_area_and_check_for_path_collision(character_shape.extents.x, character_shape.extents.y, event.global_position)
+			
+			var character_area = tempTower.get_node("overlap_check")
+			var not_overlapping_tower = check_for_overlapping_towers(character_area)
 
 			# here we check that the tower isn't in the ui section, and is not in the path layer
-			if event.global_position.x < 1280 and not_on_path and event.global_position.x > 0 and event.global_position.y > 5 and event.global_position.y < 700: 
+			if not_on_path and event.global_position.x < 1280 and not_overlapping_tower and event.global_position.x > 0 and event.global_position.y > 5 and event.global_position.y < 700: 
 				# grid snap
 				tempTower.global_position = event.global_position.snapped(Vector2(tile_size, tile_size))
 				tempTower.get_node("area").hide()
@@ -82,9 +89,15 @@ func loop_through_capsule_area_and_check_for_path_collision(area_width, area_hei
 			var point = Vector2(x, y)
 			var cell_coords = path_layer.local_to_map(mouse_position + point)
 			no_path_collision = no_path_collision and path_layer.get_cell_tile_data(cell_coords) == null
-	
 			
 	return no_path_collision
 
 	# might be able to use round shapes if you switch this code to collision_shape.shape.contains_point(event.global_position)
 	# might not work with the path logic however
+func check_for_overlapping_towers(area):
+	var result = true
+	for other_area in area.get_overlapping_areas():
+		if other_area.collision_mask == 64:
+			result = false
+			
+	return result
