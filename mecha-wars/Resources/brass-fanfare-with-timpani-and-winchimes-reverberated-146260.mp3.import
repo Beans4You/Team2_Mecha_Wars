@@ -3,12 +3,12 @@
 importer="mp3"
 type="AudioStreamMP3"
 uid="uid://bd334olpf5gpd"
-path="res://.godot/imported/brass-fanfare-with-timpani-and-winchimes-reverberated-146260.mp3-8adea0059b2b6dd0ea30dfdff3741c2f.mp3str"
+path="res://.godot/imported/brass-fanfare-with-timpani-and-winchimes-reverberated-146260.mp3-65d0b687eae1ec20969ab7d323688d7c.mp3str"
 
 [deps]
 
-source_file="res://Resources/brass-fanfare-with-timpani-and-winchimes-reverberated-146260.mp3"
-dest_files=["res://.godot/imported/brass-fanfare-with-timpani-and-winchimes-reverberated-146260.mp3-8adea0059b2b6dd0ea30dfdff3741c2f.mp3str"]
+source_file="res://resources/brass-fanfare-with-timpani-and-winchimes-reverberated-146260.mp3"
+dest_files=["res://.godot/imported/brass-fanfare-with-timpani-and-winchimes-reverberated-146260.mp3-65d0b687eae1ec20969ab7d323688d7c.mp3str"]
 
 [params]
 

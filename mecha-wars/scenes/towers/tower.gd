@@ -51,11 +51,11 @@ func strong_select_enemy():
 	current_enemy = enemy_array[enemy_index]
 
 func last_select_enemy():
-	var min_strength_array = []
-	for e in enemy_array:
-		min_strength_array.append(e.health)
-	var min_strength = min_strength_array.min()
-	var enemy_index = min_strength_array.find(min_strength)
+	var enemy_progress_array = []
+	for i in enemy_array:
+		enemy_progress_array.append(i.get_parent().get_progress())
+	var min_progress = enemy_progress_array.min()
+	var enemy_index = enemy_progress_array.find(min_progress)
 	current_enemy = enemy_array[enemy_index]
 
 func tower_ui_off():
