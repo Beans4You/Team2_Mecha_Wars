@@ -83,3 +83,4 @@ shape = SubResource("CapsuleShape2D_or3hg")
 
 [connection signal="animation_looped" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_animation_looped"]
 [connection signal="body_entered" from="hit_area" to="." method="_on_hit_area_body_entered"]
+[connection signal="timeout" from="damage_indicator/Timer" to="." method="_on_timer_timeout"]

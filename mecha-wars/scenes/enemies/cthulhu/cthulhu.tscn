@@ -251,7 +251,6 @@ animations = [{
 [node name="cthulhu" type="CharacterBody2D" groups=["enemy"]]
 script = ExtResource("1_gyr6m")
 speed = 65
-health = 100
 attack_damage = 25
 gold_worth = 250
 

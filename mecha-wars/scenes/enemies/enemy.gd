@@ -11,8 +11,6 @@ var stronghold
 @onready var game_scene = get_parent().get_parent().get_parent().get_parent()
 
 # Called when the node enters the scene tree for the first time.
-func _ready():
-	pass
 
 
 func _process(delta):
@@ -27,11 +25,6 @@ func _process(delta):
 		else:
 			speed = 120
 			$AnimatedSprite2D.play('move')
-			
-	#if game_scene.game_over == true:
-		#get_tree().call_group("enemy", "queue_free")
-		# to do: adjust game over function to encompass this
-	
 	
 	if health <=0:
 		get_parent().get_parent().queue_free()
