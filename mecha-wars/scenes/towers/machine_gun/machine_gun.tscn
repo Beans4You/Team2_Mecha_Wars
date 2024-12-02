@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://c1ulpldkh6qq0"]
+[gd_scene load_steps=13 format=3 uid="uid://c1ulpldkh6qq0"]
 
 [ext_resource type="PackedScene" uid="uid://bhrok0a2cdblv" path="res://scenes/towers/tower_shooting.tscn" id="1_6lh7w"]
 [ext_resource type="Script" path="res://scenes/towers/machine_gun/machine_gun.gd" id="2_ilk3k"]
@@ -10,6 +10,14 @@
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_fqh82"]
 animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_5hor3")
+}],
+"loop": true,
+"name": &"Upgraded",
+"speed": 5.0
+}, {
 "frames": [{
 "duration": 1.0,
 "texture": ExtResource("3_5hor3")
@@ -56,13 +64,17 @@ animations = [{
 "speed": 16.0
 }]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ifkdx"]
+size = Vector2(52, 52)
+
 [node name="machine_gun" instance=ExtResource("1_6lh7w")]
 script = ExtResource("2_ilk3k")
+rate_of_fire = 0.08
 
 [node name="animated_sprite" type="AnimatedSprite2D" parent="." index="1"]
 scale = Vector2(0.22, 0.22)
 sprite_frames = SubResource("SpriteFrames_fqh82")
-animation = &"shoot"
+animation = &"Upgraded"
 
 [node name="character_collision_shape" type="CollisionShape2D" parent="." index="2"]
 position = Vector2(0, 0.5)
@@ -86,6 +98,14 @@ scale = Vector2(3.24675, 3.24675)
 position = Vector2(-7, -25)
 scale = Vector2(0.8, 0.8)
 sprite_frames = SubResource("SpriteFrames_ym732")
+
+[node name="overlap_check" type="Area2D" parent="." index="5"]
+disable_mode = 2
+collision_layer = 64
+collision_mask = 64
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="overlap_check" index="0"]
+shape = SubResource("RectangleShape2D_ifkdx")
 
 [connection signal="body_entered" from="range" to="." method="_on_range_body_entered"]
 [connection signal="body_exited" from="range" to="." method="_on_range_body_exited"]

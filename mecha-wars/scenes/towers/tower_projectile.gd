@@ -44,9 +44,9 @@ func shoot():
 	$animated_sprite.play('shoot')
 	shoot_ready = false
 	#print("shoot")
-	#create_bullet(current_enemy)
-	await(get_tree().create_timer(rate_of_fire).timeout)
 	create_bullet(current_enemy)
+	await(get_tree().create_timer(rate_of_fire).timeout)
+	#create_bullet(current_enemy)
 	#$animated_sprite.play('idle')
 	shoot_ready = true
 	

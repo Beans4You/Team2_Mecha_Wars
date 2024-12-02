@@ -5,7 +5,7 @@ class_name tower_shooting
 #var current_enemy
 var shoot_ready = true
 @export var damage = 1
-@export var rate_of_fire = 0.1
+@export var rate_of_fire = 0.08
 
 
 func _physics_process(_delta):

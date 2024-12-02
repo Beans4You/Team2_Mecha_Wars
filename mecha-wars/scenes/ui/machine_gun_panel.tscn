@@ -34,6 +34,6 @@ offset_bottom = -55.3369
 scale = Vector2(2.8, 2.8)
 theme_override_fonts/font = ExtResource("2_vrdis")
 theme_override_font_sizes/font_size = 18
-text = "200  Gold"
+text = "150 Gold"
 
 [connection signal="gui_input" from="." to="." method="_on_gui_input"]
