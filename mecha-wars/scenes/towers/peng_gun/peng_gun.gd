@@ -4,6 +4,7 @@ var enemy_relative
 var angle
 
 func _ready():
+	damage = 8
 	super._ready()
 
 

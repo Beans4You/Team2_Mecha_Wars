@@ -1,0 +1,91 @@
+[gd_scene load_steps=12 format=3 uid="uid://c1ulpldkh6qq0"]
+
+[ext_resource type="PackedScene" uid="uid://bhrok0a2cdblv" path="res://scenes/towers/tower_shooting.tscn" id="1_6lh7w"]
+[ext_resource type="Script" path="res://scenes/towers/machine_gun/machine_gun.gd" id="2_ilk3k"]
+[ext_resource type="Texture2D" uid="uid://jas8blq6tyjo" path="res://resources/turrets_unmanned/Tower.png" id="3_5hor3"]
+[ext_resource type="Texture2D" uid="uid://dokxvuy0cuosg" path="res://resources/turrets_unmanned/MG.png" id="4_usmgb"]
+[ext_resource type="Texture2D" uid="uid://byv1kucr88ir7" path="res://resources/peng-gun/muzzle_flash/flash0.png" id="5_xnjsc"]
+[ext_resource type="Texture2D" uid="uid://dqsl7uxmqi1kg" path="res://resources/peng-gun/muzzle_flash/flash1.png" id="6_xk6kk"]
+[ext_resource type="Texture2D" uid="uid://bmy4s8dml4wfd" path="res://resources/peng-gun/muzzle_flash/flash2.png" id="7_5x6s5"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_fqh82"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_5hor3")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_5hor3")
+}],
+"loop": true,
+"name": &"shoot",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_viwyo"]
+size = Vector2(52, 51)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_bhgnr"]
+radius = 175.231
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ym732"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": null
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_xnjsc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_xk6kk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_5x6s5")
+}, {
+"duration": 1.0,
+"texture": null
+}],
+"loop": false,
+"name": &"default",
+"speed": 16.0
+}]
+
+[node name="machine_gun" instance=ExtResource("1_6lh7w")]
+script = ExtResource("2_ilk3k")
+
+[node name="animated_sprite" type="AnimatedSprite2D" parent="." index="1"]
+scale = Vector2(0.22, 0.22)
+sprite_frames = SubResource("SpriteFrames_fqh82")
+animation = &"shoot"
+
+[node name="character_collision_shape" type="CollisionShape2D" parent="." index="2"]
+position = Vector2(0, 0.5)
+shape = SubResource("RectangleShape2D_viwyo")
+
+[node name="range" type="Area2D" parent="." index="3"]
+
+[node name="range_collision_shape" type="CollisionShape2D" parent="range" index="0"]
+shape = SubResource("CircleShape2D_bhgnr")
+
+[node name="barrel" type="Sprite2D" parent="." index="4"]
+scale = Vector2(0.308, 0.308)
+texture = ExtResource("4_usmgb")
+offset = Vector2(-24, -50)
+
+[node name="aim" type="Marker2D" parent="barrel" index="0"]
+position = Vector2(25.974, -113.636)
+scale = Vector2(3.24675, 3.24675)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="barrel/aim" index="0"]
+position = Vector2(-7, -25)
+scale = Vector2(0.8, 0.8)
+sprite_frames = SubResource("SpriteFrames_ym732")
+
+[connection signal="body_entered" from="range" to="." method="_on_range_body_entered"]
+[connection signal="body_exited" from="range" to="." method="_on_range_body_exited"]

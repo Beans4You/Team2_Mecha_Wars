@@ -1,8 +1,8 @@
 [gd_scene load_steps=4 format=3 uid="uid://s3ku7fbka1wd"]
 
 [ext_resource type="Script" path="res://scenes/ui/rocket_dino_panel.gd" id="1_ehgqv"]
-[ext_resource type="Texture2D" uid="uid://dcyvs6lwd81k6" path="res://Resources/rocket_dino/rocket_dino_mecha0.png" id="1_p1wqg"]
-[ext_resource type="FontFile" uid="uid://wge3vupq5r6q" path="res://Resources/kenney_ui/Font/Kenney Future.ttf" id="3_dlay5"]
+[ext_resource type="Texture2D" uid="uid://dcyvs6lwd81k6" path="res://resources/rocket_dino/rocket_dino_mecha0.png" id="1_p1wqg"]
+[ext_resource type="FontFile" uid="uid://wge3vupq5r6q" path="res://resources/kenney_ui/Font/Kenney Future.ttf" id="3_dlay5"]
 
 [node name="RocketDinoPanel" type="Panel"]
 custom_minimum_size = Vector2(120, 120)

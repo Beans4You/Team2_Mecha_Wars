@@ -1,8 +1,8 @@
 [gd_scene load_steps=4 format=3 uid="uid://m5hm2ng2gk4q"]
 
 [ext_resource type="Script" path="res://scenes/ui/peng_panel.gd" id="1_5a3yc"]
-[ext_resource type="Texture2D" uid="uid://cclgue40mak7t" path="res://Resources/peng-gun/peng-gun7.png" id="2_l7mje"]
-[ext_resource type="FontFile" uid="uid://wge3vupq5r6q" path="res://Resources/kenney_ui/Font/Kenney Future.ttf" id="3_05ic0"]
+[ext_resource type="Texture2D" uid="uid://cclgue40mak7t" path="res://resources/peng-gun/peng-gun7.png" id="2_l7mje"]
+[ext_resource type="FontFile" uid="uid://wge3vupq5r6q" path="res://resources/kenney_ui/Font/Kenney Future.ttf" id="3_05ic0"]
 
 [node name="Pengpanel" type="Panel"]
 offset_left = 1.0
