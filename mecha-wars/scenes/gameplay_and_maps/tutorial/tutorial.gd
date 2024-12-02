@@ -4,9 +4,8 @@ extends Node
 
 @onready var starting_gold = 800
 @onready var curr_gold = starting_gold
-
+var message_state = 0
 @onready var game_over = false
-
 @onready var main = load("res://scenes/gameplay_and_maps/main.tscn")
 @onready var win_message = load("res://scenes/ui/message.tscn")
 @onready var main_menu = load("res://scenes/ui/main_menu.tscn")
@@ -14,11 +13,13 @@ extends Node
 func _ready() -> void:
 	var win = win_message.instantiate()
 	add_child(win)
-	win.set_message("Drag tower from Right side and defend tower")
+	win.set_message("Welcome to BootCamp Fresh Meat  \n\n Press Next")
 	
 func _on_button_pressed() -> void:
-	$tutorial_path/Timer.start() # Replace with function body.
+	$tutorial_path/Timer.start() 
 	$Button.queue_free()
+	$Next.queue_free()
+	
 
 func _physics_process(_delta: float) -> void:
 	if game_over:
@@ -75,3 +76,24 @@ func clicked_ui(mouse_position):
 		return true
 	return false
 	
+
+
+func _on_button_2_pressed() -> void:
+	var win = win_message.instantiate()
+	add_child(win)
+	if message_state == 0:
+		win.set_message("Drag Tower from Right Side and Place in Green Squares \n\n Press Next")
+		message_state = 1  # Update the state to show the second message nex
+	elif message_state == 1:
+		win.set_message("Placing towers along the path turns it Red, Stopping you \n\n Press Next")
+		message_state = 2 
+	elif message_state == 2:
+		win.set_message("Selecting towers Opnes the Ui Upgrade screen on the Right side \n\n Press Next ")
+		message_state = 3
+	elif message_state == 3:
+		win.set_message("More enemies Killed, gets you more Gold \n\n Press Start Game when ready")
+		message_state = 4  # Reset state if needed
+	elif message_state == 4:
+		win.queue_free()
+		message_state = 0
+		

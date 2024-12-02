@@ -3,8 +3,8 @@
 [ext_resource type="Script" path="res://scenes/gameplay_and_maps/game_scene.gd" id="1_oknfx"]
 [ext_resource type="PackedScene" uid="uid://df227y6fg578t" path="res://scenes/gameplay_and_maps/map_with_grid.tscn" id="2_d6iwt"]
 [ext_resource type="PackedScene" uid="uid://hxwjjftcvqr5" path="res://scenes/ui/ui.tscn" id="3_jlfpq"]
+[ext_resource type="AudioStream" uid="uid://cvg81ou2hn1bg" path="res://Resources/The Son of Flynn .wav" id="5_3nx8s"]
 [ext_resource type="Script" path="res://scenes/gameplay_and_maps/path_spawner.gd" id="5_cdey6"]
-[ext_resource type="AudioStream" uid="uid://b4wplp12spl8c" path="res://Resources/fight.ogg" id="5_r6buq"]
 
 [node name="game_scene_node" type="Node2D"]
 script = ExtResource("1_oknfx")
@@ -20,8 +20,7 @@ script = ExtResource("5_cdey6")
 wait_time = 1.25
 
 [node name="music" type="AudioStreamPlayer2D" parent="."]
-stream = ExtResource("5_r6buq")
-volume_db = -21.295
+stream = ExtResource("5_3nx8s")
 autoplay = true
 
 [node name="tower_container" type="Node" parent="."]

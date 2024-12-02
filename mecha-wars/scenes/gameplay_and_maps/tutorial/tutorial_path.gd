@@ -5,7 +5,7 @@ extends Node2D
 @onready var runner_path = preload("res://scenes/gameplay_and_maps/tutorial/tutorial_enemy_path.tscn")
 @onready var game_scene = get_parent()
 
-var enemy_array = [1, 1, 1, 1, 1, 1, 1, 1]
+var enemy_array = [0, 1, 1, 1, 1, 1, 1, 1, 1]
 var array_spot = 0
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
