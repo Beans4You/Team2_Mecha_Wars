@@ -12,6 +12,7 @@ outline_size = 8
 outline_color = Color(0.0272828, 0.394438, 3.36915e-07, 1)
 
 [node name="message" type="Node2D"]
+z_index = 1
 position = Vector2(740, 333)
 script = ExtResource("1_4ux6i")
 metadata/_edit_group_ = true
