@@ -1,41 +1,39 @@
-[gd_scene load_steps=5 format=3 uid="uid://4fxaw5bu5pfc"]
+[gd_scene load_steps=5 format=3 uid="uid://cw8mfuim3l4b2"]
 
-[ext_resource type="Script" path="res://scenes/ui/machine_gun_panel.gd" id="1_ahskw"]
-[ext_resource type="Texture2D" uid="uid://jas8blq6tyjo" path="res://resources/turrets_unmanned/Tower.png" id="1_sxh3x"]
-[ext_resource type="Texture2D" uid="uid://dokxvuy0cuosg" path="res://resources/turrets_unmanned/MG.png" id="2_gd68v"]
-[ext_resource type="FontFile" uid="uid://wge3vupq5r6q" path="res://resources/kenney_ui/Font/Kenney Future.ttf" id="3_qn50w"]
+[ext_resource type="Script" path="res://scenes/ui/machine_gun_panel.gd" id="1_0x3m6"]
+[ext_resource type="Texture2D" uid="uid://dokxvuy0cuosg" path="res://resources/turrets_unmanned/MG.png" id="1_o0ycw"]
+[ext_resource type="Texture2D" uid="uid://jas8blq6tyjo" path="res://resources/turrets_unmanned/Tower.png" id="2_o5xli"]
+[ext_resource type="FontFile" uid="uid://wge3vupq5r6q" path="res://resources/kenney_ui/Font/Kenney Future.ttf" id="2_vrdis"]
 
-[node name="machine_gun_panel" type="Panel"]
-offset_left = 1.0
-offset_top = 1.0
-offset_right = 121.0
-offset_bottom = 124.0
-script = ExtResource("1_ahskw")
+[node name="machine_gun_panel_2" type="Panel"]
+custom_minimum_size = Vector2(120, 120)
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_0x3m6")
 
 [node name="Sprite2D2" type="Sprite2D" parent="."]
-position = Vector2(60, 60)
-scale = Vector2(0.304, 0.3)
-texture = ExtResource("1_sxh3x")
+position = Vector2(59, 63)
+scale = Vector2(0.26, 0.26)
+texture = ExtResource("2_o5xli")
 
 [node name="Sprite2D" type="Sprite2D" parent="Sprite2D2"]
-position = Vector2(-18.1818, -40.9091)
-texture = ExtResource("2_gd68v")
+position = Vector2(-26.6667, -63.3333)
+scale = Vector2(1.33333, 1.33333)
+texture = ExtResource("1_o0ycw")
 
-[node name="Label" type="Label" parent="Sprite2D2"]
-anchors_preset = 7
-anchor_left = 0.5
-anchor_top = 1.0
-anchor_right = 0.5
-anchor_bottom = 1.0
-offset_left = -294.632
-offset_top = -104.0
-offset_right = -138.632
-offset_bottom = -75.9997
-grow_horizontal = 2
-grow_vertical = 0
-scale = Vector2(2.5, 2.5)
-theme_override_fonts/font = ExtResource("3_qn50w")
-theme_override_font_sizes/font_size = 23
-text = "200  Gold "
+[node name="Label" type="Label" parent="Sprite2D2/Sprite2D"]
+anchors_preset = -1
+anchor_left = 0.133
+anchor_top = 0.94
+anchor_right = 0.133
+anchor_bottom = 0.94
+offset_left = -153.284
+offset_top = -78.3369
+offset_right = -30.2838
+offset_bottom = -55.3369
+scale = Vector2(2.8, 2.8)
+theme_override_fonts/font = ExtResource("2_vrdis")
+theme_override_font_sizes/font_size = 18
+text = "200  Gold"
 
 [connection signal="gui_input" from="." to="." method="_on_gui_input"]

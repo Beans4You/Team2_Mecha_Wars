@@ -3,7 +3,7 @@ class_name game_scene_parent_script
 
 @onready var placing_active = false
 
-@onready var starting_gold = 5000
+@onready var starting_gold = 500
 @onready var curr_gold
 
 @onready var game_over = false

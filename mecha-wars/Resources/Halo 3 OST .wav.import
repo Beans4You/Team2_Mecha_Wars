@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://bca23j8bjb6ru"
-path="res://.godot/imported/Halo 3 OST .wav-e480d4f1c90e592a996e6fe19ed32ce3.sample"
+path="res://.godot/imported/Halo 3 OST .wav-003029b8dcfd14c661fe6810979ea116.sample"
 
 [deps]
 
-source_file="res://Resources/Halo 3 OST .wav"
-dest_files=["res://.godot/imported/Halo 3 OST .wav-e480d4f1c90e592a996e6fe19ed32ce3.sample"]
+source_file="res://resources/Halo 3 OST .wav"
+dest_files=["res://.godot/imported/Halo 3 OST .wav-003029b8dcfd14c661fe6810979ea116.sample"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cp7hy4mjmtj21"
-path="res://.godot/imported/turret_shoot0.png-d28e1eb28a69f046251af764f9dea029.ctex"
+path="res://.godot/imported/turret_shoot0.png-b2491385f5446ac88db657a1e27f999e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Resources/Hit-Scan-Tower/turret_shoot0.png"
-dest_files=["res://.godot/imported/turret_shoot0.png-d28e1eb28a69f046251af764f9dea029.ctex"]
+source_file="res://resources/Hit-Scan-Tower/turret_shoot0.png"
+dest_files=["res://.godot/imported/turret_shoot0.png-b2491385f5446ac88db657a1e27f999e.ctex"]
 
 [params]
 
