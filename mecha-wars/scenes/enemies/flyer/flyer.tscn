@@ -54,6 +54,10 @@ height = 248.0
 
 [node name="flyer" instance=ExtResource("1_qnmhe")]
 script = ExtResource("1_id6n8")
+speed = 90
+health = 20
+attack_damage = 10
+gold_worth = 30
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." index="0"]
 sprite_frames = SubResource("SpriteFrames_g80vt")

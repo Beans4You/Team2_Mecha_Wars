@@ -4,7 +4,7 @@ class_name tower_shooting
 #var enemy_array = []
 #var current_enemy
 var shoot_ready = true
-@export var damage = 1
+@export var damage = 1.0
 @export var rate_of_fire = 0.08
 
 

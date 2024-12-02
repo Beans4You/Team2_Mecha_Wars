@@ -2,11 +2,9 @@ extends CharacterBody2D
 class_name enemy_script
 
 @export var speed = 120
-
-var health = 10
-var attack_damage = 5
-
-var gold_worth = 100
+@export var health = 10
+@export var attack_damage = 5
+@export var gold_worth = 100
 
 var at_stronghold = false
 var stronghold

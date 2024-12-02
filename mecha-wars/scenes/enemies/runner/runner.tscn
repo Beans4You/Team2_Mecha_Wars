@@ -62,6 +62,7 @@ height = 86.1336
 
 [node name="runner" instance=ExtResource("1_jm8wu")]
 script = ExtResource("2_i4i83")
+gold_worth = 20
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." index="0"]
 sprite_frames = SubResource("SpriteFrames_edx1n")

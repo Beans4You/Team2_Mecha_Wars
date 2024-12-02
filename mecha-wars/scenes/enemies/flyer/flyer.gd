@@ -2,11 +2,6 @@ extends enemy_script
 
 func _ready():
 	$AnimatedSprite2D.play('move')
-	self.speed = 90
-	self.attack_damage = 10
-	self.health = 20
-	self.gold_worth = 25
-
 
 
 func _on_hit_area_body_entered(body) -> void:

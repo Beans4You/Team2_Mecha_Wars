@@ -1,17 +1,14 @@
 extends enemy_script
 
-
-var max_health = 500
+@export var max_health = 500
 var timer = 1
-
 
 func _ready():
 	$spawn_animation.hide()
 	$AnimatedSprite2D.play('move')
-	self.speed = 40
-	self.attack_damage = 50
+	
 	self.health = max_health
-	self.gold_worth = 1000
+	
 	$health_bar.max_value = max_health
 	
 	$spawn_timer.start()

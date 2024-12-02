@@ -5,10 +5,6 @@ var enemy_relative
 var angle
 
 func _ready():
-	gold_cost = 150
-	damage = 0.5
-	rate_of_fire = 0.2
-	tower_range = 550
 	super._ready()
 
 func _physics_process(_delta: float) -> void:

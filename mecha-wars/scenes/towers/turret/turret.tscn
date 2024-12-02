@@ -62,7 +62,7 @@ radius = 174.04
 
 [node name="turret" instance=ExtResource("1_nbqb2")]
 script = ExtResource("2_wqs8m")
-damage = 5
+damage = 2
 rate_of_fire = 0.3
 tower_range = 600
 gold_cost = 500

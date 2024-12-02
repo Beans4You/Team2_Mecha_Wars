@@ -147,6 +147,10 @@ animations = [{
 
 [node name="mothership" type="CharacterBody2D" groups=["enemy"]]
 script = ExtResource("1_satur")
+speed = 40
+health = 500
+attack_damage = 50
+gold_worth = 1000
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 scale = Vector2(2.5, 2.5)

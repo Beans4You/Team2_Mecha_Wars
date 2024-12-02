@@ -250,6 +250,10 @@ animations = [{
 
 [node name="cthulhu" type="CharacterBody2D" groups=["enemy"]]
 script = ExtResource("1_gyr6m")
+speed = 65
+health = 100
+attack_damage = 25
+gold_worth = 250
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 scale = Vector2(2.25, 2.25)

@@ -1,6 +1,6 @@
 extends enemy_script
 
-var max_health = 100#200
+@export var max_health = 100#200
 var phase = 1
 var alive = true
 var path
@@ -12,11 +12,8 @@ func _ready():
 	$AnimatedSprite2D.play('move')
 	path = get_parent().get_parent()
 	
-	#self.speed = 150
-	self.speed = 65
-	self.attack_damage = 25
 	self.health = max_health
-	self.gold_worth = 250
+
 	$health_bar.max_value = max_health
 
 
