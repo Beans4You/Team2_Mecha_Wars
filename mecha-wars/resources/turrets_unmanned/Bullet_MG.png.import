@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c2h6yqd1t8au2"
-path="res://.godot/imported/Bullet_MG.png-5b102eda2591a8be14c56b4ac9c3d90c.ctex"
+path="res://.godot/imported/Bullet_MG.png-55a72e49504ea84d42cafe87007ee33b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Resources/turrets_unmanned/Bullet_MG.png"
-dest_files=["res://.godot/imported/Bullet_MG.png-5b102eda2591a8be14c56b4ac9c3d90c.ctex"]
+source_file="res://resources/turrets_unmanned/Bullet_MG.png"
+dest_files=["res://.godot/imported/Bullet_MG.png-55a72e49504ea84d42cafe87007ee33b.ctex"]
 
 [params]
 

@@ -2,7 +2,7 @@ extends tower_shooting
 
 
 var enemy_relative
-var angle
+
 
 func _ready():
 	super._ready()

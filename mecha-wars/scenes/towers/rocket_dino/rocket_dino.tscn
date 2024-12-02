@@ -1,13 +1,43 @@
-[gd_scene load_steps=12 format=3 uid="uid://c2isihlke4e4t"]
+[gd_scene load_steps=18 format=3 uid="uid://c2isihlke4e4t"]
 
 [ext_resource type="PackedScene" uid="uid://dnwi2cwo0ksva" path="res://scenes/towers/tower_projectile.tscn" id="1_div88"]
-[ext_resource type="Texture2D" uid="uid://dcyvs6lwd81k6" path="res://Resources/rocket_dino/rocket_dino_mecha0.png" id="2_04m6f"]
 [ext_resource type="Script" path="res://scenes/towers/rocket_dino/rocket_dino.gd" id="2_7h3dq"]
-[ext_resource type="Texture2D" uid="uid://b5mdfjfkxegbd" path="res://Resources/rocket_dino/rocket_dino_mecha1.png" id="3_sfokh"]
-[ext_resource type="Texture2D" uid="uid://0bftqjrygi87" path="res://Resources/rocket_dino/rocket_dino_mecha2.png" id="4_dcjd5"]
-[ext_resource type="Texture2D" uid="uid://6l7uaqylv3vh" path="res://Resources/rocket_dino/rocket_dino_mecha3.png" id="5_s6v0l"]
+[ext_resource type="Texture2D" uid="uid://d2cxove0s3hga" path="res://resources/rocket_dino/rocket_dino_just_body.png" id="3_d24fu"]
+[ext_resource type="Texture2D" uid="uid://b0p62iv3xtw4f" path="res://resources/rocket_dino/dino_arm.png" id="4_afh80"]
 
 [sub_resource type="Theme" id="Theme_ojke3"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_goia5"]
+atlas = ExtResource("3_d24fu")
+region = Rect2(0, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sfa6a"]
+atlas = ExtResource("3_d24fu")
+region = Rect2(128, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jupsn"]
+atlas = ExtResource("3_d24fu")
+region = Rect2(0, 128, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pkthy"]
+atlas = ExtResource("3_d24fu")
+region = Rect2(128, 128, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sdnes"]
+atlas = ExtResource("3_d24fu")
+region = Rect2(0, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4fg4y"]
+atlas = ExtResource("3_d24fu")
+region = Rect2(128, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_j5sbr"]
+atlas = ExtResource("3_d24fu")
+region = Rect2(0, 128, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_b8to1"]
+atlas = ExtResource("3_d24fu")
+region = Rect2(128, 128, 128, 128)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_y5mq4"]
 animations = [{
@@ -18,16 +48,16 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("2_04m6f")
+"texture": SubResource("AtlasTexture_goia5")
 }, {
 "duration": 1.0,
-"texture": ExtResource("3_sfokh")
+"texture": SubResource("AtlasTexture_sfa6a")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_dcjd5")
+"texture": SubResource("AtlasTexture_jupsn")
 }, {
 "duration": 1.0,
-"texture": ExtResource("5_s6v0l")
+"texture": SubResource("AtlasTexture_pkthy")
 }],
 "loop": true,
 "name": &"idle",
@@ -35,16 +65,16 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("2_04m6f")
+"texture": SubResource("AtlasTexture_sdnes")
 }, {
 "duration": 1.0,
-"texture": ExtResource("3_sfokh")
+"texture": SubResource("AtlasTexture_4fg4y")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_dcjd5")
+"texture": SubResource("AtlasTexture_j5sbr")
 }, {
 "duration": 1.0,
-"texture": ExtResource("5_s6v0l")
+"texture": SubResource("AtlasTexture_b8to1")
 }],
 "loop": true,
 "name": &"shoot",
@@ -73,7 +103,8 @@ theme = SubResource("Theme_ojke3")
 
 [node name="animated_sprite" type="AnimatedSprite2D" parent="." index="1"]
 sprite_frames = SubResource("SpriteFrames_y5mq4")
-animation = &"Upgraded"
+animation = &"idle"
+frame_progress = 0.706768
 
 [node name="character_collision_shape" type="CollisionShape2D" parent="." index="2"]
 position = Vector2(-1, 17)
@@ -88,14 +119,19 @@ collision_mask = 64
 position = Vector2(0.5, 16)
 shape = SubResource("RectangleShape2D_1r6hh")
 
-[node name="aim" type="Marker2D" parent="." index="4"]
-position = Vector2(39, 4)
-
-[node name="range" type="Area2D" parent="." index="5" groups=["Enemy"]]
+[node name="range" type="Area2D" parent="." index="4" groups=["Enemy"]]
 
 [node name="range_collision_shape" type="CollisionShape2D" parent="range" index="0"]
 shape = SubResource("CircleShape2D_02jkp")
 debug_color = Color(0.663517, 0.501309, 0.305957, 0.42)
+
+[node name="dino_arm" type="Sprite2D" parent="." index="5"]
+position = Vector2(16, -5)
+texture = ExtResource("4_afh80")
+offset = Vector2(-15, 7.5)
+
+[node name="aim" type="Marker2D" parent="dino_arm" index="0"]
+position = Vector2(20, 14)
 
 [connection signal="body_entered" from="range" to="." method="_on_range_body_entered"]
 [connection signal="body_exited" from="range" to="." method="_on_range_body_exited"]
