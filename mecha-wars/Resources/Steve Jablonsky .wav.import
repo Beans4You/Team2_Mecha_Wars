@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://dcbrdnttcc5bm"
+path="res://.godot/imported/Steve Jablonsky .wav-36eb606bf49d089ed6a40a01eb5e0ea5.sample"
+
+[deps]
+
+source_file="res://Resources/Steve Jablonsky .wav"
+dest_files=["res://.godot/imported/Steve Jablonsky .wav-36eb606bf49d089ed6a40a01eb5e0ea5.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

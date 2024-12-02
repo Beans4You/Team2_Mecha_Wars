@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://njd2kpovtb5c"]
+[gd_scene load_steps=9 format=3 uid="uid://njd2kpovtb5c"]
 
 [ext_resource type="Script" path="res://scenes/gameplay_and_maps/tutorial/tutorial.gd" id="1_ppk4p"]
 [ext_resource type="PackedScene" uid="uid://dw56be7m8sl6e" path="res://scenes/gameplay_and_maps/tutorial/tutorial_map.tscn" id="2_1eqk4"]
@@ -6,6 +6,8 @@
 [ext_resource type="Script" path="res://scenes/gameplay_and_maps/tutorial/tutorial_path.gd" id="4_r6cv6"]
 [ext_resource type="FontFile" uid="uid://wge3vupq5r6q" path="res://Resources/kenney_ui/Font/Kenney Future.ttf" id="5_q7hg3"]
 [ext_resource type="Texture2D" uid="uid://dun2var8fyvko" path="res://Resources/random stuff/outline.png" id="6_py6in"]
+[ext_resource type="FontFile" uid="uid://cd5y7ffxerryv" path="res://Resources/kenney_ui/Font/Kenney Future Narrow.ttf" id="7_021sj"]
+[ext_resource type="AudioStream" uid="uid://bca23j8bjb6ru" path="res://Resources/Halo 3 OST .wav" id="8_n1w0g"]
 
 [node name="tutorial_scene" type="Node2D"]
 script = ExtResource("1_ppk4p")
@@ -24,6 +26,9 @@ offset_left = 504.0
 offset_top = 456.0
 offset_right = 772.0
 offset_bottom = 526.0
+theme_override_colors/font_hover_pressed_color = Color(0.168627, 0.643137, 0, 1)
+theme_override_colors/font_hover_color = Color(0.169248, 0.642905, 7.70092e-07, 1)
+theme_override_colors/font_pressed_color = Color(0.168627, 0.643137, 0, 1)
 theme_override_fonts/font = ExtResource("5_q7hg3")
 theme_override_font_sizes/font_size = 25
 text = "Press to Start"
@@ -72,5 +77,23 @@ text = "Protect the stronghold
 
 [node name="tower_container" type="Node" parent="."]
 
+[node name="Next" type="Button" parent="."]
+offset_left = 533.0
+offset_top = 604.0
+offset_right = 730.0
+offset_bottom = 693.0
+theme_override_colors/font_hover_pressed_color = Color(0.169479, 0.642887, 1.92523e-07, 1)
+theme_override_colors/font_hover_color = Color(0.168627, 0.643137, 0, 1)
+theme_override_colors/font_pressed_color = Color(0.168627, 0.643137, 0, 1)
+theme_override_fonts/font = ExtResource("7_021sj")
+theme_override_font_sizes/font_size = 50
+text = "  Next"
+icon_alignment = 1
+
+[node name="Music" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("8_n1w0g")
+autoplay = true
+
 [connection signal="timeout" from="tutorial_path/Timer" to="tutorial_path" method="_on_timer_timeout"]
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Next" to="." method="_on_button_2_pressed"]

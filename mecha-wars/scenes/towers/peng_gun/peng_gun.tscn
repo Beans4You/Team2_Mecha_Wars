@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=3 uid="uid://dshhbww8osv5u"]
+[gd_scene load_steps=21 format=3 uid="uid://dshhbww8osv5u"]
 
 [ext_resource type="PackedScene" uid="uid://bhrok0a2cdblv" path="res://scenes/towers/tower_shooting.tscn" id="1_rxmb3"]
 [ext_resource type="Script" path="res://scenes/towers/peng_gun/peng_gun.gd" id="2_fr20w"]
@@ -74,6 +74,9 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_2aer5"]
 size = Vector2(57, 86)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wi5lx"]
+size = Vector2(62, 95)
+
 [sub_resource type="SpriteFrames" id="SpriteFrames_8hnuv"]
 animations = [{
 "frames": [{
@@ -115,7 +118,16 @@ animation = &"shoot"
 [node name="character_collision_shape" type="CollisionShape2D" parent="." index="2"]
 shape = SubResource("RectangleShape2D_2aer5")
 
-[node name="aim" type="Marker2D" parent="." index="3"]
+[node name="overlap_check" type="Area2D" parent="." index="3"]
+disable_mode = 2
+collision_layer = 64
+collision_mask = 64
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="overlap_check" index="0"]
+position = Vector2(0, 5.5)
+shape = SubResource("RectangleShape2D_wi5lx")
+
+[node name="aim" type="Marker2D" parent="." index="4"]
 position = Vector2(0, -16)
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="aim" index="0"]
@@ -124,7 +136,7 @@ sprite_frames = SubResource("SpriteFrames_8hnuv")
 frame = 4
 frame_progress = 1.0
 
-[node name="range" type="Area2D" parent="." index="4"]
+[node name="range" type="Area2D" parent="." index="5"]
 position = Vector2(-3, -1)
 
 [node name="range_collision_shape" type="CollisionShape2D" parent="range" index="0"]

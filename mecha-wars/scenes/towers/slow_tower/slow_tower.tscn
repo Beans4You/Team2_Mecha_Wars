@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://bk3imwxe2dhda"]
+
+[ext_resource type="Script" path="res://scenes/towers/slow_tower/slow_tower.gd" id="1_pw345"]
+
+[node name="slow_tower" type="CharacterBody2D"]
+script = ExtResource("1_pw345")

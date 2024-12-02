@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://brcvceaq1hkhb"
+path="res://.godot/imported/The Dark Knight Main Theme.wav-fceca900205f8128fa5533c1b31d390c.sample"
+
+[deps]
+
+source_file="res://Resources/The Dark Knight Main Theme.wav"
+dest_files=["res://.godot/imported/The Dark Knight Main Theme.wav-fceca900205f8128fa5533c1b31d390c.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

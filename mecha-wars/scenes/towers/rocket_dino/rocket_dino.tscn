@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://c2isihlke4e4t"]
+[gd_scene load_steps=12 format=3 uid="uid://c2isihlke4e4t"]
 
 [ext_resource type="PackedScene" uid="uid://dnwi2cwo0ksva" path="res://scenes/towers/tower_projectile.tscn" id="1_div88"]
 [ext_resource type="Texture2D" uid="uid://dcyvs6lwd81k6" path="res://Resources/rocket_dino/rocket_dino_mecha0.png" id="2_04m6f"]
@@ -47,7 +47,10 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_8gus3"]
-size = Vector2(64, 74)
+size = Vector2(84, 102)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1r6hh"]
+size = Vector2(83, 102)
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_02jkp"]
 radius = 175.385
@@ -67,13 +70,22 @@ sprite_frames = SubResource("SpriteFrames_y5mq4")
 animation = &"shoot"
 
 [node name="character_collision_shape" type="CollisionShape2D" parent="." index="2"]
-position = Vector2(0, 6)
+position = Vector2(-1, 6)
 shape = SubResource("RectangleShape2D_8gus3")
 
-[node name="aim" type="Marker2D" parent="." index="3"]
+[node name="overlap_check" type="Area2D" parent="." index="3"]
+disable_mode = 2
+collision_layer = 64
+collision_mask = 64
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="overlap_check" index="0"]
+position = Vector2(0.5, 6)
+shape = SubResource("RectangleShape2D_1r6hh")
+
+[node name="aim" type="Marker2D" parent="." index="4"]
 position = Vector2(39, 4)
 
-[node name="range" type="Area2D" parent="." index="4" groups=["Enemy"]]
+[node name="range" type="Area2D" parent="." index="5" groups=["Enemy"]]
 
 [node name="range_collision_shape" type="CollisionShape2D" parent="range" index="0"]
 shape = SubResource("CircleShape2D_02jkp")

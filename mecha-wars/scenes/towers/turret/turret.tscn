@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://gw8xcii473kl"]
+[gd_scene load_steps=13 format=3 uid="uid://gw8xcii473kl"]
 
 [ext_resource type="PackedScene" uid="uid://dnwi2cwo0ksva" path="res://scenes/towers/tower_projectile.tscn" id="1_nbqb2"]
 [ext_resource type="Texture2D" uid="uid://cv7dr2rhjdhf0" path="res://Resources/Hit-Scan-Tower/laser_turret_0.png" id="2_3ku2y"]
@@ -47,7 +47,10 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_05sxr"]
-size = Vector2(32, 68)
+size = Vector2(36, 83)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mubka"]
+size = Vector2(44, 83)
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_1urxr"]
 radius = 174.04
@@ -65,13 +68,22 @@ animation = &"shoot"
 autoplay = "idle"
 
 [node name="character_collision_shape" type="CollisionShape2D" parent="." index="2"]
-position = Vector2(0, 4)
+position = Vector2(0, -3.5)
 shape = SubResource("RectangleShape2D_05sxr")
 
-[node name="aim" type="Marker2D" parent="." index="3"]
+[node name="overlap_check" type="Area2D" parent="." index="3"]
+disable_mode = 2
+collision_layer = 64
+collision_mask = 64
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="overlap_check" index="0"]
+position = Vector2(1, -3.5)
+shape = SubResource("RectangleShape2D_mubka")
+
+[node name="aim" type="Marker2D" parent="." index="4"]
 position = Vector2(0, -24)
 
-[node name="range" type="Area2D" parent="." index="4"]
+[node name="range" type="Area2D" parent="." index="5"]
 position = Vector2(0, -25)
 
 [node name="range_collision_shape" type="CollisionShape2D" parent="range" index="0"]
