@@ -18,7 +18,7 @@ func _ready() -> void:
 func _on_button_pressed() -> void:
 	$tutorial_path/Timer.start() 
 	$Button.queue_free()
-	$Next.queue_free()
+	
 	
 
 func _physics_process(_delta: float) -> void:

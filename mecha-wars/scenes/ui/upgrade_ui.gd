@@ -81,8 +81,8 @@ func _on_sell_gui_input(event: InputEvent) -> void:
 			sell_tower() # Replace with function body.
 
 func sell_tower() -> void:
-	var base_tower_cost = 100  # Example base cost
-	var upgrade_value = 50
+	var base_tower_cost = 200
+	var upgrade_value = 150
 	var refund = base_tower_cost + (twr.damage_upgrade_counter + twr.range_upgrade_counter) * upgrade_value
 	refund *= 0.75  
 	game_scene.curr_gold += int(refund)
