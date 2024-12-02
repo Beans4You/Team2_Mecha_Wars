@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://bvnrigqcqv0yp"
-path="res://.godot/imported/mixkit-video-game-blood-pop-2361.wav-a6010151d589210dfc1f2bab9195703a.sample"
+path="res://.godot/imported/mixkit-video-game-blood-pop-2361.wav-4047594af7f94eadbdbcb09533a12c86.sample"
 
 [deps]
 
-source_file="res://resources/mixkit-video-game-blood-pop-2361.wav"
-dest_files=["res://.godot/imported/mixkit-video-game-blood-pop-2361.wav-a6010151d589210dfc1f2bab9195703a.sample"]
+source_file="res://Resources/mixkit-video-game-blood-pop-2361.wav"
+dest_files=["res://.godot/imported/mixkit-video-game-blood-pop-2361.wav-4047594af7f94eadbdbcb09533a12c86.sample"]
 
 [params]
 

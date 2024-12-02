@@ -18,6 +18,11 @@
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_gcqc8"]
 animations = [{
+"frames": [],
+"loop": true,
+"name": &"Upgraded",
+"speed": 5.0
+}, {
 "frames": [{
 "duration": 1.0,
 "texture": ExtResource("3_iptja")
@@ -113,7 +118,7 @@ gold_cost = 200
 [node name="animated_sprite" type="AnimatedSprite2D" parent="." index="1"]
 scale = Vector2(0.75, 0.75)
 sprite_frames = SubResource("SpriteFrames_gcqc8")
-animation = &"shoot"
+animation = &"Upgraded"
 
 [node name="character_collision_shape" type="CollisionShape2D" parent="." index="2"]
 shape = SubResource("RectangleShape2D_2aer5")

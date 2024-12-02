@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://8ghmu622o5l2"
-path="res://.godot/imported/Cannon2.png-8a320e8265e311ed6966bad8cca20ddb.ctex"
+path="res://.godot/imported/Cannon2.png-a255ff4ae798c8fd6234c4d4c466b502.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://resources/turrets_unmanned/Cannon2.png"
-dest_files=["res://.godot/imported/Cannon2.png-8a320e8265e311ed6966bad8cca20ddb.ctex"]
+source_file="res://Resources/turrets_unmanned/Cannon2.png"
+dest_files=["res://.godot/imported/Cannon2.png-a255ff4ae798c8fd6234c4d4c466b502.ctex"]
 
 [params]
 

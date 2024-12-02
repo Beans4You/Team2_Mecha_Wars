@@ -11,6 +11,11 @@
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_3cso6"]
 animations = [{
+"frames": [],
+"loop": true,
+"name": &"Upgraded",
+"speed": 5.0
+}, {
 "frames": [{
 "duration": 1.0,
 "texture": ExtResource("2_3ku2y")
@@ -64,7 +69,7 @@ gold_cost = 500
 
 [node name="animated_sprite" type="AnimatedSprite2D" parent="." index="1"]
 sprite_frames = SubResource("SpriteFrames_3cso6")
-animation = &"shoot"
+animation = &"Upgraded"
 autoplay = "idle"
 
 [node name="character_collision_shape" type="CollisionShape2D" parent="." index="2"]

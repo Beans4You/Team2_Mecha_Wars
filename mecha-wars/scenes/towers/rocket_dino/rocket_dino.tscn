@@ -11,6 +11,11 @@
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_y5mq4"]
 animations = [{
+"frames": [],
+"loop": true,
+"name": &"Upgraded",
+"speed": 5.0
+}, {
 "frames": [{
 "duration": 1.0,
 "texture": ExtResource("2_04m6f")
@@ -67,7 +72,7 @@ theme = SubResource("Theme_ojke3")
 
 [node name="animated_sprite" type="AnimatedSprite2D" parent="." index="1"]
 sprite_frames = SubResource("SpriteFrames_y5mq4")
-animation = &"shoot"
+animation = &"Upgraded"
 
 [node name="character_collision_shape" type="CollisionShape2D" parent="." index="2"]
 position = Vector2(-1, 6)

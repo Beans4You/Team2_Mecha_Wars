@@ -91,9 +91,16 @@ func _on_button_2_pressed() -> void:
 		win.set_message("Selecting towers Opnes the Ui Upgrade screen on the Right side \n\n Press Next ")
 		message_state = 3
 	elif message_state == 3:
-		win.set_message("More enemies Killed, gets you more Gold \n\n Press Start Game when ready")
-		message_state = 4  # Reset state if needed
+		win.set_message("Upgrading Towers will increase range and Damage \n\n It will also change the color \n\n Press Next ")
+		message_state = 4
 	elif message_state == 4:
-		win.queue_free()
+		win.set_message("You May Also Sell Towers for 75% back \n\n Press Next ")
+		message_state = 5
+	elif message_state == 5:
+		win.set_message("More enemies Killed, gets you more Gold \n\n Press Next")
+		message_state = 6  # Reset state if needed
+	elif message_state == 6:
+		win.set_message("This Message will Self Destruct in 3 Seconds \n\n Press Start Game when ready")
+		$Next.queue_free()
 		message_state = 0
 		

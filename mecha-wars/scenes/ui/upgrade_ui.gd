@@ -50,6 +50,10 @@ func _on_damage_gui_input(event: InputEvent) -> void:
 			twr.damage_upgrade_counter += 1
 			$FlowContainer/damage/Label.text = "Max Damage"
 			game_scene.curr_gold -= 150
+			var animated_sprite = twr.get_node("animated_sprite")
+			if animated_sprite and animated_sprite is AnimatedSprite2D:
+				animated_sprite.play("Upgraded")
+				animated_sprite.self_modulate = Color(1, 0.8, 0.2)
 		else:
 			pass
 
@@ -62,7 +66,25 @@ func _on_range_gui_input(event: InputEvent) -> void:
 			twr.range_upgrade_counter += 1
 			$FlowContainer/range/Label.text = "Max Range"
 			game_scene.curr_gold -= 100
+			var animated_sprite = twr.get_node("animated_sprite")
+			if animated_sprite and animated_sprite is AnimatedSprite2D:
+				animated_sprite.play("Upgraded")
+				animated_sprite.self_modulate = Color(1, 0.8, 0.2)
 		else:
 			pass
 			
 		
+
+func _on_sell_gui_input(event: InputEvent) -> void:
+	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT and event.pressed:
+		if $FlowContainer/Sell.get_global_rect().has_point(event.global_position):
+			sell_tower() # Replace with function body.
+
+func sell_tower() -> void:
+	var base_tower_cost = 100  # Example base cost
+	var upgrade_value = 50
+	var refund = base_tower_cost + (twr.damage_upgrade_counter + twr.range_upgrade_counter) * upgrade_value
+	refund *= 0.75  
+	game_scene.curr_gold += int(refund)
+	twr.queue_free()
+	queue_free()
