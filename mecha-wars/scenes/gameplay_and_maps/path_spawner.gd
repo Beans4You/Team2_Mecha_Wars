@@ -4,6 +4,7 @@ class_name path_spawner_parent_script
 @onready var runner_path = preload("res://scenes/enemies/runner_path.tscn")
 @onready var flyer_path = preload("res://scenes/enemies/flyer_path.tscn")
 @onready var cthulhu_path = preload("res://scenes/enemies/cthulhu/cthulhu_path.tscn")
+@onready var mother_path = preload("res://scenes/enemies/mothership/mothership_path.tscn")
 @onready var game_scene = get_parent()
 @onready var last_enemy_out = false
 var enemy_array = [0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 2, 1, 1, 2, 1, 1, 2, 1, 1, 0, 0, 2, 1, 1, 2, 1, 2, 1, 1, 1, 1, 2, 2, 2, 1, 2, 1, 2, 1, 1, 2, 1, 1, 2, 1, 1, 2, 2, 1, 1, 1, 2, 2, 1, 1, 1, 2, 2,0,0, 1, 1, 2, 2, 2, 1, 1, 1, 2, 1, 1, 2, 1, 1, 0, 0, 3, 0, 0, 1, 1, 2, 1, 1, 2, 1, 1, 2, 1, 1, 1, 2, 1, 1, 2, 1, 2, 1, 1, 1, -10]
@@ -30,6 +31,9 @@ func _on_timer_timeout() -> void:
 		add_child(temp_path)
 	elif (enemy_array[array_spot] == 3):
 		var temp_path = cthulhu_path.instantiate()
+		add_child(temp_path)
+	elif (enemy_array[array_spot] == 4):
+		var temp_path = mother_path.instantiate()
 		add_child(temp_path)
 	elif(enemy_array[array_spot] == -10):
 		last_enemy_out = true

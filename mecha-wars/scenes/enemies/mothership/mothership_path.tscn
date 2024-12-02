@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://b72ecq63pv1xo"]
+
+[ext_resource type="PackedScene" uid="uid://d30chut10fmth" path="res://scenes/enemies/mothership/mothership.tscn" id="1_4qbeu"]
+
+[sub_resource type="Curve2D" id="Curve2D_qfng1"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 0, 144, 0, 0, 0, 0, 272, 144, 0, 0, 0, 0, 272, 552, 0, 0, 0, 0, 944, 552, 0, 0, 0, 0, 944, 144, 0, 0, 0, 0, 1064, 144)
+}
+point_count = 6
+
+[node name="Path2D" type="Path2D"]
+curve = SubResource("Curve2D_qfng1")
+
+[node name="PathFollow2D" type="PathFollow2D" parent="."]
+position = Vector2(0, 144)
+
+[node name="mothership" parent="PathFollow2D" instance=ExtResource("1_4qbeu")]
+position = Vector2(-150, -100)

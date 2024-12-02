@@ -1,0 +1,206 @@
+[gd_scene load_steps=27 format=3 uid="uid://d30chut10fmth"]
+
+[ext_resource type="Script" path="res://scenes/enemies/mothership/mothership.gd" id="1_satur"]
+[ext_resource type="Texture2D" uid="uid://bgeyxry6s1ncu" path="res://Resources/Alien Sprites/mothership/Mothership0.png" id="1_wx0g1"]
+[ext_resource type="Texture2D" uid="uid://04csdwb7a8hi" path="res://Resources/Alien Sprites/mothership/Mothership1.png" id="2_ni1bj"]
+[ext_resource type="Texture2D" uid="uid://by6ysnyy8e72a" path="res://Resources/Alien Sprites/mothership/Mothership2.png" id="3_ykw1e"]
+[ext_resource type="Texture2D" uid="uid://beleva64qrryd" path="res://Resources/Alien Sprites/mothership/Mothership3.png" id="4_roymf"]
+[ext_resource type="AudioStream" uid="uid://bvnrigqcqv0yp" path="res://Resources/mixkit-video-game-blood-pop-2361.wav" id="6_06bol"]
+[ext_resource type="Script" path="res://scenes/enemies/mothership/health_bar.gd" id="6_aigjk"]
+[ext_resource type="Texture2D" uid="uid://ctpjxaoiivor4" path="res://Resources/Hit-Scan-Tower/turret_hit_marker0.png" id="7_250hg"]
+[ext_resource type="Texture2D" uid="uid://ct65c8noa4ygp" path="res://Resources/Alien Sprites/mothership/spawn_animation/shot6_exp1.png" id="7_fe15l"]
+[ext_resource type="Texture2D" uid="uid://dtulcvkddnacy" path="res://Resources/Alien Sprites/mothership/spawn_animation/shot6_exp2.png" id="8_h6lcj"]
+[ext_resource type="Texture2D" uid="uid://dr4drts85iy6q" path="res://Resources/Hit-Scan-Tower/turret_hit_marker1.png" id="8_pu4ba"]
+[ext_resource type="Texture2D" uid="uid://cwixk0pnpyoa6" path="res://Resources/Alien Sprites/mothership/spawn_animation/shot6_exp3.png" id="9_l6053"]
+[ext_resource type="Texture2D" uid="uid://h8gc8jw5asbk" path="res://Resources/Alien Sprites/mothership/spawn_animation/shot6_exp4.png" id="10_s8ahd"]
+[ext_resource type="Texture2D" uid="uid://bgnto5x48h2u0" path="res://Resources/Alien Sprites/mothership/spawn_animation/shot6_exp5.png" id="11_hl3mp"]
+[ext_resource type="Texture2D" uid="uid://7n5h7sl4cdn4" path="res://Resources/Alien Sprites/mothership/spawn_animation/shot6_exp6.png" id="12_5ndo6"]
+[ext_resource type="Texture2D" uid="uid://cjl3q2dgsis04" path="res://Resources/Alien Sprites/mothership/spawn_animation/shot6_exp7.png" id="13_42fcc"]
+[ext_resource type="Texture2D" uid="uid://b3ib06yeam0il" path="res://Resources/Alien Sprites/mothership/spawn_animation/shot6_exp8.png" id="14_yn66v"]
+[ext_resource type="Texture2D" uid="uid://8rgn625yac6q" path="res://Resources/Alien Sprites/mothership/spawn_animation/shot6_exp9.png" id="15_tj5co"]
+[ext_resource type="Texture2D" uid="uid://c7be3q7eh3vj4" path="res://Resources/Alien Sprites/mothership/spawn_animation/shot6_exp10.png" id="16_fa473"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_7utx1"]
+animations = [{
+"frames": [],
+"loop": true,
+"name": &"attack",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_wx0g1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_ni1bj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_ykw1e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_roymf")
+}],
+"loop": true,
+"name": &"move",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_7d654"]
+radius = 75.0
+height = 246.0
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_551xq"]
+radius = 76.0
+height = 246.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_irub8"]
+bg_color = Color(0.886275, 0.0117647, 0.0196078, 1)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7p51f"]
+bg_color = Color(0.0156863, 0.960784, 0.027451, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0, 0, 0, 1)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_jsxn7"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("7_fe15l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_h6lcj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_l6053")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_s8ahd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_hl3mp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_5ndo6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_42fcc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_yn66v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_tj5co")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_fa473")
+}],
+"loop": false,
+"name": &"spawn",
+"speed": 15.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_g7lq1"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("7_250hg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_250hg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_250hg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_pu4ba")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_pu4ba")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_pu4ba")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_pu4ba")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_pu4ba")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_pu4ba")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_250hg")
+}],
+"loop": false,
+"name": &"turret_hit",
+"speed": 30.0
+}]
+
+[node name="mothership" type="CharacterBody2D" groups=["enemy"]]
+script = ExtResource("1_satur")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+scale = Vector2(2.5, 2.5)
+sprite_frames = SubResource("SpriteFrames_7utx1")
+animation = &"move"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(100, 0)
+rotation = 1.5708
+scale = Vector2(1.25, 1.25)
+shape = SubResource("CapsuleShape2D_7d654")
+
+[node name="hit_area" type="Area2D" parent="."]
+position = Vector2(100, 0)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="hit_area"]
+rotation = 1.5708
+scale = Vector2(1.25, 1.25)
+shape = SubResource("CapsuleShape2D_551xq")
+
+[node name="health_bar" type="ProgressBar" parent="."]
+offset_left = -15.0
+offset_top = 90.0
+offset_right = 235.0
+offset_bottom = 102.0
+theme_override_styles/background = SubResource("StyleBoxFlat_irub8")
+theme_override_styles/fill = SubResource("StyleBoxFlat_7p51f")
+max_value = 500.0
+show_percentage = false
+script = ExtResource("6_aigjk")
+
+[node name="spawn_timer" type="Timer" parent="."]
+
+[node name="spawn_animation" type="AnimatedSprite2D" parent="."]
+z_index = 10
+position = Vector2(188, 80)
+scale = Vector2(1.5, 1.5)
+sprite_frames = SubResource("SpriteFrames_jsxn7")
+animation = &"spawn"
+
+[node name="damaged_audio" type="AudioStreamPlayer2D" parent="."]
+position = Vector2(100, 0)
+rotation = 1.5708
+scale = Vector2(1.25, 1.25)
+stream = ExtResource("6_06bol")
+volume_db = -16.561
+
+[node name="hit_marks" type="AnimatedSprite2D" parent="."]
+position = Vector2(83.75, -7.1031e-07)
+rotation = 1.5708
+scale = Vector2(2.8125, 2.8125)
+sprite_frames = SubResource("SpriteFrames_g7lq1")
+animation = &"turret_hit"
+
+[connection signal="body_entered" from="hit_area" to="." method="_on_hit_area_body_entered"]
+[connection signal="timeout" from="spawn_timer" to="." method="_on_spawn_timer_timeout"]
+[connection signal="animation_finished" from="spawn_animation" to="." method="_on_spawn_animation_animation_finished"]
