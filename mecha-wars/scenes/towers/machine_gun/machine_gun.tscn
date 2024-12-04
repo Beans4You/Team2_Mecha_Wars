@@ -72,7 +72,7 @@ script = ExtResource("2_ilk3k")
 damage = 0.5
 rate_of_fire = 0.2
 tower_range = 550
-gold_cost = 150
+gold_cost = 125
 
 [node name="animated_sprite" type="AnimatedSprite2D" parent="." index="1"]
 scale = Vector2(0.22, 0.22)

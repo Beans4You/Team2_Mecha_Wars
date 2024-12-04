@@ -1,9 +1,9 @@
 [gd_scene load_steps=5 format=3 uid="uid://cw8mfuim3l4b2"]
 
 [ext_resource type="Script" path="res://scenes/ui/machine_gun_panel.gd" id="1_0x3m6"]
-[ext_resource type="Texture2D" uid="uid://dokxvuy0cuosg" path="res://Resources/turrets_unmanned/MG.png" id="1_o0ycw"]
-[ext_resource type="Texture2D" uid="uid://jas8blq6tyjo" path="res://Resources/turrets_unmanned/Tower.png" id="2_o5xli"]
-[ext_resource type="FontFile" uid="uid://wge3vupq5r6q" path="res://Resources/kenney_ui/Font/Kenney Future.ttf" id="2_vrdis"]
+[ext_resource type="Texture2D" uid="uid://dokxvuy0cuosg" path="res://resources/turrets_unmanned/MG.png" id="1_o0ycw"]
+[ext_resource type="Texture2D" uid="uid://jas8blq6tyjo" path="res://resources/turrets_unmanned/Tower.png" id="2_o5xli"]
+[ext_resource type="FontFile" uid="uid://wge3vupq5r6q" path="res://resources/kenney_ui/Font/Kenney Future.ttf" id="2_vrdis"]
 
 [node name="machine_gun_panel_2" type="Panel"]
 custom_minimum_size = Vector2(120, 120)
@@ -35,6 +35,6 @@ scale = Vector2(2.8, 2.8)
 theme_override_colors/font_color = Color(1, 0.847059, 0.258824, 1)
 theme_override_fonts/font = ExtResource("2_vrdis")
 theme_override_font_sizes/font_size = 18
-text = "150 Gold"
+text = "125 Gold"
 
 [connection signal="gui_input" from="." to="." method="_on_gui_input"]
