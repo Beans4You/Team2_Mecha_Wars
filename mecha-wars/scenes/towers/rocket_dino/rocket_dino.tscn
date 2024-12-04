@@ -1,43 +1,32 @@
-[gd_scene load_steps=18 format=3 uid="uid://c2isihlke4e4t"]
+[gd_scene load_steps=22 format=3 uid="uid://c2isihlke4e4t"]
 
 [ext_resource type="PackedScene" uid="uid://dnwi2cwo0ksva" path="res://scenes/towers/tower_projectile.tscn" id="1_div88"]
 [ext_resource type="Script" path="res://scenes/towers/rocket_dino/rocket_dino.gd" id="2_7h3dq"]
+[ext_resource type="Texture2D" uid="uid://xo5fxvo1r1a5" path="res://resources/rocket_dino/red_dino_body.png" id="3_cp4j7"]
 [ext_resource type="Texture2D" uid="uid://d2cxove0s3hga" path="res://resources/rocket_dino/rocket_dino_just_body.png" id="3_d24fu"]
-[ext_resource type="Texture2D" uid="uid://b0p62iv3xtw4f" path="res://resources/rocket_dino/dino_arm.png" id="4_afh80"]
+[ext_resource type="Texture2D" uid="uid://c0heteb30ngwn" path="res://resources/rocket_dino/red_dino_arm.png" id="5_dn7hg"]
 
 [sub_resource type="Theme" id="Theme_ojke3"]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_goia5"]
-atlas = ExtResource("3_d24fu")
+[sub_resource type="AtlasTexture" id="AtlasTexture_1gnbh"]
+atlas = ExtResource("3_cp4j7")
 region = Rect2(0, 0, 128, 128)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_sfa6a"]
-atlas = ExtResource("3_d24fu")
+[sub_resource type="AtlasTexture" id="AtlasTexture_8wsst"]
+atlas = ExtResource("3_cp4j7")
 region = Rect2(128, 0, 128, 128)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_jupsn"]
-atlas = ExtResource("3_d24fu")
+[sub_resource type="AtlasTexture" id="AtlasTexture_ul0o7"]
+atlas = ExtResource("3_cp4j7")
 region = Rect2(0, 128, 128, 128)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_pkthy"]
-atlas = ExtResource("3_d24fu")
+[sub_resource type="AtlasTexture" id="AtlasTexture_m64dk"]
+atlas = ExtResource("3_cp4j7")
 region = Rect2(128, 128, 128, 128)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_sdnes"]
 atlas = ExtResource("3_d24fu")
 region = Rect2(0, 0, 128, 128)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_4fg4y"]
-atlas = ExtResource("3_d24fu")
-region = Rect2(128, 0, 128, 128)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_j5sbr"]
-atlas = ExtResource("3_d24fu")
-region = Rect2(0, 128, 128, 128)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_b8to1"]
-atlas = ExtResource("3_d24fu")
-region = Rect2(128, 128, 128, 128)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_y5mq4"]
 animations = [{
@@ -48,16 +37,16 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_goia5")
+"texture": SubResource("AtlasTexture_1gnbh")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_sfa6a")
+"texture": SubResource("AtlasTexture_8wsst")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_jupsn")
+"texture": SubResource("AtlasTexture_ul0o7")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_pkthy")
+"texture": SubResource("AtlasTexture_m64dk")
 }],
 "loop": true,
 "name": &"idle",
@@ -66,15 +55,6 @@ animations = [{
 "frames": [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_sdnes")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_4fg4y")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_j5sbr")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_b8to1")
 }],
 "loop": true,
 "name": &"shoot",
@@ -90,11 +70,73 @@ size = Vector2(83, 82)
 [sub_resource type="CircleShape2D" id="CircleShape2D_02jkp"]
 radius = 175.385
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_1bppl"]
+atlas = ExtResource("5_dn7hg")
+region = Rect2(0, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_semis"]
+atlas = ExtResource("5_dn7hg")
+region = Rect2(128, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_530p4"]
+atlas = ExtResource("5_dn7hg")
+region = Rect2(0, 128, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wb67e"]
+atlas = ExtResource("5_dn7hg")
+region = Rect2(128, 128, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_p6kg4"]
+atlas = ExtResource("5_dn7hg")
+region = Rect2(0, 0, 128, 128)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_noxv7"]
+animations = [{
+"frames": [],
+"loop": true,
+"name": &"blue",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"gold",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"purple",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1bppl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_semis")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_530p4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wb67e")
+}],
+"loop": true,
+"name": &"red_idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_p6kg4")
+}],
+"loop": true,
+"name": &"red_shoot",
+"speed": 5.0
+}]
+
 [node name="rocket_dino" instance=ExtResource("1_div88")]
 script = ExtResource("2_7h3dq")
-damage = 4
+damage = 5
 rate_of_fire = 1.0
-gold_cost = 250
 
 [node name="area" parent="." index="0"]
 offset_top = -177.0
@@ -103,8 +145,7 @@ theme = SubResource("Theme_ojke3")
 
 [node name="animated_sprite" type="AnimatedSprite2D" parent="." index="1"]
 sprite_frames = SubResource("SpriteFrames_y5mq4")
-animation = &"idle"
-frame_progress = 0.706768
+animation = &"Upgraded"
 
 [node name="character_collision_shape" type="CollisionShape2D" parent="." index="2"]
 position = Vector2(-1, 17)
@@ -125,13 +166,14 @@ shape = SubResource("RectangleShape2D_1r6hh")
 shape = SubResource("CircleShape2D_02jkp")
 debug_color = Color(0.663517, 0.501309, 0.305957, 0.42)
 
-[node name="dino_arm" type="Sprite2D" parent="." index="5"]
-position = Vector2(16, -5)
-texture = ExtResource("4_afh80")
+[node name="dino_arm" type="AnimatedSprite2D" parent="." index="5"]
+position = Vector2(17, -6)
+sprite_frames = SubResource("SpriteFrames_noxv7")
+animation = &"red_shoot"
 offset = Vector2(-15, 7.5)
 
 [node name="aim" type="Marker2D" parent="dino_arm" index="0"]
-position = Vector2(20, 14)
+position = Vector2(23, 24)
 
 [connection signal="body_entered" from="range" to="." method="_on_range_body_entered"]
 [connection signal="body_exited" from="range" to="." method="_on_range_body_exited"]

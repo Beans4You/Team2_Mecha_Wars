@@ -6,7 +6,7 @@ func _ready() -> void:
 	pass
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
+func _process(_delta: float) -> void:
 	if get_child_count() == 1:
 		await $Timer.timeout
 		$Timer.queue_free()

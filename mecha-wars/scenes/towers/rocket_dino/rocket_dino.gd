@@ -3,9 +3,14 @@ extends tower_projectile
 var enemy_relative
 
 func _ready():
-	super._ready()
-	
-	
+	#$dino_arm.play("default")
+	$animated_sprite.play("idle")
+	$area.size = Vector2(tower_range, tower_range)
+	$area.position = -1 * Vector2(tower_range, tower_range) / 2
+	$range/range_collision_shape.shape.radius = float(tower_range) / 2
+	#$range.position = -1 * Vector2(tower_range, tower_range) / 2
+	#$animated_sprite.play("idle")
+	$area.mouse_filter = Control.MOUSE_FILTER_IGNORE # makes area node unclickable for handling clicking input
 
 func create_bullet(target_in):
 	var target = target_in
@@ -20,16 +25,32 @@ func _physics_process(_delta):
 		select_enemy()
 		var enemy_position = current_enemy.get_parent().global_position
 		enemy_relative = enemy_position - position
-
+		$animated_sprite.play("shoot")
+		$dino_arm.play("red_shoot")
+		
 		$dino_arm.look_at(enemy_position)
-		$dino_arm.rotation -= deg_to_rad(10)
+		$dino_arm.rotation -= deg_to_rad(15)
 		if shoot_ready:
 			shoot()
 	else:
+		$animated_sprite.play("idle")
+		$dino_arm.play("red_idle")
+		$dino_arm.rotation = 0
 		if !$animated_sprite.is_playing():
-			$animated_sprite.play('idle')
+			pass
+			#$animated_sprite.play('idle')
 		current_enemy = null
 
 func _on_range_body_entered(body: Node2D) -> void:
 	if body.is_in_group("enemy"):
 		enemy_array.append(body)
+
+func shoot():
+	#$animated_sprite.play('shoot')
+	shoot_ready = false
+	#print("shoot")
+	create_bullet(current_enemy)
+	await(get_tree().create_timer(rate_of_fire).timeout)
+	#create_bullet(current_enemy)
+	#$animated_sprite.play('idle')
+	shoot_ready = true

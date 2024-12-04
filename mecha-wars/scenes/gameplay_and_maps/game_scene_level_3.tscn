@@ -4,7 +4,7 @@
 [ext_resource type="Script" path="res://scenes/gameplay_and_maps/game_scene_level_3.gd" id="1_k6yc0"]
 [ext_resource type="PackedScene" uid="uid://hxwjjftcvqr5" path="res://scenes/ui/ui.tscn" id="2_ay2kb"]
 [ext_resource type="Script" path="res://scenes/gameplay_and_maps/path_spawner_level_3.gd" id="3_6kd33"]
-[ext_resource type="AudioStream" uid="uid://brcvceaq1hkhb" path="res://Resources/The Dark Knight Main Theme.wav" id="5_mvx05"]
+[ext_resource type="AudioStream" uid="uid://brcvceaq1hkhb" path="res://resources/The Dark Knight Main Theme.wav" id="5_mvx05"]
 
 [node name="game_scene_level_3" type="Node2D"]
 script = ExtResource("1_k6yc0")

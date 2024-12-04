@@ -18,7 +18,8 @@ func _physics_process(_delta):
 			shoot()
 	else:
 		if !$animated_sprite.is_playing():
-			$animated_sprite.play('idle')
+			pass
+			#$animated_sprite.play('idle')
 		current_enemy = null
 
 func _on_range_body_entered(body: Node2D) -> void:
@@ -47,7 +48,7 @@ func shoot():
 	create_bullet(current_enemy)
 	await(get_tree().create_timer(rate_of_fire).timeout)
 	#create_bullet(current_enemy)
-	#$animated_sprite.play('idle')
+	$animated_sprite.play('idle')
 	shoot_ready = true
 	
 

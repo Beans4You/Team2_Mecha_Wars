@@ -52,8 +52,11 @@ func _on_damage_gui_input(event: InputEvent) -> void:
 			game_scene.curr_gold -= 150
 			var animated_sprite = twr.get_node("animated_sprite")
 			if animated_sprite and animated_sprite is AnimatedSprite2D:
-				animated_sprite.play("Upgraded")
+				#animated_sprite.play("Upgraded")
 				animated_sprite.self_modulate = Color(1, 0.8, 0.2)
+				if twr.get_node_or_null("dino_arm") != null:
+					twr.get_node("dino_arm").self_modulate = Color(1,0.8,0.2)
+				
 		else:
 			pass
 

@@ -20,7 +20,8 @@ func _physics_process(_delta: float) -> void:
 			shoot()
 	else:
 		if !$animated_sprite.is_playing():
-			$animated_sprite.play('idle')
+			pass
+			#$animated_sprite.play('idle')
 		current_enemy = null
 		
 
@@ -42,5 +43,6 @@ func shoot():
 		current_enemy.get_child(-1).play('turret_hit')
 	await(get_tree().create_timer(rate_of_fire).timeout)
 	if enemy_array.is_empty():
-		$animated_sprite.play("idle")
+		#$animated_sprite.play("idle")
+		pass
 	shoot_ready = true

@@ -15,7 +15,8 @@ func _physics_process(_delta):
 			shoot()
 	else:
 		if !$animated_sprite.is_playing():
-			$animated_sprite.play('idle')
+			#$animated_sprite.play('idle')
+			pass
 		current_enemy = null
 
 func _on_range_body_entered(body: Node2D) -> void:
