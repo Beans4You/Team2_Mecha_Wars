@@ -7,7 +7,7 @@ class_name path_spawner_parent_script
 @onready var mother_path = preload("res://scenes/enemies/mothership/mothership_path.tscn")
 @onready var game_scene = get_parent()
 @onready var last_enemy_out = false
-var enemy_array = [0, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 2, 1, 1, 2, 1, 1, 2, 1, 1, 0, 0, 2, 1, 1, 2, 1, 2, 1, 1, 1, 1, 2, 2, 2, 1, 2, 1, 2, 1, 1, 2, 1, 1, 2, 1, 1, 2, 2, 1, 1, 1, 2, 2, 1, 1, 1, 2, 2,0,0, 1, 1, 2, 2, 2, 1, 1, 1, 2, 1, 1, 2, 1, 1, 0, 0, 3, 0, 0, 1, 1, 2, 1, 1, 2, 1, 1, 2, 1, 1, 1, 2, 1, 1, 2, 1, 2, 1, 1, 1, -10]
+var enemy_array = [0, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 1, 0, 1, 2, 0, 1, 2, 1, 1, 0, 0, 0, 1, 1, 2, 1, 0, 1, 1, 0, 1, 0, 1, 0, 1, 2, 1, 0, 0, 1, 2, 1, 0, 2, 1, 1, 2, 2, 1, 0, 1, 2, 2, 1, 1, 0, 1, 2,0,0, 1, 1, 0, 1, 2, 1, 1, 0, 2, 1, 0, 2, 1, 1, 0, 0, 1, 0, 0, 1, 1, 1, 0, 1, 2, 0, 1, 2, 0, 1, 1, 2, 0, 1, 2, 0, 2, 1, 1, 1, -10]
 var array_spot = 0
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
