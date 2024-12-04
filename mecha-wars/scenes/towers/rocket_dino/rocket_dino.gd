@@ -1,6 +1,7 @@
 extends tower_projectile
 
 var enemy_relative
+var color = "red"
 
 func _ready():
 	#$dino_arm.play("default")
@@ -25,20 +26,43 @@ func _physics_process(_delta):
 		select_enemy()
 		var enemy_position = current_enemy.get_parent().global_position
 		enemy_relative = enemy_position - position
-		$animated_sprite.play("shoot")
-		$dino_arm.play("red_shoot")
+		if color == "red":
+			$animated_sprite.play("shoot")
+			$dino_arm.play("shoot_red")
+		elif color == "purple":
+			$animated_sprite.play("shoot_purple")
+			$dino_arm.play("shoot_purple")
+		elif color == "blue":
+			$animated_sprite.play("shoot_blue")
+			$dino_arm.play("shoot_blue")
+		elif color == "gold":
+			$animated_sprite.play("shoot_gold")
+			$dino_arm.play("shoot_gold")
+		else:
+			print("color error")
 		
 		$dino_arm.look_at(enemy_position)
 		$dino_arm.rotation -= deg_to_rad(15)
 		if shoot_ready:
 			shoot()
 	else:
-		$animated_sprite.play("idle")
-		$dino_arm.play("red_idle")
+		if color == "red":
+			$animated_sprite.play("idle")
+			$dino_arm.play("idle_red")
+		elif color == "purple":
+			$animated_sprite.play("idle_purple")
+			$dino_arm.play("idle_purple")
+		elif color == "blue":
+			$animated_sprite.play("idle_blue")
+			$dino_arm.play("idle_blue")
+		elif color == "gold":
+			$animated_sprite.play("idle_gold")
+			$dino_arm.play("idle_gold")
+		else:
+			print("color error")
+			
+			
 		$dino_arm.rotation = 0
-		if !$animated_sprite.is_playing():
-			pass
-			#$animated_sprite.play('idle')
 		current_enemy = null
 
 func _on_range_body_entered(body: Node2D) -> void:

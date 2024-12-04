@@ -50,12 +50,23 @@ func _on_damage_gui_input(event: InputEvent) -> void:
 			twr.damage_upgrade_counter += 1
 			$FlowContainer/damage/Label.text = "Max Damage"
 			game_scene.curr_gold -= 150
-			var animated_sprite = twr.get_node("animated_sprite")
-			if animated_sprite and animated_sprite is AnimatedSprite2D:
-				#animated_sprite.play("Upgraded")
-				animated_sprite.self_modulate = Color(1, 0.8, 0.2)
+			
+			
+			# change color depending on upgrade
+			if $FlowContainer/range/Label.text == "Max Range":
+				twr.get_node("animated_sprite").play("idle_gold")
+				twr.color = "gold"
+				# rocket dino arm change
 				if twr.get_node_or_null("dino_arm") != null:
-					twr.get_node("dino_arm").self_modulate = Color(1,0.8,0.2)
+					twr.color = "gold"
+					twr.get_node("dino_arm").play("idle_gold")
+			else:
+				twr.get_node("animated_sprite").play("idle_purple")
+				twr.color = "purple"
+				# rocket dino arm change
+				if twr.get_node_or_null("dino_arm") != null:
+					twr.color = "blue"
+					twr.get_node("dino_arm").play("idle_purple")
 				
 		else:
 			pass
@@ -69,10 +80,25 @@ func _on_range_gui_input(event: InputEvent) -> void:
 			twr.range_upgrade_counter += 1
 			$FlowContainer/range/Label.text = "Max Range"
 			game_scene.curr_gold -= 100
-			var animated_sprite = twr.get_node("animated_sprite")
-			if animated_sprite and animated_sprite is AnimatedSprite2D:
-				animated_sprite.play("Upgraded")
-				animated_sprite.self_modulate = Color(1, 0.8, 0.2)
+			
+			# change color depending on upgrade
+			if $FlowContainer/damage/Label.text == "Max Damage":
+				twr.get_node("animated_sprite").play("idle_gold")
+				twr.color = "gold"
+				# rocket dino arm change
+				if twr.get_node_or_null("dino_arm") != null:
+					twr.color = "gold"
+					twr.get_node("dino_arm").play("idle_gold")
+			else:
+				twr.get_node("animated_sprite").play("idle_blue")
+				twr.color = "blue"
+				# rocket dino arm change
+				if twr.get_node_or_null("dino_arm") != null:
+					twr.color = "blue"
+					twr.get_node("dino_arm").play("idle_blue")
+			
+	
+			
 		else:
 			pass
 			
@@ -83,6 +109,7 @@ func _on_sell_gui_input(event: InputEvent) -> void:
 		if $FlowContainer/Sell.get_global_rect().has_point(event.global_position):
 			sell_tower() # Replace with function body.
 
+# TODO fix this code
 func sell_tower() -> void:
 	var base_tower_cost = 200
 	var upgrade_value = 150
