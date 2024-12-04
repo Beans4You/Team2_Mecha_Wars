@@ -54,19 +54,26 @@ func _on_damage_gui_input(event: InputEvent) -> void:
 			
 			# change color depending on upgrade
 			if $FlowContainer/range/Label.text == "Max Range":
-				twr.get_node("animated_sprite").play("idle_gold")
-				twr.color = "gold"
-				# rocket dino arm change
-				if twr.get_node_or_null("dino_arm") != null:
+				if twr.get_node_or_null("barrel") != null:
+					twr.get_node("animated_sprite").self_modulate = Color(1, 0.85, 0)
+				else:
+					twr.get_node("animated_sprite").play("idle_gold")
 					twr.color = "gold"
-					twr.get_node("dino_arm").play("idle_gold")
+					# rocket dino arm change
+					if twr.get_node_or_null("dino_arm") != null:
+						twr.color = "gold"
+						twr.get_node("dino_arm").play("idle_gold")
 			else:
-				twr.get_node("animated_sprite").play("idle_purple")
-				twr.color = "purple"
-				# rocket dino arm change
-				if twr.get_node_or_null("dino_arm") != null:
-					twr.color = "blue"
-					twr.get_node("dino_arm").play("idle_purple")
+				if twr.get_node_or_null("barrel") != null:
+					twr.get_node("animated_sprite").self_modulate = Color(1, 0, 1)
+				else:
+					twr.get_node("animated_sprite").play("idle_purple")
+					twr.color = "purple"
+					# rocket dino arm change
+					if twr.get_node_or_null("dino_arm") != null:
+						twr.color = "blue"
+						twr.get_node("dino_arm").play("idle_purple")
+				
 				
 		else:
 			pass
@@ -81,21 +88,29 @@ func _on_range_gui_input(event: InputEvent) -> void:
 			$FlowContainer/range/Label.text = "Max Range"
 			game_scene.curr_gold -= 100
 			
+			
 			# change color depending on upgrade
 			if $FlowContainer/damage/Label.text == "Max Damage":
-				twr.get_node("animated_sprite").play("idle_gold")
-				twr.color = "gold"
-				# rocket dino arm change
-				if twr.get_node_or_null("dino_arm") != null:
+				# check if it is turret
+				if twr.get_node_or_null("barrel") != null:
+					twr.get_node("animated_sprite").self_modulate = Color(1, 0.85, 0)
+				else:
+					twr.get_node("animated_sprite").play("idle_gold")
 					twr.color = "gold"
-					twr.get_node("dino_arm").play("idle_gold")
+					# rocket dino arm change
+					if twr.get_node_or_null("dino_arm") != null:
+						twr.color = "gold"
+						twr.get_node("dino_arm").play("idle_gold")
 			else:
-				twr.get_node("animated_sprite").play("idle_blue")
-				twr.color = "blue"
-				# rocket dino arm change
-				if twr.get_node_or_null("dino_arm") != null:
+				if twr.get_node_or_null("barrel") != null:
+					twr.get_node("animated_sprite").self_modulate = Color(0.1, 0.1, 1)
+				else:
+					twr.get_node("animated_sprite").play("idle_blue")
 					twr.color = "blue"
-					twr.get_node("dino_arm").play("idle_blue")
+					# rocket dino arm change
+					if twr.get_node_or_null("dino_arm") != null:
+						twr.color = "blue"
+						twr.get_node("dino_arm").play("idle_blue")
 			
 	
 			

@@ -10,6 +10,7 @@ var enemy_array = []
 var targeting_mode = "first"
 var damage_upgrade_counter = 0
 var range_upgrade_counter = 0
+var color = "red"
 
 func _ready():
 	$area.size = Vector2(tower_range, tower_range)

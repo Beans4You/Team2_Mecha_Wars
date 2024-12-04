@@ -1,7 +1,7 @@
 extends tower_projectile
 
 var enemy_relative
-var color = "red"
+
 
 func _ready():
 	#$dino_arm.play("default")

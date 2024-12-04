@@ -50,5 +50,15 @@ func shoot():
 		current_enemy.get_child(-1).play('turret_hit')
 	await(get_tree().create_timer(rate_of_fire).timeout)
 	if enemy_array.is_empty():
-		$animated_sprite.play("idle")
+		#$animated_sprite.play("idle")
+		if color == "red":
+			$animated_sprite.play("idle")
+		elif color == "purple":
+			$animated_sprite.play("idle_purple")
+		elif color == "blue":
+			$animated_sprite.play("idle_blue")
+		elif color == "gold":
+			$animated_sprite.play("idle_gold")
+		else:
+			print("color error")
 	shoot_ready = true

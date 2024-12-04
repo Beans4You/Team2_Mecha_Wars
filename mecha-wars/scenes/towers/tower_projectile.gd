@@ -42,13 +42,37 @@ func _on_range_body_exited(body: Node2D) -> void:
 		
 
 func shoot():
-	$animated_sprite.play('shoot')
+	if color == "red":
+		$animated_sprite.play("shoot")
+	elif color == "purple":
+		$animated_sprite.play("shoot_purple")
+	elif color == "blue":
+		$animated_sprite.play("shoot_blue")
+	elif color == "gold":
+		$animated_sprite.play("shoot_gold")
+	else:
+		print("color error")
+	#$animated_sprite.play('shoot')
 	shoot_ready = false
 	#print("shoot")
 	create_bullet(current_enemy)
 	await(get_tree().create_timer(rate_of_fire).timeout)
 	#create_bullet(current_enemy)
-	$animated_sprite.play('idle')
+	
+	
+	
+	#$animated_sprite.play('idle')
+	
+	if color == "red":
+		$animated_sprite.play("idle")
+	elif color == "purple":
+		$animated_sprite.play("idle_purple")
+	elif color == "blue":
+		$animated_sprite.play("idle_blue")
+	elif color == "gold":
+		$animated_sprite.play("idle_gold")
+	else:
+		print("color error")
 	shoot_ready = true
 	
 
@@ -59,9 +83,3 @@ func create_bullet(target_in):
 	bullet.bullet_damage = damage
 	bullet.global_position = $aim.global_position
 	get_tree().root.add_child(bullet)
-
-
-"""clickability for upgrades in future"""
-#func _input(event):
-	#if event is InputEventMouseButton and event.button_mask == 0:
-		#$area.show()
