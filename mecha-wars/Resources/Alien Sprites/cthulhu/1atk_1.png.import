@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b7nutyostt41b"
-path="res://.godot/imported/1atk_1.png-1926dd427d0de02d1c4072f6ea2f357d.ctex"
+path="res://.godot/imported/1atk_1.png-347930253716216e56a97c176e91cd02.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://resources/Alien Sprites/cthulhu/1atk_1.png"
-dest_files=["res://.godot/imported/1atk_1.png-1926dd427d0de02d1c4072f6ea2f357d.ctex"]
+source_file="res://Resources/Alien Sprites/cthulhu/1atk_1.png"
+dest_files=["res://.godot/imported/1atk_1.png-347930253716216e56a97c176e91cd02.ctex"]
 
 [params]
 

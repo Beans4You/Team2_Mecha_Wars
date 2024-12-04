@@ -1,30 +1,44 @@
-[gd_scene load_steps=27 format=3 uid="uid://d30chut10fmth"]
+[gd_scene load_steps=34 format=3 uid="uid://d30chut10fmth"]
 
 [ext_resource type="Script" path="res://scenes/enemies/mothership/mothership.gd" id="1_satur"]
 [ext_resource type="Texture2D" uid="uid://bgeyxry6s1ncu" path="res://Resources/Alien Sprites/mothership/Mothership0.png" id="1_wx0g1"]
 [ext_resource type="Texture2D" uid="uid://04csdwb7a8hi" path="res://Resources/Alien Sprites/mothership/Mothership1.png" id="2_ni1bj"]
+[ext_resource type="Texture2D" uid="uid://b8isf38aigif2" path="res://Resources/Alien Sprites/mothership/mothership_base0.png" id="2_vfekg"]
 [ext_resource type="Texture2D" uid="uid://by6ysnyy8e72a" path="res://Resources/Alien Sprites/mothership/Mothership2.png" id="3_ykw1e"]
 [ext_resource type="Texture2D" uid="uid://beleva64qrryd" path="res://Resources/Alien Sprites/mothership/Mothership3.png" id="4_roymf"]
 [ext_resource type="AudioStream" uid="uid://bvnrigqcqv0yp" path="res://Resources/mixkit-video-game-blood-pop-2361.wav" id="6_06bol"]
 [ext_resource type="Script" path="res://scenes/enemies/mothership/health_bar.gd" id="6_aigjk"]
+[ext_resource type="Texture2D" uid="uid://3ddwnh30wy6b" path="res://Resources/Alien Sprites/mothership/spawn_animation/Ship6_Explosion_009.png" id="7_4yugn"]
 [ext_resource type="Texture2D" uid="uid://ctpjxaoiivor4" path="res://Resources/Hit-Scan-Tower/turret_hit_marker0.png" id="7_250hg"]
-[ext_resource type="Texture2D" uid="uid://ct65c8noa4ygp" path="res://Resources/Alien Sprites/mothership/spawn_animation/shot6_exp1.png" id="7_fe15l"]
-[ext_resource type="Texture2D" uid="uid://dtulcvkddnacy" path="res://Resources/Alien Sprites/mothership/spawn_animation/shot6_exp2.png" id="8_h6lcj"]
+[ext_resource type="Texture2D" uid="uid://cfsfcm0w66inv" path="res://Resources/Alien Sprites/mothership/spawn_animation/Ship6_Explosion_011.png" id="8_cy2xf"]
 [ext_resource type="Texture2D" uid="uid://dr4drts85iy6q" path="res://Resources/Hit-Scan-Tower/turret_hit_marker1.png" id="8_pu4ba"]
-[ext_resource type="Texture2D" uid="uid://cwixk0pnpyoa6" path="res://Resources/Alien Sprites/mothership/spawn_animation/shot6_exp3.png" id="9_l6053"]
-[ext_resource type="Texture2D" uid="uid://h8gc8jw5asbk" path="res://Resources/Alien Sprites/mothership/spawn_animation/shot6_exp4.png" id="10_s8ahd"]
-[ext_resource type="Texture2D" uid="uid://bgnto5x48h2u0" path="res://Resources/Alien Sprites/mothership/spawn_animation/shot6_exp5.png" id="11_hl3mp"]
-[ext_resource type="Texture2D" uid="uid://7n5h7sl4cdn4" path="res://Resources/Alien Sprites/mothership/spawn_animation/shot6_exp6.png" id="12_5ndo6"]
-[ext_resource type="Texture2D" uid="uid://cjl3q2dgsis04" path="res://Resources/Alien Sprites/mothership/spawn_animation/shot6_exp7.png" id="13_42fcc"]
-[ext_resource type="Texture2D" uid="uid://b3ib06yeam0il" path="res://Resources/Alien Sprites/mothership/spawn_animation/shot6_exp8.png" id="14_yn66v"]
-[ext_resource type="Texture2D" uid="uid://8rgn625yac6q" path="res://Resources/Alien Sprites/mothership/spawn_animation/shot6_exp9.png" id="15_tj5co"]
-[ext_resource type="Texture2D" uid="uid://c7be3q7eh3vj4" path="res://Resources/Alien Sprites/mothership/spawn_animation/shot6_exp10.png" id="16_fa473"]
+[ext_resource type="Texture2D" uid="uid://bmx2imesmvuin" path="res://Resources/Alien Sprites/mothership/spawn_animation/Ship6_Explosion_013.png" id="9_hyv7e"]
+[ext_resource type="Texture2D" uid="uid://d1cmw3d3ex1na" path="res://Resources/Alien Sprites/mothership/spawn_animation/Ship6_Explosion_016.png" id="10_tbyna"]
+[ext_resource type="Texture2D" uid="uid://d4grv08l3mmnd" path="res://Resources/Alien Sprites/mothership/spawn_animation/Ship6_Explosion_017.png" id="11_rd5pd"]
+[ext_resource type="Texture2D" uid="uid://cq8eynvcngt7h" path="res://Resources/Alien Sprites/mothership/spawn_animation/Ship6_Explosion_019.png" id="12_o33ec"]
+[ext_resource type="Texture2D" uid="uid://cdkanp4ss8ooe" path="res://Resources/Alien Sprites/mothership/spawn_animation/Ship6_Explosion_021.png" id="13_ytyrt"]
+[ext_resource type="Texture2D" uid="uid://jh2cou0osawq" path="res://Resources/Alien Sprites/mothership/explosion/shot4_exp1.png" id="15_4n13q"]
+[ext_resource type="Texture2D" uid="uid://qtalbxhliol" path="res://Resources/Alien Sprites/mothership/explosion/shot4_exp2.png" id="16_6wlkl"]
+[ext_resource type="Texture2D" uid="uid://dwnuixtwcvk4u" path="res://Resources/Alien Sprites/mothership/explosion/shot4_exp3.png" id="17_cdu85"]
+[ext_resource type="Texture2D" uid="uid://cd2rgd3tv1ue" path="res://Resources/Alien Sprites/mothership/explosion/shot4_exp4.png" id="18_lixxs"]
+[ext_resource type="Texture2D" uid="uid://datt5klmx2fua" path="res://Resources/Alien Sprites/mothership/explosion/shot4_exp5.png" id="19_w4njn"]
+[ext_resource type="Texture2D" uid="uid://nvl46prwqarj" path="res://Resources/Alien Sprites/mothership/explosion/shot4_exp6.png" id="20_6icci"]
+[ext_resource type="Texture2D" uid="uid://bp4uknbupj1u6" path="res://Resources/Alien Sprites/mothership/explosion/shot4_exp7.png" id="21_8yr2w"]
+[ext_resource type="Texture2D" uid="uid://d0kddk1flsj8p" path="res://Resources/Alien Sprites/mothership/explosion/shot4_exp8.png" id="22_ktwk6"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_7utx1"]
 animations = [{
 "frames": [],
 "loop": true,
 "name": &"attack",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_vfekg")
+}],
+"loop": true,
+"name": &"base",
 "speed": 5.0
 }, {
 "frames": [{
@@ -73,38 +87,61 @@ border_color = Color(0, 0, 0, 1)
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("7_fe15l")
+"texture": ExtResource("7_4yugn")
 }, {
 "duration": 1.0,
-"texture": ExtResource("8_h6lcj")
+"texture": ExtResource("8_cy2xf")
 }, {
 "duration": 1.0,
-"texture": ExtResource("9_l6053")
+"texture": ExtResource("9_hyv7e")
 }, {
 "duration": 1.0,
-"texture": ExtResource("10_s8ahd")
+"texture": ExtResource("10_tbyna")
 }, {
 "duration": 1.0,
-"texture": ExtResource("11_hl3mp")
+"texture": ExtResource("11_rd5pd")
 }, {
 "duration": 1.0,
-"texture": ExtResource("12_5ndo6")
+"texture": ExtResource("12_o33ec")
 }, {
 "duration": 1.0,
-"texture": ExtResource("13_42fcc")
-}, {
-"duration": 1.0,
-"texture": ExtResource("14_yn66v")
-}, {
-"duration": 1.0,
-"texture": ExtResource("15_tj5co")
-}, {
-"duration": 1.0,
-"texture": ExtResource("16_fa473")
+"texture": ExtResource("13_ytyrt")
 }],
 "loop": false,
 "name": &"spawn",
 "speed": 15.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_hhhf4"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("15_4n13q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_6wlkl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_cdu85")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_lixxs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_w4njn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_6icci")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_8yr2w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_ktwk6")
+}],
+"loop": true,
+"name": &"expl",
+"speed": 8.0
 }]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_g7lq1"]
@@ -146,6 +183,7 @@ animations = [{
 }]
 
 [node name="mothership" type="CharacterBody2D" groups=["enemy"]]
+z_index = 5
 script = ExtResource("1_satur")
 speed = 40
 health = 500
@@ -155,7 +193,7 @@ gold_worth = 1000
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 scale = Vector2(2.5, 2.5)
 sprite_frames = SubResource("SpriteFrames_7utx1")
-animation = &"move"
+animation = &"base"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(100, 0)
@@ -187,9 +225,32 @@ script = ExtResource("6_aigjk")
 [node name="spawn_animation" type="AnimatedSprite2D" parent="."]
 z_index = 10
 position = Vector2(188, 80)
-scale = Vector2(1.5, 1.5)
 sprite_frames = SubResource("SpriteFrames_jsxn7")
 animation = &"spawn"
+
+[node name="explosion1" type="AnimatedSprite2D" parent="."]
+visible = false
+position = Vector2(-14, -12)
+scale = Vector2(2, 2)
+sprite_frames = SubResource("SpriteFrames_hhhf4")
+animation = &"expl"
+frame = 2
+
+[node name="explosion2" type="AnimatedSprite2D" parent="."]
+visible = false
+position = Vector2(90, 50)
+scale = Vector2(1.8, 1.8)
+sprite_frames = SubResource("SpriteFrames_hhhf4")
+animation = &"expl"
+frame = 4
+
+[node name="explosion3" type="AnimatedSprite2D" parent="."]
+visible = false
+position = Vector2(160, -30)
+scale = Vector2(1.8, 1.8)
+sprite_frames = SubResource("SpriteFrames_hhhf4")
+animation = &"expl"
+frame = 7
 
 [node name="damaged_audio" type="AudioStreamPlayer2D" parent="."]
 position = Vector2(100, 0)
@@ -208,3 +269,6 @@ animation = &"turret_hit"
 [connection signal="body_entered" from="hit_area" to="." method="_on_hit_area_body_entered"]
 [connection signal="timeout" from="spawn_timer" to="." method="_on_spawn_timer_timeout"]
 [connection signal="animation_finished" from="spawn_animation" to="." method="_on_spawn_animation_animation_finished"]
+[connection signal="animation_looped" from="explosion1" to="." method="_on_explosion_1_animation_looped"]
+[connection signal="animation_looped" from="explosion2" to="." method="_on_explosion_2_animation_looped"]
+[connection signal="animation_looped" from="explosion3" to="." method="_on_explosion_3_animation_looped"]

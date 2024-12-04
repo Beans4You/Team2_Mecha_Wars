@@ -1,7 +1,14 @@
 extends enemy_script
 
+@onready var runner_path = preload("res://scenes/enemies/runner/runner_path_level_3.tscn")
+@onready var flyer_path = preload("res://scenes/enemies/flyer/flyer_path_level_3.tscn")
+@onready var cthulhu_path = preload("res://scenes/enemies/cthulhu/cthulhu_path_level_3.tscn")
+@onready var cur_scene = get_parent().get_parent().get_parent()
+@onready var last_enemy_out = false
+
 @export var max_health = 500
 var timer = 1
+var rng = RandomNumberGenerator.new()
 
 func _ready():
 	$spawn_animation.hide()
@@ -29,6 +36,20 @@ func _process(delta):
 	
 	
 	if health <=0:
+		self.speed = 0
+		$AnimatedSprite2D.play("base")
+		$CollisionShape2D.disabled = true
+		$spawn_timer.stop()
+		
+		$explosion1.play("expl")
+		$explosion1.visible = true
+		$explosion2.play("expl")
+		$explosion2.visible = true
+		$explosion3.play("expl")
+		$explosion3.visible = true
+		
+		await get_tree().create_timer(3.0).timeout
+		
 		get_parent().get_parent().queue_free()
 		get_parent().get_parent().get_parent().mothership_defeated = true
 		game_scene.curr_gold += self.gold_worth
@@ -38,15 +59,6 @@ func _on_hit_area_body_entered(body) -> void:
 	if body.is_in_group("stronghold"):
 		at_stronghold = true
 		stronghold = body
-
-
-@onready var runner_path = preload("res://scenes/enemies/runner/runner_path_level_3.tscn")
-@onready var flyer_path = preload("res://scenes/enemies/flyer/flyer_path_level_3.tscn")
-@onready var cthulhu_path = preload("res://scenes/enemies/cthulhu/cthulhu_path_level_3.tscn")
-@onready var cur_scene = get_parent().get_parent().get_parent()
-@onready var last_enemy_out = false
-
-var rng = RandomNumberGenerator.new()
 
 
 func _on_spawn_timer_timeout() -> void:
@@ -84,3 +96,18 @@ func _on_spawn_timer_timeout() -> void:
 
 func _on_spawn_animation_animation_finished():
 	$spawn_animation.hide()
+
+
+func _on_explosion_1_animation_looped() -> void:
+	$explosion1.position.x = rng.randf_range(-25, 50)
+	$explosion1.position.y = rng.randf_range(-25, 25)
+
+
+func _on_explosion_2_animation_looped() -> void:
+	$explosion2.position.x = rng.randf_range(75, 100)
+	$explosion2.position.y = rng.randf_range(-50, 55)
+
+
+func _on_explosion_3_animation_looped() -> void:
+	$explosion3.position.x = rng.randf_range(150, 220)
+	$explosion3.position.y = rng.randf_range(-40, 10)

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c0416exuj4rhf"
-path="res://.godot/imported/gold_dino_body.png-e92387e0f49a235a8410cfd1dec9d61a.ctex"
+path="res://.godot/imported/gold_dino_body.png-2dca50b9efd19ee29bbba7ea9445cafb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://resources/rocket_dino/gold_dino_body.png"
-dest_files=["res://.godot/imported/gold_dino_body.png-e92387e0f49a235a8410cfd1dec9d61a.ctex"]
+source_file="res://Resources/rocket_dino/gold_dino_body.png"
+dest_files=["res://.godot/imported/gold_dino_body.png-2dca50b9efd19ee29bbba7ea9445cafb.ctex"]
 
 [params]
 
