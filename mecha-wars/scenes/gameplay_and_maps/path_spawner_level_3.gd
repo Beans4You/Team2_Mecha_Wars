@@ -8,7 +8,7 @@ func _ready():
 	cthulhu_path = preload("res://scenes/enemies/cthulhu/cthulhu_path_level_3.tscn")
 	mother_path = preload("res://scenes/enemies/mothership/mothership_path.tscn")
 	
-	enemy_array = [0, 0, 0, 2, 2, 2, 1, 1, 1, 1, 0, 1, 2, 0, 1, 0, 1, 0, 1, 1, 2, 1, 1, 2, 1, 1, 2, 1, 1, 2, 1, 1, 2, 1, 2, 1, 1, 1, 1, 2, 2, 2, 1, 2, 1, 2, 1, 1, 2, 1, 1, 2, 1, 1, 2, 2, 1, 1, 1, 2, 2, 1, 1, 1, 2, 1, 1, 2, 2, 1, 1, 2 ,1, 1, 1, 2, 1, 2, 1, 2, 1, 1, 2, 2, 2, 1, 1, 1, 2, 1, 1, 2, 1, 1, 0, 0, 3, 0, 0, 1, 1, 2, 1, 1, 2, 1, 1, 2, 1, 1, 1, 2, 1, 1, 2, 1, 2, 1, 1, 1, 3, 1, 2, 1, 0, 0, 0, 0, 1, 1, 1, 3, 1, 1, 1, 1, 1, 1, 3, 1, 1, 1, 1, 3, 1, 1, 1, 3, 3, 3, 1, 1, 2, -10]
+	enemy_array = [0, 0, 0, 2, 2, 2, 1, 1, 1, 1, 0, 1, 2, 0, 1, 0, 1, 0, 1, 1, 2, 1, 1, 2, 1, 1, 2, 1, 1, 2, 1, 1, 2, 1, 2, 1, 1, 1, 1, 2, 2, 2, 1, 2, 1, 2, 1, 1, 2, 1, 1, 2, 1, 1, 2, 2, 1, 1, 1, 2, 2, 1, 1, 1, 2, 1, 1, 2, 2, 1, 1, 2 ,1, 1, 1, 2, 1, 2, 1, 2, 1, 1, 2, 2, 2, 1, 1, 1, 2, 1, 1, 2, 1, 1, 0, 0, 3, 0, 0, 1, 1, 2, 1, 1, 2, 1, 1, 2, 1, 1, 1, 2, 1, 1, 2, 1, 2, 1, 1, 1, 3, 1, 2, 1, 0, 0, 0, 0, 1, 1, 1, 3, 1, 1, 1, 1, 1, 1, 3, 1, 1, 1, 1, 3, 1, 1, 1, 4, 3, 3, 3, 1, 1, 2,  -10]
 
 
 func _process(_delta):
@@ -29,13 +29,16 @@ func _on_timer_timeout() -> void:
 	elif (enemy_array[array_spot] == 3):
 		var temp_path = cthulhu_path.instantiate()
 		add_child(temp_path)
+	elif (enemy_array[array_spot] == 4):
+		var temp_path = mother_path.instantiate()
+		add_child(temp_path)
 	elif(enemy_array[array_spot] == -10):
 		last_enemy_out = true
 		$timer.stop()
 		
-		await get_tree().create_timer(3.0).timeout
-		var temp_path = mother_path.instantiate()
-		add_child(temp_path)
+		#await get_tree().create_timer(3.0).timeout
+		#var temp_path = mother_path.instantiate()
+		#add_child(temp_path)
 		
 		
 	array_spot += 1
