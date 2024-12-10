@@ -3,12 +3,12 @@
 importer="font_data_dynamic"
 type="FontFile"
 uid="uid://ds27v1s8el1ir"
-path="res://.godot/imported/NotoSansSymbols2-Regular.ttf-33c9ef00008d709fa9dbb9d817ed9d06.fontdata"
+path="res://.godot/imported/NotoSansSymbols2-Regular.ttf-eae697a5ea696fce98ba3386cdc2dfdd.fontdata"
 
 [deps]
 
-source_file="res://Resources/kenney_ui/Font/NotoSansSymbols2-Regular.ttf"
-dest_files=["res://.godot/imported/NotoSansSymbols2-Regular.ttf-33c9ef00008d709fa9dbb9d817ed9d06.fontdata"]
+source_file="res://resources/kenney_ui/Font/NotoSansSymbols2-Regular.ttf"
+dest_files=["res://.godot/imported/NotoSansSymbols2-Regular.ttf-eae697a5ea696fce98ba3386cdc2dfdd.fontdata"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c0heteb30ngwn"
-path="res://.godot/imported/red_dino_arm.png-4185b593b2b66c4de5f233197d5a1616.ctex"
+path="res://.godot/imported/red_dino_arm.png-0ba79db4f7aa8e16495f4ffc0304c09d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Resources/rocket_dino/red_dino_arm.png"
-dest_files=["res://.godot/imported/red_dino_arm.png-4185b593b2b66c4de5f233197d5a1616.ctex"]
+source_file="res://resources/rocket_dino/red_dino_arm.png"
+dest_files=["res://.godot/imported/red_dino_arm.png-0ba79db4f7aa8e16495f4ffc0304c09d.ctex"]
 
 [params]
 

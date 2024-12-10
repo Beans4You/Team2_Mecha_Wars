@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://jas8blq6tyjo"
-path="res://.godot/imported/Tower.png-a7d231901c8528aac146a3713b4ebbae.ctex"
+path="res://.godot/imported/Tower.png-d5a450ec64f2566cedcd211e43e237c1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Resources/turrets_unmanned/Tower.png"
-dest_files=["res://.godot/imported/Tower.png-a7d231901c8528aac146a3713b4ebbae.ctex"]
+source_file="res://resources/turrets_unmanned/Tower.png"
+dest_files=["res://.godot/imported/Tower.png-d5a450ec64f2566cedcd211e43e237c1.ctex"]
 
 [params]
 
