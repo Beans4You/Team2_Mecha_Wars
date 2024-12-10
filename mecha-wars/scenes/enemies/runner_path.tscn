@@ -4,7 +4,7 @@
 
 [sub_resource type="Curve2D" id="Curve2D_r3rjb"]
 _data = {
-"points": PackedVector2Array(0, 0, 0, 0, 0, 112, 0, 0, 0, 0, 408, 112, 0, 0, 0, 0, 408, 304, 0, 0, 0, 0, 232, 312, 0, 0, 0, 0, 232, 576, 0, 0, 0, 0, 608, 576, 0, 0, 0, 0, 616, 152, 0, 0, 0, 0, 960, 144, 0, 0, 0, 0, 968, 488, 0, 0, 0, 0, 1112, 496)
+"points": PackedVector2Array(0, 0, 0, 0, 0, 120, 0, 0, 0, 0, 424, 120, 0, 0, 0, 0, 424, 304, 0, 0, 0, 0, 232, 304, 0, 0, 0, 0, 232, 576, 0, 0, 0, 0, 616, 576, 0, 0, 0, 0, 616, 152, 0, 0, 0, 0, 968, 152, 0, 0, 0, 0, 968, 496, 0, 0, 0, 0, 1112, 496)
 }
 point_count = 10
 
@@ -28,7 +28,7 @@ curve = SubResource("Curve2D_r3rjb")
 script = SubResource("GDScript_8bhrm")
 
 [node name="PathFollow2D" type="PathFollow2D" parent="."]
-position = Vector2(0, 112)
+position = Vector2(0, 120)
 loop = false
 
 [node name="runner" parent="PathFollow2D" instance=ExtResource("1_ws003")]
