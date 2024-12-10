@@ -5,7 +5,7 @@ class_name bullet_parent
 var target 
 var speed = 500
 var bullet_damage = 5
-var explosion = preload("res://scenes/towers/rocket_dino/explosion.tscn")
+var explosion = load("res://scenes/towers/rocket_dino/explosion.tscn")
 
 func set_target(target_in):
 	target = target_in
@@ -16,7 +16,7 @@ func _physics_process(delta: float) -> void:
 	if target == null:
 		#print("null")
 		#position += speed * Vector2.RIGHT.rotated(rotation) * delta
-		#position += speed * Vector2.RIGHT.rotated(rotation) * delta
+		position += speed * Vector2.RIGHT.rotated(rotation) * delta
 		#position += Vector2(1,1) * speed * delta
 		#print("null")
 		return
@@ -41,6 +41,7 @@ func _on_area_2d_body_entered(body: Node2D) -> void:
 			add_sibling(expl)
 			expl.position = position
 		queue_free()
+		
 		
 
 func _on_visible_on_screen_notifier_2d_screen_exited() -> void:
