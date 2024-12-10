@@ -41,8 +41,9 @@ func _on_gui_input(event):
 			
 			var character_area = tempTower.get_node("overlap_check")
 			var not_overlapping_tower = check_for_overlapping_towers(character_area)
+			var not_out_boundary = check_boundary(character_shape.extents.x, character_shape.extents.y, event.global_position)
 			
-			if not not_on_path or not not_overlapping_tower:
+			if not not_on_path or not not_overlapping_tower or not not_out_boundary: 
 				# make red
 				tempTower.get_node("area").modulate = Color(1,0,0, 0.3)
 				tempTower.get_node("area").show()
@@ -59,9 +60,9 @@ func _on_gui_input(event):
 			
 			var character_area = tempTower.get_node("overlap_check")
 			var not_overlapping_tower = check_for_overlapping_towers(character_area)
-
+			var not_out_boundary = check_boundary(character_shape.extents.x, character_shape.extents.y, event.global_position)
 			# here we check that the tower isn't in the ui section, and is not in the path layer
-			if not_on_path and event.global_position.x < 1280 and not_overlapping_tower and event.global_position.x > 0 and event.global_position.y > 5 and event.global_position.y < 700: 
+			if not_on_path and not_overlapping_tower and not_out_boundary: 
 				# grid snap
 				tempTower.global_position = event.global_position.snapped(Vector2(tile_size, tile_size))
 				tempTower.get_node("area").hide()
@@ -101,3 +102,12 @@ func check_for_overlapping_towers(area):
 			result = false
 			
 	return result
+
+func check_boundary(area_width, area_height, mouse_position):
+	var no_boundary_collision = true
+	for x in range(-int(area_width), int(area_width)):
+		for y in range(-int(area_height), int(area_height)):
+			var point = Vector2(x, y)
+			no_boundary_collision = no_boundary_collision and (mouse_position.x + point.x < 1280 and mouse_position.x + point.x > 5 and mouse_position.y  + point.y > 5 and mouse_position.y + point.y < 700)
+			
+	return no_boundary_collision
