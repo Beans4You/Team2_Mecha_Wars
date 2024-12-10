@@ -124,12 +124,17 @@ func _on_sell_gui_input(event: InputEvent) -> void:
 		if $FlowContainer/Sell.get_global_rect().has_point(event.global_position):
 			sell_tower() # Replace with function body.
 
-# TODO fix this code
+
 func sell_tower() -> void:
-	var base_tower_cost = 200
-	var upgrade_value = 150
-	var refund = base_tower_cost + (twr.damage_upgrade_counter + twr.range_upgrade_counter) * upgrade_value
-	refund *= 0.75  
+	var upgrade_value = 0
+	
+	if twr.range_upgrade_counter > 0:
+		upgrade_value += 100
+	if twr.damage_upgrade_counter > 0:
+		upgrade_value += 150
+
+	var refund = (twr.gold_cost + upgrade_value) * 0.75
+	
 	game_scene.curr_gold += int(refund)
 	twr.queue_free()
 	queue_free()

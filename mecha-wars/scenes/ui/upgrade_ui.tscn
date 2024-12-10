@@ -1,8 +1,8 @@
 [gd_scene load_steps=5 format=3 uid="uid://d24hax5v8y6ud"]
 
 [ext_resource type="Script" path="res://scenes/ui/upgrade_ui.gd" id="1_qiwqi"]
-[ext_resource type="FontFile" uid="uid://ds27v1s8el1ir" path="res://Resources/kenney_ui/Font/NotoSansSymbols2-Regular.ttf" id="2_ur065"]
-[ext_resource type="FontFile" uid="uid://wge3vupq5r6q" path="res://Resources/kenney_ui/Font/Kenney Future.ttf" id="2_uu4ny"]
+[ext_resource type="FontFile" uid="uid://ds27v1s8el1ir" path="res://resources/kenney_ui/Font/NotoSansSymbols2-Regular.ttf" id="2_ur065"]
+[ext_resource type="FontFile" uid="uid://wge3vupq5r6q" path="res://resources/kenney_ui/Font/Kenney Future.ttf" id="2_uu4ny"]
 
 [sub_resource type="FontVariation" id="FontVariation_ey1j3"]
 fallbacks = Array[Font]([ExtResource("2_ur065")])
@@ -56,7 +56,7 @@ theme_override_fonts/font = SubResource("FontVariation_ey1j3")
 theme_override_font_sizes/font_size = 16
 
 [node name="damage" type="Panel" parent="FlowContainer"]
-custom_minimum_size = Vector2(130, 300)
+custom_minimum_size = Vector2(130, 270)
 layout_mode = 2
 
 [node name="Label" type="Label" parent="FlowContainer/damage"]
@@ -77,7 +77,7 @@ horizontal_alignment = 1
 autowrap_mode = 2
 
 [node name="range" type="Panel" parent="FlowContainer"]
-custom_minimum_size = Vector2(130, 300)
+custom_minimum_size = Vector2(130, 270)
 layout_mode = 2
 
 [node name="Label" type="Label" parent="FlowContainer/range"]
@@ -107,11 +107,18 @@ custom_minimum_size = Vector2(130, 50)
 layout_mode = 2
 
 [node name="Label" type="Label" parent="FlowContainer/Sell"]
-layout_mode = 0
-offset_left = 36.0
-offset_top = 7.0
-offset_right = 90.0
-offset_bottom = 30.0
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -32.0
+offset_top = -11.5
+offset_right = 32.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
 theme_override_colors/font_color = Color(0, 0.83, 0.83, 1)
 theme_override_fonts/font = ExtResource("2_uu4ny")
 theme_override_font_sizes/font_size = 19
