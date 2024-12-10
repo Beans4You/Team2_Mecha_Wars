@@ -55,11 +55,10 @@ func shoot():
 	#$animated_sprite.play('shoot')
 	shoot_ready = false
 	#print("shoot")
+	select_enemy()
 	create_bullet(current_enemy)
 	await(get_tree().create_timer(rate_of_fire).timeout)
 	#create_bullet(current_enemy)
-	
-	
 	
 	#$animated_sprite.play('idle')
 	
@@ -82,4 +81,4 @@ func create_bullet(target_in):
 	bullet.set_target(target)
 	bullet.bullet_damage = damage
 	bullet.global_position = $aim.global_position
-	get_tree().root.add_child(bullet)
+	get_parent().get_parent().add_child(bullet)

@@ -15,11 +15,14 @@ func set_target(target_in):
 func _physics_process(delta: float) -> void:
 	if target == null:
 		#print("null")
-		position += speed * Vector2.RIGHT.rotated(rotation) * delta
+		#position += speed * Vector2.RIGHT.rotated(rotation) * delta
+		#position += speed * Vector2.RIGHT.rotated(rotation) * delta
 		#position += Vector2(1,1) * speed * delta
+		#print("null")
 		return
 	elif target.get_child(1).disabled:
 		target = null
+		#print("targeted is null now")
 		return
 	look_at(target.global_position)
 	position = position.move_toward(target.global_position, speed * delta)

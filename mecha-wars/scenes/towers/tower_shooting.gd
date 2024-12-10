@@ -31,6 +31,7 @@ func _on_range_body_exited(body: Node2D) -> void:
 
 func shoot():
 	$animated_sprite.play('shoot')
+	select_enemy()
 	shoot_ready = false
 	current_enemy.on_hit(damage)
 	if !enemy_array.is_empty():
