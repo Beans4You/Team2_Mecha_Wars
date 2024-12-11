@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://dxk675pu5vmir"
-path="res://.godot/imported/mixkit-sci-fi-positive-notification-266.wav-8525a1e90aff816168ebbe4496141d84.sample"
+path="res://.godot/imported/mixkit-sci-fi-positive-notification-266.wav-81db7711846a5845317ce35319470612.sample"
 
 [deps]
 
-source_file="res://resources/mixkit-sci-fi-positive-notification-266.wav"
-dest_files=["res://.godot/imported/mixkit-sci-fi-positive-notification-266.wav-8525a1e90aff816168ebbe4496141d84.sample"]
+source_file="res://Resources/mixkit-sci-fi-positive-notification-266.wav"
+dest_files=["res://.godot/imported/mixkit-sci-fi-positive-notification-266.wav-81db7711846a5845317ce35319470612.sample"]
 
 [params]
 

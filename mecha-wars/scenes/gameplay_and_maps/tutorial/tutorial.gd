@@ -11,9 +11,16 @@ var message_state = 0
 @onready var main_menu = load("res://scenes/ui/main_menu.tscn")
 
 func _ready() -> void:
+	$Box1.hide()
+	$Box2.hide()
+	$Label.hide()
+	$Label2.hide()
+	$Label3.hide()
+	$Button.hide()
 	var win = win_message.instantiate()
 	add_child(win)
-	win.set_message("Welcome to BootCamp Fresh Meat  \n\n Press Next")
+	win.set_message("Incoming Message... \n\n Welcome to BootCamp Fresh Meat  \n\n Press Next")
+	
 	
 func _on_button_pressed() -> void:
 	$tutorial_path/Timer.start() 
@@ -103,4 +110,10 @@ func _on_button_2_pressed() -> void:
 		win.set_message("This Message will Self Destruct in 3 Seconds \n\n Press Start Game when ready")
 		$Next.queue_free()
 		message_state = 0
+		$Box1.show()
+		$Box2.show()
+		$Label.show()
+		$Label2.show()
+		$Label3.show()
+		$Button.show()
 		

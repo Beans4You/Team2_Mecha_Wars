@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cmmftq1a0mwp7"
-path="res://.godot/imported/Dino_landscape.png-3a9996c954529457ea13f2541ef5f427.ctex"
+path="res://.godot/imported/Dino_landscape.png-2225c2bfd9e3a9dca5cd490dfff24117.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://resources/random stuff/Dino_landscape.png"
-dest_files=["res://.godot/imported/Dino_landscape.png-3a9996c954529457ea13f2541ef5f427.ctex"]
+source_file="res://Resources/random stuff/Dino_landscape.png"
+dest_files=["res://.godot/imported/Dino_landscape.png-2225c2bfd9e3a9dca5cd490dfff24117.ctex"]
 
 [params]
 

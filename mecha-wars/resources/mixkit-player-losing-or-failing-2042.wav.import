@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://774b0tlvwuqr"
-path="res://.godot/imported/mixkit-player-losing-or-failing-2042.wav-efc35140e8454dba070f34df85298023.sample"
+path="res://.godot/imported/mixkit-player-losing-or-failing-2042.wav-4f11ae3b86dd3d5a53ef1d5d0a1f0766.sample"
 
 [deps]
 
-source_file="res://resources/mixkit-player-losing-or-failing-2042.wav"
-dest_files=["res://.godot/imported/mixkit-player-losing-or-failing-2042.wav-efc35140e8454dba070f34df85298023.sample"]
+source_file="res://Resources/mixkit-player-losing-or-failing-2042.wav"
+dest_files=["res://.godot/imported/mixkit-player-losing-or-failing-2042.wav-4f11ae3b86dd3d5a53ef1d5d0a1f0766.sample"]
 
 [params]
 

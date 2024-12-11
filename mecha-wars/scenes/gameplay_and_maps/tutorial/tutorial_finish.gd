@@ -4,8 +4,10 @@ extends Node2D
 
 func _ready() -> void:
 	#for testing only
+	"""
 	$Total_Timer.wait_time = float(len($back/Label.text))/20.0 + 3.0
 	$Total_Timer.start()
+	"""
 	pass
 
 func _process(_delta: float) -> void:

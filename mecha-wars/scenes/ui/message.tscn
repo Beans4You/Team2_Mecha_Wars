@@ -38,8 +38,7 @@ offset_top = 7.0
 offset_right = 830.0
 offset_bottom = 480.0
 theme_override_fonts/font = ExtResource("2_geq6l")
-text = "Incoming Message... 
-             
+text = "             
 "
 label_settings = SubResource("LabelSettings_24dno")
 horizontal_alignment = 1

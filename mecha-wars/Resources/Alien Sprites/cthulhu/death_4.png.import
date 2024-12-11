@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bmgajttiaoja1"
-path="res://.godot/imported/death_4.png-c0b83cb25ab1b2f7ab82e6cfbc959c2b.ctex"
+path="res://.godot/imported/death_4.png-1b5e6628c6ee0d3906d0025872fab46c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://resources/Alien Sprites/cthulhu/death_4.png"
-dest_files=["res://.godot/imported/death_4.png-c0b83cb25ab1b2f7ab82e6cfbc959c2b.ctex"]
+source_file="res://Resources/Alien Sprites/cthulhu/death_4.png"
+dest_files=["res://.godot/imported/death_4.png-1b5e6628c6ee0d3906d0025872fab46c.ctex"]
 
 [params]
 

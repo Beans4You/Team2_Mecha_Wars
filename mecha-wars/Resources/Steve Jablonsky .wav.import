@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://dcbrdnttcc5bm"
-path="res://.godot/imported/Steve Jablonsky .wav-d86871f7a822704f657fcd2c6022c253.sample"
+path="res://.godot/imported/Steve Jablonsky .wav-36eb606bf49d089ed6a40a01eb5e0ea5.sample"
 
 [deps]
 
-source_file="res://resources/Steve Jablonsky .wav"
-dest_files=["res://.godot/imported/Steve Jablonsky .wav-d86871f7a822704f657fcd2c6022c253.sample"]
+source_file="res://Resources/Steve Jablonsky .wav"
+dest_files=["res://.godot/imported/Steve Jablonsky .wav-36eb606bf49d089ed6a40a01eb5e0ea5.sample"]
 
 [params]
 
