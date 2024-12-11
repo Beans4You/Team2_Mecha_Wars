@@ -14,7 +14,15 @@ func shoot():
 	enemy_relative = enemy_position - position
 	angle = atan2(enemy_relative.y, enemy_relative.x)
 	
-	$animated_sprite.animation = "shoot"
+	if color == 'red':
+		$animated_sprite.animation = "shoot"
+	if color == 'blue':
+		$animated_sprite.animation = "shoot_blue"
+	if color == 'purple':
+		$animated_sprite.animation = "shoot_purple"
+	if color == 'gold':
+		$animated_sprite.animation = "shoot_gold"
+	
 	if angle < 0:
 		angle += 2*PI
 	if angle < PI/3:

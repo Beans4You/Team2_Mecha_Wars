@@ -395,7 +395,7 @@ animations = [{
 
 [node name="rocket_dino" instance=ExtResource("1_div88")]
 script = ExtResource("2_7h3dq")
-damage = 5
+damage = 4
 rate_of_fire = 1.0
 
 [node name="area" parent="." index="0"]
@@ -405,7 +405,7 @@ theme = SubResource("Theme_ojke3")
 
 [node name="animated_sprite" type="AnimatedSprite2D" parent="." index="1"]
 sprite_frames = SubResource("SpriteFrames_y5mq4")
-animation = &"shoot"
+animation = &"shoot_gold"
 
 [node name="character_collision_shape" type="CollisionShape2D" parent="." index="2"]
 position = Vector2(-1, 17)

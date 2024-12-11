@@ -1,8 +1,8 @@
 [gd_scene load_steps=5 format=3 uid="uid://d24hax5v8y6ud"]
 
 [ext_resource type="Script" path="res://scenes/ui/upgrade_ui.gd" id="1_qiwqi"]
-[ext_resource type="FontFile" uid="uid://ds27v1s8el1ir" path="res://resources/kenney_ui/Font/NotoSansSymbols2-Regular.ttf" id="2_ur065"]
-[ext_resource type="FontFile" uid="uid://wge3vupq5r6q" path="res://resources/kenney_ui/Font/Kenney Future.ttf" id="2_uu4ny"]
+[ext_resource type="FontFile" uid="uid://ds27v1s8el1ir" path="res://Resources/kenney_ui/Font/NotoSansSymbols2-Regular.ttf" id="2_ur065"]
+[ext_resource type="FontFile" uid="uid://wge3vupq5r6q" path="res://Resources/kenney_ui/Font/Kenney Future.ttf" id="2_uu4ny"]
 
 [sub_resource type="FontVariation" id="FontVariation_ey1j3"]
 fallbacks = Array[Font]([ExtResource("2_ur065")])
