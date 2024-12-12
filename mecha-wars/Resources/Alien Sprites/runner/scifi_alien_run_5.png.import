@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ccyxk5ocdn8h7"
-path="res://.godot/imported/scifi_alien_run_5.png-93e43ca0013c02b3aa854920464aed28.ctex"
+path="res://.godot/imported/scifi_alien_run_5.png-b72d6600705f2d476cd289120b64c9f9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Resources/Alien Sprites/runner/scifi_alien_run_5.png"
-dest_files=["res://.godot/imported/scifi_alien_run_5.png-93e43ca0013c02b3aa854920464aed28.ctex"]
+source_file="res://resources/Alien Sprites/runner/scifi_alien_run_5.png"
+dest_files=["res://.godot/imported/scifi_alien_run_5.png-b72d6600705f2d476cd289120b64c9f9.ctex"]
 
 [params]
 

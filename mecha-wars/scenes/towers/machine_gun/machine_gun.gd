@@ -26,6 +26,14 @@ func _physics_process(_delta: float) -> void:
 		
 
 func shoot():
+	var audio_node = AudioStreamPlayer2D.new()
+	# Load the audio file 
+	var audio_stream = preload("res://resources/sound/submachine-gun-79846.mp3") 
+	audio_node.stream = audio_stream
+	get_parent().get_parent().add_child(audio_node)
+	audio_node.volume_db = -30
+	audio_node.play() # Play the sound
+	
 	shoot_ready = false
 	#
 	#var enemy_position = current_enemy.get_parent().position
@@ -40,7 +48,7 @@ func shoot():
 	if !enemy_array.is_empty():
 		$barrel/aim/AnimatedSprite2D.play()
 		#print(enemy.health)
-		current_enemy.get_child(-1).play('turret_hit')
+		#current_enemy.get_child(-1).play('turret_hit')
 	await(get_tree().create_timer(rate_of_fire).timeout)
 	if enemy_array.is_empty():
 		#$animated_sprite.play("idle")

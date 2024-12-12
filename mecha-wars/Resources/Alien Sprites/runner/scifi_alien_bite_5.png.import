@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://da2pkefqwjdx0"
-path="res://.godot/imported/scifi_alien_bite_5.png-5bf9b155e49c9cda4cfe77cf2a0a0326.ctex"
+path="res://.godot/imported/scifi_alien_bite_5.png-5b3339eecd708ee13adbf7a847198abe.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Resources/Alien Sprites/runner/scifi_alien_bite_5.png"
-dest_files=["res://.godot/imported/scifi_alien_bite_5.png-5bf9b155e49c9cda4cfe77cf2a0a0326.ctex"]
+source_file="res://resources/Alien Sprites/runner/scifi_alien_bite_5.png"
+dest_files=["res://.godot/imported/scifi_alien_bite_5.png-5b3339eecd708ee13adbf7a847198abe.ctex"]
 
 [params]
 

@@ -39,7 +39,7 @@ func _process(delta):
 # hit scan (tower shooting scene)
 func on_hit(damage):
 	health -= damage
-	$damaged_audio.play()
+	#$damaged_audio.play()
 	# TODO is this needed
 
 

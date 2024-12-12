@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cpwqrrqproopx"
-path="res://.godot/imported/Hit-Scan-Tower-Purple.png-4d070e66c163258dab2585fcdc4d86e5.ctex"
+path="res://.godot/imported/Hit-Scan-Tower-Purple.png-8b5b6b87603330c61ba3e942ffea727e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Resources/Hit-Scan-Tower/Hit-Scan-Tower-Purple.png"
-dest_files=["res://.godot/imported/Hit-Scan-Tower-Purple.png-4d070e66c163258dab2585fcdc4d86e5.ctex"]
+source_file="res://resources/Hit-Scan-Tower/Hit-Scan-Tower-Purple.png"
+dest_files=["res://.godot/imported/Hit-Scan-Tower-Purple.png-8b5b6b87603330c61ba3e942ffea727e.ctex"]
 
 [params]
 

@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://brcvceaq1hkhb"
-path="res://.godot/imported/The Dark Knight Main Theme.wav-fceca900205f8128fa5533c1b31d390c.sample"
+path="res://.godot/imported/The Dark Knight Main Theme.wav-068f19804ecd11a15aeb51f5da2a3b8c.sample"
 
 [deps]
 
-source_file="res://Resources/The Dark Knight Main Theme.wav"
-dest_files=["res://.godot/imported/The Dark Knight Main Theme.wav-fceca900205f8128fa5533c1b31d390c.sample"]
+source_file="res://resources/The Dark Knight Main Theme.wav"
+dest_files=["res://.godot/imported/The Dark Knight Main Theme.wav-068f19804ecd11a15aeb51f5da2a3b8c.sample"]
 
 [params]
 

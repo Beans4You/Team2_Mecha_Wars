@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://nlyeff3k3mru"
-path="res://.godot/imported/flyer_death4.png-880cc3a06e553e6bec9437980a247226.ctex"
+path="res://.godot/imported/flyer_death4.png-451a90b05e1a10b719a3c03f0139dc81.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Resources/Alien Sprites/flyer/flyer_death4.png"
-dest_files=["res://.godot/imported/flyer_death4.png-880cc3a06e553e6bec9437980a247226.ctex"]
+source_file="res://resources/Alien Sprites/flyer/flyer_death4.png"
+dest_files=["res://.godot/imported/flyer_death4.png-451a90b05e1a10b719a3c03f0139dc81.ctex"]
 
 [params]
 

@@ -12,6 +12,7 @@ func _ready():
 	#$range.position = -1 * Vector2(tower_range, tower_range) / 2
 	#$animated_sprite.play("idle")
 	$area.mouse_filter = Control.MOUSE_FILTER_IGNORE # makes area node unclickable for handling clicking input
+	rate_of_fire = 1.5
 	gold_cost = 250
 
 func create_bullet(target_in):
@@ -71,6 +72,14 @@ func _on_range_body_entered(body: Node2D) -> void:
 		enemy_array.append(body)
 
 func shoot():
+	var audio_node = AudioStreamPlayer2D.new()
+	# Load the audio file 
+	var audio_stream = preload("res://resources/sound/medium-explosion-40472.mp3") 
+	audio_node.stream = audio_stream
+	get_parent().get_parent().add_child(audio_node)
+	audio_node.volume_db = -9
+	audio_node.play() # Play the sound
+	
 	#$animated_sprite.play('shoot')
 	shoot_ready = false
 	#print("shoot")
@@ -79,3 +88,5 @@ func shoot():
 	#create_bullet(current_enemy)
 	#$animated_sprite.play('idle')
 	shoot_ready = true
+	
+	

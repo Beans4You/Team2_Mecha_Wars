@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://cvg81ou2hn1bg"
-path="res://.godot/imported/The Son of Flynn .wav-a8e9de15289565b441055d8892265021.sample"
+path="res://.godot/imported/The Son of Flynn .wav-c036e44f94b9b2f58990b95362cbdcf4.sample"
 
 [deps]
 
-source_file="res://Resources/The Son of Flynn .wav"
-dest_files=["res://.godot/imported/The Son of Flynn .wav-a8e9de15289565b441055d8892265021.sample"]
+source_file="res://resources/The Son of Flynn .wav"
+dest_files=["res://.godot/imported/The Son of Flynn .wav-c036e44f94b9b2f58990b95362cbdcf4.sample"]
 
 [params]
 

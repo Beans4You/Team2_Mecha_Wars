@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c60jvnpn1deyp"
-path="res://.godot/imported/Mecha_landscape.png-40e63e0ec736e2cae039e432280ab09f.ctex"
+path="res://.godot/imported/Mecha_landscape.png-3093b297da054c4407d33773c854cb79.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Resources/random stuff/Mecha_landscape.png"
-dest_files=["res://.godot/imported/Mecha_landscape.png-40e63e0ec736e2cae039e432280ab09f.ctex"]
+source_file="res://resources/random stuff/Mecha_landscape.png"
+dest_files=["res://.godot/imported/Mecha_landscape.png-3093b297da054c4407d33773c854cb79.ctex"]
 
 [params]
 

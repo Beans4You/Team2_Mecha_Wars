@@ -2,14 +2,14 @@
 
 [ext_resource type="PackedScene" uid="uid://dnwi2cwo0ksva" path="res://scenes/towers/tower_projectile.tscn" id="1_div88"]
 [ext_resource type="Script" path="res://scenes/towers/rocket_dino/rocket_dino.gd" id="2_7h3dq"]
-[ext_resource type="Texture2D" uid="uid://xo5fxvo1r1a5" path="res://Resources/rocket_dino/red_dino_body.png" id="3_cp4j7"]
-[ext_resource type="Texture2D" uid="uid://hshkigwy4w2c" path="res://Resources/rocket_dino/blue_dino_body.png" id="4_dyxo3"]
-[ext_resource type="Texture2D" uid="uid://c0heteb30ngwn" path="res://Resources/rocket_dino/red_dino_arm.png" id="5_dn7hg"]
-[ext_resource type="Texture2D" uid="uid://c0416exuj4rhf" path="res://Resources/rocket_dino/gold_dino_body.png" id="5_s7h01"]
-[ext_resource type="Texture2D" uid="uid://cl0xjutrxkbhx" path="res://Resources/rocket_dino/purple_dino_body.png" id="6_y6pa5"]
-[ext_resource type="Texture2D" uid="uid://dpx24gy81s8my" path="res://Resources/rocket_dino/blue_dino_arm.png" id="8_73oad"]
-[ext_resource type="Texture2D" uid="uid://bqb1753o3hejy" path="res://Resources/rocket_dino/gold_dino_arm.png" id="9_lm7jg"]
-[ext_resource type="Texture2D" uid="uid://ral52n6efsf7" path="res://Resources/rocket_dino/purple_dino_arm.png" id="10_uy53e"]
+[ext_resource type="Texture2D" uid="uid://xo5fxvo1r1a5" path="res://resources/rocket_dino/red_dino_body.png" id="3_cp4j7"]
+[ext_resource type="Texture2D" uid="uid://hshkigwy4w2c" path="res://resources/rocket_dino/blue_dino_body.png" id="4_dyxo3"]
+[ext_resource type="Texture2D" uid="uid://c0heteb30ngwn" path="res://resources/rocket_dino/red_dino_arm.png" id="5_dn7hg"]
+[ext_resource type="Texture2D" uid="uid://c0416exuj4rhf" path="res://resources/rocket_dino/gold_dino_body.png" id="5_s7h01"]
+[ext_resource type="Texture2D" uid="uid://cl0xjutrxkbhx" path="res://resources/rocket_dino/purple_dino_body.png" id="6_y6pa5"]
+[ext_resource type="Texture2D" uid="uid://dpx24gy81s8my" path="res://resources/rocket_dino/blue_dino_arm.png" id="8_73oad"]
+[ext_resource type="Texture2D" uid="uid://bqb1753o3hejy" path="res://resources/rocket_dino/gold_dino_arm.png" id="9_lm7jg"]
+[ext_resource type="Texture2D" uid="uid://ral52n6efsf7" path="res://resources/rocket_dino/purple_dino_arm.png" id="10_uy53e"]
 
 [sub_resource type="Theme" id="Theme_ojke3"]
 
@@ -395,8 +395,9 @@ animations = [{
 
 [node name="rocket_dino" instance=ExtResource("1_div88")]
 script = ExtResource("2_7h3dq")
-damage = 4
+damage = 5
 rate_of_fire = 1.0
+gold_cost = 250
 
 [node name="area" parent="." index="0"]
 offset_top = -177.0

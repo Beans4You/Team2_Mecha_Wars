@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bmx2imesmvuin"
-path="res://.godot/imported/Ship6_Explosion_013.png-bce03eeeb6fec2973df88576684d5ec7.ctex"
+path="res://.godot/imported/Ship6_Explosion_013.png-c17168fb34e6bf77e43d4f04ee5cd548.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Resources/Alien Sprites/mothership/spawn_animation/Ship6_Explosion_013.png"
-dest_files=["res://.godot/imported/Ship6_Explosion_013.png-bce03eeeb6fec2973df88576684d5ec7.ctex"]
+source_file="res://resources/Alien Sprites/mothership/spawn_animation/Ship6_Explosion_013.png"
+dest_files=["res://.godot/imported/Ship6_Explosion_013.png-c17168fb34e6bf77e43d4f04ee5cd548.ctex"]
 
 [params]
 

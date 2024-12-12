@@ -8,6 +8,14 @@ func _ready():
 
 
 func shoot():
+	var audio_node = AudioStreamPlayer2D.new()
+	# Load the audio file 
+	var audio_stream = preload("res://resources/sound/072807_heavy-machine-gun-50-caliber-39765.mp3") 
+	audio_node.stream = audio_stream
+	get_parent().get_parent().add_child(audio_node)
+	audio_node.volume_db = -10
+	audio_node.play() # Play the sound
+	
 	shoot_ready = false
 	
 	var enemy_position = current_enemy.get_parent().position
