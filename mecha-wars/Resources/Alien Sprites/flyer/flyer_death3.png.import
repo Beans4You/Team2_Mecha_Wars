@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://scnetxmnefe3"
-path="res://.godot/imported/scifi_alien_run_1.png-54845063e8e88ea2498e2aa6be7670ce.ctex"
+uid="uid://bnjlfgmx7u57"
+path="res://.godot/imported/flyer_death3.png-67bcb19686b9d67af498bb4253f95d82.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Resources/Alien Sprites/scifi_alien_run_1.png"
-dest_files=["res://.godot/imported/scifi_alien_run_1.png-54845063e8e88ea2498e2aa6be7670ce.ctex"]
+source_file="res://Resources/Alien Sprites/flyer/flyer_death3.png"
+dest_files=["res://.godot/imported/flyer_death3.png-67bcb19686b9d67af498bb4253f95d82.ctex"]
 
 [params]
 

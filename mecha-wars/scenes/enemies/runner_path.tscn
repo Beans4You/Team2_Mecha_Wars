@@ -29,6 +29,7 @@ script = SubResource("GDScript_8bhrm")
 
 [node name="PathFollow2D" type="PathFollow2D" parent="."]
 position = Vector2(0, 120)
+rotates = false
 loop = false
 
 [node name="runner" parent="PathFollow2D" instance=ExtResource("1_ws003")]

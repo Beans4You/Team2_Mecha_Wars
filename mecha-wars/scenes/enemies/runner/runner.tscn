@@ -1,35 +1,40 @@
-[gd_scene load_steps=15 format=3 uid="uid://h6nqnmhkcq1v"]
+[gd_scene load_steps=20 format=3 uid="uid://h6nqnmhkcq1v"]
 
 [ext_resource type="PackedScene" uid="uid://cwm1h72ovnakg" path="res://scenes/enemies/enemy.tscn" id="1_jm8wu"]
 [ext_resource type="Script" path="res://scenes/enemies/runner/runner.gd" id="2_i4i83"]
-[ext_resource type="Texture2D" uid="uid://scnetxmnefe3" path="res://Resources/Alien Sprites/scifi_alien_run_1.png" id="2_t62gp"]
-[ext_resource type="Texture2D" uid="uid://dyd07x1u70syn" path="res://Resources/Alien Sprites/scifi_alien_bite_1.png" id="3_l307w"]
-[ext_resource type="Texture2D" uid="uid://bgbmvfyd165w3" path="res://Resources/Alien Sprites/scifi_alien_run_2.png" id="3_si3x4"]
-[ext_resource type="Texture2D" uid="uid://cbfnc0lels7lr" path="res://Resources/Alien Sprites/scifi_alien_run_3.png" id="4_1nk3a"]
-[ext_resource type="Texture2D" uid="uid://catbe1u8itejs" path="res://Resources/Alien Sprites/scifi_alien_bite_2.png" id="4_7mwq2"]
-[ext_resource type="Texture2D" uid="uid://djfe4qg8wv31s" path="res://Resources/Alien Sprites/scifi_alien_bite_3.png" id="5_ca21w"]
-[ext_resource type="Texture2D" uid="uid://108pe3d7d7gn" path="res://Resources/Alien Sprites/scifi_alien_run_4.png" id="5_g5eqo"]
-[ext_resource type="Texture2D" uid="uid://cibtxgrvpalsj" path="res://Resources/Alien Sprites/scifi_alien_bite_4.png" id="6_8qm2s"]
-[ext_resource type="Texture2D" uid="uid://ccyxk5ocdn8h7" path="res://Resources/Alien Sprites/scifi_alien_run_5.png" id="6_aj3cw"]
-[ext_resource type="Texture2D" uid="uid://da2pkefqwjdx0" path="res://Resources/Alien Sprites/scifi_alien_bite_5.png" id="7_0vtgh"]
+[ext_resource type="Texture2D" uid="uid://dyd07x1u70syn" path="res://Resources/Alien Sprites/runner/scifi_alien_bite_1.png" id="3_t2eqj"]
+[ext_resource type="Texture2D" uid="uid://catbe1u8itejs" path="res://Resources/Alien Sprites/runner/scifi_alien_bite_2.png" id="4_7q56e"]
+[ext_resource type="Texture2D" uid="uid://djfe4qg8wv31s" path="res://Resources/Alien Sprites/runner/scifi_alien_bite_3.png" id="5_nmlo6"]
+[ext_resource type="Texture2D" uid="uid://cibtxgrvpalsj" path="res://Resources/Alien Sprites/runner/scifi_alien_bite_4.png" id="6_0lemu"]
+[ext_resource type="Texture2D" uid="uid://da2pkefqwjdx0" path="res://Resources/Alien Sprites/runner/scifi_alien_bite_5.png" id="7_02s6s"]
+[ext_resource type="Texture2D" uid="uid://d4lkjnt1mlnck" path="res://Resources/Alien Sprites/runner/scifi_alien_die_1.png" id="8_wyy88"]
+[ext_resource type="Texture2D" uid="uid://gu6vhq88xqsp" path="res://Resources/Alien Sprites/runner/scifi_alien_die_2.png" id="9_151s7"]
+[ext_resource type="Texture2D" uid="uid://cwig1ago7angi" path="res://Resources/Alien Sprites/runner/scifi_alien_die_3.png" id="10_6m85q"]
+[ext_resource type="Texture2D" uid="uid://bu7k8bs0nkt4b" path="res://Resources/Alien Sprites/runner/scifi_alien_die_4.png" id="11_itetr"]
+[ext_resource type="Texture2D" uid="uid://cds41abpb4ht" path="res://Resources/Alien Sprites/runner/scifi_alien_die_5.png" id="12_6uf0m"]
+[ext_resource type="Texture2D" uid="uid://scnetxmnefe3" path="res://Resources/Alien Sprites/runner/scifi_alien_run_1.png" id="13_1i8ey"]
+[ext_resource type="Texture2D" uid="uid://bgbmvfyd165w3" path="res://Resources/Alien Sprites/runner/scifi_alien_run_2.png" id="14_kj87u"]
+[ext_resource type="Texture2D" uid="uid://cbfnc0lels7lr" path="res://Resources/Alien Sprites/runner/scifi_alien_run_3.png" id="15_1ndxt"]
+[ext_resource type="Texture2D" uid="uid://108pe3d7d7gn" path="res://Resources/Alien Sprites/runner/scifi_alien_run_4.png" id="16_evcb4"]
+[ext_resource type="Texture2D" uid="uid://ccyxk5ocdn8h7" path="res://Resources/Alien Sprites/runner/scifi_alien_run_5.png" id="17_mge7g"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_edx1n"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("3_l307w")
+"texture": ExtResource("3_t2eqj")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_7mwq2")
+"texture": ExtResource("4_7q56e")
 }, {
 "duration": 1.0,
-"texture": ExtResource("5_ca21w")
+"texture": ExtResource("5_nmlo6")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_8qm2s")
+"texture": ExtResource("6_0lemu")
 }, {
 "duration": 1.0,
-"texture": ExtResource("7_0vtgh")
+"texture": ExtResource("7_02s6s")
 }],
 "loop": true,
 "name": &"attack",
@@ -37,19 +42,39 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("2_t62gp")
+"texture": ExtResource("8_wyy88")
 }, {
 "duration": 1.0,
-"texture": ExtResource("3_si3x4")
+"texture": ExtResource("9_151s7")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_1nk3a")
+"texture": ExtResource("10_6m85q")
 }, {
 "duration": 1.0,
-"texture": ExtResource("5_g5eqo")
+"texture": ExtResource("11_itetr")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_aj3cw")
+"texture": ExtResource("12_6uf0m")
+}],
+"loop": false,
+"name": &"death",
+"speed": 7.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("13_1i8ey")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_kj87u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_1ndxt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_evcb4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_mge7g")
 }],
 "loop": true,
 "name": &"move",
@@ -66,7 +91,7 @@ gold_worth = 20
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." index="0"]
 sprite_frames = SubResource("SpriteFrames_edx1n")
-animation = &"move"
+animation = &"attack"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." index="1"]
 position = Vector2(7, 11)
@@ -76,7 +101,7 @@ shape = SubResource("CapsuleShape2D_or3hg")
 [node name="hit_area" type="Area2D" parent="." index="2"]
 collision_mask = 255
 
-[node name="CollisionShape2D2" type="CollisionShape2D" parent="hit_area" index="0"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="hit_area" index="0"]
 position = Vector2(7, 10)
 rotation = -1.16432
 shape = SubResource("CapsuleShape2D_or3hg")

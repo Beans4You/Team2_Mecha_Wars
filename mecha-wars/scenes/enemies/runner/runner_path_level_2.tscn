@@ -13,5 +13,6 @@ curve = SubResource("Curve2D_hdt61")
 
 [node name="PathFollow2D" type="PathFollow2D" parent="."]
 position = Vector2(0, 152)
+rotates = false
 
 [node name="runner" parent="PathFollow2D" instance=ExtResource("1_fitc2")]

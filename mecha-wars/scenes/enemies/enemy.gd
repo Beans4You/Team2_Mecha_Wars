@@ -6,11 +6,11 @@ class_name enemy_script
 @export var attack_damage = 5
 @export var gold_worth = 100
 
+var alive = true
 var at_stronghold = false
+var x_last = 0
 var stronghold
 @onready var game_scene = get_parent().get_parent().get_parent().get_parent()
-
-# Called when the node enters the scene tree for the first time.
 
 
 func _process(delta):
@@ -26,10 +26,14 @@ func _process(delta):
 			speed = 120
 			$AnimatedSprite2D.play('move')
 	
-	if health <=0:
-		get_parent().get_parent().queue_free()
-		game_scene.curr_gold += self.gold_worth
-		
+	var x_cur = global_position.x
+	if health <= 0 and alive:
+		var need_flip = false
+		if (x_cur < x_last):
+			need_flip = true
+		death_func(need_flip)
+		$damage_indicator.hide()
+	x_last = x_cur
 
 
 # hit scan (tower shooting scene)
@@ -37,10 +41,21 @@ func on_hit(damage):
 	health -= damage
 	$damaged_audio.play()
 	# TODO is this needed
+
+
+func death_func(y_flip = false):
+	alive = false
+	game_scene.curr_gold += self.gold_worth
+	$CollisionShape2D.disabled = true
+	$hit_area/CollisionShape2D.disabled = true
+	$AnimatedSprite2D.play("death")
+	get_parent().rotates = true
+	if y_flip:
+		$AnimatedSprite2D.flip_v = true
+	self.speed = 0
+	await $AnimatedSprite2D.animation_finished
 	
-	
-	#if health <= 0:
-		#get_parent().get_parent().queue_free()
+	get_parent().get_parent().queue_free()
 
 
 #checking to see if enemy is at the stronghold

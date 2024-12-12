@@ -2,7 +2,6 @@ extends enemy_script
 
 @export var max_health = 100#200
 var phase = 1
-var alive = true
 var path
 var cur_x
 var last_x = 0
@@ -29,8 +28,6 @@ func _process(delta):
 		$AnimatedSprite2D.flip_h = false
 	last_x = cur_x
 	
-	#if velocity.x < 0:
-	#	$AnimatedSprite2D.flip_h
 	
 	if at_stronghold and alive:
 		if stronghold.visible:
@@ -46,13 +43,14 @@ func _process(delta):
 	
 	if health <= 0 and alive:
 		alive = false
+		game_scene.curr_gold += self.gold_worth
 		$CollisionShape2D.disabled = true
 		$hit_area/CollisionShape2D.disabled = true
 		$AnimatedSprite2D.play("death")
 		self.speed = 0
 		await $AnimatedSprite2D.animation_finished
+		
 		get_parent().get_parent().queue_free()
-		game_scene.curr_gold += self.gold_worth
 
 
 func transform():

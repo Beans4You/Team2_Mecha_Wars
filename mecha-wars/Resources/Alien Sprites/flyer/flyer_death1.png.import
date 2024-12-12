@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://da2pkefqwjdx0"
-path="res://.godot/imported/scifi_alien_bite_5.png-104c349417589bb13644c353c431e7a5.ctex"
+uid="uid://qfwp2ypv40g1"
+path="res://.godot/imported/flyer_death1.png-3f2c6d4e872dd12d04258cf821bd2be5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Resources/Alien Sprites/scifi_alien_bite_5.png"
-dest_files=["res://.godot/imported/scifi_alien_bite_5.png-104c349417589bb13644c353c431e7a5.ctex"]
+source_file="res://Resources/Alien Sprites/flyer/flyer_death1.png"
+dest_files=["res://.godot/imported/flyer_death1.png-3f2c6d4e872dd12d04258cf821bd2be5.ctex"]
 
 [params]
 
